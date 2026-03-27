@@ -1,6 +1,6 @@
 <div align="center">
 
-# NS App (RALQ-4-Next.js)
+# RALQ-4-Next.js
 
 _Construye 10x más rápido con NS._
 
@@ -77,7 +77,7 @@ Sigue estos pasos para correr el proyecto localmente.
 ### 1. Clonar el repositorio
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/EmirPolito/RALQ-4-Next.js.git
 cd RALQ-4-Next.js
 ```
 
@@ -91,18 +91,8 @@ pnpm install
 
 _(Si no tienes `pnpm`, puedes usar `npm install --legacy-peer-deps`)_
 
-### 3. Configurar Variables de Entorno
 
-Crea un archivo `.env.local` en la raíz del proyecto y configura tus variables para Nodemailer (SMTP u otro proveedor):
-
-```env
-SMTP_HOST=tu_host
-SMTP_PORT=tu_puerto
-SMTP_USER=tu_usuario
-SMTP_PASS=tu_contraseña
-```
-
-### 4. Servidor de Desarrollo
+### 3. Servidor de Desarrollo
 
 Inicia el entorno de desarrollo:
 
@@ -117,3 +107,8 @@ El servidor de Next.js arrancará en [http://localhost:3000](http://localhost:30
 ## 🤝 Contribución
 
 ¡Las contribuciones son bienvenidas! Siéntete libre de abrir un _Issue_ o enviar un _Pull Request_ para proponer mejoras u optimizaciones en la aplicación.
+
+## 👨‍💻 Autor
+**Emir Polito**
+- GitHub: https://github.com/EmirPolito
+- Linkedin: https://www.linkedin.com/in/emir-polito-g/
