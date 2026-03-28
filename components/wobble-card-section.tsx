@@ -32,16 +32,19 @@ export default function WobbleCardSection() {
 
             {/* RECTANGULAR */}
             <WobbleCard containerClassName="bg-wobble-bg-1 col-span-1 lg:col-span-3 min-h-[300px]">
-              <div className="max-w-md -mt-8">
+              <div className="max-w-lg">
                 <h2 className="text-wobble-ttl-5 text-left text-balance text-base md:text-xl lg:text-4xl font-semibold tracking-[-0.015em]">
-                  Exploración de Instrumentos
+                  Laboratorio Virtual a Detalle
                 </h2>
 
                 <p className="text-wobble-desc-6 mt-5 text-left text-base/6">
-                  Conoce los materiales y equipos utilizados en prácticas de
-                  laboratorio. Cada instrumento incluye información sobre su
-                  estructura, función y uso dentro de experimentos químicos.
+                  Conoce y maneja el equipo crítico antes de pisar el laboratorio físico. Cada módulo incluye su estructura, función y protocolos de seguridad.
                 </p>
+
+                <ul className="text-wobble-desc-6 mt-4 space-y-2 text-sm md:text-base">
+                  <li className="flex items-center gap-2"><span>🔬</span> Modelos 3D interactivos con zoom</li>
+                  <li className="flex items-center gap-2"><span>📋</span> Fichas descriptivas de materiales</li>
+                </ul>
               </div>
 
               <img
@@ -85,20 +88,18 @@ export default function WobbleCardSection() {
 
             {/* RECTANGULAR */}
             <WobbleCard containerClassName="bg-wobble-bg-4 col-span-1 lg:col-span-3 min-h-[300px]">
-              <div className="max-w-sm">
+              <div className="max-w-xl">
                 <h2 className="text-wobble-ttl-5 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em]">
-                  Visualización Científica en el Entorno Real
+                  Química en Realidad Aumentada
                 </h2>
 
                 <p className="text-wobble-desc-6 mt-5 text-left text-base/6">
-                  Observa modelos científicos dentro de tu propio espacio para
-                  analizar su forma, proporciones y estructura desde distintas
-                  perspectivas.
+                  Convierte tu habitación, escritorio o aula en un entorno de aprendizaje dinámico. Proyecta compuestos moleculares y equipo de precisión directamente en tu espacio real utilizando la cámara de tu dispositivo para entender escalas y proporciones.
                 </p>
               </div>
 
               <img
-                src="/img/carrusel/carrusel1.png"
+                src="/img/carrusel/carrusel7.png"
                 width={370}
                 height={370}
                 alt="Visualización de estructuras científicas"

@@ -51,7 +51,7 @@ const PRODUCT_DATA: Record<ProductId, ProductData> = {
     title: "Gradilla",
     description:
       "La gradilla es un instrumento de laboratorio utilizado para sostener y organizar tubos de ensayo de forma segura durante experimentos, reacciones químicas o procesos de análisis.",
-    image: "https://ik.imagekit.io/kqmrslzuq/SOUND/left-earbud.png",
+    image: "/img/demo/gradilla.png",
     colors: {
       gradient: "from-[#111] to-[#000]",
       glow: "bg-[#222]",
@@ -70,7 +70,7 @@ const PRODUCT_DATA: Record<ProductId, ProductData> = {
     title: "Cafeína",
     description:
       "La cafeína es una molécula orgánica perteneciente al grupo de las metilxantinas. Es conocida por sus efectos estimulantes en el sistema nervioso central y se encuentra de forma natural en el café, té y cacao.",
-    image: "https://ik.imagekit.io/kqmrslzuq/SOUND/right-earbud.png",
+    image: "/img/demo/cafeina.png",
     colors: {
       gradient: "from-[#111] to-[#000]",
       glow: "bg-[#222]",

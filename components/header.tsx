@@ -12,7 +12,6 @@ const menuItems = [
   { name: "Nosotros", href: "/nosotros" },
   { name: "Contacto", href: "/contacto" },
   { name: "Ayuda", href: "/ayuda" },
-  { name: "Blog", href: "/blog" },
 ];
 
 export const HeroHeader = () => {
@@ -96,26 +95,31 @@ export const HeroHeader = () => {
                 </ul>
               </div>
 
-              <div className="flex w-full flex-col space-y-3 sm:flex-row sm:items-center sm:gap-5 sm:space-y-0 md:w-fit">
-                <ThemeControls />
+              <ThemeControls />
 
+              <div className="flex w-full flex-col space-y-3 sm:flex-row sm:items-center sm:gap-3 sm:space-y-0 md:w-fit">
                 <Button
                   size="sm"
                   className="cursor-pointer rounded-full px-5 py-5
                   bg-header-login-bg-2
                   text-header-login-txt
-                  hover:bg-header-login-bg-2">
-                  Iniciar sesión
+                  hover:bg-header-login-bg-2"
+                >
+                  <Link href="/login">
+                    <span>Iniciar sesión</span>
+                  </Link>
                 </Button>
+
                 {/* <div className="text-white">o</div> */}
+
                 <Button
-                  
                   size="sm"
                   className="cursor-pointer rounded-full px-5 py-5
                   bg-header-regis-bg
                   text-header-login-txt 
-                  hover:bg-header-regis-bg">
-                  <Link href="#">
+                  hover:bg-header-regis-bg"
+                >
+                  <Link href="/registro">
                     <span>Registrarse</span>
                   </Link>
                 </Button>

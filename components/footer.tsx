@@ -87,14 +87,6 @@ export default function Footer() {
                     Ayuda
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="/blog"
-                    className="text-footer-pag hover:text-footer-pag-hov"
-                  >
-                    Blog
-                  </Link>
-                </li>
               </ul>
             </div>
 
