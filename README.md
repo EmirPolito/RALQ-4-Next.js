@@ -1,50 +1,40 @@
-<div align="center">
-
 # RALQ-4-Next.js
 
-_Construye 10x más rápido con NS._
+Una moderna aplicación web (Landing / Showcase) construida enfocándose en un diseño altamente interactivo, animaciones fluidas, experiencias 3D y autenticación segura.
 
-Una moderna aplicación web (Landing / Showcase) construida enfocándose en un diseño altamente interactivo, animaciones fluidas y experiencias 3D.
-
-[![Screenshot 1](https://github.com/user-attachments/assets/3a812062-6e7c-4ab6-98b8-fd33d02eb491)](#)
-<br>
-<br>
-[![Screenshot 2](https://github.com/user-attachments/assets/0e918093-9d4a-4429-b81a-17a54a7a1708)](#)
-
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/3a812062-6e7c-4ab6-98b8-fd33d02eb491" alt="Screenshot 1" width="800" />
+  <br />
+  <img src="https://github.com/user-attachments/assets/0e918093-9d4a-4429-b81a-17a54a7a1708" alt="Screenshot 2" width="800" />
 </div>
 
 ## 🚀 Características Principales
 
+- **Autenticación con Clerk**: Gestión de usuarios segura y lista para producción (Login/Registro/Perfil).
 - **Experiencias 3D**: Integración nativa con modelos de **Spline** (`@splinetool/react-spline`) para un _Earbud Showcase_ interactivo.
 - **Animaciones Avanzadas**: Transiciones de páginas, scroll paralaje y componentes espaciales utilizando **Framer Motion** y **Motion Primitives**.
-- **Modo Oscuro / Claro**: Soporte completo de temas personalizados mediante `next-themes` y Tailwind CSS.
+- **Modo Oscuro / Claro**: Soporte completo de temas personalizados mediante `next-themes` y **Tailwind CSS v4**.
 - **Formulario de Contacto Funcional**: Uso de `react-hook-form`, validación con `zod` y envío de correos desde la API estructurada empleando `nodemailer`.
-- **UI Moderna**: Componentes altamente accesibles y reusables gracias a **Radix UI** y **Tailwind CSS v4**.
+- **Rendimiento Optimo**: Construido sobre la base de **Next.js 16** con Turbopack.
 
 ---
-
 
 ## 🛠️ Tecnologías Utilizadas
 
 ### Frontend
 
-- **Framework**: [Next.js 14+](https://nextjs.org/) (App Router)
-- **Librería UI**: [React 19](https://react.dev/)
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **Autenticación**: [Clerk](https://clerk.com/)
 - **Estilos**: [Tailwind CSS v4](https://tailwindcss.com/)
-- **Componentes Base**: [Radix UI](https://www.radix-ui.com/) (Accordion, Dialog, Select, Tabs, etc.)
 - **Animaciones**: [Framer Motion](https://www.framer.com/motion/)
 - **Integración 3D**: [Spline](https://spline.design/)
+- **Librería UI**: [Radix UI](https://www.radix-ui.com/)
 
-### Backend (Next.js API Routes)
+### Backend & API
 
-- **Mailing**: Nodemailer
-- **Validación de Datos**: Zod
-
-### Herramientas de Desarrollo
-
-- **Lenguaje**: TypeScript
-- **Gestor de Paquetes**: pnpm
-- **Formateo**: ESLint + Prettier
+- **Mailing**: [Nodemailer](https://nodemailer.com/)
+- **Validación**: [Zod](https://zod.dev/)
+- **Analíticas**: [@vercel/analytics](https://vercel.com/analytics)
 
 ---
 
@@ -52,66 +42,63 @@ Una moderna aplicación web (Landing / Showcase) construida enfocándose en un d
 
 ```text
 ├── app/
-│   ├── api/          # Rutas API de Next.js (Check Env, Envío de contacto)
-│   ├── ayuda/        # Página de Ayuda (Preguntas frecuentes, FAQs)
-│   ├── contacto/     # Página de Contacto con formulario
-│   ├── demo/         # Demostración del producto (Showcase 3D)
-│   ├── nosotros/     # Timeline de historia "Sobre Nosotros"
-│   ├── layout.tsx    # Layout maestro (Providers, Dark mode, Fonts)
-│   └── page.tsx      # Landing page / Hero Section primario
+│   ├── api/             # Rutas API (Auth, Contacto, Env check)
+│   ├── login/           # Páginas de autenticación de Clerk
+│   ├── menu/            # Area protegida (requiere login)
+│   ├── layout.tsx       # Root layout con ClerkProvider y ThemeProvider
+│   └── globals.css      # Estilos globales y variables de Tailwind v4
 ├── components/
-│   ├── motion-primitives/  # Componentes de animación de bajo nivel
-│   ├── ui/                 # Componentes genéricos de Radix UI encapsulados
-│   ├── hero-section.tsx    # Sección inicial animada
-│   ├── contact-section.tsx # Lógica y UI del contacto
-│   ├── spatial-product...  # Componente espacial para Spline Viewer
-│   └── footer.tsx / header.tsx # Secciones estructurales y navegación
-├── lib/
-│   └── utils.ts      # Funciones de ayuda (clsx, tailwind-merge, etc.)
-└── public/           # Recursos estáticos (Iconos, manifiestos)
+│   ├── ui/              # Componentes base (Shadcn/Radix)
+│   └── hero-section.tsx # Secciones principales de la landing
+├── middleware.ts        # Protección de rutas y sesiones (Clerk)
+└── next.config.mjs      # Configuración de Next.js y Turbo
 ```
 
 ---
 
-## ⚙️ Instalación y Configuración
+## ⚙️ Instalación Local
 
-Sigue estos pasos para correr el proyecto localmente.
+1. **Clonar repositorio**:
 
-### 1. Clonar el repositorio
+   ```bash
+   git clone https://github.com/EmirPolito/RALQ-4-Next.js.git
+   cd RALQ-4-Next.js
+   ```
 
-```bash
-git clone https://github.com/EmirPolito/RALQ-4-Next.js.git
-cd RALQ-4-Next.js
-```
+2. **Instalar dependencias**:
 
-### 2. Instalar las dependencias
+   ```bash
+   pnpm install
+   ```
 
-Este proyecto utiliza `pnpm`, por lo cual es recomendado utilizarlo para instalar:
+3. **Variables de Entorno**:
+   Crea un archivo `.env` basado en las claves de Clerk y tu configuración de correo.
 
-```bash
-pnpm install
-```
-
-_(Si no tienes `pnpm`, puedes usar `npm install --legacy-peer-deps`)_
-
-
-### 3. Servidor de Desarrollo
-
-Inicia el entorno de desarrollo:
-
-```bash
-pnpm dev
-```
-
-El servidor de Next.js arrancará en [http://localhost:3000](http://localhost:3000).
+4. **Correr en desarrollo**:
+   ```bash
+   pnpm dev
+   ```
 
 ---
 
-## 🤝 Contribución
+## ☁️ Despliegue en Vercel
 
-¡Las contribuciones son bienvenidas! Siéntete libre de abrir un _Issue_ o enviar un _Pull Request_ para proponer mejoras u optimizaciones en la aplicación.
+Este proyecto está optimizado para desplegarse en **Vercel** con un solo clic. Asegúrate de configurar las siguientes **Environment Variables** en el dashboard de Vercel:
+
+| Variable                            | Requerido para            |
+| :---------------------------------- | :------------------------ |
+| `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` | Autenticación (Frontend)  |
+| `CLERK_SECRET_KEY`                  | Autenticación (Backend)   |
+| `EMAIL_HOST`                        | Host SMTP para contacto   |
+| `EMAIL_PORT`                        | Puerto SMTP (e.g. 465)    |
+| `EMAIL_USER`                        | Usuario de correo         |
+| `EMAIL_PASS`                        | Contraseña / App Password |
+
+---
 
 ## 👨‍💻 Autor
+
 **Emir Polito**
-- GitHub: https://github.com/EmirPolito
-- Linkedin: https://www.linkedin.com/in/emir-polito-g/
+
+- GitHub: [github.com/EmirPolito](https://github.com/EmirPolito)
+- LinkedIn: [linkedin.com/in/emir-polito-g/](https://www.linkedin.com/in/emir-polito-g/)
