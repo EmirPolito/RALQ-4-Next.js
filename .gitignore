@@ -5,7 +5,11 @@ __v0_jsx-dev-runtime.ts
 
 # Common ignores
 node_modules/
-.env/
+# local env files
+.env
+.env.local
+.env.*.local
+
 .next/
 .DS_Store
 # clerk configuration (can include secrets)
