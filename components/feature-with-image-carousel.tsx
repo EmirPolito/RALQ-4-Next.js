@@ -110,20 +110,22 @@ function Feature() {
   const bgColor = resolvedTheme === "light" ? "#dff4e5" : "var(--background)";
 
   return (
-    <div className="w-full py-20 lg:py-30">
-      <div className="container mx-auto px-13">
+    <div className="w-full py-20 lg:py-26">
+      <div className="container mx-auto px-15">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 min-h-[400px]">
           {/* Texto */}
-          <div className="flex gap-3.5 flex-col items-start">
+          <div className="flex gap-2 flex-col items-start">
             <div>
               <Badge className="bg-carrusel2-mini-bg text-carrusel2-mini-txt rounded-2xl px-2 py-1">
                 Plataforma educativa interactiva
               </Badge>
             </div>
 
-            <div className="flex gap-6 flex-col">
+            <div className="flex gap-5 flex-col">
               <h2 className="text-carrusel2-ttl text-xl md:text-3xl lg:text-6xl tracking-tighter lg:max-w-xl font-semibold text-left">
-                Sumérgete en la Realidad Aumentada
+                Sumérgete en la
+                <br />
+                Realidad Aumentada
               </h2>
 
               <p className="text-carrusel2-desc lg:max-w-xl text-lg max-w-xl leading-relaxed tracking-tight text-left">
@@ -135,23 +137,21 @@ function Feature() {
             </div>
 
             {/* Botón opcional */}
-            {/* 
             <Button
               asChild
               size="sm"
-              className="h-10 rounded-full px-4 text-sm bg-[#60806b] hover:bg-[#85b18f] text-white mt-4"
+              className="-mx-2 h-10 rounded-full px-4 text-sm bg-background hover:bg-background text-titulos mt-3"
             >
-              <Link href="#link" className="flex items-center gap-1">
+              <Link href="/demo" className="flex items-center gap-1">
                 <span>Explorar la plataforma</span>
                 <ChevronRight className="h-4 w-4" />
               </Link>
-            </Button> 
-            */}
+            </Button>
           </div>
 
           {/* Carrusel */}
           <div
-            className="w-full max-w-full px-5"
+            className="w-full max-w-full px-3"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
@@ -180,8 +180,9 @@ function Feature() {
                 ))}
               </CarouselContent>
 
-              <CarouselPrevious className="bg-carrusel2-sig text-carrusel2-sig-txt cursor-pointer -left-20" />
-              <CarouselNext className="bg-carrusel2-sig text-carrusel2-sig-txt cursor-pointer right-0 " />
+              {/* Botones para cambiar imagen cada lado */}
+              {/* <CarouselPrevious className=" cursor-pointer -left-23" />
+              <CarouselNext className=" cursor-pointer -right-7 " /> */}
             </Carousel>
           </div>
         </div>

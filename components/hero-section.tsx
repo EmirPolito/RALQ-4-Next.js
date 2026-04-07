@@ -6,17 +6,19 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 import { HeroHeader } from "./header";
+
 import { InfiniteSlider } from "@/components/motion-primitives/infinite-slider";
 import { ProgressiveBlur } from "@/components/motion-primitives/progressive-blur";
 import { ScrollAnimation } from "@/components/motion-primitives/scroll-animation";
 import { ChevronRight } from "lucide-react";
 import { Feature } from "@/components/feature-with-image-carousel";
-import SectionWithMockup from "@/components/section-with-mockup";
+
 import FAQs from "@/components/preguntas-frec";
 import Footer from "@/components/footer";
 import WobbleCardSection from "@/components/wobble-card-section";
 import PinCardsSection from "@/components/pin-cards-section";
 import { useReducedMotion } from "@/components/theme-controls";
+import { IzquierdaDerecha } from "@/components/izquierda-derecha";
 
 const circleItems = [
   { image: "/img/carrusel/carrusel1.png", title: "Microscopio" },
@@ -83,7 +85,7 @@ export default function HeroSection() {
             </div>
 
             {/* ADN */}
-            <div className="absolute inset-0 overflow-hidden rounded-3xl lg:rounded-[3rem] border border-black/10 dark:border-white/5 bg-white dark:bg-black">
+            <div className="bg-background absolute inset-0 overflow-hidden rounded-3xl lg:rounded-[2rem] border border-black/10 dark:border-white/5 bg-white dark:bg-black">
               <video
                 ref={videoRef}
                 autoPlay
@@ -149,66 +151,19 @@ export default function HeroSection() {
           </div>
         </section>
 
-                {/* imagene automatico*/}
-        <ScrollAnimation direction="up" delay={0.1}>
-          <Feature />
-        </ScrollAnimation>
-
         {/* 3 tarjetas pin */}
         <PinCardsSection />
 
-
-
-        {/* Izquierdo y derecho  y viceversa */}
-        <SectionWithMockup
-          title={
-            <>
-              Conoce los instrumentos
-              <br />
-              antes de entrar al laboratorio
-            </>
-          }
-          description={
-            <>
-              Familiarízate con equipos y materiales
-              <br />
-              utilizados en prácticas de química.
-              <br />
-              Observa su estructura, función y uso
-              <br />
-              dentro del trabajo experimental.
-            </>
-          }
-          imageSrc="/img/sections/section1.png"
-          reverseLayout={false}
-        />
-
-        <SectionWithMockup
-          title={
-            <>
-              Explora estructuras
-              <br />
-              químicas en detalle
-            </>
-          }
-          description={
-            <>
-              Analiza la forma y organización
-              <br />
-              de diferentes compuestos mediante
-              <br />
-              representaciones visuales diseñadas
-              <br />
-              para facilitar su comprensión.
-            </>
-          }
-          imageSrc="/img/sections/section2.png"
-          reverseLayout={true}
-        />
-        <section className="py-20 lg:py-5 bg-background"></section>
+        {/* Izquierda y derecha */}
+        <IzquierdaDerecha />
 
         {/* Rectangulo y cuadro 2*/}
         <WobbleCardSection />
+
+        {/* imagene automatico*/}
+        <ScrollAnimation direction="up" delay={0.1}>
+          <Feature />
+        </ScrollAnimation>
 
         {/*Preguntas frecuentes*/}
         <FAQs />

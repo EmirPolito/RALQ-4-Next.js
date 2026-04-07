@@ -5,7 +5,6 @@ import { Timeline } from "@/components/ui/timeline";
 
 export function SobreNosotros() {
   const data = [
-    
     {
       title: "2023",
       content: (
@@ -57,7 +56,6 @@ export function SobreNosotros() {
               alt="feature template"
               className="h-50 w-full rounded-lg object-cover border-[var(--border-theme)]"
             />
-
           </div>
         </div>
       ),
@@ -89,17 +87,14 @@ export function SobreNosotros() {
         </div>
       ),
     },
-    
-   
-     {
 
-      
+    {
       title: "Mejoras continuas",
       content: (
         <div>
           <p className="mb-2 text-base md:text-lg text-[var(--foreground)]">
-            Seguiremos Implementando nuevas funciones y modelos 3D para mejorar la
-            interacción.
+            Seguiremos Implementando nuevas funciones y modelos 3D para mejorar
+            la interacción.
           </p>
           <p className="mb-8 text-base md:text-lg text-[var(--foreground-secondary)]">
             Actualizaremos componentes y secciones para mantener la plataforma
@@ -116,19 +111,16 @@ export function SobreNosotros() {
               alt="feature template"
               className="h-50 w-full rounded-lg object-cover border-[var(--border-theme)]"
             />
-
           </div>
         </div>
       ),
     },
-    
+
     {
-      
       title: "",
       content: (
         <div>
-          <div className="grid grid-cols-2 gap-4">
-          </div>
+          <div className="grid grid-cols-2 gap-4"></div>
         </div>
       ),
     },

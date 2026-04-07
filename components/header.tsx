@@ -99,6 +99,7 @@ export const HeroHeader = () => {
 
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:items-center sm:gap-3 sm:space-y-0 md:w-fit">
                 <Button
+                  asChild
                   size="sm"
                   className="cursor-pointer rounded-full px-5 py-5
                   bg-header-login-bg-2
@@ -110,13 +111,12 @@ export const HeroHeader = () => {
                   </Link>
                 </Button>
 
-                {/* <div className="text-white">o</div> */}
-
                 <Button
+                  asChild
                   size="sm"
                   className="cursor-pointer rounded-full px-5 py-5
                   bg-header-regis-bg
-                  text-header-login-txt 
+                  text-header-regis-txt 
                   hover:bg-header-regis-bg"
                 >
                   <Link href="/registro">

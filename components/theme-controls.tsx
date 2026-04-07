@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { Moon, Sun, Eye, Palette } from "lucide-react"
-import { useTheme } from "next-themes"
-import { Button } from "@/components/ui/button"
+import * as React from "react";
+import { Moon, Sun, Eye, Palette } from "lucide-react";
+import { useTheme } from "next-themes";
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,8 +11,12 @@ import {
   DropdownMenuTrigger,
   DropdownMenuSeparator,
   DropdownMenuLabel,
-} from "@/components/ui/dropdown-menu"
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
+} from "@/components/ui/dropdown-menu";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 
 const colorOptions = [
   { name: "Por defecto", value: "default", color: "" },
@@ -20,95 +24,109 @@ const colorOptions = [
   { name: "Morado", value: "purple", color: "#8b5cf6" },
   { name: "Rojo", value: "red", color: "#ef4444" },
   { name: "Naranja", value: "orange", color: "#f97316" },
-  { name: "Rosa", value: "pink", color: "#ec4899" },
+  { name: "Rosa", value: "pink", color: "#ec003f" },
   { name: "Verde", value: "green", color: "#15cb24" },
-]
+];
 
 // Custom event to communicate reduced motion state to other components
-export const REDUCED_MOTION_EVENT = "reducedMotionChange"
+export const REDUCED_MOTION_EVENT = "reducedMotionChange";
 
 export function useReducedMotion() {
-  const [reducedMotion, setReducedMotion] = React.useState(false)
-  
+  const [reducedMotion, setReducedMotion] = React.useState(false);
+
   React.useEffect(() => {
-    setReducedMotion(localStorage.getItem("reducedMotion") === "true")
-    
+    setReducedMotion(localStorage.getItem("reducedMotion") === "true");
+
     const handler = (e: CustomEvent) => {
-      setReducedMotion(e.detail.reducedMotion)
-    }
-    window.addEventListener(REDUCED_MOTION_EVENT, handler as EventListener)
-    return () => window.removeEventListener(REDUCED_MOTION_EVENT, handler as EventListener)
-  }, [])
-  
-  return reducedMotion
+      setReducedMotion(e.detail.reducedMotion);
+    };
+    window.addEventListener(REDUCED_MOTION_EVENT, handler as EventListener);
+    return () =>
+      window.removeEventListener(
+        REDUCED_MOTION_EVENT,
+        handler as EventListener,
+      );
+  }, []);
+
+  return reducedMotion;
 }
 
 export function ThemeControls() {
-  const { theme, setTheme, resolvedTheme } = useTheme()
-  const [mounted, setMounted] = React.useState(false)
-  const [colorblind, setColorblind] = React.useState(false)
-  const [reducedMotion, setReducedMotion] = React.useState(false)
-  const [primaryColor, setPrimaryColor] = React.useState("default")
+  const { theme, setTheme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = React.useState(false);
+  const [colorblind, setColorblind] = React.useState(false);
+  const [reducedMotion, setReducedMotion] = React.useState(false);
+  const [primaryColor, setPrimaryColor] = React.useState("default");
 
   React.useEffect(() => {
-    setMounted(true)
-    const savedColorblind = localStorage.getItem("colorblind") === "true"
-    const savedReducedMotion = localStorage.getItem("reducedMotion") === "true"
-    const savedColor = localStorage.getItem("primaryColor") || "default"
+    setMounted(true);
+    const savedColorblind = localStorage.getItem("colorblind") === "true";
+    const savedReducedMotion = localStorage.getItem("reducedMotion") === "true";
+    const savedColor = localStorage.getItem("primaryColor") || "default";
 
-    setColorblind(savedColorblind)
-    setReducedMotion(savedReducedMotion)
-    setPrimaryColor(savedColor)
+    setColorblind(savedColorblind);
+    setReducedMotion(savedReducedMotion);
+    setPrimaryColor(savedColor);
 
-    applyColorblindMode(savedColorblind)
-    applyReducedMotion(savedReducedMotion)
-    applyColorTheme(savedColor)
-  }, [])
+    applyColorblindMode(savedColorblind);
+    applyReducedMotion(savedReducedMotion);
+    applyColorTheme(savedColor);
+  }, []);
 
   const applyColorblindMode = (enabled: boolean) => {
-    const html = document.documentElement
-    enabled ? html.classList.add("colorblind") : html.classList.remove("colorblind")
-  }
+    const html = document.documentElement;
+    enabled
+      ? html.classList.add("colorblind")
+      : html.classList.remove("colorblind");
+  };
 
   const applyReducedMotion = (enabled: boolean) => {
-    const html = document.documentElement
-    enabled ? html.classList.add("reduce-motion") : html.classList.remove("reduce-motion")
-    window.dispatchEvent(new CustomEvent(REDUCED_MOTION_EVENT, { detail: { reducedMotion: enabled } }))
-  }
+    const html = document.documentElement;
+    enabled
+      ? html.classList.add("reduce-motion")
+      : html.classList.remove("reduce-motion");
+    window.dispatchEvent(
+      new CustomEvent(REDUCED_MOTION_EVENT, {
+        detail: { reducedMotion: enabled },
+      }),
+    );
+  };
 
   const applyColorTheme = (color: string) => {
-    if (color === "default") document.documentElement.removeAttribute("data-color")
-    else document.documentElement.setAttribute("data-color", color)
-  }
+    if (color === "default")
+      document.documentElement.removeAttribute("data-color");
+    else document.documentElement.setAttribute("data-color", color);
+  };
 
   const toggleColorblind = (e: React.MouseEvent) => {
-    e.preventDefault()
-    e.stopPropagation()
-    const newValue = !colorblind
-    setColorblind(newValue)
-    localStorage.setItem("colorblind", String(newValue))
-    applyColorblindMode(newValue)
-  }
+    e.preventDefault();
+    e.stopPropagation();
+    const newValue = !colorblind;
+    setColorblind(newValue);
+    localStorage.setItem("colorblind", String(newValue));
+    applyColorblindMode(newValue);
+  };
 
   const toggleReducedMotion = () => {
-    const newValue = !reducedMotion
-    setReducedMotion(newValue)
-    localStorage.setItem("reducedMotion", String(newValue))
-    applyReducedMotion(newValue)
-  }
+    const newValue = !reducedMotion;
+    setReducedMotion(newValue);
+    localStorage.setItem("reducedMotion", String(newValue));
+    applyReducedMotion(newValue);
+  };
 
   const handleColorChange = (color: string) => {
-    setPrimaryColor(color)
-    localStorage.setItem("primaryColor", color)
-    applyColorTheme(color)
-  }
+    setPrimaryColor(color);
+    localStorage.setItem("primaryColor", color);
+    applyColorTheme(color);
+  };
 
-  if (!mounted) return null
+  if (!mounted) return null;
 
-  const currentTheme = resolvedTheme || theme
+  const currentTheme = resolvedTheme || theme;
 
   return (
-    <div className="flex items-center gap-3 pl-3">
+    <div className="flex items-center gap-2 pl-0">
+      {" "}
       {/* Theme Mode Dropdown */}
       <DropdownMenu modal={false}>
         <DropdownMenuTrigger asChild>
@@ -157,7 +175,6 @@ export function ThemeControls() {
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
-
       {/* Color Selector Popover */}
       <Popover modal={false}>
         <PopoverTrigger asChild>
@@ -180,7 +197,9 @@ export function ThemeControls() {
         </PopoverTrigger>
         <PopoverContent className="rounded-2xl w-42 z-[100]" align="end">
           <div className="space-y-2">
-            <p className="text-sm font-medium text-foreground mb-3">Selecciona un color</p>
+            <p className="text-sm font-medium text-foreground mb-3">
+              Selecciona un color
+            </p>
             <div className="flex flex-col gap-1">
               {colorOptions.map((option) => (
                 <button
@@ -209,7 +228,6 @@ export function ThemeControls() {
           </div>
         </PopoverContent>
       </Popover>
-
       {/* Reduced Motion Toggle tipo switch */}
       <button
         className="relative inline-flex h-6 w-12 items-center rounded-full bg-muted cursor-pointer transition-colors focus:outline-none outline-none focus-visible:ring-0 focus-visible:outline-none"
@@ -218,15 +236,20 @@ export function ThemeControls() {
       >
         <span
           className={`inline-block h-4.5 w-4.5 transform rounded-full transition-transform ${
-            reducedMotion ? "translate-x-6 bg-muted-foreground" : "translate-x-1 bg-primary"
+            reducedMotion
+              ? "translate-x-6 bg-muted-foreground"
+              : "translate-x-1 bg-primary"
           }`}
         />
       </button>
     </div>
-  )
+  );
 }
-      {/* Reduced Motion Toggle tipo switch */}
-      {/* <button
+{
+  /* Reduced Motion Toggle tipo switch */
+}
+{
+  /* <button
         className="relative inline-flex h-6 w-12 items-center rounded-full bg-muted cursor-pointer transition-colors focus:outline-none outline-none focus-visible:ring-0 focus-visible:outline-none"
         onClick={toggleReducedMotion}
         aria-label="Reducir animaciones"
@@ -239,4 +262,5 @@ export function ThemeControls() {
       </button>
     </div>
   )
-} */}
+} */
+}

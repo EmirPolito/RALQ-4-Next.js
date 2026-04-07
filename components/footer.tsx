@@ -33,7 +33,7 @@ export default function Footer() {
               <span className="text-footer-link gap-2">
                 <Link
                   className="hover:underline"
-                  href="https://x.com/arihantCodes"
+                  href="https://x.com/emirpolito"
                 >
                   @emirpolito
                 </Link>
@@ -55,7 +55,7 @@ export default function Footer() {
               </span>
             </h1>
 
-            <p className="text-footer-derechos text-sm mt-2">
+            <p className="text-footer-derechos mt-1.5">
               © {new Date().getFullYear()} RALQ. Todos los derechos reservados.
             </p>
           </div>
@@ -142,17 +142,18 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="w-full flex mt-10 items-center justify-center">
-  <h1
-    className="bg-clip-text text-center text-3xl md:text-5xl lg:text-[14rem] font-bold tracking-widest text-transparent bg-gradient-to-b from-footer-ralq to-footer-ralq select-none"
-    style={{
-      WebkitMaskImage: "linear-gradient(to bottom, black 70%, transparent)",
-      maskImage: "linear-gradient(to bottom, black 70%, transparent)",
-    }}
-  >
-    RALQ
-  </h1>
-</div>
+        <div className="w-full flex mt-9.5 items-center justify-center">
+          <h1
+            className="bg-clip-text text-center text-3xl md:text-5xl lg:text-[14rem] font-bold tracking-widest text-transparent bg-gradient-to-b from-footer-ralq to-footer-ralq select-none"
+            style={{
+              WebkitMaskImage:
+                "linear-gradient(to bottom, black 70%, transparent)",
+              maskImage: "linear-gradient(to bottom, black 70%, transparent)",
+            }}
+          >
+            RALQ
+          </h1>
+        </div>
       </div>
     </footer>
   );

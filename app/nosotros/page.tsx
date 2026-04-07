@@ -1,19 +1,18 @@
-'use client'
+"use client";
 
-import React from 'react'
-import {HeroHeader} from '@/components/header'
-import {SobreNosotros} from '@/components/timeline-demo'
-import Footer  from "@/components/footer";
-
+import React from "react";
+import { HeroHeader } from "@/components/header";
+import { SobreNosotros } from "@/components/timeline-demo";
+import Footer from "@/components/footer";
 
 const nosotros = () => {
   return (
     <div>
-        <HeroHeader/>
-        <SobreNosotros/>
-        {/* <Footer/> */}
+      <HeroHeader />
+      <SobreNosotros />
+      {/* <Footer/> */}
     </div>
-  )
-}
+  );
+};
 
-export default nosotros
+export default nosotros;

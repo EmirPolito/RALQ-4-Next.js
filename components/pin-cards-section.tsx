@@ -15,7 +15,7 @@ export default function PinCardsSection() {
               Áreas de Exploración Científica
             </h2>
 
-            <p className="text-tarjetas-desc2 mt-4 text-lg max-w-4xl mx-auto text-center">
+            <p className="text-tarjetas-desc2 mt-2 max-w-3xl mx-auto text-lg text-center">
               La plataforma organiza el contenido en distintos entornos de
               aprendizaje
               <br />
@@ -73,9 +73,7 @@ export default function PinCardsSection() {
                       <div className="text-tarjetas-1txt6 text-4xl font-bold">
                         3D
                       </div>
-                      <div className="text-tarjetas-desc7 text-xs">
-                        Modelos
-                      </div>
+                      <div className="text-tarjetas-desc7 text-xs">Modelos</div>
                     </div>
                   </div>
 
@@ -112,7 +110,8 @@ export default function PinCardsSection() {
 
                   <p className="text-tarjetas-desc5 text-[15px] leading-relaxed">
                     Descubre cómo los instrumentos científicos permiten
-                    identificar compuestos y analizar propiedades químicas de diferentes sustancias.
+                    identificar compuestos y analizar propiedades químicas de
+                    diferentes sustancias.
                   </p>
 
                   <div className="grid grid-cols-3 gap-20 mt-10">
@@ -138,9 +137,7 @@ export default function PinCardsSection() {
                       <div className="text-tarjetas-2txt6 text-4xl font-bold">
                         3D
                       </div>
-                      <div className="text-tarjetas-desc7 text-xs">
-                        Modelos
-                      </div>
+                      <div className="text-tarjetas-desc7 text-xs">Modelos</div>
                     </div>
                   </div>
 
