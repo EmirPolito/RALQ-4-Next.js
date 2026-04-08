@@ -4,14 +4,14 @@ import { Logo } from "@/components/logo";
 
 export default function Footer() {
   return (
-    <footer className="py-20 px-4 md:px-10 z-50 bg-background border-t border-border">
+    <footer className="py-20 px-4 md:px-10 z-50 bg-[var(--footer-bg)] border-t border-border">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="mb-8 md:mb-13">
             <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
               {/* <div className="h-6 w-6 bg-neutral-100 border-neutral-300 border dark:bg-white rounded-md flex items-center justify-center p-1">
               </div> */}
-              <span className=" font-bold lg:inline-block">
+              <span className=" bg font-bold lg:inline-block">
                 {/* Logo claro */}
                 <img
                   src="/logos/logo-verde.png"
