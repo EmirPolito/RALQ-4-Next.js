@@ -29,9 +29,9 @@
 
   /* Hero */
   --hero-bg: #f9f9f9;
-  --hero-ttl: #49504c;
+  --hero-ttl: #313432;
   --hero-desc: #454444;
-  --hero-bg-demo: #3e413f;
+  --hero-bg-demo: #313432;
   --hero-txt-demo: #ffffff;
 
   /* Carrusel 1*/
@@ -71,10 +71,10 @@
   --wobble-ttl: #000000;
   --wobble-desc: #616161;
 
-  --wobble-bg-1: #f2f2f2;
+  --wobble-bg-1: #eeeeee;
   --wobble-bg-2: #dae5de;
   --wobble-bg-3: #dae5de;
-  --wobble-bg-4: #f3f3f3;
+  --wobble-bg-4: #eeeeee;
 
   --wobble-ttl-5: #000000;
   --wobble-desc-6: #727272;

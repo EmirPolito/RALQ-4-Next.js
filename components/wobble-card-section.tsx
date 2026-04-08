@@ -10,7 +10,7 @@ export default function WobbleCardSection() {
       <div className="container mx-auto px-5 md:px-15">
         {/* Titulo y descripcion inicial */}
         <ScrollAnimation direction="up" delay={0.1}>
-          <div className="text-center mb-15">
+          <div className="text-center mb-12">
             <h2 className="text-wobble-ttl text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight text-balance">
               Funcionalidades de la Plataforma
             </h2>

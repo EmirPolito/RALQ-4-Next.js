@@ -112,13 +112,12 @@ export function ThemeControls({ className }: { className?: string }) {
     setColorblind(newValue);
     localStorage.setItem("colorblind", String(newValue));
     applyColorblindMode(newValue);
-    
+
     // Si se activa el modo daltónico, forzar el tema claro
     if (newValue) {
       setTheme("light");
     }
   };
-
 
   const toggleReducedMotion = () => {
     const newValue = !reducedMotion;
@@ -168,8 +167,8 @@ export function ThemeControls({ className }: { className?: string }) {
                   className="h-9 w-9 cursor-pointer flex items-center justify-center rounded-md transition-colors hover:!bg-transparent dark:hover:!bg-transparent focus:outline-none focus:ring-0 focus-visible:ring-0 outline-none group"
                 >
                   {colorblind ? (
-                    <Eye 
-                      className="h-5 w-5 transition-all group-hover:opacity-80" 
+                    <Eye
+                      className="h-5 w-5 transition-all group-hover:opacity-80"
                       style={{ color: currentThemeColor }}
                     />
                   ) : (
@@ -245,7 +244,6 @@ export function ThemeControls({ className }: { className?: string }) {
               <span>Daltonico</span>
               {colorblind && <span className="ml-auto text-primary">*</span>}
             </DropdownMenuItem>
-
           </DropdownMenuContent>
         </DropdownMenu>
 

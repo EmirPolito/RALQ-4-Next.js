@@ -10,7 +10,7 @@ export default function PinCardsSection() {
     <section className="py-20 lg:py-25 overflow-hidden">
       <div className="container mx-auto px-8">
         <ScrollAnimation direction="up" delay={0.1}>
-          <div className="text-center mb-7">
+          <div className="text-center mb-2">
             <h2 className="text-tarjetas-ttl1 text-3xl md:text-4xl lg:text-6xl font-semibold tracking-tight text-balance">
               Áreas de Exploración Científica
             </h2>
