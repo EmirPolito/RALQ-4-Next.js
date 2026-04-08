@@ -2,6 +2,7 @@
 
 import React, { useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
+import { useReducedMotion } from "@/components/theme-controls";
 
 interface LensProps {
   children: React.ReactNode;
@@ -27,6 +28,7 @@ export const Lens: React.FC<LensProps> = ({
   setHovering,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const reducedMotion = useReducedMotion();
 
   const [localIsHovering, setLocalIsHovering] = useState(false);
 
@@ -35,6 +37,15 @@ export const Lens: React.FC<LensProps> = ({
 
   // const [isHovering, setIsHovering] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 100, y: 100 });
+  
+  // If reduced motion, just render children without lens effect
+  if (reducedMotion) {
+    return (
+      <div className="relative overflow-hidden rounded-lg z-20">
+        {children}
+      </div>
+    );
+  }
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();

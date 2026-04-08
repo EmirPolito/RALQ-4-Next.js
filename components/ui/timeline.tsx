@@ -6,6 +6,7 @@ import {
   motion,
 } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
+import { useReducedMotion } from "@/components/theme-controls";
 
 interface TimelineEntry {
   title: string;
@@ -16,6 +17,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
+  const reducedMotion = useReducedMotion();
 
   useEffect(() => {
     if (ref.current) {
@@ -32,6 +34,11 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
+  // Static animations when reduced motion is enabled
+  const staticInitial = reducedMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 };
+  const staticAnimate = reducedMotion ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 };
+  const staticTransition = reducedMotion ? { duration: 0 } : { duration: 0.7, ease: "easeOut" };
+
   return (
     <div
   className="w-full bg-white dark:bg-neutral-950 md:px-10"
@@ -40,9 +47,9 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   {/* 🔥 TÍTULO PRINCIPAL + PÁRRAFO PRINCIPAL CON EFECTO */}
   <div className="max-w-7xl mx-auto py-40 px-4 md:px-8 lg:px-10 text-center">
     <motion.h1
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
+      initial={staticInitial}
+      whileInView={staticAnimate}
+      transition={staticTransition}
       viewport={{ once: true }}
       className="text-5xl md:text-6xl font-bold text-foreground mb-5 text-balance"
     >
@@ -50,9 +57,9 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     </motion.h1>
 
     <motion.p
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
+      initial={reducedMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+      whileInView={staticAnimate}
+      transition={reducedMotion ? { duration: 0 } : { duration: 0.7, ease: "easeOut", delay: 0.15 }}
       viewport={{ once: true }}
       className="text-lg text-muted-foreground text-balance max-w-1xl mx-auto font-normal"
     >
@@ -90,13 +97,20 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       }}
       className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%]  [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] "
     >
-      <motion.div
-        style={{
-          height: heightTransform,
-          opacity: opacityTransform,
-        }}
-        className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
-      />
+      {reducedMotion ? (
+        <div
+          style={{ height: "100%", opacity: 1 }}
+          className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
+        />
+      ) : (
+        <motion.div
+          style={{
+            height: heightTransform,
+            opacity: opacityTransform,
+          }}
+          className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
+        />
+      )}
     </div>
   </div>
 </div>

@@ -137,85 +137,179 @@ const ANIMATIONS: {
   }),
 };
 
-const BackgroundGradient = ({ isLeft }: { isLeft: boolean }) => (
+const BackgroundGradient = ({ isLeft, reducedMotion }: { isLeft: boolean; reducedMotion: boolean }) => (
   <div className="absolute inset-0 pointer-events-none">
-    <motion.div
-      animate={{
-        background: isLeft
-          ? "radial-gradient(circle at 0% 50%, rgba(0,0,0,0.25), transparent 50%)"
-          : "radial-gradient(circle at 100% 50%, rgba(0,0,0,0.25), transparent 50%)",
-      }}
-      transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-      className="absolute inset-0 hidden dark:block"
-    />
+    {reducedMotion ? (
+      <div 
+        className="absolute inset-0 hidden dark:block"
+        style={{
+          background: isLeft
+            ? "radial-gradient(circle at 0% 50%, rgba(0,0,0,0.25), transparent 50%)"
+            : "radial-gradient(circle at 100% 50%, rgba(0,0,0,0.25), transparent 50%)"
+        }}
+      />
+    ) : (
+      <motion.div
+        animate={{
+          background: isLeft
+            ? "radial-gradient(circle at 0% 50%, rgba(0,0,0,0.25), transparent 50%)"
+            : "radial-gradient(circle at 100% 50%, rgba(0,0,0,0.25), transparent 50%)",
+        }}
+        transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+        className="absolute inset-0 hidden dark:block"
+      />
+    )}
   </div>
 );
 
 const ProductVisual = ({
   data,
   isLeft,
+  reducedMotion,
 }: {
   data: ProductData;
   isLeft: boolean;
-}) => (
-  <motion.div layout="position" className="relative group shrink-0">
-    <motion.div
-      animate={{ rotate: 360 }}
-      transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-      className={`absolute inset-[-20%] rounded-full border border-dashed border-border/20 dark:border-demo-border/30 ${data.colors.ring}`}
-    />
-    <motion.div
-      animate={{ scale: [1, 1.05, 1] }}
-      transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-      className={`absolute inset-0 rounded-full ${data.colors.gradient} blur-2xl opacity-0 dark:opacity-10`}
-    />
-
-    {/* Contenedor circular */}
-    <div className="relative h-64 w-64 md:h-88 md:w-88 rounded-full border border-border/30 dark:border-white/10 flex items-center justify-center overflow-hidden backdrop-blur-sm">
-      <motion.div
-        animate={{ y: [-10, 10, -10] }}
-        transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-        className="relative z-10 w-full h-full flex items-center justify-center"
-      >
-        <AnimatePresence mode="wait">
-          <motion.img
-            key={data.id}
-            src={data.image}
-            alt={`${data.title}`}
-            variants={ANIMATIONS.image(isLeft)}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            className="w-full h-full object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] p-0"
-            draggable={false}
-          />
-        </AnimatePresence>
-      </motion.div>
-    </div>
-
-    {/* Boton DISPONIBLE */}
-    <motion.div
-      layout="position"
-      className="absolute -bottom-12 left-1/2 -translate-x-1/2 whitespace-nowrap"
-    >
-      <div className="text-demo-dis-txt bg-demo-dis-bg/70 flex items-center gap-3 border border-border/10 dark:border-demo-border/10 text-xs uppercase tracking-widest px-4 py-2 rounded-full backdrop-blur">
-        <span
-          className={`h-1.5 w-1.5 rounded-full ${data.colors.glow} animate-pulse`}
+  reducedMotion: boolean;
+}) => {
+  // Static version for reduced motion
+  if (reducedMotion) {
+    return (
+      <div className="relative group shrink-0">
+        <div
+          className={`absolute inset-[-20%] rounded-full border border-dashed border-border/20 dark:border-demo-border/30 ${data.colors.ring}`}
         />
-        {data.stats.connectionStatus}
+        <div
+          className={`absolute inset-0 rounded-full ${data.colors.gradient} blur-2xl opacity-0 dark:opacity-10`}
+        />
+        <div className="relative h-64 w-64 md:h-88 md:w-88 rounded-full border border-border/30 dark:border-white/10 flex items-center justify-center overflow-hidden backdrop-blur-sm">
+          <div className="relative z-10 w-full h-full flex items-center justify-center">
+            <img
+              key={data.id}
+              src={data.image}
+              alt={`${data.title}`}
+              className="w-full h-full object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] p-0"
+              draggable={false}
+            />
+          </div>
+        </div>
+        <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 whitespace-nowrap">
+          <div className="text-demo-dis-txt bg-demo-dis-bg/70 flex items-center gap-3 border border-border/10 dark:border-demo-border/10 text-xs uppercase tracking-widest px-4 py-2 rounded-full backdrop-blur">
+            <span className={`h-1.5 w-1.5 rounded-full ${data.colors.glow}`} />
+            {data.stats.connectionStatus}
+          </div>
+        </div>
       </div>
+    );
+  }
+
+  return (
+    <motion.div layout="position" className="relative group shrink-0">
+      <motion.div
+        animate={{ rotate: 360 }}
+        transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+        className={`absolute inset-[-20%] rounded-full border border-dashed border-border/20 dark:border-demo-border/30 ${data.colors.ring}`}
+      />
+      <motion.div
+        animate={{ scale: [1, 1.05, 1] }}
+        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+        className={`absolute inset-0 rounded-full ${data.colors.gradient} blur-2xl opacity-0 dark:opacity-10`}
+      />
+
+      {/* Contenedor circular */}
+      <div className="relative h-64 w-64 md:h-88 md:w-88 rounded-full border border-border/30 dark:border-white/10 flex items-center justify-center overflow-hidden backdrop-blur-sm">
+        <motion.div
+          animate={{ y: [-10, 10, -10] }}
+          transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
+          className="relative z-10 w-full h-full flex items-center justify-center"
+        >
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={data.id}
+              src={data.image}
+              alt={`${data.title}`}
+              variants={ANIMATIONS.image(isLeft)}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              className="w-full h-full object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] p-0"
+              draggable={false}
+            />
+          </AnimatePresence>
+        </motion.div>
+      </div>
+
+      {/* Boton DISPONIBLE */}
+      <motion.div
+        layout="position"
+        className="absolute -bottom-12 left-1/2 -translate-x-1/2 whitespace-nowrap"
+      >
+        <div className="text-demo-dis-txt bg-demo-dis-bg/70 flex items-center gap-3 border border-border/10 dark:border-demo-border/10 text-xs uppercase tracking-widest px-4 py-2 rounded-full backdrop-blur">
+          <span
+            className={`h-1.5 w-1.5 rounded-full ${data.colors.glow} animate-pulse`}
+          />
+          {data.stats.connectionStatus}
+        </div>
+      </motion.div>
     </motion.div>
-  </motion.div>
-);
+  );
+};
 
 const ProductDetails = ({
   data,
   isLeft,
+  reducedMotion = false,
 }: {
   data: ProductData;
   isLeft: boolean;
+  reducedMotion?: boolean;
 }) => {
   const alignClass = "items-start text-left";
+
+  // Static version for reduced motion
+  if (reducedMotion) {
+    return (
+      <div className={`flex flex-col ml-15 ${alignClass}`}>
+        <h2 className="text-demo-mini-ttl text-sm font-normal uppercase tracking-[0.2em] mb-2">
+          {data.label}
+        </h2>
+        <h1 className="text-demo-ttl text-4xl md:text-5xl font-bold tracking-tight mb-2 bg-clip-text bg-gradient-to-b from-foreground to-muted-foreground whitespace-nowrap">
+          {data.title}
+        </h1>
+        <p className="text-demo-desc mb-8 max-w-sm leading-relaxed mr-auto">
+          {data.description}
+        </p>
+        <div className="w-full space-y-1 p-5 rounded-2xl border border-border/10 dark:border-foreground/5 dark:bg-card/30 backdrop-blur-sm">
+          {data.infoItems.map((item) => (
+            <div
+              key={item.label}
+              className="flex items-center gap-4 py-3.5 border-b border-border/10 dark:border-foreground/5 last:border-0"
+            >
+              <div className="flex items-center justify-center h-9 w-9 rounded-lg bg-muted/20 dark:bg-muted/50 shrink-0">
+                <item.icon size={18} className="text-muted-foreground" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-xs text-muted-foreground uppercase tracking-wider">
+                  {item.label}
+                </p>
+                <p className="text-sm font-semibold text-foreground">
+                  {item.value}
+                </p>
+              </div>
+            </div>
+          ))}
+          <div className="pt-3 flex justify-start">
+            <button
+              type="button"
+              className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-foreground/70 hover:text-foreground transition-colors group"
+            >
+              <Sliders size={14} /> Ver en Realidad Aumentada
+              <ChevronRight size={14} />
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <motion.div
@@ -348,23 +442,54 @@ const Switcher = ({
 
 export default function EarbudShowcase() {
   const [activeSide, setActiveSide] = useState<ProductId>("left");
-
+  const shouldReduceMotion = useReducedMotion();
+  
   const currentData = PRODUCT_DATA[activeSide];
   const isLeft = activeSide === "left";
+  
+  // Static version for reduced motion
+  if (shouldReduceMotion) {
+    return (
+      <div className="relative min-h-screen w-full bg-background text-foreground overflow-hidden selection:bg-muted flex flex-col items-center justify-center">
+        <BackgroundGradient isLeft={isLeft} reducedMotion={true} />
+        
+        <main className="relative z-10 w-full px-6 pt-32 pb-20 flex flex-col justify-center max-w-7xl mx-auto">
+          <div
+            className={`flex flex-col md:flex-row items-center justify-center gap-16 md:gap-32 lg:gap-60 w-full ${
+              isLeft ? "md:flex-row" : "md:flex-row-reverse"
+            }`}
+          >
+            <ProductVisual data={currentData} isLeft={isLeft} reducedMotion={true} />
+            
+            <div className="w-full max-w-md">
+              <ProductDetails
+                key={activeSide}
+                data={currentData}
+                isLeft={isLeft}
+                reducedMotion={true}
+              />
+            </div>
+          </div>
+        </main>
 
+        <Switcher activeId={activeSide} onToggle={setActiveSide} />
+      </div>
+    );
+  }
+  
   return (
-    <div className="relative min-h-screen w-full bg-background text-foreground overflow-hidden selection:bg-muted flex flex-col items-center justify-center">
-      <BackgroundGradient isLeft={isLeft} />
-
-      <main className="relative z-10 w-full px-6 pt-32 pb-20 flex flex-col justify-center max-w-7xl mx-auto">
-        <motion.div
-          layout
-          transition={{ type: "spring", bounce: 0, duration: 0.9 }}
-          className={`flex flex-col md:flex-row items-center justify-center gap-16 md:gap-32 lg:gap-60 w-full ${
-            isLeft ? "md:flex-row" : "md:flex-row-reverse"
-          }`}
-        >
-          <ProductVisual data={currentData} isLeft={isLeft} />
+  <div className="relative min-h-screen w-full bg-background text-foreground overflow-hidden selection:bg-muted flex flex-col items-center justify-center">
+  <BackgroundGradient isLeft={isLeft} reducedMotion={false} />
+  
+  <main className="relative z-10 w-full px-6 pt-32 pb-20 flex flex-col justify-center max-w-7xl mx-auto">
+  <motion.div
+  layout
+  transition={{ type: "spring", bounce: 0, duration: 0.9 }}
+  className={`flex flex-col md:flex-row items-center justify-center gap-16 md:gap-32 lg:gap-60 w-full ${
+  isLeft ? "md:flex-row" : "md:flex-row-reverse"
+  }`}
+  >
+  <ProductVisual data={currentData} isLeft={isLeft} reducedMotion={false} />
 
           <motion.div layout="position" className="w-full max-w-md">
             <AnimatePresence mode="wait">
@@ -372,6 +497,7 @@ export default function EarbudShowcase() {
                 key={activeSide}
                 data={currentData}
                 isLeft={isLeft}
+                reducedMotion={false}
               />
             </AnimatePresence>
           </motion.div>
