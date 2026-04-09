@@ -442,8 +442,8 @@
   --header-redir: #333333;
   --header-redir-cursor: #0072b2;
 
-  --header-login-bg-2: #ffffff;
-  --header-login-txt: #000000;
+  --header-login-bg-2: #3a3a3a;
+  --header-login-txt: #333333;
 
   --header-regis-bg: #0072b2;
   --header-regis-txt: #ffffff;
@@ -645,7 +645,7 @@
   --header-redir-cursor: #155dfc;
 
   --header-login-bg-2: #155dfc;
-  --header-login-txt: #ffffff;
+  --header-login-txt: #155dfc;
 
   --header-regis-bg: #155dfc;
   --header-regis-txt: #ffffff;
@@ -985,7 +985,7 @@
   --header-redir-cursor: #8a0194;
 
   --header-login-bg-2: #8a0194;
-  --header-login-txt: #ffffff;
+  --header-login-txt: #8a0194;
 
   --header-regis-bg: #8a0194;
   --header-regis-txt: #ffffff;
@@ -1325,7 +1325,7 @@
   --header-redir-cursor: #ec0c0c;
 
   --header-login-bg-2: #ec0c0c;
-  --header-login-txt: #ffffff;
+  --header-login-txt: #ec0c0c;
 
   --header-regis-bg: #ec0c0c;
   --header-regis-txt: #ffffff;
@@ -1665,7 +1665,7 @@
   --header-redir-cursor: #ff6f00;
 
   --header-login-bg-2: #ff6f00;
-  --header-login-txt: #ffffff;
+  --header-login-txt: #ff6f00;
 
   --header-regis-bg: #ff6f00;
   --header-regis-txt: #ffffff;
@@ -2345,7 +2345,7 @@
   --header-redir-cursor: #5ea500;
 
   --header-login-bg-2: #5ea500;
-  --header-login-txt: #ffffff;
+  --header-login-txt: #5ea500;
 
   --header-regis-bg: #5ea500;
   --header-regis-txt: #ffffff;
