@@ -29,7 +29,7 @@ export function Carousel() {
             <InfiniteSlider speedOnHover={20} speed={40} gap={56}>
               {circleItems.map((item, index) => (
                 <div key={index} className="flex flex-col items-center gap-3">
-                  <div className="bg-carrusel2-bg h-55 w-55 rounded-full flex items-center justify-center overflow-hidden p-2 shadow-lg border-2">
+                  <div className="bg-carrusel2-bg h-55 w-55 rounded-full flex items-center justify-center overflow-hidden p-2 shadow-lg border-1">
                     <Image
                       src={item.image}
                       alt={item.title}

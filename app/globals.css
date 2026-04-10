@@ -635,7 +635,6 @@
 }
 
 
-
 /* Azul */
 [data-color="blue"] {
   /* General */
@@ -675,7 +674,7 @@
   --tarjetas-ttl1: #155dfc;
   --tarjetas-desc2: #616161;
 
-  --tarjetas-bg: #f7f9f7;
+  --tarjetas-bg: #ffffff;
   --tarjetas-border: #e2e8e3;
 
   --tarjetas-txt3: #616161;
