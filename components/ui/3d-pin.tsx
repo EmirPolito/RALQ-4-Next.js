@@ -156,10 +156,20 @@ export const PinPerspective = ({
       <div className="w-full h-full -mt-7 flex-none inset-0">
         {/* etiqueta superior — en móvil es un Link clickeable */}
         <div
-          style={isMobile ? { transform: isActive ? "translateY(-2.1rem)" : "translateY(0)" } : {}}
+          style={
+            isMobile
+              ? {
+                  transform: isActive ? "translateY(-0.5rem)" : "translateY(0)",
+                }
+              : {}
+          }
           className={cn(
             "absolute inset-x-0 flex justify-center transition-all duration-500",
-            isMobile ? "top-0 transition-transform duration-300 ease-out will-change-transform" : (isActive ? "top-[-2.1rem]" : "top-0"),
+            isMobile
+              ? "top-0 transition-transform duration-300 ease-out will-change-transform"
+              : isActive
+                ? "top-[-2.1rem]"
+                : "top-0",
           )}
         >
           {isMobile && href ? (
@@ -219,8 +229,8 @@ export const PinPerspective = ({
           {isMobile ? (
             <div
               style={{
-                transform: isActive 
-                  ? "translateY(14px) scaleY(1)" 
+                transform: isActive
+                  ? "translateY(14px) scaleY(1)"
                   : "translateY(14px) scaleY(0.45)",
                 transformOrigin: "bottom",
                 opacity: isActive ? 1 : 0,

@@ -7,7 +7,7 @@ import { Beaker, Atom, FlaskConical } from "lucide-react";
 
 export default function PinCardsSection() {
   return (
-    <section className="py-20 lg:py-25 overflow-hidden">
+    <section className="py-20 lg:py-18 overflow-hidden">
       <div className="container mx-auto px-8">
         <ScrollAnimation direction="up" delay={0.1}>
           <div className="text-center mb-5">
@@ -25,12 +25,12 @@ export default function PinCardsSection() {
           </div>
         </ScrollAnimation>
 
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-24 lg:gap-20">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-24 lg:gap-32 lg:-ml-10">
           {/* Pin 1 */}
           <ScrollAnimation
             direction="up"
             delay={0.2}
-            className="w-full lg:w-1/3"
+            className="w-full lg:w-[22rem]"
           >
             <div className="h-[22rem] sm:h-[27rem] flex items-center justify-center">
               <PinContainer title="Procesos Industriales" href="#laboratorios">
@@ -99,7 +99,7 @@ export default function PinCardsSection() {
           <ScrollAnimation
             direction="up"
             delay={0.3}
-            className="w-full lg:w-1/3"
+            className="w-full lg:w-[22rem]"
           >
             <div className="h-[22rem] sm:h-[27rem] flex items-center justify-center">
               <PinContainer
@@ -171,7 +171,7 @@ export default function PinCardsSection() {
           <ScrollAnimation
             direction="up"
             delay={0.4}
-            className="w-full lg:w-1/3"
+            className="w-full lg:w-[22rem]"
           >
             <div className="h-[22rem] sm:h-[27rem] flex items-center justify-center">
               <PinContainer
