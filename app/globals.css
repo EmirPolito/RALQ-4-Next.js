@@ -400,9 +400,9 @@
   /* UI */
   --background: #000000;
   --foreground: #fafafa;
-  --card: #09090b;
+  --card: #050505;
   --card-foreground: #fafafa;
-  --popover: #09090b;
+  --popover: #050505;
   --popover-foreground: #fafafa;
   --primary: #60806b;
   --primary-foreground: #ffffff;
@@ -414,8 +414,8 @@
   --accent-foreground: #fafafa;
   --destructive: #7f1d1d;
   --destructive-foreground: #fafafa;
-  --border: #27272a;
-  --input: #27272a;
+  --border: #1a1a1a;
+  --input: #1a1a1a;
   --ring: #60806b;
   --chart-1: #3b82f6;
   --chart-2: #10b981;
@@ -1367,43 +1367,43 @@
   --dash-card-3: #3d2503;
 }
 
-/* Rojo */
-[data-color="red"]  {
+/* Amarillo */
+[data-color="yellow"]  {
   /* General */
   --bg-fondo: #ffffff;
-  --titulos: #ec0c0c;
+  --titulos: #fdc700;
   --descripciones: #616161;
 
 
   /* Header */
   --header-login-bg: transparent;
   --header-redir: #6b6b6b;
-  --header-redir-cursor: #ec0c0c;
+  --header-redir-cursor: #fdc700;
 
-  --header-login-bg-2: #ec0c0c;
-  --header-login-txt: #ec0c0c;
+  --header-login-bg-2: #fdc700;
+  --header-login-txt: #fdc700;
 
-  --header-regis-bg: #ec0c0c;
+  --header-regis-bg: #fdc700;
   --header-regis-txt: #ffffff;
 
 
   /* Hero */
-  --hero-ttl: #ec0c0c;
+  --hero-ttl: #fdc700;
   --hero-desc: #616161;
 
-  --hero-bg-demo: #ec0c0c;
+  --hero-bg-demo: #fdc700;
   --hero-txt-demo: #fcfcfc;
-  --hero-hvr-demo: #ec0c0c;
+  --hero-hvr-demo: #fdc700;
 
 
   /* Carrusel 1*/
   --carrusel-bg: #9cc2a9;
-  --carrusel-ttl: #ec0c0c;
-  --carrusel-desc: #ec0c0c;
+  --carrusel-ttl: #fdc700;
+  --carrusel-desc: #fdc700;
 
 
   /* Tarjetas pin3d */
-  --tarjetas-ttl1: #ec0c0c;
+  --tarjetas-ttl1: #fdc700;
   --tarjetas-desc2: #616161;
 
   --tarjetas-bg: #f7f9f7;
@@ -1413,29 +1413,29 @@
   --tarjetas-ttl4: #000000;
   --tarjetas-desc5: #616161;
 
-  --tarjetas-1txt6: #ec0c0c;
-  --tarjetas-2txt6: #ec0c0c;
-  --tarjetas-3txt6: #ec0c0c;
+  --tarjetas-1txt6: #fdc700;
+  --tarjetas-2txt6: #fdc700;
+  --tarjetas-3txt6: #fdc700;
 
   --tarjetas-desc7: #616161;
   --tarjetas-txt8: #616161;
 
-  --pin-line: #ec0c0c;
-  --pin-wave: #ec0c0c;
+  --pin-line: #fdc700;
+  --pin-wave: #fdc700;
 
 
   /* 2 mockup cada lado */
-  --mockup-ttl: #ec0c0c;
+  --mockup-ttl: #fdc700;
   --mockup-desc: #616161;
 
 
   /* wobble 4 */
-  --wobble-ttl: #ec0c0c;
+  --wobble-ttl: #fdc700;
   --wobble-desc: #616161;
 
   --wobble-bg-1: #2c2d2c;
-  --wobble-bg-2: #ec0c0c;
-  --wobble-bg-3: #ec0c0c;
+  --wobble-bg-2: #fdc700;
+  --wobble-bg-3: #fdc700;
   --wobble-bg-4: #2c2d2c;
 
   --wobble-ttl-5: #ffffff;
@@ -1443,32 +1443,32 @@
 
 
     /* --carrusel 2 */
-  --carrusel2-mini-bg: #ec0c0c;
+  --carrusel2-mini-bg: #fdc700;
   --carrusel2-mini-txt: #ffffff;
 
-  --carrusel2-ttl: #ec0c0c;
+  --carrusel2-ttl: #fdc700;
   --carrusel2-desc: #616161;
 
 
   /* Preguntas frecuentes */
-  --preg-ttl: #ec0c0c;
+  --preg-ttl: #fdc700;
   --preg-desc: #616161;
-  --preg-link: #ec0c0c;
+  --preg-link: #fdc700;
 
-  --preg-preg: #ec0c0c;
+  --preg-preg: #fdc700;
   --preg-txt: #616161;
 
 
   /* Footer */
   --footer-txt: #2c2a2a;
-  --footer-link: #ec0c0c;
+  --footer-link: #fdc700;
   --footer-derechos: #2c2a2a;
 
-  --footer-ttl: #ec0c0c;
+  --footer-ttl: #fdc700;
   --footer-pag: #2c2a2a;
-  --footer-pag-hov: #ec0c0c;
+  --footer-pag-hov: #fdc700;
 
-  --footer-ralq: #ec0c0c;
+  --footer-ralq: #fdc700;
 
 
   /* demo/demo.tsx */
@@ -1480,7 +1480,7 @@
   --demo-btn-border: #515352;
   --demo-btn-bg: #232222;
   --demo-btn-txt: #e80e0e;
-  --demo-btn-des: #ec0c0c;
+  --demo-btn-des: #fdc700;
 
   --demo-mini-ttl: #dad9d9;
   --demo-ttl: #ffffff;
@@ -1489,53 +1489,53 @@
   /* =========================
    Sobre Nosotros
 ========================= */
-  --nos-ttl: #ec0c0c;
+  --nos-ttl: #fdc700;
   --nos-desc: #616161;
 
-  --nos-fechas: #ec0c0c;
+  --nos-fechas: #fdc700;
   --nos-txt: #616161;
 
 
   /* =========================
    Contacto
 ========================= */
-  --contact-ttl: #ec0c0c;
+  --contact-ttl: #fdc700;
   --contact-desc: #2c2a2a;
 
   --contact-card-bg: #ffffff;
   --contact-card-border: #d1d1d1;
 
-  --contact-label: #ec0c0c;
+  --contact-label: #fdc700;
 
-  --contact-input-text: #ec0c0c;
+  --contact-input-text: #fdc700;
   --contact-input-desc: #2c2a2a;
   --contact-input-bg: #ffffff;
   --contact-input-border: #e2e8e3;
-  --contact-input-border-hover: #ec0c0c;
+  --contact-input-border-hover: #fdc700;
 
-  --contact-btn-bg: #ec0c0c;
+  --contact-btn-bg: #fdc700;
   --contact-btn-text: #ffffff;
-  --contact-btn-hover: #d10a0a;
+  --contact-btn-hover: #fdc700;
 
   
-  --contact-team-ttl: #ec0c0c;
-  --contact-team-name: #ec0c0c;
+  --contact-team-ttl: #fdc700;
+  --contact-team-name: #fdc700;
   --contact-team-email: #616161;
 
-  --contact-social: #ec0c0c;
-  --contact-social-hvr: #d10a0a;
+  --contact-social: #fdc700;
+  --contact-social-hvr: #fdc700;
 
 
   /* =========================
    Ayuda
 ========================= */
-  --ayuda-ttl: #ec0c0c;
+  --ayuda-ttl: #fdc700;
   --ayuda-desc: #616161;
 
-  --ayuda-preg-ttl: #ec0c0c;
+  --ayuda-preg-ttl: #fdc700;
   --ayuda-preg-txt: #616161;
 
-  --ayuda-link: #ec0c0c;
+  --ayuda-link: #fdc700;
 
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
@@ -1546,43 +1546,43 @@
   --dash-card-3: #fff9e6;
 }
 
-[data-color="red"].dark,
-.dark [data-color="red"]  {
+[data-color="yellow"].dark,
+.dark [data-color="yellow"]  {
   /* General */
   --bg-fondo: #000000;
-  --titulos: #ff1a1a;
+  --titulos: #fdc700;
   --descripciones: #dddddd;
 
 
   /* Header */
   --header-login-bg: transparent;
   --header-redir: #dddddd;
-  --header-redir-cursor: #ff1a1a;
+  --header-redir-cursor: #fdc700;
 
-  --header-login-bg-2: #ff1a1a;
+  --header-login-bg-2: #fdc700;
   --header-login-txt: #ffffff;
 
-  --header-regis-bg: #ff1a1a;
+  --header-regis-bg: #fdc700;
   --header-regis-txt: #ffffff;
 
 
   /* Hero */
-  --hero-ttl: #ff1a1a;
+  --hero-ttl: #fdc700;
   --hero-desc: #dddddd;
 
-  --hero-bg-demo: #ff1a1a;
+  --hero-bg-demo: #fdc700;
   --hero-txt-demo: #fcfcfc;
-  --hero-hvr-demo: #ff1a1a;
+  --hero-hvr-demo: #fdc700;
 
 
   /* Carrusel 1*/
   --carrusel-bg: #0c0c0c;
-  --carrusel-ttl: #ff1a1a;
-  --carrusel-desc: #ff1a1a;
+  --carrusel-ttl: #fdc700;
+  --carrusel-desc: #fdc700;
 
 
   /* Tarjetas pin3d */
-  --tarjetas-ttl1: #ff1a1a;
+  --tarjetas-ttl1: #fdc700;
   --tarjetas-desc2: #dddddd;
 
   --tarjetas-bg: #131313;
@@ -1592,29 +1592,29 @@
   --tarjetas-ttl4: #ffffff;
   --tarjetas-desc5: #dddddd;
 
-  --tarjetas-1txt6: #ff1a1a;
-  --tarjetas-2txt6: #ff1a1a;
-  --tarjetas-3txt6: #ff1a1a;
+  --tarjetas-1txt6: #fdc700;
+  --tarjetas-2txt6: #fdc700;
+  --tarjetas-3txt6: #fdc700;
 
   --tarjetas-desc7: #dddddd;
   --tarjetas-txt8: #dddddd;
 
-  --pin-line: #ff1a1a;
-  --pin-wave: #ff1a1a;
+  --pin-line: #fdc700;
+  --pin-wave: #fdc700;
 
 
   /* 2 mockup cada lado */
-  --mockup-ttl: #ff1a1a;
+  --mockup-ttl: #fdc700;
   --mockup-desc: #dddddd;
 
 
   /* wobble 4 */
-  --wobble-ttl: #ff1a1a;
+  --wobble-ttl: #fdc700;
   --wobble-desc: #dddddd;
 
   --wobble-bg-1: #1a1818;
-  --wobble-bg-2: #ff1a1a;
-  --wobble-bg-3: #ff1a1a;
+  --wobble-bg-2: #fdc700;
+  --wobble-bg-3: #fdc700;
   --wobble-bg-4: #1a1818;
 
   --wobble-ttl-5: #ffffff;
@@ -1622,32 +1622,32 @@
 
 
     /* --carrusel 2 */
-  --carrusel2-mini-bg: #ff1a1a;
+  --carrusel2-mini-bg: #fdc700;
   --carrusel2-mini-txt: #ffffff;
 
-  --carrusel2-ttl: #ff1a1a;
+  --carrusel2-ttl: #fdc700;
   --carrusel2-desc: #dddddd;
 
 
   /* Preguntas frecuentes */
-  --preg-ttl: #ff1a1a;
+  --preg-ttl: #fdc700;
   --preg-desc: #dddddd;
-  --preg-link: #ff1a1a;
+  --preg-link: #fdc700;
 
-  --preg-preg: #ff1a1a;
+  --preg-preg: #fdc700;
   --preg-txt: #dddddd;
 
 
   /* Footer */
   --footer-txt: #dddddd;
-  --footer-link: #ff1a1a;
+  --footer-link: #fdc700;
   --footer-derechos: #dddddd;
 
-  --footer-ttl: #ff1a1a;
+  --footer-ttl: #fdc700;
   --footer-pag: #dddddd;
-  --footer-pag-hov: #ff1a1a;
+  --footer-pag-hov: #fdc700;
 
-  --footer-ralq: #ff1a1a;
+  --footer-ralq: #fdc700;
 
 
   /* demo/demo.tsx */
@@ -1658,8 +1658,8 @@
 
   --demo-btn-border: #515352;
   --demo-btn-bg: #232222;
-  --demo-btn-txt: #e80e0e;
-  --demo-btn-des: #ff1a1a;
+  --demo-btn-txt: #fdc700;
+  --demo-btn-des: #fdc700;
 
   --demo-mini-ttl: #dad9d9;
   --demo-ttl: #ffffff;
@@ -1668,53 +1668,53 @@
   /* =========================
    Sobre Nosotros
 ========================= */
-  --nos-ttl: #ff1a1a;
+  --nos-ttl: #fdc700;
   --nos-desc: #dddddd;
 
-  --nos-fechas: #ff1a1a;
+  --nos-fechas: #fdc700;
   --nos-txt: #dddddd;
 
 
   /* =========================
    Contacto
 ========================= */
-  --contact-ttl: #ff1a1a;
+  --contact-ttl: #fdc700;
   --contact-desc: #dddddd;
 
   --contact-card-bg: #0a0a0a;
   --contact-card-border: #1f1f1f;
 
-  --contact-label: #ff1a1a;
+  --contact-label: #fdc700;
 
-  --contact-input-text: #ff1a1a;
+  --contact-input-text: #fdc700;
   --contact-input-desc: #ffffff;
   --contact-input-bg: #141313;
   --contact-input-border: #333333;
-  --contact-input-border-hover: #ff1a1a;
+  --contact-input-border-hover: #fdc700;
 
-  --contact-btn-bg: #ff1a1a;
+  --contact-btn-bg: #fdc700;
   --contact-btn-text: #ffffff;
-  --contact-btn-hover: #d10a0a;
+  --contact-btn-hover: #fdc700;
 
-  
-  --contact-team-ttl: #ff1a1a;
-  --contact-team-name: #ff1a1a;
+
+  --contact-team-ttl: #fdc700;
+  --contact-team-name: #fdc700;
   --contact-team-email: #dddddd;
 
-  --contact-social: #ff1a1a;
-  --contact-social-hvr: #d10a0a;
+  --contact-social: #fdc700;
+  --contact-social-hvr: #fdc700;
 
 
   /* =========================
    Ayuda
 ========================= */
-  --ayuda-ttl: #ff1a1a;
+  --ayuda-ttl: #fdc700;
   --ayuda-desc: #dddddd;
 
-  --ayuda-preg-ttl: #ff1a1a;
+  --ayuda-preg-ttl: #fdc700;
   --ayuda-preg-txt: #dddddd;
 
-  --ayuda-link: #ff1a1a;
+  --ayuda-link: #fdc700;
 
   /* Dashboard Custom Properties */
   --dash-bg: #121318;

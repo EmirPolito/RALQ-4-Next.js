@@ -30,7 +30,7 @@ const colorOptions = [
   { name: "Por defecto", value: "default", color: "" },
   { name: "Azul", value: "blue", color: "#155dfc" },
   { name: "Morado", value: "purple", color: "#a800b7" },
-  { name: "Rojo", value: "red", color: "#ef4444" },
+  { name: "Amarillo", value: "yellow", color: "#fdc700" },
   { name: "Naranja", value: "orange", color: "#f97316" },
   { name: "Rosa", value: "pink", color: "#ec003f" },
   { name: "Verde", value: "green", color: "#5ea500" },

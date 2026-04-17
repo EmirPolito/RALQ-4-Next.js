@@ -15,8 +15,6 @@ import Footer from "@/components/footer";
 export default function HeroSection() {
   return (
     <>
-      {/* header */}
-      <HeroHeader />
       <main className="overflow-x-hidden">
         {/* HERO */}
         <Hero />
@@ -47,3 +45,8 @@ export default function HeroSection() {
     </>
   );
 }
+
+// import { LandingAccordionItem } from "@/components/despliegue-img";
+
+// {/* Despliegue de imagen  */}
+// {/* <LandingAccordionItem /> */}
