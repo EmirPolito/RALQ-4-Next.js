@@ -181,18 +181,18 @@ export const HeroHeader = () => {
                 </div>
 
                 {/* Auth Buttons Grid - Wider and Lower */}
-                <div className="grid grid-cols-2 gap-9">
+                <div className="grid grid-cols-2 gap-7">
                   <Button
                     asChild
                     variant="ghost"
-                    className="w-full justify-center h-11 text-xs font-medium rounded-xl bg-muted/40 text-[var(--titulos)] hover:bg-muted/35 transition-all"
+                    className="w-full justify-center h-11 text-sm font-medium rounded-3xl bg-muted/0 text-[var(--titulos)] hover:bg-muted/35 transition-all"
                     onClick={() => setMenuState(false)}
                   >
                     <Link href="/login">Iniciar sesión</Link>
                   </Button>
                   <Button
                     asChild
-                    className="w-full justify-center h-11 text-xs font-medium rounded-xl bg-header-regis-bg text-header-regis-txt hover:opacity-90 transition-all shadow-md shadow-header-regis-bg/10"
+                    className="w-full justify-center h-11 text-sm font-medium rounded-3xl bg-header-regis-bg text-header-regis-txt hover:opacity-90 transition-all shadow-md shadow-header-regis-bg/10"
                     onClick={() => setMenuState(false)}
                   >
                     <Link href="/registro">Registrarse</Link>
