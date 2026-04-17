@@ -4,14 +4,14 @@ import { Logo } from "@/components/logo";
 
 export default function Footer() {
   return (
-    <footer className="py-20 px-4 md:px-10 z-50 bg-[var(--footer-bg)] border-t border-border">
+    <footer className="py-17 px-5 md:px-10 z-50 bg-[var(--footer-bg)] border-t border-border">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between">
-          <div className="mb-8 md:mb-13">
+          <div className="mb-12 md:mb-13">
             <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
               {/* <div className="h-6 w-6 bg-neutral-100 border-neutral-300 border dark:bg-white rounded-md flex items-center justify-center p-1">
               </div> */}
-              <span className=" bg font-bold lg:inline-block">
+              <span className="bg font-bold lg:inline-block">
                 {/* Logo claro */}
                 <img
                   src="/logos/logo-verde.png"
@@ -28,7 +28,7 @@ export default function Footer() {
               </span>
             </Link>
 
-            <h1 className="text-footer-txt mt-1.5 px-1">
+            <h1 className="text-footer-txt mt-1 md:mt-1.5 px-1">
               Realidad Aumentada para Laboratorios de Quimica.
               {/* Desarrollado por{" "}
               <span className="text-footer-link gap-2">
@@ -56,7 +56,7 @@ export default function Footer() {
               </span> */}
             </h1>
 
-            <p className="text-footer-derechos mt-1 px-1">
+            <p className="hidden md:block text-footer-derechos mt-1 px-1">
               © {new Date().getFullYear()} RALQ. Todos los derechos reservados.
             </p>
           </div>
@@ -92,7 +92,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h3 className="text-footer-ttl font-semibold mb-4">Paginas</h3>
+              <h3 className="text-footer-ttl font-semibold mb-4">Redes</h3>
               <ul className="space-y-2">
                 <li>
                   <Link
@@ -121,7 +121,7 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h3 className="text-footer-ttl font-semibold mb-4">Paginas</h3>
+              <h3 className="text-footer-ttl font-semibold mb-4">Legales</h3>
               <ul className="space-y-2">
                 <li>
                   <Link
@@ -143,9 +143,9 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="w-full flex mt-9.5 items-center justify-center">
+        <div className="w-full flex flex-col mt-10 md:mt-9.5 items-center justify-center">
           <h1
-            className="bg-clip-text text-center text-3xl md:text-5xl lg:text-[14rem] font-bold tracking-widest text-transparent bg-gradient-to-b from-footer-ralq to-footer-ralq select-none"
+            className="hidden md:block bg-clip-text text-center text-3xl md:text-5xl lg:text-[14rem] font-bold tracking-widest text-transparent bg-gradient-to-b from-footer-ralq to-footer-ralq select-none"
             style={{
               WebkitMaskImage:
                 "linear-gradient(to bottom, black 70%, transparent)",
@@ -154,6 +154,9 @@ export default function Footer() {
           >
             RALQ
           </h1>
+          <p className="md:hidden text-footer-derechos mt-6 text-center px-1">
+            © {new Date().getFullYear()} RALQ. Todos los derechos reservados.
+          </p>
         </div>
       </div>
     </footer>

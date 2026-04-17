@@ -203,7 +203,7 @@ export default function ContactForm() {
         </motion.div>
 
         <motion.div
-          className="pl-0 md:pl-23 lg:pl-40"
+          className="mt-20 lg:mt-0 pl-0 md:pl-23 lg:pl-40"
           variants={fadeInUp}
           custom={0.6}
         >

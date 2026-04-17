@@ -90,7 +90,7 @@ export default function ContenidoBlog() {
   }
 
   return (
-    <div className="w-full bg-background py-29.5 px-4 transition-colors">
+    <div className="w-full bg-background pt-36 md:pt-29.5 pb-29.5 px-4 transition-colors">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
@@ -110,11 +110,11 @@ export default function ContenidoBlog() {
         </motion.div>
 
         {/* Items */}
-        <div className="space-y-17">
+        <div className="space-y-12 md:space-y-17">
           {rows.map((row, rowIndex) => (
             <div
               key={rowIndex}
-              className="grid grid-cols-1 md:grid-cols-3 gap-2"
+              className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-2"
             >
               {row.map((item, itemIndex) => (
                 <motion.div
@@ -132,7 +132,7 @@ export default function ContenidoBlog() {
                   onMouseEnter={() => setHoveredId(item.id)}
                   onMouseLeave={() => setHoveredId(null)}
                 >
-                  <div className="mb-8">
+                  <div className="mb-4 lg:mb-8">
                     <h2 className="text-ayuda-preg-ttl text-2xl font-semibold mb-3">
                       {item.title}
                     </h2>
@@ -146,7 +146,7 @@ export default function ContenidoBlog() {
                       ${
                         hoveredId === item.id
                           ? "opacity-100 visible"
-                          : "opacity-0 invisible"
+                          : "opacity-100 visible lg:opacity-0 lg:invisible"
                       }
                     `}
                   >

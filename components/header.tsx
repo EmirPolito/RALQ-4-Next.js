@@ -40,11 +40,12 @@ export const HeroHeader = () => {
 
   return (
     <header>
-      <nav className="fixed z-[100] w-full pt-2">
+      <nav className="fixed z-[120] w-full pt-2">
         <div
           className={cn(
             "mx-auto max-w-8xl rounded-2xl px-6 transition-all duration-300 lg:px-9",
             scrolled && !menuState && "bg-background/10 backdrop-blur-2xl",
+            !scrolled && !menuState && "max-lg:bg-background/10 max-lg:backdrop-blur-2xl",
           )}
         >
           <div
@@ -139,7 +140,7 @@ export const HeroHeader = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-50 bg-background/98 backdrop-blur-3xl lg:hidden flex flex-col"
+            className="fixed inset-0 z-[110] bg-background lg:hidden flex flex-col"
           >
             {/* Header Area */}
             <div className="h-24 px-6 flex items-center justify-between">
@@ -176,7 +177,7 @@ export const HeroHeader = () => {
                 className="mt-auto pb-11.5 space-y-9"
               >
                 {/* Theme Controls - Centered Cycle Mode */}
-                <div className="flex items-center justify-center pt-28">
+                <div className="flex items-center justify-center pt-29">
                   <ThemeControls isMobile={true} />
                 </div>
 
