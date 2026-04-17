@@ -176,7 +176,7 @@ export const HeroHeader = () => {
                 className="mt-auto pb-11.5 space-y-9"
               >
                 {/* Theme Controls - Centered Cycle Mode */}
-                <div className="flex items-center justify-center pt-27.5">
+                <div className="flex items-center justify-center pt-28">
                   <ThemeControls isMobile={true} />
                 </div>
 
