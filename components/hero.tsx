@@ -24,31 +24,31 @@ export function Hero() {
   return (
     <section>
       <div>
-        <div className="relative z-10 flex min-h-[80vh] flex-col justify-end px-4 sm:px-6 md:px-12 lg:px-20 lg:min-h-screen">
-          <div className="mx-auto w-full max-w-7xl pb-12 sm:pb-20 md:pb-32 lg:pb-35">
+        <div className="relative z-10 flex min-h-[80vh] lg:min-h-screen flex-col justify-end pt-20 pb-4 lg:pt-0 lg:pb-0 px-5 sm:px-6 md:px-12 lg:px-20">
+          <div className="mx-auto w-full max-w-7xl pb-4 lg:pb-40 sm:pb-20 md:pb-32">
             <ScrollAnimation direction="up" delay={0.2}>
-              <div className="flex flex-col items-center text-center sm:items-start sm:text-left">
+              <div className="flex flex-col items-start text-left lg:items-start lg:text-left">
                 <h1 className="text-hero-ttl text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight tracking-tight">
                   Instrumentos al
                   <br />
                   alcance de tus manos
                 </h1>
 
-                <p className="text-hero-desc max-w-sm sm:max-w-md md:max-w-2xl text-base sm:text-lg md:text-xl mt-2 leading-relaxed">
+                <p className="text-hero-desc w-full sm:max-w-md md:max-w-2xl text-sm sm:text-lg md:text-xl mt-4 leading-relaxed">
                   Nuestra plataforma permite a los estudiantes aprender sobre
                   instrumentos de laboratorio de química mediante modelos 3D en
                   Realidad Aumentada.
                 </p>
 
-                <div className="mt-10 flex items-center justify-center sm:justify-start gap-4">
+                <div className="mt-8 flex items-center justify-start gap-4">
                   <Button
                     asChild
                     size="lg"
-                    className="h-12 rounded-full px-8 text-base font-medium shadow-lg transition-all hover:scale-100 active:scale-95 bg-hero-bg-demo text-hero-txt-demo hover:bg-hero-hvr-demo"
+                    className="h-10 lg:h-12 rounded-full px-6 lg:px-8 text-sm lg:text-base font-medium shadow-lg transition-all hover:scale-100 active:scale-95 bg-hero-bg-demo text-hero-txt-demo hover:bg-hero-hvr-demo"
                   >
                     <Link href="/demo">
                       <span className="text-nowrap">Ver demo</span>
-                      <ChevronRight className="ml-2 size-5" />
+                      <ChevronRight className="ml-2 size-4 lg:size-5" />
                     </Link>
                   </Button>
                 </div>
@@ -66,7 +66,7 @@ export function Hero() {
             muted
             playsInline
             className="
-            absolute inset-5
+            absolute inset-0 lg:inset-5
             w-full h-full object-cover
             -scale-x-95
             invert contrast-115 
