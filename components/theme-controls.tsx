@@ -214,7 +214,7 @@ export function ThemeControls({
                 className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[150]"
               >
                 <p className="font-medium text-foreground leading-relaxed text-center">
-                  Cambiar modo de visualización.
+                  Cambia el modo a: claro/oscuro/daltonico
                 </p>
               </PopoverContent>
             </Popover>
@@ -360,7 +360,7 @@ export function ThemeControls({
                 className="w-35 p-1 rounded-xl bg-popover/95 backdrop-blur-md border-border/50 text-xs shadow-xl z-[150]"
               >
                 <p className="font-medium text-foreground leading-relaxed text-center">
-                  Personalizar la paleta de colores.
+                  Cambia los colores a: original/azul/etc.
                 </p>
               </PopoverContent>
             </Popover>
