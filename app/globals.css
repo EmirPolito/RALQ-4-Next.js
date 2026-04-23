@@ -66,43 +66,26 @@
   --carrusel2-sig: #000000;
   --carrusel2-sig-txt: #ffffff;
 
-  /* 3 secciones*/
+  /* 3 secciones general*/
   --tres-bg: #ffffff;
+  --tres-ttl: #000000;
+  --tres-desc: #333333;
+
+  --tres-num: #cccccc;
+  --tres-mini-bg: #f5f5f5;
+  --tres-mini-borde: #e1e1e1;
+  --tres-mini-txt: #000000;
+
   --tres-ttl: #020202;
   --tres-desc: #2c2a2a;
 
-  --tres-01-num: #dbdbdb;
-  --tres-01-mini-bg: #f1f1f1;
-  --tres-01-mini-borde: #bfbfbf;
-  --tres-01-mini-txt: #000000;
+  --tres-caracteristicas-bg: #f5f5f5;
+  --tres-caracteristicas-border: #e1e1e1;
+  --tres-caracteristicas-puntos: #000000;
+  --tres-caracteristicas-txt: #000000;
 
-  --tres-01-ttl: #000000;
-  --tres-01-desc: #2c2a2a;
-
-  --tres-01-marcos: #f5f5f5;
-  --tres-01-marcos-txt: #000000;
   --tres-01-cursor: #008cff;
-
-  /**/
-  --tres-02-num: #dbdbdb;
-  --tres-02-mini-bg: #f1f1f1;
-  --tres-02-mini-borde: #bfbfbf;
-  --tres-02-mini-txt: #000000;
-  --tres-02-ttl: #000000;
-  --tres-02-desc: #2c2a2a;
-  --tres-02-marcos: #f5f5f5;
-  --tres-02-marcos-txt: #000000;
-  --tres-02-cursor: #00ff7b;
-
-  /**/
-  --tres-03-num: #dbdbdb;
-  --tres-03-mini-bg: #f1f1f1;
-  --tres-03-mini-borde: #bfbfbf;
-  --tres-03-mini-txt: #000000;
-  --tres-03-ttl: #000000;
-  --tres-03-desc: #2c2a2a;
-  --tres-03-marcos: #f5f5f5;
-  --tres-03-marcos-txt: #000000;
+  --tres-02-cursor: #01ff38;
   --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
@@ -221,6 +204,7 @@
 
   /* UI */
   --background: #ffffff;
+  --muted: #e6e6e6; /*bg para el boton de las animaciones */
   --foreground: #09090b;
   --card: #ffffff;
   --card-foreground: #09090b;
@@ -230,7 +214,6 @@
   --primary-foreground: #ffffff;
   --secondary: #f4f4f5;
   --secondary-foreground: #18181b;
-  --muted: #e6e6e6; /*bg para el boton de las animaciones */
   --muted-foreground: #71717a;
   --accent: #f4f4f5;
   --accent-foreground: #18181b;
@@ -359,38 +342,21 @@
   --tres-ttl: #ffffff;
   --tres-desc: #dad9d9;
 
-  --tres-01-num: #333333;
-  --tres-01-mini-bg: #1a1a1a;
-  --tres-01-mini-borde: #444444;
-  --tres-01-mini-txt: #ffffff;
+  --tres-num: #333333;
+  --tres-mini-bg: #1a1a1a;
+  --tres-mini-borde: #303030;
+  --tres-mini-txt: #ffffff;
 
-  --tres-01-ttl: #ffffff;
-  --tres-01-desc: #dad9d9;
+  --tres-ttl: #ffffff;
+  --tres-desc: #dad9d9;
 
-  --tres-01-marcos: #121212;
-  --tres-01-marcos-txt: #ffffff;
+  --tres-caracteristicas-bg: #1a1a1a;
+  --tres-caracteristicas-border: #303030;
+  --tres-caracteristicas-puntos: #333333;
+  --tres-caracteristicas-txt: #ffffff;
+
   --tres-01-cursor: #008cff;
-
-  /**/
-  --tres-02-num: #333333;
-  --tres-02-mini-bg: #1a1a1a;
-  --tres-02-mini-borde: #444444;
-  --tres-02-mini-txt: #ffffff;
-  --tres-02-ttl: #ffffff;
-  --tres-02-desc: #dad9d9;
-  --tres-02-marcos: #121212;
-  --tres-02-marcos-txt: #ffffff;
   --tres-02-cursor: #00ff7b;
-
-  /**/
-  --tres-03-num: #333333;
-  --tres-03-mini-bg: #1a1a1a;
-  --tres-03-mini-borde: #444444;
-  --tres-03-mini-txt: #ffffff;
-  --tres-03-ttl: #ffffff;
-  --tres-03-desc: #dad9d9;
-  --tres-03-marcos: #121212;
-  --tres-03-marcos-txt: #ffffff;
   --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
@@ -631,41 +597,21 @@
 
   /* 3 secciones*/
   --tres-bg: #ffffff;
-  --tres-ttl: #000000;
+  --tres-num: #e0e0e0;
+  --tres-mini-bg: #f5f5f5;
+  --tres-mini-borde: #cccccc;
+  --tres-mini-txt: #000000;
+
+  --tres-ttl: #0072b2;
   --tres-desc: #333333;
 
-  --tres-01-num: #e0e0e0;
-  --tres-01-mini-bg: #f5f5f5;
-  --tres-01-mini-borde: #cccccc;
-  --tres-01-mini-txt: #000000;
+  --tres-caracteristicas-bg: #f5f5f5;
+  --tres-caracteristicas-border: #e1e1e1;
+  --tres-caracteristicas-puntos: #000000;
+  --tres-caracteristicas-txt: #000000;
 
-  --tres-01-ttl: #0072b2;
-  --tres-01-desc: #333333;
-
-  --tres-01-marcos: #f9f9f9;
-  --tres-01-marcos-txt: #000000;
   --tres-01-cursor: #0072b2;
-
-  /**/
-  --tres-02-num: #e0e0e0;
-  --tres-02-mini-bg: #f5f5f5;
-  --tres-02-mini-borde: #cccccc;
-  --tres-02-mini-txt: #000000;
-  --tres-02-ttl: #d55e00;
-  --tres-02-desc: #333333;
-  --tres-02-marcos: #f9f9f9;
-  --tres-02-marcos-txt: #000000;
   --tres-02-cursor: #d55e00;
-
-  /**/
-  --tres-03-num: #e0e0e0;
-  --tres-03-mini-bg: #f5f5f5;
-  --tres-03-mini-borde: #cccccc;
-  --tres-03-mini-txt: #000000;
-  --tres-03-ttl: #009e73;
-  --tres-03-desc: #333333;
-  --tres-03-marcos: #f9f9f9;
-  --tres-03-marcos-txt: #000000;
   --tres-03-cursor: #009e73;
 
   /* Imagen al pasar el cursor*/
@@ -821,7 +767,7 @@
 
   /* Header */
   --header-login-bg: transparent;
-  --header-redir: #6b6b6b;
+  --header-redir: #2c2a2a;
   --header-redir-cursor: #155dfc;
 
   --header-login-bg-2: #155dfc;
@@ -832,7 +778,7 @@
 
   /* Hero */
   --hero-ttl: #155dfc;
-  --hero-desc: #616161;
+  --hero-desc: #2c2a2a;
 
   --hero-bg-demo: #155dfc;
   --hero-txt-demo: #fcfcfc;
@@ -845,28 +791,28 @@
 
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #155dfc;
-  --tarjetas-desc2: #616161;
+  --tarjetas-desc2: #2c2a2a;
 
   --tarjetas-bg: #ffffff;
   --tarjetas-border: #e2e8e3;
 
-  --tarjetas-txt3: #616161;
+  --tarjetas-txt3: #2c2a2a;
   --tarjetas-ttl4: #000000;
-  --tarjetas-desc5: #616161;
+  --tarjetas-desc5: #2c2a2a;
 
   --tarjetas-1txt6: #155dfc;
   --tarjetas-2txt6: #155dfc;
   --tarjetas-3txt6: #155dfc;
 
-  --tarjetas-desc7: #616161;
-  --tarjetas-txt8: #616161;
+  --tarjetas-desc7: #2c2a2a;
+  --tarjetas-txt8: #2c2a22;
 
   --pin-line: #1c6aa9;
   --pin-wave: #1c6aa9;
 
   /* 2 mockup cada lado */
   --mockup-ttl: #155dfc;
-  --mockup-desc: #616161;
+  --mockup-desc: #2c2a2a;
 
   /* wobble 4 */
   --wobble-ttl: #155dfc;
@@ -885,51 +831,34 @@
   --carrusel2-mini-txt: #ffffff;
 
   --carrusel2-ttl: #155dfc;
-  --carrusel2-desc: #616161;
+  --carrusel2-desc: #2c2a2a;
 
   /* 3 secciones*/
   --tres-bg: #ffffff;
   --tres-ttl: #155dfc;
   --tres-desc: #616161;
 
-  --tres-01-num: #dbdbdb;
-  --tres-01-mini-bg: #f1f1f1;
-  --tres-01-mini-borde: #bfbfbf;
-  --tres-01-mini-txt: #000000;
+  --tres-num: #dbdbdb;
+  --tres-mini-bg: #f1f1f1;
+  --tres-mini-borde: #bfbfbf;
+  --tres-mini-txt: #155dfc;
 
-  --tres-01-ttl: #155dfc;
-  --tres-01-desc: #616161;
+  --tres-ttl: #155dfc;
+  --tres-desc: #2c2a2a;
 
-  --tres-01-marcos: #f5f5f5;
-  --tres-01-marcos-txt: #000000;
+  --tres-caracteristicas-bg: #f5f5f5;
+  --tres-caracteristicas-border: #e1e1e1;
+  --tres-caracteristicas-puntos: #155dfc;
+  --tres-caracteristicas-txt: #155dfc;
+
   --tres-01-cursor: #155dfc;
-
-  /**/
-  --tres-02-num: #dbdbdb;
-  --tres-02-mini-bg: #f1f1f1;
-  --tres-02-mini-borde: #bfbfbf;
-  --tres-02-mini-txt: #000000;
-  --tres-02-ttl: #155dfc;
-  --tres-02-desc: #616161;
-  --tres-02-marcos: #f5f5f5;
-  --tres-02-marcos-txt: #000000;
   --tres-02-cursor: #00ff7b;
-
-  /**/
-  --tres-03-num: #dbdbdb;
-  --tres-03-mini-bg: #f1f1f1;
-  --tres-03-mini-borde: #bfbfbf;
-  --tres-03-mini-txt: #000000;
-  --tres-03-ttl: #155dfc;
-  --tres-03-desc: #616161;
-  --tres-03-marcos: #f5f5f5;
-  --tres-03-marcos-txt: #000000;
   --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
   --imgcursor-bg: #ffffff;
   --imgcursor-ttl: #155dfc;
-  --imgcursor-desc: #616161;
+  --imgcursor-desc: #2c2a2a;
 
   --imgcursor-izq-borde: #afafaf;
   --imgcursor-izq-bg: #ffffff;
@@ -941,7 +870,7 @@
   --imgcursor-der-borde: #afafaf;
   --imgcursor-der-bg: #ffffff;
 
-  --imgcursor-der-des: #616161;
+  --imgcursor-der-des: #2c2a2a;
   --imgcursor-der-cursor1: #155dfc;
   --imgcursor-der-cursor2: #ff4100;
   --imgcursor-der-cursor3: #ff9d00;
@@ -953,15 +882,15 @@
   --imgcursor-der-c-bg: #ffffff;
   --imgcursor-der-c: #000000;
   --imgcursor-der-ttl: #155dfc;
-  --imgcursor-der-desc: #616161;
+  --imgcursor-der-desc: #2c2a2a;
 
   /* Preguntas frecuentes */
   --preg-ttl: #155dfc;
-  --preg-desc: #616161;
+  --preg-desc: #2c2a2a;
   --preg-link: #155dfc;
 
   --preg-preg: #155dfc;
-  --preg-txt: #616161;
+  --preg-txt: #2c2a2a;
 
   /* Footer */
   --footer-txt: #2c2a2a;
@@ -1126,38 +1055,21 @@
   --tres-ttl: #155dfc;
   --tres-desc: #dddddd;
 
-  --tres-01-num: #333333;
-  --tres-01-mini-bg: #1a1a1a;
-  --tres-01-mini-borde: #444444;
-  --tres-01-mini-txt: #ffffff;
+  --tres-num: #333333;
+  --tres-mini-bg: #1a1a1a;
+  --tres-mini-borde: #303030;
+  --tres-mini-txt: #155dfc;
 
-  --tres-01-ttl: #155dfc;
-  --tres-01-desc: #dddddd;
+  --tres-ttl: #155dfc;
+  --tres-desc: #dddddd;
 
-  --tres-01-marcos: #121212;
-  --tres-01-marcos-txt: #ffffff;
+  --tres-caracteristicas-bg: #121212;
+  --tres-caracteristicas-border: #303030;
+  --tres-caracteristicas-puntos: #155dfc;
+  --tres-caracteristicas-txt: #155dfc;
+
   --tres-01-cursor: #155dfc;
-
-  /**/
-  --tres-02-num: #333333;
-  --tres-02-mini-bg: #1a1a1a;
-  --tres-02-mini-borde: #444444;
-  --tres-02-mini-txt: #ffffff;
-  --tres-02-ttl: #155dfc;
-  --tres-02-desc: #dddddd;
-  --tres-02-marcos: #121212;
-  --tres-02-marcos-txt: #ffffff;
   --tres-02-cursor: #00ff7b;
-
-  /**/
-  --tres-03-num: #333333;
-  --tres-03-mini-bg: #1a1a1a;
-  --tres-03-mini-borde: #444444;
-  --tres-03-mini-txt: #ffffff;
-  --tres-03-ttl: #155dfc;
-  --tres-03-desc: #dddddd;
-  --tres-03-marcos: #121212;
-  --tres-03-marcos-txt: #ffffff;
   --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
@@ -1285,11 +1197,11 @@
   /* General */
   --bg-fondo: #ffffff;
   --titulos: #8a0194;
-  --descripciones: #616161;
+  --descripciones: #2c2a2a;
 
   /* Header */
   --header-login-bg: transparent;
-  --header-redir: #6b6b6b;
+  --header-redir: #2c2a2a;
   --header-redir-cursor: #8a0194;
 
   --header-login-bg-2: #8a0194;
@@ -1299,8 +1211,9 @@
   --header-regis-txt: #ffffff;
 
   /* Hero */
+  --hero-bg: #ffffff;
   --hero-ttl: #8a0194;
-  --hero-desc: #616161;
+  --hero-desc: #2c2a2a;
 
   --hero-bg-demo: #8a0194;
   --hero-txt-demo: #fcfcfc;
@@ -1313,32 +1226,32 @@
 
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #8a0194;
-  --tarjetas-desc2: #616161;
+  --tarjetas-desc2: #2c2a2a;
 
   --tarjetas-bg: #f7f9f7;
   --tarjetas-border: #e2e8e3;
 
-  --tarjetas-txt3: #616161;
+  --tarjetas-txt3: #2c2a2a;
   --tarjetas-ttl4: #000000;
-  --tarjetas-desc5: #616161;
+  --tarjetas-desc5: #2c2a2a;
 
   --tarjetas-1txt6: #8a0194;
   --tarjetas-2txt6: #8a0194;
   --tarjetas-3txt6: #8a0194;
 
-  --tarjetas-desc7: #616161;
-  --tarjetas-txt8: #616161;
+  --tarjetas-desc7: #2c2a2a;
+  --tarjetas-txt8: #2c2a2a;
 
   --pin-line: #6326a0;
   --pin-wave: #6326a0;
 
   /* 2 mockup cada lado */
   --mockup-ttl: #8a0194;
-  --mockup-desc: #616161;
+  --mockup-desc: #2c2a2a;
 
   /* wobble 4 */
   --wobble-ttl: #8a0194;
-  --wobble-desc: #616161;
+  --wobble-desc: #2c2a2a;
 
   --wobble-bg-1: #2c2d2c;
   --wobble-bg-2: #8a0194;
@@ -1353,63 +1266,46 @@
   --carrusel2-mini-txt: #ffffff;
 
   --carrusel2-ttl: #8a0194;
-  --carrusel2-desc: #616161;
+  --carrusel2-desc: #2c2a2a;
 
   /* 3 secciones*/
   --tres-bg: #ffffff;
   --tres-ttl: #8a0194;
-  --tres-desc: #616161;
+  --tres-desc: #2c2a2a;
 
-  --tres-01-num: #dbdbdb;
-  --tres-01-mini-bg: #f1f1f1;
-  --tres-01-mini-borde: #bfbfbf;
-  --tres-01-mini-txt: #000000;
+  --tres-num: #dbdbdb;
+  --tres-mini-bg: #f1f1f1;
+  --tres-mini-borde: #bfbfbf;
+  --tres-mini-txt: #8a0194;
 
-  --tres-01-ttl: #8a0194;
-  --tres-01-desc: #616161;
+  --tres-ttl: #8a0194;
+  --tres-desc: #2c2a2a;
 
-  --tres-01-marcos: #f5f5f5;
-  --tres-01-marcos-txt: #000000;
+  --tres-caracteristicas-bg: #f5f5f5;
+  --tres-caracteristicas-border: #e1e1e1;
+  --tres-caracteristicas-puntos: #8a0194;
+  --tres-caracteristicas-txt: #8a0194;
+
   --tres-01-cursor: #8a0194;
-
-  /**/
-  --tres-02-num: #dbdbdb;
-  --tres-02-mini-bg: #f1f1f1;
-  --tres-02-mini-borde: #bfbfbf;
-  --tres-02-mini-txt: #000000;
-  --tres-02-ttl: #8a0194;
-  --tres-02-desc: #616161;
-  --tres-02-marcos: #f5f5f5;
-  --tres-02-marcos-txt: #000000;
   --tres-02-cursor: #00ff7b;
-
-  /**/
-  --tres-03-num: #dbdbdb;
-  --tres-03-mini-bg: #f1f1f1;
-  --tres-03-mini-borde: #bfbfbf;
-  --tres-03-mini-txt: #000000;
-  --tres-03-ttl: #8a0194;
-  --tres-03-desc: #616161;
-  --tres-03-marcos: #f5f5f5;
-  --tres-03-marcos-txt: #000000;
   --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
   --imgcursor-bg: #ffffff;
   --imgcursor-ttl: #8a0194;
-  --imgcursor-desc: #616161;
+  --imgcursor-desc: #2c2a2a;
 
   --imgcursor-izq-borde: #afafaf;
   --imgcursor-izq-bg: #ffffff;
 
   --imgcursor-izq-ttl: #8a0194;
-  --imgcursor-izq-desc: #616161;
+  --imgcursor-izq-desc: #2c2a2a;
   --imgcursor-izq-hvr: #7b0185;
 
   --imgcursor-der-borde: #afafaf;
   --imgcursor-der-bg: #ffffff;
 
-  --imgcursor-der-des: #616161;
+  --imgcursor-der-des: #2c2a2a;
   --imgcursor-der-cursor1: #8a0194;
   --imgcursor-der-cursor2: #ff4100;
   --imgcursor-der-cursor3: #ff9d00;
@@ -1421,15 +1317,15 @@
   --imgcursor-der-c-bg: #ffffff;
   --imgcursor-der-c: #000000;
   --imgcursor-der-ttl: #8a0194;
-  --imgcursor-der-desc: #616161;
+  --imgcursor-der-desc: #2c2a2a;
 
   /* Preguntas frecuentes */
   --preg-ttl: #8a0194;
-  --preg-desc: #616161;
+  --preg-desc: #2c2a2a;
   --preg-link: #8a0194;
 
   --preg-preg: #8a0194;
-  --preg-txt: #616161;
+  --preg-txt: #2c2a2a;
 
   /* Footer */
   --footer-txt: #2c2a2a;
@@ -1461,10 +1357,10 @@
    Sobre Nosotros
 ========================= */
   --nos-ttl: #8a0194;
-  --nos-desc: #616161;
+  --nos-desc: #2c2a2a;
 
   --nos-fechas: #8a0194;
-  --nos-txt: #616161;
+  --nos-txt: #2c2a2a;
 
   /* =========================
    Contacto
@@ -1489,7 +1385,7 @@
 
   --contact-team-ttl: #8a0194;
   --contact-team-name: #8a0194;
-  --contact-team-email: #616161;
+  --contact-team-email: #2c2a2a;
 
   --contact-social: #8a0194;
   --contact-social-hvr: #7b0185;
@@ -1498,10 +1394,10 @@
    Ayuda
 ========================= */
   --ayuda-ttl: #8a0194;
-  --ayuda-desc: #616161;
+  --ayuda-desc: #2c2a2a;
 
   --ayuda-preg-ttl: #8a0194;
-  --ayuda-preg-txt: #616161;
+  --ayuda-preg-txt: #2c2a2a;
 
   --ayuda-link: #8a0194;
 
@@ -1533,6 +1429,7 @@
   --header-regis-txt: #ffffff;
 
   /* Hero */
+  --hero-bg: #000000;
   --hero-ttl: #a800b7;
   --hero-desc: #dddddd;
 
@@ -1594,38 +1491,21 @@
   --tres-ttl: #a800b7;
   --tres-desc: #dddddd;
 
-  --tres-01-num: #333333;
-  --tres-01-mini-bg: #1a1a1a;
-  --tres-01-mini-borde: #444444;
-  --tres-01-mini-txt: #ffffff;
+  --tres-num: #333333;
+  --tres-mini-bg: #1a1a1a;
+  --tres-mini-borde: #303030;
+  --tres-mini-txt: #a800b7;
 
-  --tres-01-ttl: #a800b7;
-  --tres-01-desc: #dddddd;
+  --tres-ttl: #a800b7;
+  --tres-desc: #dddddd;
 
-  --tres-01-marcos: #121212;
-  --tres-01-marcos-txt: #ffffff;
+  --tres-caracteristicas-bg: #121212;
+  --tres-caracteristicas-border: #303030;
+  --tres-caracteristicas-puntos: #a800b7;
+  --tres-caracteristicas-txt: #a800b7;
+
   --tres-01-cursor: #a800b7;
-
-  /**/
-  --tres-02-num: #333333;
-  --tres-02-mini-bg: #1a1a1a;
-  --tres-02-mini-borde: #444444;
-  --tres-02-mini-txt: #ffffff;
-  --tres-02-ttl: #a800b7;
-  --tres-02-desc: #dddddd;
-  --tres-02-marcos: #121212;
-  --tres-02-marcos-txt: #ffffff;
   --tres-02-cursor: #00ff7b;
-
-  /**/
-  --tres-03-num: #333333;
-  --tres-03-mini-bg: #1a1a1a;
-  --tres-03-mini-borde: #444444;
-  --tres-03-mini-txt: #ffffff;
-  --tres-03-ttl: #a800b7;
-  --tres-03-desc: #dddddd;
-  --tres-03-marcos: #121212;
-  --tres-03-marcos-txt: #ffffff;
   --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
@@ -1753,11 +1633,11 @@
   /* General */
   --bg-fondo: #ffffff;
   --titulos: #fdc700;
-  --descripciones: #616161;
+  --descripciones: #2c2a2a;
 
   /* Header */
   --header-login-bg: transparent;
-  --header-redir: #6b6b6b;
+  --header-redir: #2c2a2a;
   --header-redir-cursor: #fdc700;
 
   --header-login-bg-2: #fdc700;
@@ -1767,8 +1647,9 @@
   --header-regis-txt: #ffffff;
 
   /* Hero */
+  --hero-bg: #ffffff;
   --hero-ttl: #f0b100;
-  --hero-desc: #616161;
+  --hero-desc: #2c2a2a;
 
   --hero-bg-demo: #f0b100;
   --hero-txt-demo: #fcfcfc;
@@ -1781,32 +1662,32 @@
 
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #fdc700;
-  --tarjetas-desc2: #616161;
+  --tarjetas-desc2: #2c2a2a;
 
   --tarjetas-bg: #f7f9f7;
   --tarjetas-border: #e2e8e3;
 
-  --tarjetas-txt3: #616161;
+  --tarjetas-txt3: #2c2a2a;
   --tarjetas-ttl4: #000000;
-  --tarjetas-desc5: #616161;
+  --tarjetas-desc5: #2c2a2a;
 
   --tarjetas-1txt6: #fdc700;
   --tarjetas-2txt6: #fdc700;
   --tarjetas-3txt6: #fdc700;
 
-  --tarjetas-desc7: #616161;
-  --tarjetas-txt8: #616161;
+  --tarjetas-desc7: #2c2a2a;
+  --tarjetas-txt8: #2c2a2a;
 
   --pin-line: #fdc700;
   --pin-wave: #fdc700;
 
   /* 2 mockup cada lado */
   --mockup-ttl: #fdc700;
-  --mockup-desc: #616161;
+  --mockup-desc: #2c2a2a;
 
   /* wobble 4 */
   --wobble-ttl: #fdc700;
-  --wobble-desc: #616161;
+  --wobble-desc: #2c2a2a;
 
   --wobble-bg-1: #2c2d2c;
   --wobble-bg-2: #fdc700;
@@ -1821,63 +1702,46 @@
   --carrusel2-mini-txt: #ffffff;
 
   --carrusel2-ttl: #fdc700;
-  --carrusel2-desc: #616161;
+  --carrusel2-desc: #2c2a2a;
 
   /* 3 secciones*/
   --tres-bg: #ffffff;
   --tres-ttl: #fdc700;
-  --tres-desc: #616161;
+  --tres-desc: #2c2a2a;
 
-  --tres-01-num: #dbdbdb;
-  --tres-01-mini-bg: #f1f1f1;
-  --tres-01-mini-borde: #bfbfbf;
-  --tres-01-mini-txt: #000000;
+  --tres-num: #dbdbdb;
+  --tres-mini-bg: #f1f1f1;
+  --tres-mini-borde: #bfbfbf;
+  --tres-mini-txt: #fdc700;
 
-  --tres-01-ttl: #fdc700;
-  --tres-01-desc: #616161;
+  --tres-ttl: #fdc700;
+  --tres-desc: #2c2a2a;
 
-  --tres-01-marcos: #f5f5f5;
-  --tres-01-marcos-txt: #000000;
+  --tres-caracteristicas-bg: #f5f5f5;
+  --tres-caracteristicas-border: #e1e1e1;
+  --tres-caracteristicas-puntos: #fdc700;
+  --tres-caracteristicas-txt: #fdc700;
+
   --tres-01-cursor: #fdc700;
-
-  /**/
-  --tres-02-num: #dbdbdb;
-  --tres-02-mini-bg: #f1f1f1;
-  --tres-02-mini-borde: #bfbfbf;
-  --tres-02-mini-txt: #000000;
-  --tres-02-ttl: #fdc700;
-  --tres-02-desc: #616161;
-  --tres-02-marcos: #f5f5f5;
-  --tres-02-marcos-txt: #000000;
   --tres-02-cursor: #00ff7b;
-
-  /**/
-  --tres-03-num: #dbdbdb;
-  --tres-03-mini-bg: #f1f1f1;
-  --tres-03-mini-borde: #bfbfbf;
-  --tres-03-mini-txt: #000000;
-  --tres-03-ttl: #fdc700;
-  --tres-03-desc: #616161;
-  --tres-03-marcos: #f5f5f5;
-  --tres-03-marcos-txt: #000000;
   --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
   --imgcursor-bg: #ffffff;
   --imgcursor-ttl: #fdc700;
-  --imgcursor-desc: #616161;
+  --imgcursor-desc: #2c2a2a;
 
   --imgcursor-izq-borde: #afafaf;
   --imgcursor-izq-bg: #ffffff;
 
   --imgcursor-izq-ttl: #fdc700;
-  --imgcursor-izq-desc: #616161;
+  --imgcursor-izq-desc: #2c2a2a;
   --imgcursor-izq-hvr: #f0b100;
 
   --imgcursor-der-borde: #afafaf;
   --imgcursor-der-bg: #ffffff;
 
-  --imgcursor-der-des: #616161;
+  --imgcursor-der-des: #2c2a2a;
   --imgcursor-der-cursor1: #fdc700;
   --imgcursor-der-cursor2: #ff4100;
   --imgcursor-der-cursor3: #ff9d00;
@@ -1889,15 +1753,15 @@
   --imgcursor-der-c-bg: #ffffff;
   --imgcursor-der-c: #000000;
   --imgcursor-der-ttl: #fdc700;
-  --imgcursor-der-desc: #616161;
+  --imgcursor-der-desc: #2c2a2a;
 
   /* Preguntas frecuentes */
   --preg-ttl: #fdc700;
-  --preg-desc: #616161;
+  --preg-desc: #2c2a2a;
   --preg-link: #fdc700;
 
   --preg-preg: #fdc700;
-  --preg-txt: #616161;
+  --preg-txt: #2c2a2a;
 
   /* Footer */
   --footer-txt: #2c2a2a;
@@ -1929,10 +1793,10 @@
    Sobre Nosotros
 ========================= */
   --nos-ttl: #fdc700;
-  --nos-desc: #616161;
+  --nos-desc: #2c2a2a;
 
   --nos-fechas: #fdc700;
-  --nos-txt: #616161;
+  --nos-txt: #2c2a2a;
 
   /* =========================
    Contacto
@@ -1953,23 +1817,23 @@
 
   --contact-btn-bg: #fdc700;
   --contact-btn-text: #ffffff;
-  --contact-btn-hover: #fdc700;
+  --contact-btn-hover: #f0b100;
 
   --contact-team-ttl: #fdc700;
   --contact-team-name: #fdc700;
-  --contact-team-email: #616161;
+  --contact-team-email: #2c2a2a;
 
   --contact-social: #fdc700;
-  --contact-social-hvr: #fdc700;
+  --contact-social-hvr: #f0b100;
 
   /* =========================
    Ayuda
 ========================= */
   --ayuda-ttl: #fdc700;
-  --ayuda-desc: #616161;
+  --ayuda-desc: #2c2a2a;
 
   --ayuda-preg-ttl: #fdc700;
-  --ayuda-preg-txt: #616161;
+  --ayuda-preg-txt: #2c2a2a;
 
   --ayuda-link: #fdc700;
 
@@ -2001,6 +1865,7 @@
   --header-regis-txt: #ffffff;
 
   /* Hero */
+  --hero-bg: #000000;
   --hero-ttl: #fdc700;
   --hero-desc: #dddddd;
 
@@ -2031,8 +1896,8 @@
   --tarjetas-desc7: #dddddd;
   --tarjetas-txt8: #dddddd;
 
-  --pin-line: #fdc700;
-  --pin-wave: #fdc700;
+  --pin-line: #f0b100;
+  --pin-wave: #f0b100;
 
   /* 2 mockup cada lado */
   --mockup-ttl: #fdc700;
@@ -2043,15 +1908,15 @@
   --wobble-desc: #dddddd;
 
   --wobble-bg-1: #1a1818;
-  --wobble-bg-2: #f0b100;
-  --wobble-bg-3: #f0b100;
+  --wobble-bg-2: #fdc700;
+  --wobble-bg-3: #fdc700;
   --wobble-bg-4: #1a1818;
 
   --wobble-ttl-5: #ffffff;
   --wobble-desc-6: #efefef;
 
   /* --carrusel 2 */
-  --carrusel2-mini-bg: #f0b100;
+  --carrusel2-mini-bg: #fdc700;
   --carrusel2-mini-txt: #ffffff;
 
   --carrusel2-ttl: #fdc700;
@@ -2062,38 +1927,21 @@
   --tres-ttl: #fdc700;
   --tres-desc: #dddddd;
 
-  --tres-01-num: #333333;
-  --tres-01-mini-bg: #1a1a1a;
-  --tres-01-mini-borde: #444444;
-  --tres-01-mini-txt: #ffffff;
+  --tres-num: #333333;
+  --tres-mini-bg: #1a1a1a;
+  --tres-mini-borde: #303030;
+  --tres-mini-txt: #fdc700;
 
-  --tres-01-ttl: #fdc700;
-  --tres-01-desc: #dddddd;
+  --tres-ttl: #fdc700;
+  --tres-desc: #dddddd;
 
-  --tres-01-marcos: #121212;
-  --tres-01-marcos-txt: #ffffff;
+  --tres-caracteristicas-bg: #121212;
+  --tres-caracteristicas-border: #303030;
+  --tres-caracteristicas-puntos: #fdc700;
+  --tres-caracteristicas-txt: #fdc700;
+
   --tres-01-cursor: #fdc700;
-
-  /**/
-  --tres-02-num: #333333;
-  --tres-02-mini-bg: #1a1a1a;
-  --tres-02-mini-borde: #444444;
-  --tres-02-mini-txt: #ffffff;
-  --tres-02-ttl: #fdc700;
-  --tres-02-desc: #dddddd;
-  --tres-02-marcos: #121212;
-  --tres-02-marcos-txt: #ffffff;
   --tres-02-cursor: #00ff7b;
-
-  /**/
-  --tres-03-num: #333333;
-  --tres-03-mini-bg: #1a1a1a;
-  --tres-03-mini-borde: #444444;
-  --tres-03-mini-txt: #ffffff;
-  --tres-03-ttl: #fdc700;
-  --tres-03-desc: #dddddd;
-  --tres-03-marcos: #121212;
-  --tres-03-marcos-txt: #ffffff;
   --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
@@ -2221,12 +2069,12 @@
   /* General */
   --bg-fondo: #ffffff;
   --titulos: #f77817;
-  --descripciones: #616161;
+  --descripciones: #2c2a2a;
   --primary: #f77817;
 
   /* Header */
   --header-login-bg: transparent;
-  --header-redir: #6b6b6b;
+  --header-redir: #2c2a2a;
   --header-redir-cursor: #ff6f00;
 
   --header-login-bg-2: #ff6f00;
@@ -2236,8 +2084,9 @@
   --header-regis-txt: #ffffff;
 
   /* Hero */
+  --hero-bg: #ffffff;
   --hero-ttl: #f77817;
-  --hero-desc: #616161;
+  --hero-desc: #2c2a2a;
 
   --hero-bg-demo: #f77817;
   --hero-txt-demo: #fcfcfc;
@@ -2250,32 +2099,32 @@
 
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #f77817;
-  --tarjetas-desc2: #616161;
+  --tarjetas-desc2: #2c2a2a;
 
   --tarjetas-bg: #f7f9f7;
   --tarjetas-border: #e2e8e3;
 
-  --tarjetas-txt3: #616161;
+  --tarjetas-txt3: #2c2a2a;
   --tarjetas-ttl4: #000000;
-  --tarjetas-desc5: #616161;
+  --tarjetas-desc5: #2c2a2a;
 
   --tarjetas-1txt6: #f77817;
   --tarjetas-2txt6: #f77817;
   --tarjetas-3txt6: #f77817;
 
-  --tarjetas-desc7: #616161;
-  --tarjetas-txt8: #616161;
+  --tarjetas-desc7: #2c2a2a;
+  --tarjetas-txt8: #2c2a2a;
 
   --pin-line: #f77817;
   --pin-wave: #f77817;
 
   /* 2 mockup cada lado */
   --mockup-ttl: #f77817;
-  --mockup-desc: #616161;
+  --mockup-desc: #2c2a2a;
 
   /* wobble 4 */
   --wobble-ttl: #f77817;
-  --wobble-desc: #616161;
+  --wobble-desc: #2c2a2a;
 
   --wobble-bg-1: #2c2d2c;
   --wobble-bg-2: #f77817;
@@ -2290,63 +2139,46 @@
   --carrusel2-mini-txt: #ffffff;
 
   --carrusel2-ttl: #f77817;
-  --carrusel2-desc: #616161;
+  --carrusel2-desc: #2c2a2a;
 
   /* 3 secciones*/
   --tres-bg: #ffffff;
   --tres-ttl: #f77817;
-  --tres-desc: #616161;
+  --tres-desc: #2c2a2a;
 
-  --tres-01-num: #dbdbdb;
-  --tres-01-mini-bg: #f1f1f1;
-  --tres-01-mini-borde: #bfbfbf;
-  --tres-01-mini-txt: #000000;
+  --tres-num: #dbdbdb;
+  --tres-mini-bg: #f1f1f1;
+  --tres-mini-borde: #bfbfbf;
+  --tres-mini-txt: #f77817;
 
-  --tres-01-ttl: #f77817;
-  --tres-01-desc: #616161;
+  --tres-ttl: #f77817;
+  --tres-desc: #2c2a2a;
 
-  --tres-01-marcos: #f5f5f5;
-  --tres-01-marcos-txt: #000000;
+  --tres-caracteristicas-bg: #f5f5f5;
+  --tres-caracteristicas-border: #e1e1e1;
+  --tres-caracteristicas-puntos: #f77817;
+  --tres-caracteristicas-txt: #f77817;
+
   --tres-01-cursor: #f77817;
-
-  /**/
-  --tres-02-num: #dbdbdb;
-  --tres-02-mini-bg: #f1f1f1;
-  --tres-02-mini-borde: #bfbfbf;
-  --tres-02-mini-txt: #000000;
-  --tres-02-ttl: #f77817;
-  --tres-02-desc: #616161;
-  --tres-02-marcos: #f5f5f5;
-  --tres-02-marcos-txt: #000000;
   --tres-02-cursor: #00ff7b;
-
-  /**/
-  --tres-03-num: #dbdbdb;
-  --tres-03-mini-bg: #f1f1f1;
-  --tres-03-mini-borde: #bfbfbf;
-  --tres-03-mini-txt: #000000;
-  --tres-03-ttl: #f77817;
-  --tres-03-desc: #616161;
-  --tres-03-marcos: #f5f5f5;
-  --tres-03-marcos-txt: #000000;
   --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
   --imgcursor-bg: #ffffff;
   --imgcursor-ttl: #f77817;
-  --imgcursor-desc: #616161;
+  --imgcursor-desc: #2c2a2a;
 
   --imgcursor-izq-borde: #afafaf;
   --imgcursor-izq-bg: #ffffff;
 
   --imgcursor-izq-ttl: #f77817;
-  --imgcursor-izq-desc: #616161;
+  --imgcursor-izq-desc: #2c2a2a;
   --imgcursor-izq-hvr: #d16613;
 
   --imgcursor-der-borde: #afafaf;
   --imgcursor-der-bg: #ffffff;
 
-  --imgcursor-der-des: #616161;
+  --imgcursor-der-des: #2c2a2a;
   --imgcursor-der-cursor1: #f77817;
   --imgcursor-der-cursor2: #ff4100;
   --imgcursor-der-cursor3: #ff9d00;
@@ -2358,15 +2190,15 @@
   --imgcursor-der-c-bg: #ffffff;
   --imgcursor-der-c: #000000;
   --imgcursor-der-ttl: #f77817;
-  --imgcursor-der-desc: #616161;
+  --imgcursor-der-desc: #2c2a2a;
 
   /* Preguntas frecuentes */
   --preg-ttl: #f77817;
-  --preg-desc: #616161;
+  --preg-desc: #2c2a2a;
   --preg-link: #f77817;
 
   --preg-preg: #f77817;
-  --preg-txt: #616161;
+  --preg-txt: #2c2a2a;
 
   /* Footer */
   --footer-txt: #2c2a2a;
@@ -2398,10 +2230,10 @@
    Sobre Nosotros
 ========================= */
   --nos-ttl: #f77817;
-  --nos-desc: #616161;
+  --nos-desc: #2c2a2a;
 
   --nos-fechas: #f77817;
-  --nos-txt: #616161;
+  --nos-txt: #2c2a2a;
 
   /* =========================
    Contacto
@@ -2426,7 +2258,7 @@
 
   --contact-team-ttl: #f77817;
   --contact-team-name: #f77817;
-  --contact-team-email: #616161;
+  --contact-team-email: #2c2a2a;
 
   --contact-social: #f77817;
   --contact-social-hvr: #d16613;
@@ -2435,10 +2267,10 @@
    Ayuda
 ========================= */
   --ayuda-ttl: #f77817;
-  --ayuda-desc: #616161;
+  --ayuda-desc: #2c2a2a;
 
   --ayuda-preg-ttl: #f77817;
-  --ayuda-preg-txt: #616161;
+  --ayuda-preg-txt: #2c2a2a;
 
   --ayuda-link: #f77817;
 
@@ -2532,38 +2364,21 @@
   --tres-ttl: #ff8400;
   --tres-desc: #dddddd;
 
-  --tres-01-num: #333333;
-  --tres-01-mini-bg: #1a1a1a;
-  --tres-01-mini-borde: #444444;
-  --tres-01-mini-txt: #ffffff;
+  --tres-num: #333333;
+  --tres-mini-bg: #1a1a1a;
+  --tres-mini-borde: #303030;
+  --tres-mini-txt: #ff8400;
 
-  --tres-01-ttl: #ff8400;
-  --tres-01-desc: #dddddd;
+  --tres-ttl: #ff8400;
+  --tres-desc: #dddddd;
 
-  --tres-01-marcos: #121212;
-  --tres-01-marcos-txt: #ffffff;
+  --tres-caracteristicas-bg: #121212;
+  --tres-caracteristicas-border: #303030;
+  --tres-caracteristicas-puntos: #ff8400;
+  --tres-caracteristicas-txt: #ff8400;
+
   --tres-01-cursor: #ff8400;
-
-  /**/
-  --tres-02-num: #333333;
-  --tres-02-mini-bg: #1a1a1a;
-  --tres-02-mini-borde: #444444;
-  --tres-02-mini-txt: #ffffff;
-  --tres-02-ttl: #ff8400;
-  --tres-02-desc: #dddddd;
-  --tres-02-marcos: #121212;
-  --tres-02-marcos-txt: #ffffff;
   --tres-02-cursor: #00ff7b;
-
-  /**/
-  --tres-03-num: #333333;
-  --tres-03-mini-bg: #1a1a1a;
-  --tres-03-mini-borde: #444444;
-  --tres-03-mini-txt: #ffffff;
-  --tres-03-ttl: #ff8400;
-  --tres-03-desc: #dddddd;
-  --tres-03-marcos: #121212;
-  --tres-03-marcos-txt: #ffffff;
   --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
@@ -2767,38 +2582,21 @@
   --tres-ttl: #ec003f;
   --tres-desc: #616161;
 
-  --tres-01-num: #dbdbdb;
-  --tres-01-mini-bg: #f1f1f1;
-  --tres-01-mini-borde: #bfbfbf;
-  --tres-01-mini-txt: #000000;
+  --tres-num: #dbdbdb;
+  --tres-mini-bg: #f1f1f1;
+  --tres-mini-borde: #bfbfbf;
+  --tres-mini-txt: #ec003f;
 
-  --tres-01-ttl: #ec003f;
-  --tres-01-desc: #616161;
+  --tres-ttl: #ec003f;
+  --tres-desc: #616161;
 
-  --tres-01-marcos: #f5f5f5;
-  --tres-01-marcos-txt: #000000;
+  --tres-caracteristicas-bg: #f5f5f5;
+  --tres-caracteristicas-border: #e1e1e1;
+  --tres-caracteristicas-puntos: #ec003f;
+  --tres-caracteristicas-txt: #ec003f;
+
   --tres-01-cursor: #ec003f;
-
-  /**/
-  --tres-02-num: #dbdbdb;
-  --tres-02-mini-bg: #f1f1f1;
-  --tres-02-mini-borde: #bfbfbf;
-  --tres-02-mini-txt: #000000;
-  --tres-02-ttl: #ec003f;
-  --tres-02-desc: #616161;
-  --tres-02-marcos: #f5f5f5;
-  --tres-02-marcos-txt: #000000;
   --tres-02-cursor: #00ff7b;
-
-  /**/
-  --tres-03-num: #dbdbdb;
-  --tres-03-mini-bg: #f1f1f1;
-  --tres-03-mini-borde: #bfbfbf;
-  --tres-03-mini-txt: #000000;
-  --tres-03-ttl: #ec003f;
-  --tres-03-desc: #616161;
-  --tres-03-marcos: #f5f5f5;
-  --tres-03-marcos-txt: #000000;
   --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
@@ -3002,38 +2800,21 @@
   --tres-ttl: #ec003f;
   --tres-desc: #dddddd;
 
-  --tres-01-num: #333333;
-  --tres-01-mini-bg: #1a1a1a;
-  --tres-01-mini-borde: #444444;
-  --tres-01-mini-txt: #ffffff;
+  --tres-num: #333333;
+  --tres-mini-bg: #1a1a1a;
+  --tres-mini-borde: #303030;
+  --tres-mini-txt: #ec003f;
 
-  --tres-01-ttl: #ec003f;
-  --tres-01-desc: #dddddd;
+  --tres-ttl: #ec003f;
+  --tres-desc: #dddddd;
 
-  --tres-01-marcos: #121212;
-  --tres-01-marcos-txt: #ffffff;
+  --tres-caracteristicas-bg: #121212;
+  --tres-caracteristicas-border: #303030;
+  --tres-caracteristicas-puntos: #ec003f;
+  --tres-caracteristicas-txt: #ec003f;
+
   --tres-01-cursor: #ec003f;
-
-  /**/
-  --tres-02-num: #333333;
-  --tres-02-mini-bg: #1a1a1a;
-  --tres-02-mini-borde: #444444;
-  --tres-02-mini-txt: #ffffff;
-  --tres-02-ttl: #ec003f;
-  --tres-02-desc: #dddddd;
-  --tres-02-marcos: #121212;
-  --tres-02-marcos-txt: #ffffff;
   --tres-02-cursor: #00ff7b;
-
-  /**/
-  --tres-03-num: #333333;
-  --tres-03-mini-bg: #1a1a1a;
-  --tres-03-mini-borde: #444444;
-  --tres-03-mini-txt: #ffffff;
-  --tres-03-ttl: #ec003f;
-  --tres-03-desc: #dddddd;
-  --tres-03-marcos: #121212;
-  --tres-03-marcos-txt: #ffffff;
   --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
@@ -3237,38 +3018,21 @@
   --tres-ttl: #5ea500;
   --tres-desc: #2c2a2a;
 
-  --tres-01-num: #dbdbdb;
-  --tres-01-mini-bg: #f1f1f1;
-  --tres-01-mini-borde: #bfbfbf;
-  --tres-01-mini-txt: #000000;
+  --tres-num: #dbdbdb;
+  --tres-mini-bg: #f1f1f1;
+  --tres-mini-borde: #bfbfbf;
+  --tres-mini-txt: #5ea500;
 
-  --tres-01-ttl: #5ea500;
-  --tres-01-desc: #2c2a2a;
+  --tres-ttl: #5ea500;
+  --tres-desc: #2c2a2a;
 
-  --tres-01-marcos: #f5f5f5;
-  --tres-01-marcos-txt: #000000;
+  --tres-caracteristicas-bg: #f5f5f5;
+  --tres-caracteristicas-border: #e1e1e1;
+  --tres-caracteristicas-puntos: #5ea500;
+  --tres-caracteristicas-txt: #5ea500;
+
   --tres-01-cursor: #5ea500;
-
-  /**/
-  --tres-02-num: #dbdbdb;
-  --tres-02-mini-bg: #f1f1f1;
-  --tres-02-mini-borde: #bfbfbf;
-  --tres-02-mini-txt: #000000;
-  --tres-02-ttl: #5ea500;
-  --tres-02-desc: #2c2a2a;
-  --tres-02-marcos: #f5f5f5;
-  --tres-02-marcos-txt: #000000;
   --tres-02-cursor: #00ff7b;
-
-  /**/
-  --tres-03-num: #dbdbdb;
-  --tres-03-mini-bg: #f1f1f1;
-  --tres-03-mini-borde: #bfbfbf;
-  --tres-03-mini-txt: #000000;
-  --tres-03-ttl: #5ea500;
-  --tres-03-desc: #2c2a2a;
-  --tres-03-marcos: #f5f5f5;
-  --tres-03-marcos-txt: #000000;
   --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
@@ -3472,38 +3236,21 @@
   --tres-ttl: #7ccf00;
   --tres-desc: #dddddd;
 
-  --tres-01-num: #333333;
-  --tres-01-mini-bg: #1a1a1a;
-  --tres-01-mini-borde: #444444;
-  --tres-01-mini-txt: #ffffff;
+  --tres-num: #333333;
+  --tres-mini-bg: #1a1a1a;
+  --tres-mini-borde: #303030;
+  --tres-mini-txt: #7ccf00;
 
-  --tres-01-ttl: #7ccf00;
-  --tres-01-desc: #dddddd;
+  --tres-ttl: #7ccf00;
+  --tres-desc: #dddddd;
 
-  --tres-01-marcos: #121212;
-  --tres-01-marcos-txt: #ffffff;
+  --tres-caracteristicas-bg: #121212;
+  --tres-caracteristicas-border: #303030;
+  --tres-caracteristicas-puntos: #7ccf00;
+  --tres-caracteristicas-txt: #7ccf00;
+
   --tres-01-cursor: #7ccf00;
-
-  /**/
-  --tres-02-num: #333333;
-  --tres-02-mini-bg: #1a1a1a;
-  --tres-02-mini-borde: #444444;
-  --tres-02-mini-txt: #ffffff;
-  --tres-02-ttl: #7ccf00;
-  --tres-02-desc: #dddddd;
-  --tres-02-marcos: #121212;
-  --tres-02-marcos-txt: #ffffff;
   --tres-02-cursor: #00ff7b;
-
-  /**/
-  --tres-03-num: #333333;
-  --tres-03-mini-bg: #1a1a1a;
-  --tres-03-mini-borde: #444444;
-  --tres-03-mini-txt: #ffffff;
-  --tres-03-ttl: #7ccf00;
-  --tres-03-desc: #dddddd;
-  --tres-03-marcos: #121212;
-  --tres-03-marcos-txt: #ffffff;
   --tres-03-cursor: #ffb700;
 
   /* Imagen al pasar el cursor*/
@@ -3725,32 +3472,18 @@
   --color-tres-ttl: var(--tres-ttl);
   --color-tres-desc: var(--tres-desc);
 
-  --color-tres-01-num: var(--tres-01-num);
-  --color-tres-01-mini-bg: var(--tres-01-mini-bg);
-  --color-tres-01-mini-borde: var(--tres-01-mini-borde);
-  --color-tres-01-mini-txt: var(--tres-01-mini-txt);
-  --color-tres-01-ttl: var(--tres-01-ttl);
-  --color-tres-01-desc: var(--tres-01-desc);
-  --color-tres-01-marcos: var(--tres-01-marcos);
-  --color-tres-01-marcos-txt: var(--tres-01-marcos-txt);
+  --color-tres-num: var(--tres-num);
+  --color-tres-mini-bg: var(--tres-mini-bg);
+  --color-tres-mini-borde: var(--tres-mini-borde);
+  --color-tres-mini-txt: var(--tres-mini-txt);
+
+  --color-tres-caracteristicas-bg: var(--tres-caracteristicas-bg);
+  --color-tres-caracteristicas-border: var(--tres-caracteristicas-border);
+  --color-tres-caracteristicas-puntos: var(--tres-caracteristicas-puntos);
+  --color-tres-caracteristicas-txt: var(--tres-caracteristicas-txt);
+
   --color-tres-01-cursor: var(--tres-01-cursor);
-
-  --color-tres-02-num: var(--tres-02-num);
-  --color-tres-02-mini-bg: var(--tres-02-mini-bg);
-  --color-tres-02-mini-txt: var(--tres-02-mini-txt);
-  --color-tres-02-ttl: var(--tres-02-ttl);
-  --color-tres-02-desc: var(--tres-02-desc);
-  --color-tres-02-marcos: var(--tres-02-marcos);
-  --color-tres-02-marcos-txt: var(--tres-02-marcos-txt);
   --color-tres-02-cursor: var(--tres-02-cursor);
-
-  --color-tres-03-num: var(--tres-03-num);
-  --color-tres-03-mini-bg: var(--tres-03-mini-bg);
-  --color-tres-03-mini-txt: var(--tres-03-mini-txt);
-  --color-tres-03-ttl: var(--tres-03-ttl);
-  --color-tres-03-desc: var(--tres-03-desc);
-  --color-tres-03-marcos: var(--tres-03-marcos);
-  --color-tres-03-marcos-txt: var(--tres-03-marcos-txt);
   --color-tres-03-cursor: var(--tres-03-cursor);
 
   /*Imagen al pasar el cursor*/

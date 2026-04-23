@@ -24,14 +24,15 @@ const steps = [
     color: "from-brand-subtle to-teal-50",
     accentColor: "bg-emerald-500",
     textColor: "text-emerald-600",
-    varNum: "text-tres-01-num",
-    varMiniBg: "bg-tres-01-mini-bg",
-    varMiniBorder: "border-tres-01-mini-borde",
-    varMiniTxt: "text-tres-01-mini-txt",
-    varTtl: "text-tres-01-ttl",
-    varDesc: "text-tres-01-desc",
-    varMarcos: "bg-tres-01-marcos",
-    varMarcosTxt: "text-tres-01-marcos-txt",
+    varNum: "text-tres-num",
+    varMiniBg: "bg-tres-mini-bg",
+    varMiniBorder: "border-tres-mini-borde",
+    varMiniTxt: "text-tres-mini-txt",
+    varTtl: "text-tres-ttl",
+    varDesc: "text-tres-desc",
+    varMarcos: "bg-tres-caracteristicas-bg border-tres-caracteristicas-border",
+    varMarcosTxt: "text-tres-caracteristicas-txt",
+    varPuntos: "bg-tres-caracteristicas-puntos",
     varCursor: "text-tres-01-cursor",
   },
   {
@@ -50,14 +51,15 @@ const steps = [
     color: "from-teal-50 to-sky-50",
     accentColor: "bg-teal-500",
     textColor: "text-teal-600",
-    varNum: "text-tres-02-num",
-    varMiniBg: "bg-tres-02-mini-bg",
-    varMiniBorder: "border-tres-02-mini-borde",
-    varMiniTxt: "text-tres-02-mini-txt",
-    varTtl: "text-tres-02-ttl",
-    varDesc: "text-tres-02-desc",
-    varMarcos: "bg-tres-02-marcos",
-    varMarcosTxt: "text-tres-02-marcos-txt",
+    varNum: "text-tres-num",
+    varMiniBg: "bg-tres-mini-bg",
+    varMiniBorder: "border-tres-mini-borde",
+    varMiniTxt: "text-tres-mini-txt",
+    varTtl: "text-tres-ttl",
+    varDesc: "text-tres-desc",
+    varMarcos: "bg-tres-caracteristicas-bg border-tres-caracteristicas-border",
+    varMarcosTxt: "text-tres-caracteristicas-txt",
+    varPuntos: "bg-tres-caracteristicas-puntos",
     varCursor: "text-tres-02-cursor",
   },
   {
@@ -76,14 +78,15 @@ const steps = [
     color: "from-sky-50 to-indigo-50",
     accentColor: "bg-sky-500",
     textColor: "text-sky-600",
-    varNum: "text-tres-03-num",
-    varMiniBg: "bg-tres-03-mini-bg",
-    varMiniBorder: "border-tres-03-mini-borde",
-    varMiniTxt: "text-tres-03-mini-txt",
-    varTtl: "text-tres-03-ttl",
-    varDesc: "text-tres-03-desc",
-    varMarcos: "bg-tres-03-marcos",
-    varMarcosTxt: "text-tres-03-marcos-txt",
+    varNum: "text-tres-num",
+    varMiniBg: "bg-tres-mini-bg",
+    varMiniBorder: "border-tres-mini-borde",
+    varMiniTxt: "text-tres-mini-txt",
+    varTtl: "text-tres-ttl",
+    varDesc: "text-tres-desc",
+    varMarcos: "bg-tres-caracteristicas-bg border-tres-caracteristicas-border",
+    varMarcosTxt: "text-tres-caracteristicas-txt",
+    varPuntos: "bg-tres-caracteristicas-puntos",
     varCursor: "text-tres-03-cursor",
   },
 ];
@@ -94,7 +97,7 @@ export default function TresPasosLaboratorio() {
   return (
     <section
       id="how-it-works"
-      className="relative overflow-hidden bg-tres-bg px-5 py-0 md:px-12 md:py-24 lg:py-5"
+      className="relative overflow-hidden bg-tres-bg px-5 py-[1px] md:px-12 md:py-24 lg:py-5"
     >
       {/* Section heading — left-anchored, not centered */}
       <div className="mx-auto max-w-[1400px]">
@@ -116,8 +119,12 @@ export default function TresPasosLaboratorio() {
           {steps.map((step, index) => (
             <motion.div
               key={`${step.step}-${reducedMotion}`}
-              initial={reducedMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
-              whileInView={reducedMotion ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
+              initial={
+                reducedMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }
+              }
+              whileInView={
+                reducedMotion ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }
+              }
               transition={
                 reducedMotion
                   ? { duration: 0 }
@@ -145,10 +152,14 @@ export default function TresPasosLaboratorio() {
                     >
                       {step.tag}
                     </span>
-                    <h3 className={`text-xl sm:text-2xl md:text-3xl font-bold tracking-tight ${step.varTtl}`}>
+                    <h3
+                      className={`text-xl sm:text-2xl md:text-3xl font-bold tracking-tight ${step.varTtl}`}
+                    >
                       {step.title}
                     </h3>
-                    <p className={`mt-4 text-base leading-relaxed ${step.varDesc}`}>
+                    <p
+                      className={`mt-4 text-base leading-relaxed ${step.varDesc}`}
+                    >
                       {step.description}
                     </p>
 
@@ -157,10 +168,10 @@ export default function TresPasosLaboratorio() {
                       {step.details.map((d) => (
                         <span
                           key={d}
-                          className={`flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium ${step.varMarcos} ${step.varMarcosTxt}`}
+                          className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium ${step.varMarcos} ${step.varMarcosTxt}`}
                         >
                           <span
-                            className={`h-1.5 w-1.5 rounded-full ${step.accentColor}`}
+                            className={`h-1.5 w-1.5 rounded-full ${step.varPuntos}`}
                           />
                           {d}
                         </span>
@@ -173,8 +184,8 @@ export default function TresPasosLaboratorio() {
               {/* Visual side */}
               <PointerHighlight
                 rectangleClassName={cn(
-                  "rounded-2xl border border-current/10",
-                  step.textColor,
+                  "rounded-2xl border",
+                  step.varMiniBorder,
                 )}
                 bgOpacity={0.03}
                 pointerClassName={step.varCursor}
@@ -192,7 +203,7 @@ export default function TresPasosLaboratorio() {
                     quality={75}
                     className={cn(
                       "h-full w-full object-cover transition duration-500 will-change-transform dark:opacity-90 [transform:translateZ(0)] [backface-visibility:hidden]",
-                      !reducedMotion && "group-hover:scale-[1.03]"
+                      !reducedMotion && "group-hover:scale-[1.03]",
                     )}
                   />
                   {/* Step badge overlay */}

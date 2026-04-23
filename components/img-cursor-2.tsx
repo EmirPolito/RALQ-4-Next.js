@@ -21,13 +21,13 @@ const tech = [
   },
 ];
 
-export default function ImgCursorDemo() {
+export default function ImgCursorDemo2() {
   const reducedMotion = useReducedMotion();
 
   return (
     <section
       id="resources"
-      className="relative bg-imgcursor-bg px-4 py-22 md:px-8 md:py-20"
+      className="relative bg-imgcursor-bg px-4 py-20 md:px-8 md:py-20"
     >
       <div className="mx-auto max-w-[1400px]">
         {/* Two-col layout: left = heading + tech pills, right = editorial paragraph */}

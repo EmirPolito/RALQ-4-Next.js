@@ -14,18 +14,18 @@ const features = [
       "Explora modelos moleculares tridimensionales con detalle atómico. Rota, acerca y analiza cada enlace químico, ángulo de enlace y propiedad fisicoquímica en tiempo real.",
     highlight: "ver cada átomo",
     highlightColors: {
-      rectangle: "bg-tres-01-mini-bg/10 border-tres-01-mini-borde leading-loose",
+      rectangle: "bg-tres-mini-bg/10 border-tres-mini-borde leading-loose",
       pointer: "text-tres-01-cursor h-3 w-3",
     },
     visual: <MoleculeVisual />,
-    color: "bg-tres-01-mini-bg",
-    textColor: "text-tres-01-ttl",
-    borderColor: "border-tres-01-marcos",
-    numColor: "text-tres-01-num",
-    miniBg: "bg-tres-01-mini-bg",
-    miniBorder: "border-tres-01-mini-borde",
-    miniTxt: "text-tres-01-mini-txt",
-    descColor: "text-tres-01-desc",
+    color: "bg-tres-mini-bg",
+    textColor: "text-tres-ttl",
+    borderColor: "border-tres-caracteristicas-border",
+    numColor: "text-tres-num",
+    miniBg: "bg-tres-mini-bg",
+    miniBorder: "border-tres-mini-borde",
+    miniTxt: "text-tres-mini-txt",
+    descColor: "text-tres-desc",
   },
   {
     id: "instruments",
@@ -36,18 +36,18 @@ const features = [
       "Desde matraces Erlenmeyer hasta espectrofotómetros. Cada instrumento renderizado en alta resolución con anotaciones técnicas y guías de uso.",
     highlight: "practicar sin riesgos",
     highlightColors: {
-      rectangle: "bg-tres-02-mini-bg/10 border-tres-02-mini-borde leading-loose",
+      rectangle: "bg-tres-mini-bg/10 border-tres-mini-borde leading-loose",
       pointer: "text-tres-02-cursor h-3 w-3",
     },
     visual: <InstrumentVisual />,
-    color: "bg-tres-02-mini-bg",
-    textColor: "text-tres-02-ttl",
-    borderColor: "border-tres-02-marcos",
-    numColor: "text-tres-02-num",
-    miniBg: "bg-tres-02-mini-bg",
-    miniBorder: "border-tres-02-mini-borde",
-    miniTxt: "text-tres-02-mini-txt",
-    descColor: "text-tres-02-desc",
+    color: "bg-tres-mini-bg",
+    textColor: "text-tres-ttl",
+    borderColor: "border-tres-caracteristicas-border",
+    numColor: "text-tres-num",
+    miniBg: "bg-tres-mini-bg",
+    miniBorder: "border-tres-mini-borde",
+    miniTxt: "text-tres-mini-txt",
+    descColor: "text-tres-desc",
   },
   {
     id: "ar",
@@ -58,18 +58,18 @@ const features = [
       "Proyecta modelos 3D en tu entorno usando la cámara de tu dispositivo. Coloca una molécula en tu escritorio o un instrumento en tu laboratorio real en menos de 2 segundos.",
     highlight: "el laboratorio a ti",
     highlightColors: {
-      rectangle: "bg-tres-03-mini-bg/10 border-tres-03-mini-borde leading-loose",
+      rectangle: "bg-tres-mini-bg/10 border-tres-mini-borde leading-loose",
       pointer: "text-tres-03-cursor h-3 w-3",
     },
     visual: <ARVisual />,
-    color: "bg-tres-03-mini-bg",
-    textColor: "text-tres-03-ttl",
-    borderColor: "border-tres-03-marcos",
-    numColor: "text-tres-03-num",
-    miniBg: "bg-tres-03-mini-bg",
-    miniBorder: "border-tres-03-mini-borde",
-    miniTxt: "text-tres-03-mini-txt",
-    descColor: "text-tres-03-desc",
+    color: "bg-tres-mini-bg",
+    textColor: "text-tres-ttl",
+    borderColor: "border-tres-caracteristicas-border",
+    numColor: "text-tres-num",
+    miniBg: "bg-tres-mini-bg",
+    miniBorder: "border-tres-mini-borde",
+    miniTxt: "text-tres-mini-txt",
+    descColor: "text-tres-desc",
   },
 ];
 
@@ -92,8 +92,8 @@ export default function SeccionesDemo() {
             <h2 className="text-balance text-4xl font-bold leading-[1.1] tracking-tight text-tres-ttl md:text-5xl">
               Todo lo que necesitas, <br className="hidden md:block" />
               <PointerHighlight
-                rectangleClassName="bg-tres-01-mini-bg/10 border-tres-01-mini-borde leading-loose"
-                pointerClassName="text-tres-01-cursor h-3 w-3"
+                rectangleClassName={current.highlightColors.rectangle}
+                pointerClassName={current.highlightColors.pointer}
                 containerClassName="inline-block"
               >
                 <span className="relative z-10">nada que sobra.</span>

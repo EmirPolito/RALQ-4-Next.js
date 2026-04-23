@@ -9,6 +9,7 @@ import PinCardsSection from "@/components/3d-pin-demo";
 import TresPasosLaboratorio from "@/components/tres-secciones";
 import { Feature } from "@/components/carrusel-2";
 import ImgCursorDemo from "@/components/img-cursor";
+import ImgCursorDemo2 from "@/components/img-cursor-2";
 import Preguntas1 from "@/components/preguntas-frecuentes";
 import Footer from "@/components/footer";
 
@@ -35,6 +36,8 @@ export default function HeroSection() {
 
         {/* Comentario*/}
         <ImgCursorDemo />
+
+        <ImgCursorDemo2 />
 
         {/*Preguntas frecuentes 2*/}
         <Preguntas1 />
