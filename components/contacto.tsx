@@ -6,13 +6,15 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function ContactForm() {
+  const t = useTranslations("contacto");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [loadingText, setLoadingText] = useState("Enviando");
+  const [loadingText, setLoadingText] = useState(t("sending"));
 
   const { resolvedTheme } = useTheme();
 
@@ -23,7 +25,7 @@ export default function ContactForm() {
     let dotCount = 0;
     const interval = setInterval(() => {
       dotCount = (dotCount + 1) % 4;
-      setLoadingText("Enviando" + ".".repeat(dotCount));
+      setLoadingText(t("sending") + ".".repeat(dotCount));
     }, 400);
 
     try {
@@ -36,21 +38,21 @@ export default function ContactForm() {
       const data = await res.json();
 
       if (data.ok) {
-        alert("Mensaje enviado correctamente");
+        alert(t("successMsg"));
         setName("");
         setEmail("");
         setMessage("");
       } else {
-        alert("Hubo un error al enviar el mensaje.");
+        alert(t("errorMsg"));
       }
     } catch (error) {
       console.log(error);
-      alert("No se pudo conectar con el servidor.");
+      alert(t("connectionError"));
     }
 
     setIsLoading(false);
     clearInterval(interval);
-    setLoadingText("Enviando");
+    setLoadingText(t("sending"));
   };
 
   const fadeInUp = {
@@ -62,7 +64,6 @@ export default function ContactForm() {
     }),
   };
 
-  // 🔥 CLASES CORREGIDAS
   const inputClasses = `
   rounded-[8px]
   border border-contact-card-border
@@ -92,12 +93,11 @@ export default function ContactForm() {
     >
       <motion.div className="text-center mb-30" variants={fadeInUp} custom={0}>
         <h1 className="text-contact-ttl text-4xl md:text-6xl font-semibold mb-2 text-balance">
-          Contáctanos
+          {t("title")}
         </h1>
 
         <p className="text-contact-desc text-base text-balance max-w-1xl mx-auto">
-          Si necesitas soporte, deseas colaborar o tienes preguntas sobre la
-          plataforma, estámos disponible para ayudarte.
+          {t("description")}
         </p>
       </motion.div>
 
@@ -116,11 +116,11 @@ export default function ContactForm() {
           custom={0.1}
         >
           <h1 className="text-contact-ttl text-2xl font-semibold mb-0">
-            Envíanos un mensaje.
+            {t("formTitle")}
           </h1>
 
           <p className="text-contact-desc mb-7">
-            Rellena el formulario y te responderemos lo antes posible.
+            {t("formSubtitle")}
           </p>
 
           <form onSubmit={handleSubmit} className=" space-y-6">
@@ -129,13 +129,13 @@ export default function ContactForm() {
                 htmlFor="name"
                 className="text-contact-input-text text-sm font-semibold "
               >
-                Nombre completo
+                {t("nameLabel")}
               </Label>
               <Input
                 id="name"
                 type="text"
                 value={name}
-                placeholder="Introduce tu nombre"
+                placeholder={t("namePlaceholder")}
                 onChange={(e) => setName(e.target.value)}
                 required
                 className={inputClasses}
@@ -147,13 +147,13 @@ export default function ContactForm() {
                 htmlFor="email"
                 className="text-contact-input-text text-sm font-semibold"
               >
-                Email
+                {t("emailLabel")}
               </Label>
               <Input
                 id="email"
                 type="email"
                 value={email}
-                placeholder="Usuario@ejemplo.com"
+                placeholder={t("emailPlaceholder")}
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 className={inputClasses}
@@ -165,12 +165,12 @@ export default function ContactForm() {
                 htmlFor="message"
                 className="text-contact-input-text text-sm font-semibold"
               >
-                Mensaje
+                {t("messageLabel")}
               </Label>
               <textarea
                 id="message"
                 value={message}
-                placeholder="Introduce tu mensaje"
+                placeholder={t("messagePlaceholder")}
                 onChange={(e) => setMessage(e.target.value)}
                 required
                 className={inputClasses}
@@ -196,7 +196,7 @@ export default function ContactForm() {
                   transition-none
                   flex items-center justify-center"
               >
-                {isLoading ? loadingText : "Enviar mensaje"}
+                {isLoading ? loadingText : t("send")}
               </Button>
             </motion.div>
           </form>
@@ -208,7 +208,7 @@ export default function ContactForm() {
           custom={0.6}
         >
           <h3 className="text-contact-team-ttl text-2xl font-semibold mb-9">
-            Miembros del equipo
+            {t("teamTitle")}
           </h3>
 
           <ul className="space-y-8 text-gray-300">

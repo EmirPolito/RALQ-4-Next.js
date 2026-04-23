@@ -4,6 +4,8 @@ import { Analytics } from "@vercel/analytics/next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ClerkProvider } from "@clerk/nextjs";
 import { ConditionalHeader } from "@/components/conditional-header";
+import { LanguageProvider } from "@/context/language-context";
+import { IntlProvider } from "@/components/intl-provider";
 import "./globals.css";
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -30,8 +32,12 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <ConditionalHeader />
-            {children}
+            <LanguageProvider>
+              <IntlProvider>
+                <ConditionalHeader />
+                {children}
+              </IntlProvider>
+            </LanguageProvider>
           </ThemeProvider>
           <Analytics />
         </ClerkProvider>

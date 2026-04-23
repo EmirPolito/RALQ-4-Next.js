@@ -8,6 +8,7 @@ import {
 } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
 import { useReducedMotion } from "@/hooks/use-reduced-motion";
+import { useTranslations } from "next-intl";
 
 interface TimelineEntry {
   title: string;
@@ -15,6 +16,7 @@ interface TimelineEntry {
 }
 
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
+  const t = useTranslations("nosotros");
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
@@ -72,7 +74,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           viewport={{ once: true }}
           className="text-nos-ttl text-4xl md:text-6xl font-semibold mb-3 text-balance"
         >
-          Sobre Nosotros
+          {t("title")}
         </motion.h1>
 
         <motion.p
@@ -86,8 +88,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           viewport={{ once: true }}
           className="text-nos-desc text-base md:text-lg text-balance max-w-1xl mx-auto font-normal"
         >
-          Desde 2023, hemos estado desarrollando RALQ, con el objetivo de crear
-          experiencias educativas interactivas para todos.
+          {t("description")}
         </motion.p>
       </div>
 

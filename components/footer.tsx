@@ -1,16 +1,18 @@
 "use client";
+
 import Link from "next/link";
 import { Logo } from "@/components/logo";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("footer");
+
   return (
     <footer className="py-17 px-5 md:px-10 z-50 bg-[var(--footer-bg)] border-t border-border">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="mb-12 md:mb-13">
             <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
-              {/* <div className="h-6 w-6 bg-neutral-100 border-neutral-300 border dark:bg-white rounded-md flex items-center justify-center p-1">
-              </div> */}
               <span className="bg font-bold lg:inline-block">
                 {/* Logo claro */}
                 <img
@@ -29,47 +31,23 @@ export default function Footer() {
             </Link>
 
             <h1 className="text-footer-txt mt-1 md:mt-1.5 px-1">
-              Realidad Aumentada para Laboratorios de Quimica.
-              {/* Desarrollado por{" "}
-              <span className="text-footer-link gap-2">
-                <Link
-                  className="hover:underline"
-                  href="https://x.com/emirpolito"
-                >
-                  @emirpolito
-                </Link>
-                <span>{"  "}</span>
-                <Link
-                  href="https://linkedin.com/in/itzamanjain"
-                  className="hover:underline"
-                >
-                  @irvingstbn
-                </Link>
-                <span>{" & "}</span>
-
-                <Link
-                  href="https://linkedin.com/in/itzamanjain"
-                  className="hover:underline"
-                >
-                  @cristiandnl
-                </Link>
-              </span> */}
+              {t("tagline")}
             </h1>
 
             <p className="hidden md:block text-footer-derechos mt-1 px-1">
-              © {new Date().getFullYear()} RALQ. Todos los derechos reservados.
+              © {new Date().getFullYear()} {t("copyright")}
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-footer-ttl font-semibold mb-4">Paginas</h3>
+              <h3 className="text-footer-ttl font-semibold mb-4">{t("sections.pages")}</h3>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="/nosotros"
                     className="text-footer-pag hover:text-footer-pag-hov"
                   >
-                    Nosotros
+                    {t("links.nosotros")}
                   </Link>
                 </li>
                 <li>
@@ -77,7 +55,7 @@ export default function Footer() {
                     href="/contacto"
                     className="text-footer-pag hover:text-footer-pag-hov"
                   >
-                    Contacto
+                    {t("links.contacto")}
                   </Link>
                 </li>
                 <li>
@@ -85,21 +63,21 @@ export default function Footer() {
                     href="/ayuda"
                     className="text-footer-pag hover:text-footer-pag-hov"
                   >
-                    Ayuda
+                    {t("links.ayuda")}
                   </Link>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-footer-ttl font-semibold mb-4">Redes</h3>
+              <h3 className="text-footer-ttl font-semibold mb-4">{t("sections.networks")}</h3>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="https://www.facebook.com/profile.php?id=61563746413453"
                     className="text-footer-pag hover:text-footer-pag-hov"
                   >
-                    Facebook
+                    {t("links.facebook")}
                   </Link>
                 </li>
                 <li>
@@ -107,7 +85,7 @@ export default function Footer() {
                     href="https://www.instagram.com/ralq.utsv?igsh=Z256dmRoOXY3ZDg2"
                     className="text-footer-pag hover:text-footer-pag-hov"
                   >
-                    Instagram
+                    {t("links.instagram")}
                   </Link>
                 </li>
                 <li>
@@ -115,20 +93,20 @@ export default function Footer() {
                     href="https://x.com/arihantcodes"
                     className="text-footer-pag hover:text-footer-pag-hov"
                   >
-                    Linkedln
+                    {t("links.linkedin")}
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-footer-ttl font-semibold mb-4">Legales</h3>
+              <h3 className="text-footer-ttl font-semibold mb-4">{t("sections.legal")}</h3>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="/politica-privacidad"
                     className="text-footer-pag hover:text-footer-pag-hov"
                   >
-                    Politica de privacidad
+                    {t("links.privacidad")}
                   </Link>
                 </li>
                 <li>
@@ -136,7 +114,7 @@ export default function Footer() {
                     href="/terminos-condiciones"
                     className="text-footer-pag hover:text-footer-pag-hov"
                   >
-                    Terminos y condiciones
+                    {t("links.terminos")}
                   </Link>
                 </li>
               </ul>
@@ -155,7 +133,7 @@ export default function Footer() {
             RALQ
           </h1>
           <p className="md:hidden text-footer-derechos mt-6 text-center px-1">
-            © {new Date().getFullYear()} RALQ. Todos los derechos reservados.
+            © {new Date().getFullYear()} {t("copyright")}
           </p>
         </div>
       </div>

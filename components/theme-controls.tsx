@@ -193,7 +193,7 @@ export function ThemeControls({
       <div
         className={cn(
           "flex items-center gap-5",
-          isMobile ? "w-full justify-center gap-14" : "",
+          isMobile ? "w-full justify-center gap-18" : "",
           className,
         )}
       >
@@ -301,7 +301,7 @@ export function ThemeControls({
                 <Sun className="mr-2 h-5 w-5" />
                 <span>Claro</span>
                 {resolvedTheme === "light" && !colorblind && (
-                  <span className="ml-auto text-primary">*</span>
+                  <span className="ml-auto text-primary text-xs">✓</span>
                 )}
               </DropdownMenuItem>
 
@@ -317,7 +317,7 @@ export function ThemeControls({
                 <Moon className="mr-2 h-5 w-5" />
                 <span>Oscuro</span>
                 {resolvedTheme === "dark" && (
-                  <span className="ml-auto text-primary">*</span>
+                  <span className="ml-auto text-primary text-xs">✓</span>
                 )}
               </DropdownMenuItem>
 
@@ -338,7 +338,7 @@ export function ThemeControls({
               >
                 <Eye className="mr-2 h-5 w-5" />
                 <span>Daltonico</span>
-                {colorblind && <span className="ml-auto text-primary">*</span>}
+                {colorblind && <span className="ml-auto text-primary text-xs">✓</span>}
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -442,7 +442,7 @@ export function ThemeControls({
                         {option.name}
                       </span>
                       {primaryColor === option.value && (
-                        <span className="ml-auto text-primary text-xs">*</span>
+                        <span className="ml-auto text-primary text-xs">✓</span>
                       )}
                     </button>
                   ))}

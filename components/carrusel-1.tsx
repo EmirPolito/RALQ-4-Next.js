@@ -4,18 +4,22 @@ import React from "react";
 import Image from "next/image";
 import { InfiniteSlider } from "@/components/motion-primitives/infinite-slider";
 import { ProgressiveBlur } from "@/components/motion-primitives/progressive-blur";
-
-const circleItems = [
-  { image: "/img/carrusel/carrusel1.png", title: "Microscopio" },
-  { image: "/img/carrusel/carrusel2.png", title: "Tubos de ensayo" },
-  { image: "/img/carrusel/carrusel4.png", title: "Matraz" },
-  { image: "/img/carrusel/carrusel5.png", title: "Recipientes" },
-  { image: "/img/carrusel/carrusel6.png", title: "Matraz redondo" },
-  { image: "/img/carrusel/carrusel7.png", title: "Moleculas" },
-];
+import { useTranslations } from "next-intl";
 
 export function Carousel() {
+  const t = useTranslations("carrusel1");
   const [gap, setGap] = React.useState(56);
+
+  const items = t.raw("items") as { title: string }[];
+
+  const images = [
+    "/img/carrusel/carrusel1.png",
+    "/img/carrusel/carrusel2.png",
+    "/img/carrusel/carrusel4.png",
+    "/img/carrusel/carrusel5.png",
+    "/img/carrusel/carrusel6.png",
+    "/img/carrusel/carrusel7.png",
+  ];
 
   React.useEffect(() => {
     const handleResize = () => {
@@ -32,12 +36,11 @@ export function Carousel() {
         <div className="flex flex-col items-center md:flex-row">
           <div className="relative py-13 w-full">
             <InfiniteSlider speedOnHover={20} speed={40} gap={gap}>
-              {circleItems.map((item, index) => (
+              {items.map((item, index) => (
                 <div key={index} className="flex flex-col items-center gap-5">
-                  {/* border-1 */}
                   <div className="bg-carrusel2-bg h-36 w-36 md:h-55 md:w-55 rounded-full flex items-center justify-center overflow-hidden p-1.5">
                     <Image
-                      src={item.image}
+                      src={images[index] ?? images[0]}
                       alt={item.title}
                       width={112}
                       height={112}

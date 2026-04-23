@@ -6,8 +6,10 @@ import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import { ScrollAnimation } from "@/components/motion-primitives/scroll-animation";
 import { useReducedMotion } from "@/hooks/use-reduced-motion";
+import { useTranslations } from "next-intl";
 
 export function Hero() {
+  const t = useTranslations("hero");
   const reducedMotion = useReducedMotion();
   const videoRef = React.useRef<HTMLVideoElement>(null);
 
@@ -29,15 +31,13 @@ export function Hero() {
             <ScrollAnimation direction="up" delay={0.2}>
               <div className="flex flex-col items-start text-left lg:items-start lg:text-left">
                 <h1 className="text-hero-ttl text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold leading-tight tracking-tight">
-                  Instrumentos al
+                  {t("titleLine1")}
                   <br />
-                  alcance de tus manos
+                  {t("titleLine2")}
                 </h1>
 
                 <p className="text-hero-desc w-full sm:max-w-md md:max-w-2xl text-sm sm:text-lg md:text-xl mt-2 leading-relaxed">
-                  Nuestra plataforma permite a los estudiantes aprender sobre
-                  instrumentos de laboratorio de química mediante modelos 3D en
-                  Realidad Aumentada.
+                  {t("description")}
                 </p>
 
                 <div className="mt-8 flex items-center justify-start gap-4">
@@ -47,7 +47,7 @@ export function Hero() {
                     className="h-10 lg:h-12 rounded-full px-6 lg:px-8 text-sm lg:text-base font-medium shadow-lg transition-all hover:scale-100 active:scale-95 bg-hero-bg-demo text-hero-txt-demo hover:bg-hero-hvr-demo"
                   >
                     <Link href="/demo">
-                      <span className="text-nowrap">Ver demo</span>
+                      <span className="text-nowrap">{t("cta")}</span>
                       <ChevronRight className="ml-2 size-4 lg:size-5" />
                     </Link>
                   </Button>

@@ -2,22 +2,39 @@
 
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
+import { useTranslations } from "next-intl";
 
 export function SobreNosotros() {
+  const t = useTranslations("nosotros");
+
   const data = [
     {
-      title: "2023",
+      title: t("y2023.title"),
       content: (
         <div>
-          <p className="text-nos-txt mb-2 text-base">
-            Establecimos los cimientos del proyecto, definiendo objetivos y
-            metodologías.
-          </p>
-          <p className="text-nos-txt mb-8 text-base">
-            Nos centramos en crear una experiencia educativa innovadora y
-            motivadora.
-          </p>
-
+          <p className="text-nos-txt mb-2 text-base">{t("y2023.p1")}</p>
+          <p className="text-nos-txt mb-8 text-base">{t("y2023.p2")}</p>
+          <div className="grid grid-cols-2 gap-4">
+            <img
+              src="https://assets.aceternity.com/templates/startup-1.webp"
+              alt="startup template"
+              className="h-50 w-full rounded-lg object-cover border-[var(--border-theme)]"
+            />
+            <img
+              src="https://assets.aceternity.com/templates/startup-4.webp"
+              alt="startup template"
+              className="h-50 w-full rounded-lg object-cover border-[var(--border-theme)]"
+            />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: t("y2024.title"),
+      content: (
+        <div>
+          <p className="text-nos-txt mb-2 text-base">{t("y2024.p1")}</p>
+          <p className="text-nos-txt mb-8 text-base">{t("y2024.p2")}</p>
           <div className="grid grid-cols-2 gap-4">
             <img
               src="https://assets.aceternity.com/pro/hero-sections.png"
@@ -34,17 +51,11 @@ export function SobreNosotros() {
       ),
     },
     {
-      title: "2024",
+      title: t("y2025.title"),
       content: (
         <div>
-          <p className="text-nos-txt mb-2 text-base">
-            Desarrollamos nuevas secciones y plantillas interactivas para la
-            plataforma.
-          </p>
-          <p className="text-nos-txt mb-8 text-base">
-            Mejoramos la experiencia visual y la adaptabilidad a diferentes
-            dispositivos.
-          </p>
+          <p className="text-nos-txt mb-2 text-base">{t("y2025.p1")}</p>
+          <p className="text-nos-txt mb-8 text-base">{t("y2025.p2")}</p>
           <div className="grid grid-cols-2 gap-4">
             <img
               src="https://assets.aceternity.com/pro/hero-sections.png"
@@ -61,17 +72,11 @@ export function SobreNosotros() {
       ),
     },
     {
-      title: "2025",
+      title: t("mejoras.title"),
       content: (
         <div>
-          <p className="text-nos-txt mb-2 text-base">
-            Lanzamos la experiencia web de RALQ con contenido 3D interactivo
-            para estudiantes.
-          </p>
-          <p className="text-nos-txt mb-8 text-base">
-            Nos enfocamos en que fuera accesible, atractiva y fácil de usar en
-            cualquier plataforma.
-          </p>
+          <p className="text-nos-txt mb-2 text-base">{t("mejoras.p1")}</p>
+          <p className="text-nos-txt mb-8 text-base">{t("mejoras.p2")}</p>
           <div className="grid grid-cols-2 gap-4">
             <img
               src="https://assets.aceternity.com/pro/hero-sections.png"
@@ -87,39 +92,10 @@ export function SobreNosotros() {
         </div>
       ),
     },
-
-    {
-      title: "Mejoras continuas",
-      content: (
-        <div>
-          <p className="text-nos-txt mb-2 text-base">
-            Seguiremos Implementando nuevas funciones y modelos 3D para mejorar
-            la interacción.
-          </p>
-          <p className="text-nos-txt mb-8 text-base">
-            Actualizaremos componentes y secciones para mantener la plataforma
-            más accesible.
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              className="h-50 w-full rounded-lg object-cover border-[var(--border-theme)]"
-            />
-            <img
-              src="https://assets.aceternity.com/features-section.png"
-              alt="feature template"
-              className="h-50 w-full rounded-lg object-cover border-[var(--border-theme)]"
-            />
-          </div>
-        </div>
-      ),
-    },
-
   ];
 
   return (
-    <div className="relative w-full overflow-clip">
+    <div className="w-full">
       <Timeline data={data} />
     </div>
   );

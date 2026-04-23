@@ -4,89 +4,39 @@ import { useState } from "react";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-
-interface SupportItem {
-  id: string;
-  title: string;
-  description: string;
-  href: string;
-}
-
-const supportItems: SupportItem[] = [
-  {
-    id: "faq",
-    title: "Preguntas Frecuentes",
-    description:
-      "Respuestas rápidas a problemas comunes: modelos que no cargan, errores al escanear QR, problemas de compatibilidad y más.",
-    href: "/preguntas-frecuentes",
-  },
-  {
-    id: "reportes",
-    title: "Reporte de Problemas",
-    description:
-      "Envía reportes de errores, fallos visuales o problemas técnicos para que el equipo de desarrollo los revise y corrija.",
-    href: "/contacto",
-  },
-  {
-    id: "correo",
-    title: "Soporte por Correo",
-    description:
-      "Contacta directamente al equipo de RALQ para resolver dudas, reportar problemas o recibir asistencia personalizada.",
-    href: "/contacto",
-  },
-  {
-    id: "manual-usuario",
-    title: "Manual de Usuario",
-    description:
-      "Aprende paso a paso cómo utilizar el sistema RALQ: registro, escaneo de códigos QR, interacción con modelos 3D y navegación.",
-    href: "/manual-usuario",
-  },
-
-  {
-    id: "actualizaciones",
-    title: "Historial de Actualizaciones",
-    description:
-      "Consulta los cambios más recientes, mejoras, correcciones de bugs y nuevas funciones añadidas a RALQ.",
-    href: "/historial",
-  },
-  {
-    id: "docs-tecnicas",
-    title: "Documentación Técnica",
-    description:
-      "Información para desarrolladores: APIs, arquitectura del sistema, estructura del visor 3D y detalles de integración.",
-    href: "/documentacion",
-  },
-  {
-    id: "tutoriales",
-    title: "Videos relacionados",
-    description:
-      "Visualiza videos explicativos sobre cómo operar cada función del proyecto RALQ, desde el escaneo hasta los laboratorios virtuales.",
-    href: "recorrido-laboratorios-de-quimica-utsv",
-  },
-
-  {
-    id: "comunidad",
-    title: "Foro de la Comunidad",
-    description:
-      "Comparte ideas, resuelve dudas con otros estudiantes y colabora en discusiones sobre el uso de la plataforma.",
-    href: "/comunidad",
-  },
-
-  {
-    id: "estado-sistema",
-    title: "Estado del Sistema",
-    description:
-      "Revisa si los servicios del sistema están funcionando: servidor, APIs, visor 3D, QR y base de datos.",
-    href: "/estado",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function ContenidoBlog() {
+  const t = useTranslations("ayuda");
   const [hoveredId, setHoveredId] = useState<string | null>(null);
 
-  const rows = [];
-  for (let i = 0; i < supportItems.length; i += 3) {
-    rows.push(supportItems.slice(i, i + 3));
+  const itemIds = [
+    "faq",
+    "reportes",
+    "correo",
+    "manual",
+    "actualizaciones",
+    "docs",
+    "tutoriales",
+    "comunidad",
+    "estado",
+  ] as const;
+
+  const hrefs: Record<string, string> = {
+    faq: "/preguntas-frecuentes",
+    reportes: "/contacto",
+    correo: "/contacto",
+    manual: "/manual-usuario",
+    actualizaciones: "/historial",
+    docs: "/documentacion",
+    tutoriales: "recorrido-laboratorios-de-quimica-utsv",
+    comunidad: "/comunidad",
+    estado: "/estado",
+  };
+
+  const rows: (typeof itemIds[number])[][] = [];
+  for (let i = 0; i < itemIds.length; i += 3) {
+    rows.push(itemIds.slice(i, i + 3) as unknown as (typeof itemIds[number])[]);
   }
 
   return (
@@ -100,12 +50,11 @@ export default function ContenidoBlog() {
           className="text-center mb-20 md:mb-30"
         >
           <h1 className="text-ayuda-ttl text-4xl md:text-6xl font-semibold mb-3 text-balance">
-            Centro de Ayuda
+            {t("title")}
           </h1>
 
           <p className="text-ayuda-desc text-base text-balance max-w-1xl mx-auto">
-            Encuentra asistencia rápida sobre el funcionamiento del sistema
-            RALQ, guías, tutoriales, reportes y soporte personalizado.
+            {t("description")}
           </p>
         </motion.div>
 
@@ -116,45 +65,45 @@ export default function ContenidoBlog() {
               key={rowIndex}
               className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-2"
             >
-              {row.map((item, itemIndex) => (
+              {row.map((id, itemIndex) => (
                 <motion.div
-                  key={item.id}
+                  key={id}
                   initial={{ opacity: 0, y: 40 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
                     duration: 0.6,
                     ease: "easeOut",
-                    delay: (rowIndex * 3 + itemIndex) * 0.08, // animación escalonada SOLO al cargar
+                    delay: (rowIndex * 3 + itemIndex) * 0.08,
                   }}
                   className={`py-2 px-8 transition-all duration-300 relative group border-border
                     ${itemIndex !== row.length - 1 ? "md:border-r" : ""}
                   `}
-                  onMouseEnter={() => setHoveredId(item.id)}
+                  onMouseEnter={() => setHoveredId(id)}
                   onMouseLeave={() => setHoveredId(null)}
                 >
                   <div className="mb-2 md:mb-8">
                     <h2 className="text-ayuda-preg-ttl text-2xl font-semibold mb-3">
-                      {item.title}
+                      {t(`items.${id}.title`)}
                     </h2>
                     <p className="text-ayuda-preg-txt text-base leading-relaxed text-pretty md:text-left">
-                      {item.description}
+                      {t(`items.${id}.description`)}
                     </p>
                   </div>
 
                   <div
                     className={`transition-all duration-300 overflow-hidden 
                       ${
-                        hoveredId === item.id
+                        hoveredId === id
                           ? "opacity-100 visible"
                           : "opacity-100 visible lg:opacity-0 lg:invisible"
                       }
                     `}
                   >
                     <Link
-                      href={item.href}
+                      href={hrefs[id]}
                       className="hover:text-ayuda-link-hvr text-ayuda-link inline-flex items-center gap-2 font-medium hover:gap-3 transition-all duration-300 group/link"
                     >
-                      Ver más
+                      {t("verMas")}
                       <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1" />
                     </Link>
                   </div>

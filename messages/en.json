@@ -1,0 +1,291 @@
+{
+  "nav": {
+    "nosotros": "About Us",
+    "contacto": "Contact",
+    "ayuda": "Help",
+    "login": "Sign In",
+    "register": "Sign Up"
+  },
+  "hero": {
+    "titleLine1": "Instruments",
+    "titleLine2": "at your fingertips",
+    "description": "Our platform allows students to learn about chemistry laboratory instruments through 3D models in Augmented Reality.",
+    "cta": "View demo"
+  },
+  "tresPasos": {
+    "step1": {
+      "tag": "Catalog",
+      "title": "Choose your molecule",
+      "description": "Browse a curated library of over 150 molecular structures and instruments. Filter by type, complexity, or academic unit.",
+      "detail1": "150+ models available",
+      "detail2": "Verified data (PubChem)",
+      "detail3": "Classified by topic"
+    },
+    "step2": {
+      "tag": "Visualization",
+      "title": "Explore it in 3D",
+      "description": "Rotate, zoom, and break down each model. Observe bond angles, atomic distances, and physicochemical properties annotated directly on the model.",
+      "detail1": "Free 360° rotation",
+      "detail2": "Real-time properties",
+      "detail3": "Scientific annotations"
+    },
+    "step3": {
+      "tag": "Augmented Reality",
+      "title": "Project it in your space",
+      "description": "A single tap activates Augmented Reality. The model appears on any flat surface. Walk around it, change the angle, study from every point of view.",
+      "detail1": "No extra apps needed",
+      "detail2": "Works on iOS & Android",
+      "detail3": "Surface recognition"
+    }
+  },
+  "nosotros": {
+    "title": "About Us",
+    "description": "Since 2023, we have been developing RALQ, with the goal of creating interactive educational experiences for everyone.",
+    "y2023": {
+      "title": "2023",
+      "p1": "We laid the foundations of the project, defining objectives and methodologies.",
+      "p2": "We focused on creating an innovative and motivating educational experience."
+    },
+    "y2024": {
+      "title": "2024",
+      "p1": "We developed new sections and interactive templates for the platform.",
+      "p2": "We improved the visual experience and adaptability to different devices."
+    },
+    "y2025": {
+      "title": "2025",
+      "p1": "We launched the RALQ web experience with interactive 3D content for students.",
+      "p2": "We focused on making it accessible, attractive, and easy to use on any platform."
+    },
+    "mejoras": {
+      "title": "Continuous Improvements",
+      "p1": "We will continue implementing new features and 3D models to enhance interaction.",
+      "p2": "We will update components and sections to keep the platform more accessible."
+    }
+  },
+  "ayuda": {
+    "title": "Help Center",
+    "description": "Find quick assistance about how the RALQ system works, guides, tutorials, reports, and personalized support.",
+    "verMas": "Learn more",
+    "items": {
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "description": "Quick answers to common problems: models that won't load, QR scanning errors, compatibility issues, and more."
+      },
+      "reportes": {
+        "title": "Problem Reports",
+        "description": "Submit bug reports, visual glitches, or technical problems for the development team to review and fix."
+      },
+      "correo": {
+        "title": "Email Support",
+        "description": "Contact the RALQ team directly to resolve questions, report problems, or receive personalized assistance."
+      },
+      "manual": {
+        "title": "User Manual",
+        "description": "Learn step by step how to use the RALQ system: registration, QR code scanning, interaction with 3D models, and navigation."
+      },
+      "actualizaciones": {
+        "title": "Update History",
+        "description": "Check the latest changes, improvements, bug fixes, and new features added to RALQ."
+      },
+      "docs": {
+        "title": "Technical Documentation",
+        "description": "Information for developers: APIs, system architecture, 3D viewer structure, and integration details."
+      },
+      "tutoriales": {
+        "title": "Related Videos",
+        "description": "Watch explanatory videos on how to operate each RALQ function, from scanning to virtual laboratories."
+      },
+      "comunidad": {
+        "title": "Community Forum",
+        "description": "Share ideas, resolve questions with other students, and collaborate in discussions about platform usage."
+      },
+      "estado": {
+        "title": "System Status",
+        "description": "Check if system services are working: server, APIs, 3D viewer, QR scanner, and database."
+      }
+    }
+  },
+  "contacto": {
+    "title": "Contact Us",
+    "description": "If you need support, want to collaborate, or have questions about the platform, we are here to help you.",
+    "formTitle": "Send us a message.",
+    "formSubtitle": "Fill out the form and we'll get back to you as soon as possible.",
+    "nameLabel": "Full name",
+    "namePlaceholder": "Enter your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "user@example.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Enter your message",
+    "send": "Send message",
+    "sending": "Sending",
+    "teamTitle": "Team members",
+    "successMsg": "Message sent successfully",
+    "errorMsg": "There was an error sending the message.",
+    "connectionError": "Could not connect to the server."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Need more help?",
+    "contactLink": "Contact us",
+    "items": [
+      {
+        "question": "What is RALQ and how does it work?",
+        "answer": "RALQ is an educational platform that uses augmented reality and interactive 3D models to transform chemistry learning through visual and interactive experiences."
+      },
+      {
+        "question": "Do I need a special device to use RALQ?",
+        "answer": "No. You only need a smartphone, tablet, or computer with internet access and a camera to view augmented reality experiences."
+      },
+      {
+        "question": "Is the platform free to use?",
+        "answer": "RALQ offers free access to various educational features. Some advanced tools or additional content may require expanded access in the future."
+      },
+      {
+        "question": "Can I use RALQ without an internet connection?",
+        "answer": "No. An internet connection is currently required to access the 3D models and platform features."
+      },
+      {
+        "question": "Is RALQ suitable for all educational levels?",
+        "answer": "Yes. The platform is designed for students from elementary through university level, as well as teachers looking for interactive tools to teach chemistry."
+      },
+      {
+        "question": "What type of content can I explore on RALQ?",
+        "answer": "You can explore laboratory instruments, molecular models, chemical structures, and augmented reality educational experiences designed to facilitate understanding of scientific concepts."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Augmented Reality for Chemistry Laboratories.",
+    "copyright": "RALQ. All rights reserved.",
+    "sections": {
+      "pages": "Pages",
+      "networks": "Networks",
+      "legal": "Legal"
+    },
+    "links": {
+      "nosotros": "About Us",
+      "contacto": "Contact",
+      "ayuda": "Help",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "privacidad": "Privacy Policy",
+      "terminos": "Terms & Conditions"
+    }
+  },
+  "privacidad": {
+    "title": "Privacy Policy",
+    "lastUpdate": "Last updated:",
+    "intro": "At RALQ (Augmented Reality for Chemistry Laboratories), your privacy is fundamental. This policy describes how we collect, use, and protect personal information when you use our interactive chemistry educational platform.",
+    "s1Title": "1. Information We Collect",
+    "s1Intro": "We collect two types of information:",
+    "s1l1Label": "Account data:",
+    "s1l1": "Name and email address provided when registering through Clerk Auth.",
+    "s1l2Label": "Usage data:",
+    "s1l2": "Pages visited, session time, and interaction patterns with 3D models and augmented reality features, collected anonymously via Vercel Analytics.",
+    "s1l3Label": "Device data:",
+    "s1l3": "Browser type, operating system, and screen resolution, needed to optimize the augmented reality experience.",
+    "s2Title": "2. Use of Your Information",
+    "s2Intro": "We use your information to:",
+    "s2l1": "Manage your account and session on the RALQ platform securely.",
+    "s2l2": "Personalize your experience with molecular models and laboratory instruments.",
+    "s2l3": "Improve the performance of 3D modules and the augmented reality experience.",
+    "s2l4": "Respond to inquiries submitted through the contact form.",
+    "s3Title": "3. Sharing Information",
+    "s3Intro": "RALQ does not sell or lease your personal information. We may share it only with:",
+    "s3l1Label": "Clerk:",
+    "s3l1": "For authentication and user session management.",
+    "s3l2Label": "Vercel:",
+    "s3l2": "For platform hosting and anonymous performance analytics.",
+    "s3l3": "Competent authorities, if required by applicable Mexican or international law.",
+    "s4Title": "4. Cookies and Local Storage",
+    "s4": "We use essential cookies to keep your session active and remember your preferences (dark mode, colorblind mode, motion reduction). We do not use advertising or cross-site tracking cookies.",
+    "s5Title": "5. Security and Retention",
+    "s5": "We implement industry-standard security measures, including HTTPS and authentication managed by Clerk. We retain your data while you maintain an active account on RALQ. You can request deletion of your account and data at any time by contacting us at",
+    "s5Link": "our contact page",
+    "s6Title": "6. Contact",
+    "s6": "If you have questions about this policy, you can contact us through our",
+    "s6Link": "contact page"
+  },
+  "terminos": {
+    "title": "Terms and Conditions",
+    "lastUpdate": "Last updated:",
+    "intro": "Welcome to RALQ (Augmented Reality for Chemistry Laboratories). By accessing or using our educational platform, you accept these Terms and Conditions. If you do not agree, please do not use the service.",
+    "s1Title": "1. Service Description",
+    "s1": "RALQ is an interactive educational platform offering 3D models of chemistry instruments and molecules, augmented reality visualization, and learning support resources. The service is primarily intended for middle school, high school, and university students and teachers.",
+    "s2Title": "2. Acceptable Use",
+    "s2Intro": "By using RALQ you agree to:",
+    "s2l1": "Use the platform solely for educational and personal purposes.",
+    "s2l2": "Not reproduce, distribute, or modify RALQ content without express authorization.",
+    "s2l3": "Not attempt to access other users' accounts or compromise platform security.",
+    "s2l4": "Not use the platform for illegal activities or activities contrary to these terms.",
+    "s3Title": "3. User Accounts",
+    "s3": "Access to certain RALQ features requires creating an account through our authentication system (Clerk). You are responsible for maintaining the confidentiality of your credentials and all activities conducted from your account. Notify us immediately if you suspect unauthorized access.",
+    "s4Title": "4. Intellectual Property",
+    "s4": "All RALQ content—including 3D models, interfaces, animations, texts, and source code—is the property of its respective authors and is protected by applicable intellectual property laws. Scientific data about molecules comes from PubChem and reference educational content from Khan Academy, under their respective licenses.",
+    "s5Title": "5. Limitation of Liability",
+    "s5": "RALQ is provided \"as is\" for educational purposes. We do not guarantee absolute scientific accuracy of all models, nor uninterrupted service availability. We are not responsible for damages resulting from use of the platform in real laboratory contexts without appropriate professional supervision.",
+    "s6Title": "6. Modifications",
+    "s6": "We reserve the right to modify these Terms and Conditions at any time. Updates will be published on this page with the corresponding revision date. Continued use of the platform after an update implies acceptance of the new terms.",
+    "s7Title": "7. Contact",
+    "s7": "If you have questions about these Terms and Conditions, you can contact us through our",
+    "s7Link": "contact page"
+  },
+  "carrusel1": {
+    "items": [
+      { "title": "Microscope" },
+      { "title": "Test Tubes" },
+      { "title": "Flask" },
+      { "title": "Containers" },
+      { "title": "Round Flask" },
+      { "title": "Molecules" }
+    ]
+  },
+  "pinCards": {
+    "sectionTitle": "Scientific Exploration Areas",
+    "sectionDesc": "The platform organizes content into environments that show the use of chemistry.",
+    "pin1": {
+      "cta": "Go to industrial processes",
+      "tag": "Industrial environment",
+      "title": "Chemical Plants",
+      "desc": "Understand how substances are transformed in industrial processes by observing equipment used in large-scale chemical production.",
+      "stat1": "Processes",
+      "stat2": "Visualization",
+      "stat3": "Models",
+      "footer": "Chemical production explained visually"
+    },
+    "pin2": {
+      "cta": "Go to scientific instrumentation",
+      "tag": "Analytical technology",
+      "title": "Instrumental Analysis",
+      "desc": "Discover how scientific instruments allow identifying compounds and analyzing the chemical properties of different substances.",
+      "stat1": "Instruments",
+      "stat2": "Compatible",
+      "stat3": "Models",
+      "footer": "Scientific tools explained step by step"
+    },
+    "pin3": {
+      "cta": "Go to laboratory fundamentals",
+      "tag": "Educational laboratory",
+      "title": "General Chemistry",
+      "desc": "Get familiar with the use of essential laboratory materials and understand their role in basic chemistry experimental practices.",
+      "stat1": "Materials",
+      "stat2": "Exploration",
+      "stat3": "Interaction",
+      "footer": "Visual introduction to laboratory work"
+    }
+  },
+  "feature": {
+    "badge": "Interactive educational platform",
+    "titleLine1": "Immerse yourself in",
+    "titleLine2": "Augmented Reality",
+    "description": "RALQ brings together instruments, materials and laboratory resources within a digital environment designed to facilitate the understanding of chemistry through visual exploration.",
+    "cta": "Explore the experience"
+  },
+  "imgCursor": {
+    "titleLine1": "Built on",
+    "titleLine2": "the best technologies",
+    "description": "Each technology was chosen with a clear purpose: to offer the best scientific and visual experience for the student, ensuring an interactive, intuitive and easy-to-use environment.",
+    "techRole": "Educational Resources"
+  }
+}

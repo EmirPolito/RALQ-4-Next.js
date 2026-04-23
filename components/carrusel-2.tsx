@@ -18,6 +18,7 @@ import { ChevronRight, ArrowLeft, ArrowRight } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { useReducedMotion } from "@/hooks/use-reduced-motion";
+import { useTranslations } from "next-intl";
 
 const carouselImages = [
   {
@@ -43,6 +44,7 @@ const carouselImages = [
 ];
 
 function Feature() {
+  const t = useTranslations("feature");
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
@@ -91,21 +93,19 @@ function Feature() {
           <div className="flex gap-2 flex-col items-center text-center lg:items-start lg:text-left">
             <div>
               <Badge className="bg-carrusel2-mini-bg text-carrusel2-mini-txt rounded-2xl px-2 py-1">
-                Plataforma educativa interactiva
+                {t("badge")}
               </Badge>
             </div>
 
             <div className="flex gap-3 flex-col items-center lg:items-start">
               <h2 className="text-carrusel2-ttl text-balance text-3xl font-semibold leading-[1.1] tracking-tight md:text-4xl lg:text-6xl">
-                Sumérgete en la
+                {t("titleLine1")}
                 <br />
-                Realidad Aumentada
+                {t("titleLine2")}
               </h2>
 
               <div className="text-carrusel2-desc lg:max-w-xl text-lg max-w-xl leading-relaxed tracking-tight text-justify mx-auto lg:mx-0 lg:text-left [text-align-last:center] lg:[text-align-last:left]">
-                RALQ reúne instrumentos, materiales y recursos de laboratorio
-                dentro de un entorno digital diseñado para facilitar la
-                comprensión de la química mediante exploración visual.S
+                {t("description")}
               </div>
             </div>
 
@@ -116,7 +116,7 @@ function Feature() {
               className="h-10 rounded-full px-4 text-sm bg-background hover:bg-background text-titulos mt-3 lg:-mx-2"
             >
               <Link href="/demo" className="flex items-center gap-1">
-                <span>Explorar la experiencia</span>
+                <span>{t("cta")}</span>
                 <ChevronRight className="h-4 w-4" />
               </Link>
             </Button>

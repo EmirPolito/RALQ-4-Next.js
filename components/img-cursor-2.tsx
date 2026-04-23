@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 import { LinkPreview } from "@/components/ui/link-preview";
 import { useReducedMotion } from "@/hooks/use-reduced-motion";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 
 const tech = [
   {
@@ -34,6 +35,7 @@ const tech = [
 ];
 
 export default function ImgCursorDemo2() {
+  const t = useTranslations("imgCursor");
   const reducedMotion = useReducedMotion();
 
   return (
@@ -60,9 +62,9 @@ export default function ImgCursorDemo2() {
           className="mb-12 text-center"
         >
           <h2 className="text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-imgcursor-ttl md:text-5xl lg:text-6xl">
-            Construido sobre
+            {t("titleLine1")}
             <br />
-            las mejores tecnologías
+            {t("titleLine2")}
           </h2>
         </motion.div>
 
@@ -87,9 +89,7 @@ export default function ImgCursorDemo2() {
               className="flex flex-col items-center lg:items-start"
             >
               <p className="mb-8 text-center text-[15px] leading-relaxed text-imgcursor-desc lg:text-left max-w-[510px]">
-                Cada tecnología fue elegida con un criterio claro: ofrecer la
-                mejor experiencia científica y visual para el estudiante,
-                asegurando un entorno interactivo, intuitivo y fácil de usar.
+                {t("description")}
               </p>
 
               {/* Tech grid - Row 1 (3 items) */}

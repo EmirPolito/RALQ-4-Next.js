@@ -4,20 +4,23 @@ import { Logo } from "@/components/logo";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ThemeControls } from "@/components/theme-controls";
+import { LanguageSelector } from "@/components/language-selector";
 import React from "react";
 import { useScroll, motion, AnimatePresence } from "motion/react";
 import { cn } from "@/lib/utils";
-
-const menuItems = [
-  { name: "Nosotros", href: "/nosotros" },
-  { name: "Contacto", href: "/contacto" },
-  { name: "Ayuda", href: "/ayuda" },
-];
+import { useTranslations } from "next-intl";
 
 export const HeroHeader = () => {
+  const t = useTranslations("nav");
   const [menuState, setMenuState] = React.useState(false);
   const [scrolled, setScrolled] = React.useState(false);
   const { scrollYProgress } = useScroll();
+
+  const menuItems = [
+    { name: t("nosotros"), href: "/nosotros" },
+    { name: t("contacto"), href: "/contacto" },
+    { name: t("ayuda"), href: "/ayuda" },
+  ];
 
   React.useEffect(() => {
     const unsubscribe = scrollYProgress.on("change", (latest) => {
@@ -63,11 +66,19 @@ export const HeroHeader = () => {
                 <Logo />
               </Link>
 
-              <button
-                onClick={() => setMenuState(!menuState)}
-                aria-label={menuState ? "Close Menu" : "Open Menu"}
-                className="relative z-[110] -m-2.5 -mr-4 block cursor-pointer p-2.5 lg:hidden"
-              >
+              {/* Mobile: hamburger + language when open */}
+              <div className="flex items-center gap-1 lg:hidden">
+                {/* Language selector: only visible when menu is open */}
+                {menuState && (
+                  <div className="relative z-[110] mr-2">
+                    <LanguageSelector isMobile />
+                  </div>
+                )}
+                <button
+                  onClick={() => setMenuState(!menuState)}
+                  aria-label={menuState ? "Close Menu" : "Open Menu"}
+                  className="relative z-[110] -m-2.5 -mr-4 block cursor-pointer p-2.5"
+                >
                 <div className="relative size-6">
                   <Menu
                     className={cn(
@@ -86,7 +97,8 @@ export const HeroHeader = () => {
                     )}
                   />
                 </div>
-              </button>
+                </button>
+              </div>
 
               <div className="hidden lg:block">
                 <ul className="flex gap-13 text-sm">
@@ -106,6 +118,7 @@ export const HeroHeader = () => {
 
             {/* Desktop layout buttons */}
             <div className="hidden lg:flex w-full flex-wrap items-center justify-end gap-6 lg:w-fit">
+              <LanguageSelector />
               <ThemeControls className="mr-8 lg:mr-12" />
 
               <Button
@@ -114,7 +127,7 @@ export const HeroHeader = () => {
                 className="cursor-pointer text-header-login-txt bg-transparent hover:bg-transparent focus:outline-none shadow-none px-0 py-0"
               >
                 <Link href="/login">
-                  <span>Iniciar sesion</span>
+                  <span>{t("login")}</span>
                 </Link>
               </Button>
 
@@ -124,7 +137,7 @@ export const HeroHeader = () => {
                 className="cursor-pointer rounded-full px-5 py-5 bg-header-regis-bg text-header-regis-txt hover:bg-header-regis-bg"
               >
                 <Link href="/registro">
-                  <span>Registrarse</span>
+                  <span>{t("register")}</span>
                 </Link>
               </Button>
             </div>
@@ -176,8 +189,8 @@ export const HeroHeader = () => {
                 transition={{ delay: 0.3 }}
                 className="mt-auto pb-11.5 space-y-9"
               >
-                {/* Theme Controls - Centered Cycle Mode */}
-                <div className="flex items-center justify-center pt-29">
+                {/* Theme Controls only — Language moved to top bar */}
+                <div className="flex items-center justify-center gap-8 pt-29">
                   <ThemeControls isMobile={true} />
                 </div>
 
@@ -189,14 +202,14 @@ export const HeroHeader = () => {
                     className="w-full justify-center h-11 text-sm font-medium rounded-3xl bg-muted/0 text-[var(--titulos)] hover:bg-muted/35 transition-all"
                     onClick={() => setMenuState(false)}
                   >
-                    <Link href="/login">Iniciar sesión</Link>
+                    <Link href="/login" onClick={() => setMenuState(false)}>{t("login")}</Link>
                   </Button>
                   <Button
                     asChild
                     className="w-full justify-center h-11 text-sm font-medium rounded-3xl bg-header-regis-bg text-header-regis-txt hover:opacity-90 transition-all shadow-md shadow-header-regis-bg/10"
                     onClick={() => setMenuState(false)}
                   >
-                    <Link href="/registro">Registrarse</Link>
+                    <Link href="/registro" onClick={() => setMenuState(false)}>{t("register")}</Link>
                   </Button>
                 </div>
               </motion.div>
