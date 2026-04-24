@@ -109,6 +109,7 @@ export const PinContainer = ({
             reducedMotion
               ? "transition duration-200"
               : "transition duration-700",
+            !reducedMotion && "will-change-transform",
             !reducedMotion &&
               (isActive
                 ? "border-primary/30"
@@ -151,6 +152,7 @@ export const PinPerspective = ({
         "pointer-events-none w-[19rem] h-[19rem] sm:w-96 sm:h-80 flex items-center justify-center z-[60]",
         reducedMotion ? "transition duration-150" : "transition duration-500",
         isActive ? "opacity-100" : "opacity-0 group-hover/pin:opacity-100",
+        !reducedMotion && "will-change-[opacity,transform]",
       )}
     >
       <div className="w-full h-full -mt-7 flex-none inset-0">

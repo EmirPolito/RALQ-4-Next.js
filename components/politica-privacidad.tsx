@@ -14,9 +14,7 @@ export default function PoliticaPrivacidad() {
           {t("title")}
         </h1>
         <div className="space-y-6 text-base text-desc leading-relaxed">
-          <p>
-            En <strong className="font-bold">RALQ</strong> {t("intro")}
-          </p>
+          <p>{t("intro")}</p>
 
           <h2 className="text-2xl font-semibold text-ttl mt-10 mb-3">
             {t("s1Title")}
@@ -24,13 +22,16 @@ export default function PoliticaPrivacidad() {
           <p>{t("s1Intro")}</p>
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              <strong className="font-bold">{t("s1l1Label")}</strong> {t("s1l1")}
+              <strong className="font-bold">{t("s1l1Label")}</strong>{" "}
+              {t("s1l1")}
             </li>
             <li>
-              <strong className="font-bold">{t("s1l2Label")}</strong> {t("s1l2")}
+              <strong className="font-bold">{t("s1l2Label")}</strong>{" "}
+              {t("s1l2")}
             </li>
             <li>
-              <strong className="font-bold">{t("s1l3Label")}</strong> {t("s1l3")}
+              <strong className="font-bold">{t("s1l3Label")}</strong>{" "}
+              {t("s1l3")}
             </li>
           </ul>
 
@@ -51,10 +52,12 @@ export default function PoliticaPrivacidad() {
           <p>{t("s3Intro")}</p>
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              <strong className="font-bold">{t("s3l1Label")}</strong> {t("s3l1")}
+              <strong className="font-bold">{t("s3l1Label")}</strong>{" "}
+              {t("s3l1")}
             </li>
             <li>
-              <strong className="font-bold">{t("s3l2Label")}</strong> {t("s3l2")}
+              <strong className="font-bold">{t("s3l2Label")}</strong>{" "}
+              {t("s3l2")}
             </li>
             <li>{t("s3l3")}</li>
           </ul>

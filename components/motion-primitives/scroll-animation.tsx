@@ -17,10 +17,10 @@ interface ScrollAnimationProps {
 const getVariants = (direction: string): Variants => {
   const hidden = {
     opacity: 0,
-    ...(direction === "up" && { y: 40 }),
-    ...(direction === "down" && { y: -40 }),
-    ...(direction === "left" && { x: 40 }),
-    ...(direction === "right" && { x: -40 }),
+    ...(direction === "up" && { y: 20 }),
+    ...(direction === "down" && { y: -20 }),
+    ...(direction === "left" && { x: 20 }),
+    ...(direction === "right" && { x: -20 }),
   };
 
   const visible = {
@@ -36,7 +36,7 @@ export function ScrollAnimation({
   children,
   className,
   delay = 0,
-  duration = 0.6,
+  duration = 0.5,
   direction = "up",
   once = true,
   amount = 0.2,
@@ -60,6 +60,7 @@ export function ScrollAnimation({
         delay,
         ease: [0.22, 1, 0.36, 1],
       }}
+      style={{ willChange: "transform, opacity" }}
       className={className}
     >
       {children}
@@ -125,16 +126,17 @@ export function StaggerItem({
   return (
     <motion.div
       variants={{
-        hidden: { opacity: 0, y: 20 },
+        hidden: { opacity: 0, y: 15 },
         visible: {
           opacity: 1,
           y: 0,
           transition: {
-            duration: 0.5,
+            duration: 0.4,
             ease: [0.22, 1, 0.36, 1],
           },
         },
       }}
+      style={{ willChange: "transform, opacity" }}
       className={className}
     >
       {children}

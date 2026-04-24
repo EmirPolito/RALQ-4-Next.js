@@ -110,21 +110,21 @@ export default function TresPasosLaboratorio() {
             <motion.div
               key={`${step.step}-${reducedMotion}`}
               initial={
-                reducedMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+                reducedMotion ? { opacity: 1 } : { opacity: 0 }
               }
               whileInView={
-                reducedMotion ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }
+                reducedMotion ? { opacity: 1 } : { opacity: 1 }
               }
               transition={
                 reducedMotion
                   ? { duration: 0 }
                   : {
-                      duration: 0.8,
+                      duration: 0.6,
                       ease: [0.16, 1, 0.3, 1],
                       delay: index * 0.1,
                     }
               }
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-50px" }}
               className={cn(
                 "group relative grid grid-cols-1 gap-12 py-12 md:py-16 lg:py-24 lg:grid-cols-2 lg:gap-24 lg:gap-y-0 will-change-[transform,opacity]",
                 step.align === "right" &&

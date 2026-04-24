@@ -26,10 +26,13 @@ export function Hero() {
   return (
     <section>
       <div>
-        <div className="relative z-10 flex min-h-[80vh] lg:min-h-screen flex-col justify-end pt-20 pb-4 lg:pt-0 lg:pb-0 px-5 sm:px-6 md:px-12 lg:px-20">
+        <div className="relative z-10 flex min-h-[85vh] lg:min-h-screen flex-col justify-end pt-20 pb-4 lg:pt-0 lg:pb-0 px-5 sm:px-6 md:px-12 lg:px-20">
           <div className="mx-auto w-full max-w-7xl pb-4 lg:pb-40 sm:pb-20 md:pb-32">
             <ScrollAnimation direction="up" delay={0.2}>
-              <div className="flex flex-col items-start text-left lg:items-start lg:text-left">
+              <div
+                className="flex flex-col items-start text-left lg:items-start lg:text-left"
+                style={{ willChange: "transform, opacity" }}
+              >
                 <h1 className="text-hero-ttl text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold leading-tight tracking-tight">
                   {t("titleLine1")}
                   <br />
@@ -68,11 +71,11 @@ export function Hero() {
             className="
             absolute inset-0 lg:inset-5
             w-full h-full object-cover
-            -scale-x-95
+            -scale-x-100
             invert contrast-115 
             brightness-90
             dark:invert-0 
-            dark:brightness-110"
+            dark:brightness-65"
             src="https://videos.pexels.com/video-files/35968183/15249566_1920_1080_30fps.mp4"
           />
         </div>

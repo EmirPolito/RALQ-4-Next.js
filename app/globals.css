@@ -182,14 +182,14 @@
 
   --contact-btn-bg: #000000;
   --contact-btn-text: #ffffff;
-  --contact-btn-hover: #333333;
+  --contact-btn-hover: #000000;
 
   --contact-team-ttl: #000000;
   --contact-team-name: #000000;
   --contact-team-email: #475569;
 
   --contact-social: #000000;
-  --contact-social-hvr: #333333;
+  --contact-social-hvr: #1e1e1e;
 
   /* =========================
    Ayuda
@@ -451,7 +451,7 @@
 
   --contact-input-text: #ffffff;
   --contact-input-desc: #dddddd;
-  --contact-input-bg: #141313;
+  --contact-input-bg: #100f0f;
   --contact-input-border: #333333;
   --contact-input-border-hover: #ffffff;
 
@@ -1182,7 +1182,7 @@
 
   --contact-input-text: #155dfc;
   --contact-input-desc: #ffffff;
-  --contact-input-bg: #141313;
+  --contact-input-bg: #100f0f;
   --contact-input-border: #333333;
   --contact-input-border-hover: #155dfc;
 
@@ -1628,7 +1628,7 @@
 
   --contact-input-text: #a800b7;
   --contact-input-desc: #ffffff;
-  --contact-input-bg: #141313;
+  --contact-input-bg: #100f0f;
   --contact-input-border: #333333;
   --contact-input-border-hover: #a800b7;
 
@@ -2074,7 +2074,7 @@
 
   --contact-input-text: #fdc700;
   --contact-input-desc: #ffffff;
-  --contact-input-bg: #141313;
+  --contact-input-bg: #100f0f;
   --contact-input-border: #333333;
   --contact-input-border-hover: #fdc700;
 
@@ -2521,7 +2521,7 @@
 
   --contact-input-text: #ff8400;
   --contact-input-desc: #ffffff;
-  --contact-input-bg: #141313;
+  --contact-input-bg: #100f0f;
   --contact-input-border: #333333;
   --contact-input-border-hover: #ff8400;
 
@@ -2967,7 +2967,7 @@
 
   --contact-input-text: #ec003f;
   --contact-input-desc: #ffffff;
-  --contact-input-bg: #141313;
+  --contact-input-bg: #100f0f;
   --contact-input-border: #333333;
   --contact-input-border-hover: #ec003f;
 
@@ -3413,7 +3413,7 @@
 
   --contact-input-text: #7ccf00;
   --contact-input-desc: #ffffff;
-  --contact-input-bg: #141313;
+  --contact-input-bg: #100f0f;
   --contact-input-border: #333333;
   --contact-input-border-hover: #7ccf00;
 

@@ -17,7 +17,11 @@ export function IntlProvider({ children }: { children: React.ReactNode }) {
   const { locale } = useLanguage();
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages[locale]}>
+    <NextIntlClientProvider 
+      locale={locale} 
+      messages={messages[locale]}
+      timeZone="America/Mexico_City"
+    >
       {children}
     </NextIntlClientProvider>
   );

@@ -56,9 +56,9 @@ export function PointerHighlight({
       {!disabled && dimensions.width > 0 && dimensions.height > 0 && (
         <motion.div
           className="pointer-events-none absolute inset-0 z-0"
-          initial={{ opacity: 0, scale: 0.95, originX: 0, originY: 0 }}
+          initial={{ opacity: 0, scale: 0.98, originX: 0, originY: 0 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
         >
           <motion.div
             className={cn(
@@ -77,8 +77,8 @@ export function PointerHighlight({
               scaleY: 1,
             }}
             transition={{
-              duration: 1,
-              ease: "easeInOut",
+              duration: 0.6,
+              ease: "easeOut",
               delay: animationDelay,
             }}
           />
@@ -94,9 +94,9 @@ export function PointerHighlight({
               rotate: -90,
             }}
             transition={{
-              opacity: { duration: 0.1, ease: "easeInOut", delay: animationDelay },
-              duration: 1,
-              ease: "easeInOut",
+              opacity: { duration: 0.1, ease: "easeOut", delay: animationDelay },
+              duration: 0.7,
+              ease: "easeOut",
               delay: animationDelay,
             }}
           >
