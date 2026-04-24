@@ -255,6 +255,11 @@
   --wobble-ttl-5: #000000;
   --wobble-desc-6: #2c2a2a;
   --wobble-dmas-7: #ffffff;  */
+
+  /* RALQ Content Properties */
+  --ttl: var(--titulos);
+  --desc: #2c2a2a;
+  --link: var(--ttl);
 }
 
 .dark {
@@ -513,6 +518,11 @@
   --dash-card-1: #062d22;
   --dash-card-2: #042838;
   --dash-card-3: #3d2503;
+
+  /* RALQ Content Properties */
+  --ttl: var(--titulos);
+  --desc: #dad9d9;
+  --link: var(--ttl);
 }
 
 .colorblind {
@@ -756,6 +766,11 @@
   --dash-card-1: #e6fbf4;
   --dash-card-2: #e0fcfb;
   --dash-card-3: #fff9e6;
+
+  /* RALQ Content Properties */
+  --ttl: var(--titulos);
+  --desc: #333333;
+  --link: var(--ttl);
 }
 
 /* Azul */
@@ -764,6 +779,11 @@
   --bg-fondo: #ffffff;
   --titulos: #155dfc;
   --descripciones: #616161;
+
+  /* Content Properties */
+  --ttl: #155dfc;
+  --desc: var(--descripciones);
+  --link: #155dfc;
 
   /* Header */
   --header-login-bg: transparent;
@@ -982,6 +1002,11 @@
   --titulos: #155dfc;
   --descripciones: #dddddd;
 
+  /* Content Properties */
+  --ttl: #155dfc;
+  --desc: var(--descripciones);
+  --link: #155dfc;
+
   /* Header */
   --header-login-bg: transparent;
   --header-redir: #c4c4c4;
@@ -1198,6 +1223,11 @@
   --bg-fondo: #ffffff;
   --titulos: #8a0194;
   --descripciones: #2c2a2a;
+
+  /* Content Properties */
+  --ttl: #8a0194;
+  --desc: var(--descripciones);
+  --link: #8a0194;
 
   /* Header */
   --header-login-bg: transparent;
@@ -1417,6 +1447,11 @@
   --titulos: #a800b7;
   --descripciones: #dddddd;
 
+  /* Content Properties */
+  --ttl: #a800b7;
+  --desc: var(--descripciones);
+  --link: #a800b7;
+
   /* Header */
   --header-login-bg: transparent;
   --header-redir: #dddddd;
@@ -1635,6 +1670,11 @@
   --titulos: #fdc700;
   --descripciones: #2c2a2a;
 
+  /* Content Properties */
+  --ttl: #fdc700;
+  --desc: var(--descripciones);
+  --link: #fdc700;
+
   /* Header */
   --header-login-bg: transparent;
   --header-redir: #2c2a2a;
@@ -1852,6 +1892,11 @@
   --bg-fondo: #000000;
   --titulos: #fdc700;
   --descripciones: #dddddd;
+
+  /* Content Properties */
+  --ttl: #fdc700;
+  --desc: var(--descripciones);
+  --link: #fdc700;
 
   /* Header */
   --header-login-bg: transparent;
@@ -2072,6 +2117,11 @@
   --descripciones: #2c2a2a;
   --primary: #f77817;
 
+  /* Content Properties */
+  --ttl: #f77817;
+  --desc: var(--descripciones);
+  --link: #f77817;
+
   /* Header */
   --header-login-bg: transparent;
   --header-redir: #2c2a2a;
@@ -2291,6 +2341,11 @@
   --descripciones: #dddddd;
   --primary: #ff8400;
 
+  /* Content Properties */
+  --ttl: #ff8400;
+  --desc: var(--descripciones);
+  --link: #ff8400;
+
   /* Header */
   --header-login-bg: transparent;
   --header-redir: #dddddd;
@@ -2508,6 +2563,11 @@
   --titulos: #ec003f;
   --descripciones: #616161;
   --primary: #ec003f;
+
+  /* Content Properties */
+  --ttl: #ec003f;
+  --desc: var(--descripciones);
+  --link: #ec003f;
 
   /* Header */
   --header-login-bg: transparent;
@@ -2727,6 +2787,11 @@
   --descripciones: #dddddd;
   --primary: #ec003f;
 
+  /* Content Properties */
+  --ttl: #ec003f;
+  --desc: var(--descripciones);
+  --link: #ec003f;
+
   /* Header */
   --header-login-bg: transparent;
   --header-redir: #dddddd;
@@ -2945,6 +3010,11 @@
   --descripciones: #2c2a2a;
   --primary: #5ea500;
 
+  /* Content Properties */
+  --ttl: #5ea500;
+  --desc: var(--descripciones);
+  --link: #5ea500;
+
   /* Header */
   --header-login-bg: transparent;
   --header-redir: #2c2a2a;
@@ -3162,6 +3232,11 @@
   --titulos: #7ccf00;
   --descripciones: #dddddd;
   --primary: #7ccf00;
+
+  /* Content Properties */
+  --ttl: #7ccf00;
+  --desc: var(--descripciones);
+  --link: #7ccf00;
 
   /* Header */
   --header-login-bg: transparent;
@@ -3413,6 +3488,11 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  /* RALQ Colors */
+  --color-ttl: var(--ttl);
+  --color-desc: var(--desc);
+  --color-link: var(--link);
 
   /* Header */
   --color-header-login-bg: var(--header-login-bg);

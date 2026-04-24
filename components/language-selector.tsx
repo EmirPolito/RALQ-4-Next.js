@@ -36,14 +36,20 @@ const LANGUAGES: {
   },
 ];
 
-export function LanguageSelector({ isMobile = false }: { isMobile?: boolean }) {
+export function LanguageSelector({ 
+  isMobile = false,
+  className 
+}: { 
+  isMobile?: boolean;
+  className?: string;
+}) {
   const { locale, setLocale } = useLanguage();
   const [open, setOpen] = useState(false);
 
   const current = LANGUAGES.find((l) => l.code === locale) ?? LANGUAGES[0];
 
   return (
-    <div className="relative flex items-center">
+    <div className={cn("relative flex items-center", className)}>
       {/* Trigger button */}
       <button
         type="button"
@@ -88,7 +94,7 @@ export function LanguageSelector({ isMobile = false }: { isMobile?: boolean }) {
                   ? "top-11 left-1/2 -translate-x-1/2"
                   : "top-11 right-0",
               )}
-              style={{ minWidth: "148px" }}
+              style={{ minWidth: "140px" }}
             >
               {LANGUAGES.map((lang) => (
                 <button

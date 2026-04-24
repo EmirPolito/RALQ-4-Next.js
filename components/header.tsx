@@ -72,7 +72,7 @@ export const HeroHeader = () => {
               <div className="flex items-center gap-1 lg:hidden">
                 {/* Language selector: only visible when menu is open */}
                 {menuState && (
-                  <div className="relative z-[110] mr-2">
+                  <div className="relative z-[110] mr-6">
                     <LanguageSelector isMobile />
                   </div>
                 )}
@@ -81,23 +81,32 @@ export const HeroHeader = () => {
                   aria-label={menuState ? "Close Menu" : "Open Menu"}
                   className="relative z-[110] -m-2.5 -mr-4 block cursor-pointer p-2.5"
                 >
-                  <div className="relative size-6">
-                    <Menu
-                      className={cn(
-                        "absolute inset-0 m-auto size-6 transition-all duration-300",
-                        menuState
-                          ? "rotate-180 scale-0 opacity-0"
-                          : "rotate-0 scale-100 opacity-100",
+                  <div className="relative size-6 flex items-center justify-center">
+                    <AnimatePresence mode="wait" initial={false}>
+                      {menuState ? (
+                        <motion.div
+                          key="close"
+                          initial={{ opacity: 0, rotate: -90, scale: 0.5 }}
+                          animate={{ opacity: 1, rotate: 0, scale: 1 }}
+                          exit={{ opacity: 0, rotate: 90, scale: 0.5 }}
+                          transition={{ duration: 0.2 }}
+                          className="absolute inset-0 flex items-center justify-center"
+                        >
+                          <X className="size-6" />
+                        </motion.div>
+                      ) : (
+                        <motion.div
+                          key="menu"
+                          initial={{ opacity: 0, rotate: 90, scale: 0.5 }}
+                          animate={{ opacity: 1, rotate: 0, scale: 1 }}
+                          exit={{ opacity: 0, rotate: -90, scale: 0.5 }}
+                          transition={{ duration: 0.2 }}
+                          className="absolute inset-0 flex items-center justify-center"
+                        >
+                          <Menu className="size-6" />
+                        </motion.div>
                       )}
-                    />
-                    <X
-                      className={cn(
-                        "absolute inset-0 m-auto size-6 transition-all duration-300",
-                        menuState
-                          ? "rotate-0 scale-100 opacity-100"
-                          : "-rotate-180 scale-0 opacity-0",
-                      )}
-                    />
+                    </AnimatePresence>
                   </div>
                 </button>
               </div>
@@ -120,7 +129,7 @@ export const HeroHeader = () => {
 
             {/* Desktop layout buttons */}
             <div className="hidden lg:flex w-full flex-wrap items-center justify-end gap-6 lg:w-fit">
-              <LanguageSelector />
+              <LanguageSelector className="mr-4 lg:mr-6" />
               <ThemeControls className="mr-8 lg:mr-12" />
 
               <Button

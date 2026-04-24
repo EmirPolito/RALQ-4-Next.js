@@ -301,7 +301,12 @@ export function ThemeControls({
                 <Sun className="mr-2 h-5 w-5" />
                 <span>Claro</span>
                 {resolvedTheme === "light" && !colorblind && (
-                  <span className="ml-auto text-primary text-xs">✓</span>
+                  <span
+                    className="ml-auto text-xs"
+                    style={{ color: currentThemeColor }}
+                  >
+                    ✓
+                  </span>
                 )}
               </DropdownMenuItem>
 
@@ -317,7 +322,12 @@ export function ThemeControls({
                 <Moon className="mr-2 h-5 w-5" />
                 <span>Oscuro</span>
                 {resolvedTheme === "dark" && (
-                  <span className="ml-auto text-primary text-xs">✓</span>
+                  <span
+                    className="ml-auto text-xs"
+                    style={{ color: currentThemeColor }}
+                  >
+                    ✓
+                  </span>
                 )}
               </DropdownMenuItem>
 
@@ -338,7 +348,14 @@ export function ThemeControls({
               >
                 <Eye className="mr-2 h-5 w-5" />
                 <span>Daltonico</span>
-                {colorblind && <span className="ml-auto text-primary text-xs">✓</span>}
+                {colorblind && (
+                  <span
+                    className="ml-auto text-xs"
+                    style={{ color: currentThemeColor }}
+                  >
+                    ✓
+                  </span>
+                )}
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -431,18 +448,19 @@ export function ThemeControls({
                       aria-label={`Color ${option.name}`}
                     >
                       <div
-                        className={`h-3 w-3 rounded-full shrink-0 ${
-                          primaryColor === option.value
-                            ? "ring-1 ring-offset-1 ring-foreground"
-                            : ""
-                        }`}
+                        className="h-3 w-3 rounded-full shrink-0"
                         style={{ backgroundColor: option.color }}
                       />
                       <span className="text-sm text-foreground">
                         {option.name}
                       </span>
                       {primaryColor === option.value && (
-                        <span className="ml-auto text-primary text-xs">✓</span>
+                        <span
+                          className="ml-auto text-xs"
+                          style={{ color: option.color }}
+                        >
+                          ✓
+                        </span>
                       )}
                     </button>
                   ))}
