@@ -256,8 +256,8 @@ export default function ImgCursorDemo2() {
               {/* Attribution */}
               <div className="mt-7 flex items-center gap-3.5 border-t border-imgcursor-der-linea/60 pt-8">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-imgcursor-der-c-bg border border-imgcursor-der-linea/60">
-                  <span className="text-sm font-black text-imgcursor-der-c">
-                    C
+                  <span className="text-sm font-semibold text-imgcursor-der-c">
+                    E
                   </span>
                 </div>
                 <div>

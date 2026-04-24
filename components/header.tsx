@@ -48,7 +48,9 @@ export const HeroHeader = () => {
           className={cn(
             "mx-auto max-w-8xl rounded-2xl px-6 transition-all duration-300 lg:px-9",
             scrolled && !menuState && "bg-background/10 backdrop-blur-2xl",
-            !scrolled && !menuState && "max-lg:bg-background/10 max-lg:backdrop-blur-2xl",
+            !scrolled &&
+              !menuState &&
+              "max-lg:bg-background/10 max-lg:backdrop-blur-2xl",
           )}
         >
           <div
@@ -79,24 +81,24 @@ export const HeroHeader = () => {
                   aria-label={menuState ? "Close Menu" : "Open Menu"}
                   className="relative z-[110] -m-2.5 -mr-4 block cursor-pointer p-2.5"
                 >
-                <div className="relative size-6">
-                  <Menu
-                    className={cn(
-                      "absolute inset-0 m-auto size-6 transition-all duration-300",
-                      menuState
-                        ? "rotate-180 scale-0 opacity-0"
-                        : "rotate-0 scale-100 opacity-100",
-                    )}
-                  />
-                  <X
-                    className={cn(
-                      "absolute inset-0 m-auto size-6 transition-all duration-300",
-                      menuState
-                        ? "rotate-0 scale-100 opacity-100"
-                        : "-rotate-180 scale-0 opacity-0",
-                    )}
-                  />
-                </div>
+                  <div className="relative size-6">
+                    <Menu
+                      className={cn(
+                        "absolute inset-0 m-auto size-6 transition-all duration-300",
+                        menuState
+                          ? "rotate-180 scale-0 opacity-0"
+                          : "rotate-0 scale-100 opacity-100",
+                      )}
+                    />
+                    <X
+                      className={cn(
+                        "absolute inset-0 m-auto size-6 transition-all duration-300",
+                        menuState
+                          ? "rotate-0 scale-100 opacity-100"
+                          : "-rotate-180 scale-0 opacity-0",
+                      )}
+                    />
+                  </div>
                 </button>
               </div>
 
@@ -202,14 +204,18 @@ export const HeroHeader = () => {
                     className="w-full justify-center h-11 text-sm font-medium rounded-3xl bg-muted/0 text-[var(--titulos)] hover:bg-muted/35 transition-all"
                     onClick={() => setMenuState(false)}
                   >
-                    <Link href="/login" onClick={() => setMenuState(false)}>{t("login")}</Link>
+                    <Link href="/login" onClick={() => setMenuState(false)}>
+                      {t("login")}
+                    </Link>
                   </Button>
                   <Button
                     asChild
                     className="w-full justify-center h-11 text-sm font-medium rounded-3xl bg-header-regis-bg text-header-regis-txt hover:opacity-90 transition-all shadow-md shadow-header-regis-bg/10"
                     onClick={() => setMenuState(false)}
                   >
-                    <Link href="/registro" onClick={() => setMenuState(false)}>{t("register")}</Link>
+                    <Link href="/registro" onClick={() => setMenuState(false)}>
+                      {t("register")}
+                    </Link>
                   </Button>
                 </div>
               </motion.div>

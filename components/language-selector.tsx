@@ -55,7 +55,7 @@ export function LanguageSelector({ isMobile = false }: { isMobile?: boolean }) {
         )}
       >
         <span
-          className="flex items-center justify-center w-6 h-6 rounded-full overflow-hidden border border-border/30 shrink-0"
+          className="flex items-center justify-center w-6.5 h-6.5 rounded-full overflow-hidden border border-border/30 shrink-0"
           aria-hidden
         >
           <img
