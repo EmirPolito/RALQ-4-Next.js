@@ -169,7 +169,7 @@
   --contact-desc: #2c2a2a;
 
   --contact-card-bg: #ffffff;
-  --contact-card-border: #d1d1d1;
+  --contact-card-border: #e2e2e2;
 
   --contact-label: #2c2a2a;
 
@@ -178,7 +178,7 @@
 
   --contact-input-bg: #ffffff;
   --contact-input-border: #d1d1d1;
-  --contact-input-border-hover: #000000;
+  --contact-input-border-hover: #c0c0c0;
 
   --contact-btn-bg: #000000;
   --contact-btn-text: #ffffff;
@@ -453,7 +453,7 @@
   --contact-input-desc: #dddddd;
   --contact-input-bg: #100f0f;
   --contact-input-border: #333333;
-  --contact-input-border-hover: #ffffff;
+  --contact-input-border-hover: #585858;
 
   --contact-btn-bg: #ffffff;
   --contact-btn-text: #000000;

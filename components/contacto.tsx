@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
@@ -80,23 +79,27 @@ export default function ContactForm() {
 
   const inputClasses = `
   rounded-[8px]
-  border border-contact-card-border
+  border-[2px] border-contact-input-border/20
   bg-contact-input-bg
-  text-contact-input-desc
-  placeholder:text-contact-input-desc
+  text-contact-input-desc/50
+  placeholder:text-contact-input-desc/15
   text-sm                 
   leading-5               
   px-2.5 
   py-2.5 
   w-full
   transition-all duration-300
-  hover:border-gray-400
+  hover:border-contact-input-border-hover/30
   focus:outline-none
   focus:ring-0
-  focus:border-gray-400
+  focus:border-contact-input-border-hover/30
   focus-visible:outline-none
   focus-visible:ring-0
   focus-visible:ring-offset-0
+  autofill:shadow-[0_0_0_1000px_var(--contact-input-bg)_inset]
+  autofill:text-contact-input-desc
+  [transition:background-color_5000s_ease-in-out_0s]
+  [-webkit-text-fill-color:var(--contact-input-desc)]
 `;
 
   return (
@@ -205,15 +208,15 @@ export default function ContactForm() {
 
           <p className="text-contact-desc mb-7.5">{t("formSubtitle")}</p>
 
-          <form onSubmit={handleSubmit} className=" space-y-6">
+          <form onSubmit={handleSubmit} className=" space-y-6.5">
             <motion.div variants={fadeInUp} custom={0.2}>
               <Label
                 htmlFor="name"
-                className="text-contact-input-text text-sm font-semibold "
+                className="text-contact-input-text text-sm font-semibold mb-1 block"
               >
                 {t("nameLabel")}
               </Label>
-              <Input
+              <input
                 id="name"
                 type="text"
                 value={name}
@@ -227,11 +230,11 @@ export default function ContactForm() {
             <motion.div variants={fadeInUp} custom={0.3}>
               <Label
                 htmlFor="email"
-                className="text-contact-input-text text-sm font-semibold"
+                className="text-contact-input-text text-sm font-semibold mb-1 block"
               >
                 {t("emailLabel")}
               </Label>
-              <Input
+              <input
                 id="email"
                 type="email"
                 value={email}
@@ -245,7 +248,7 @@ export default function ContactForm() {
             <motion.div variants={fadeInUp} custom={0.4}>
               <Label
                 htmlFor="message"
-                className="text-contact-input-text text-sm font-semibold"
+                className="text-contact-input-text text-sm font-semibold mb-1 block"
               >
                 {t("messageLabel")}
               </Label>
