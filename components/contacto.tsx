@@ -104,7 +104,7 @@ export default function ContactForm() {
 
   return (
     <motion.section
-      className="relative min-h-screen font-inter px-5 pt-32 md:pt-32 pb-20"
+      className="relative min-h-screen font-inter px-5 pt-32 md:pt-32 pb-10"
       initial="hidden"
       animate="visible"
     >
@@ -206,7 +206,7 @@ export default function ContactForm() {
             {t("formTitle")}
           </h1>
 
-          <p className="text-contact-desc mb-7.5">{t("formSubtitle")}</p>
+          <p className="text-contact-desc mb-8">{t("formSubtitle")}</p>
 
           <form onSubmit={handleSubmit} className=" space-y-6.5">
             <motion.div variants={fadeInUp} custom={0.2}>

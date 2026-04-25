@@ -40,14 +40,14 @@ export default function ContenidoBlog() {
   }
 
   return (
-    <div className="w-full bg-background pt-32 md:pt-32 pb-28.5 px-4 transition-colors">
+    <div className="w-full bg-background pt-32 md:pt-32 pb-20 px-4  transition-colors">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="text-center mb-20 md:mb-30"
+          className="text-center mb-18 md:mb-30"
         >
           {/* Título — ayuda.title */}
           <h1 className="text-ayuda-ttl text-4xl md:text-6xl font-semibold mb-3 text-balance">
@@ -84,7 +84,7 @@ export default function ContenidoBlog() {
                   onMouseLeave={() => setHoveredId(null)}
                 >
                   <div className="mb-2 md:mb-8">
-                  {/* Título de cada item — ayuda.items.[id].title */}
+                    {/* Título de cada item — ayuda.items.[id].title */}
                     <h2 className="text-ayuda-preg-ttl text-2xl font-semibold mb-3">
                       {t(`items.${id}.title`)}
                     </h2>

@@ -12,8 +12,10 @@ export default function RegisterPage() {
             colorText: "var(--foreground)",
           },
           elements: {
-            card: "w-full max-w-[600px] border border-border shadow-2xl",
+            card: "w-full max-w-[600px] border border-[color:var(--ttl)] shadow-2xl",
             rootBox: "w-full flex justify-center",
+            formFieldInput:
+              "!bg-[var(--input)] !border-[color:var(--ttl)] focus:!ring-[color:var(--ttl)] focus:!border-[color:var(--ttl)] text-foreground",
           },
         }}
       />
