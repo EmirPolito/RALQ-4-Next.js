@@ -9,21 +9,19 @@ export default function TerminosCondiciones() {
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col">
-      <main className="flex-1 max-w-4xl mx-auto w-full px-4 md:px-5 py-35 text-left">
+      <main className="pb-20 flex-1 max-w-4xl mx-auto w-full px-4 md:px-5 py-35 text-left">
         <h1 className="text-4xl md:text-5xl font-bold text-ttl mb-4 tracking-tight">
           {t("title")}
         </h1>
         <div className="space-y-6 text-base text-desc leading-relaxed">
-          <p>
-            {t("intro")}
-          </p>
+          <p>{t("intro")}</p>
 
-          <h2 className="text-2xl font-semibold text-ttl mt-10 mb-3">
+          <h2 className="text-xl font-semibold text-ttl mt-10 mb-2">
             {t("s1Title")}
           </h2>
           <p>{t("s1")}</p>
 
-          <h2 className="text-2xl font-semibold text-ttl mt-10 mb-3">
+          <h2 className="text-xl font-semibold text-ttl mt-11 mb-2">
             {t("s2Title")}
           </h2>
           <p>{t("s2Intro")}</p>
@@ -34,27 +32,27 @@ export default function TerminosCondiciones() {
             <li>{t("s2l4")}</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-ttl mt-10 mb-3">
+          <h2 className="text-xl font-semibold text-ttl mt-11 mb-2">
             {t("s3Title")}
           </h2>
           <p>{t("s3")}</p>
 
-          <h2 className="text-2xl font-semibold text-ttl mt-10 mb-3">
+          <h2 className="text-xl font-semibold text-ttl mt-11 mb-2">
             {t("s4Title")}
           </h2>
           <p>{t("s4")}</p>
 
-          <h2 className="text-2xl font-semibold text-ttl mt-10 mb-3">
+          <h2 className="text-xl font-semibold text-ttl mt-11 mb-2">
             {t("s5Title")}
           </h2>
           <p>{t("s5")}</p>
 
-          <h2 className="text-2xl font-semibold text-ttl mt-10 mb-3">
+          <h2 className="text-xl font-semibold text-ttl mt-11 mb-2">
             {t("s6Title")}
           </h2>
           <p>{t("s6")}</p>
 
-          <h2 className="text-2xl font-semibold text-ttl mt-10 mb-3">
+          <h2 className="text-xl font-semibold text-ttl mt-11 mb-2">
             {t("s7Title")}
           </h2>
           <p>
