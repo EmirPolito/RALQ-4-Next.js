@@ -27,11 +27,6 @@ const tech = [
   { name: "A-Frame", url: "https://aframe.io", role: "AR Framework" },
   { name: "Next.js", url: "https://nextjs.org", role: "Web Framework" },
   { name: "OpenAI", url: "https://openai.com", role: "IA " },
-
-  { name: "Three.js", url: "https://threejs.org", role: "3D Engine" },
-  { name: "A-Frame", url: "https://aframe.io", role: "AR Framework" },
-  { name: "Next.js", url: "https://nextjs.org", role: "Web Framework" },
-  { name: "OpenAI", url: "https://openai.com", role: "IA " },
 ];
 
 export default function ImgCursorDemo2() {
@@ -89,13 +84,13 @@ export default function ImgCursorDemo2() {
               viewport={{ once: true }}
               className="flex flex-col items-center lg:items-start"
             >
-              <p className="mb-8 text-center text-[15px] leading-relaxed text-imgcursor-desc lg:text-left max-w-[510px]">
+              <p className="mb-11 text-center text-[16px] leading-relaxed text-imgcursor-desc lg:text-left max-w-[510px]">
                 {t("description")}
               </p>
 
-              {/* Tech grid - Row 1 (3 items) */}
+              {/* Tech grid - Row 1 (4 items) */}
               <div className="flex flex-wrap justify-center lg:justify-start gap-5 mb-6">
-                {tech.slice(0, 3).map((t, i) => (
+                {tech.slice(3).map((t, i) => (
                   <motion.div
                     key={`tech-top-${i}-${reducedMotion}`}
                     initial={
@@ -119,15 +114,15 @@ export default function ImgCursorDemo2() {
                       url={t.url}
                       disabled={reducedMotion}
                       className={cn(
-                        "group inline-flex flex-col rounded-xl border border-imgcursor-izq-borde bg-imgcursor-izq-bg px-4 py-4 transition-all cursor-pointer no-underline w-[110px] md:w-[145px]",
+                        "group inline-flex flex-col rounded-xl border border-imgcursor-izq-borde bg-imgcursor-izq-bg px-3 py-4 transition-all cursor-pointer no-underline w-[110px] md:w-[104px]",
                         !reducedMotion &&
                           "hover:border-primary/25 hover:shadow-sm hover:-translate-y-0.5",
                       )}
                     >
-                      <span className="text-[15px] font-bold text-imgcursor-izq-ttl group-hover:text-imgcursor-izq-hvr transition-colors truncate">
+                      <span className="text-[14px] font-bold text-imgcursor-izq-ttl group-hover:text-imgcursor-izq-hvr transition-colors truncate">
                         {t.name}
                       </span>
-                      <span className="text-[10.5px] text-imgcursor-izq-desc truncate">
+                      <span className="text-[9.5px] text-imgcursor-izq-desc truncate">
                         {t.role}
                       </span>
                     </LinkPreview>
@@ -135,9 +130,9 @@ export default function ImgCursorDemo2() {
                 ))}
               </div>
 
-              {/* Tech grid - Row 2 (4 items) */}
+              {/* Tech grid - Row 2 (3 items) */}
               <div className="flex flex-wrap justify-center lg:justify-start gap-5">
-                {tech.slice(3).map((t, i) => (
+                {tech.slice(0, 3).map((t, i) => (
                   <motion.div
                     key={`tech-bottom-${i}-${reducedMotion}`}
                     initial={
@@ -155,7 +150,7 @@ export default function ImgCursorDemo2() {
                         ? { duration: 0 }
                         : {
                             duration: 0.5,
-                            delay: (i + 3) * 0.08,
+                            delay: (i + 4) * 0.08,
                             ease: "easeOut",
                           }
                     }
@@ -165,15 +160,15 @@ export default function ImgCursorDemo2() {
                       url={t.url}
                       disabled={reducedMotion}
                       className={cn(
-                        "group inline-flex flex-col rounded-xl border border-imgcursor-izq-borde bg-imgcursor-izq-bg px-3 py-3.5 transition-all cursor-pointer no-underline w-[110px] md:w-[104px]",
+                        "group inline-flex flex-col rounded-xl border border-imgcursor-izq-borde bg-imgcursor-izq-bg px-4 py-4 transition-all cursor-pointer no-underline w-[110px] md:w-[145px]",
                         !reducedMotion &&
                           "hover:border-primary/25 hover:shadow-sm hover:-translate-y-0.5",
                       )}
                     >
-                      <span className="text-[13px] font-bold text-imgcursor-izq-ttl group-hover:text-imgcursor-izq-hvr transition-colors truncate">
+                      <span className="text-[14px] font-bold text-imgcursor-izq-ttl group-hover:text-imgcursor-izq-hvr transition-colors truncate">
                         {t.name}
                       </span>
-                      <span className="text-[9px] text-imgcursor-izq-desc truncate">
+                      <span className="text-[9.5px] text-imgcursor-izq-desc truncate">
                         {t.role}
                       </span>
                     </LinkPreview>
