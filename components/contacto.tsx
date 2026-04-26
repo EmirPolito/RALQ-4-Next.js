@@ -84,7 +84,7 @@ export default function ContactForm() {
   text-contact-input-desc/50
   placeholder:text-contact-input-desc/15
   text-sm                 
-  leading-5               
+  leading-4               
   px-2.5 
   py-2.5 
   w-full
