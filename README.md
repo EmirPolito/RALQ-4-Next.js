@@ -2,10 +2,10 @@
  <h1> RALQ — Realidad Aumentada para Laboratorios de Química</h1>
  </div>
 
-
 <div align="center">
 
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/) [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38bdf8?logo=tailwindcss)](https://tailwindcss.com/) [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/) [![Clerk](https://img.shields.io/badge/Clerk-Auth-6c47ff?logo=clerk&logoColor=white)](https://clerk.com/) [![next-intl](https://img.shields.io/badge/next--intl-i18n-blue)](https://next-intl-docs.vercel.app/) [![Framer Motion](https://img.shields.io/badge/Framer_Motion-latest-ff0055?logo=framer&logoColor=white)](https://www.framer.com/motion/) [![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)](https://vercel.com/) [![Three.js](https://img.shields.io/badge/Three.js-3D_Engine-black?logo=three.js)](https://threejs.org/) [![A-Frame](https://img.shields.io/badge/A--Frame-AR_Framework-ef2d5e)](https://aframe.io/)
+
 </div>
   <br />
 
@@ -53,10 +53,17 @@ Una plataforma educativa de vanguardia construida con **Next.js**, diseñada par
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Desarrolladores
 
-**Emir Polito** — _Desarrollador y Visionario detrás de RALQ_
+**Emir Polito** — \_Desarrollador full stack
 
 - GitHub: [@EmirPolito](https://github.com/EmirPolito)
 - LinkedIn: [Emir Polito](https://www.linkedin.com/in/emir-polito-g/)
 
+**Irving Esteban Méndez** — \_Diseñador UI/UX designer
+
+- GitHub: [@IrvingEsteban](https://github.com/1RV1N6-M3ND3Z)
+
+**Cristian Daniel Barraza** — \_Diseñador de experiencia de usuario.
+
+- GitHub: [@CristianDanielBarraza](https://github.com/CristianDanielBarraza)
