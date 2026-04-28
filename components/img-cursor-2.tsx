@@ -11,22 +11,25 @@ const tech = [
     name: "Khan Academy",
     url: "https://www.khanacademy.org/science/chemistry",
     role: "Recursos Educativos",
+    imageSrc: "https://assets.aceternity.com/pro/hero-sections.png",
   },
   {
     name: "Khan Academy",
     url: "https://www.khanacademy.org/science/chemistry",
     role: "Recursos Educativos",
+    imageSrc: "https://assets.aceternity.com/features-section.png",
   },
   {
     name: "Khan Academy",
     url: "https://www.khanacademy.org/science/chemistry",
     role: "Recursos Educativos",
+    imageSrc: "https://assets.aceternity.com/templates/startup-1.webp",
   },
 
-  { name: "Three.js", url: "https://threejs.org", role: "3D Engine" },
-  { name: "A-Frame", url: "https://aframe.io", role: "AR Framework" },
-  { name: "Next.js", url: "https://nextjs.org", role: "Web Framework" },
-  { name: "OpenAI", url: "https://openai.com", role: "IA " },
+  { name: "Three.js", url: "https://threejs.org", role: "3D Engine", imageSrc: "https://assets.aceternity.com/templates/startup-2.webp" },
+  { name: "A-Frame", url: "https://aframe.io", role: "AR Framework", imageSrc: "https://assets.aceternity.com/templates/startup-3.webp" },
+  { name: "Next.js", url: "https://nextjs.org", role: "Web Framework", imageSrc: "https://assets.aceternity.com/templates/startup-4.webp" },
+  { name: "OpenAI", url: "https://openai.com", role: "IA ", imageSrc: "https://assets.aceternity.com/macbook.png" },
 ];
 
 export default function ImgCursorDemo2() {
@@ -84,7 +87,7 @@ export default function ImgCursorDemo2() {
               viewport={{ once: true }}
               className="flex flex-col items-center lg:items-start"
             >
-              <p className=" px-5 text-justify md:px-0 mb-11 text-center text-sm lg:text-base leading-relaxed text-imgcursor-desc lg:text-left max-w-[510px]">
+              <p className=" px-2 md:px-0 mb-11 text-center text-sm lg:text-base leading-relaxed text-imgcursor-desc lg:text-left max-w-[510px]">
                 {t("description")}
               </p>
 
@@ -112,6 +115,8 @@ export default function ImgCursorDemo2() {
                   >
                     <LinkPreview
                       url={t.url}
+                      isStatic
+                      imageSrc={t.imageSrc}
                       disabled={reducedMotion}
                       className={cn(
                         "group inline-flex flex-col rounded-xl border border-imgcursor-izq-borde bg-imgcursor-izq-bg px-3 py-4 transition-all cursor-pointer no-underline w-[110px] md:w-[104px]",
@@ -158,6 +163,8 @@ export default function ImgCursorDemo2() {
                   >
                     <LinkPreview
                       url={t.url}
+                      isStatic
+                      imageSrc={t.imageSrc}
                       disabled={reducedMotion}
                       className={cn(
                         "group inline-flex flex-col rounded-xl border border-imgcursor-izq-borde bg-imgcursor-izq-bg px-4 py-4 transition-all cursor-pointer no-underline w-[110px] md:w-[145px]",
@@ -205,6 +212,8 @@ export default function ImgCursorDemo2() {
                 {"ChemAR usa "}
                 <LinkPreview
                   url="https://threejs.org"
+                  isStatic
+                  imageSrc="https://assets.aceternity.com/templates/startup-2.webp"
                   disabled={reducedMotion}
                   className="font-bold text-imgcursor-der-cursor1 underline-offset-4 decoration-current/30 underline"
                 >
@@ -215,6 +224,8 @@ export default function ImgCursorDemo2() {
                 }
                 <LinkPreview
                   url="https://aframe.io"
+                  isStatic
+                  imageSrc="https://assets.aceternity.com/templates/startup-3.webp"
                   disabled={reducedMotion}
                   className="font-bold text-imgcursor-der-cursor2 underline-offset-4 decoration-current/30 underline"
                 >
@@ -223,6 +234,8 @@ export default function ImgCursorDemo2() {
                 {" para proyectarlos en el mundo real a través de RA, y "}
                 <LinkPreview
                   url="https://nextjs.org"
+                  isStatic
+                  imageSrc="https://assets.aceternity.com/templates/startup-4.webp"
                   disabled={reducedMotion}
                   className="font-bold text-imgcursor-der-cursor3 underline-offset-4 decoration-current/30 underline"
                 >
@@ -233,6 +246,8 @@ export default function ImgCursorDemo2() {
                 }
                 <LinkPreview
                   url="https://pubchem.ncbi.nlm.nih.gov"
+                  isStatic
+                  imageSrc="https://assets.aceternity.com/pro/hero-sections.png"
                   disabled={reducedMotion}
                   className="font-bold text-imgcursor-der-cursor4 underline-offset-4 decoration-current/30 underline"
                 >
@@ -241,6 +256,8 @@ export default function ImgCursorDemo2() {
                 {", respaldado por contenido educativo de "}
                 <LinkPreview
                   url="https://www.khanacademy.org/science/chemistry"
+                  isStatic
+                  imageSrc="https://assets.aceternity.com/features-section.png"
                   disabled={reducedMotion}
                   className="font-bold text-imgcursor-der-cursor5 underline-offset-4 decoration-current/30 underline"
                 >

@@ -12,26 +12,26 @@ export default function Footer() {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between">
           {/* Logo + tagline + copyright */}
-          <div className="mb-12 md:mb-13">
+          <div className="mb-11 md:mb-13">
             <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
               <span className="bg font-bold lg:inline-block">
                 {/* Logo claro */}
                 <img
                   src="/logos/logo-verde.png"
                   alt="RALQ logo"
-                  className="h-10 w-auto dark:hidden"
+                  className="-ml-1 h-10 w-auto dark:hidden"
                 />
 
                 {/* Logo oscuro */}
                 <img
                   src="/logos/logo-blanco.png"
                   alt="RALQ logo"
-                  className="px-1 hidden h-10 w-auto dark:block"
+                  className="px-0 hidden h-10 w-auto dark:block"
                 />
               </span>
             </Link>
 
-            <h1 className="text-footer-txt text-sm lg:text-base mt-1 md:mt-1.5 px-1">
+            <h1 className="text-footer-txt text-sm lg:text-base mt-1 md:mt-1.5 px-0">
               {t("tagline")}
             </h1>
 
@@ -39,10 +39,13 @@ export default function Footer() {
               © {new Date().getFullYear()} {t("copyright")}
             </p>
           </div>
+
           {/* Columnas de links — Páginas / Redes / Legales */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-footer-ttl font-semibold mb-4">{t("sections.pages")}</h3>
+              <h3 className="text-footer-ttl font-semibold mb-4">
+                {t("sections.pages")}
+              </h3>
               <ul className="space-y-2">
                 <li>
                   <Link
@@ -72,7 +75,9 @@ export default function Footer() {
             </div>
 
             <div>
-              <h3 className="text-footer-ttl font-semibold mb-4">{t("sections.networks")}</h3>
+              <h3 className="text-footer-ttl font-semibold mb-4">
+                {t("sections.networks")}
+              </h3>
               <ul className="space-y-2">
                 <li>
                   <Link
@@ -101,7 +106,9 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h3 className="text-footer-ttl font-semibold mb-4">{t("sections.legal")}</h3>
+              <h3 className="text-footer-ttl font-semibold mb-4">
+                {t("sections.legal")}
+              </h3>
               <ul className="space-y-2">
                 <li>
                   <Link
