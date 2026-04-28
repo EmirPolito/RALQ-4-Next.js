@@ -27,6 +27,7 @@ const navItems = [
 
 export function MenuSidebar() {
   const pathname = usePathname();
+
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -37,11 +38,14 @@ export function MenuSidebar() {
       collapsible="icon"
       className="border-r border-menu-lineas bg-menu-bg"
     >
-      <SidebarHeader className="h-21 flex justify-center items-center relative pt-3.5 pb-2">
+      <SidebarHeader className="h-21 flex flex-row items-center px-4 pt-3.5 pb-2 group-data-[state=collapsed]:flex-col group-data-[state=collapsed]:px-2 group-data-[state=collapsed]:justify-start">
+        <div className="w-8 h-8 shrink-0 group-data-[state=collapsed]:hidden" />
+        <div className="flex-1 flex justify-center group-data-[state=collapsed]:hidden">
         <Link
           href="/menu"
-          className="flex items-center justify-center w-full group-data-[state=collapsed]:hidden"
+          className="flex items-center justify-center"
         >
+
           {mounted ? (
             <img
               src={
@@ -55,9 +59,19 @@ export function MenuSidebar() {
           ) : (
             <div className="h-12" />
           )}
-        </Link>
-        <SidebarTrigger className="absolute -right-3 top-[60%] -translate-y-1/2 z-50 w-6 h-6 shrink-0 flex items-center justify-center opacity-100 transition-all text-menu-mostrador hover:bg-transparent cursor-pointer" />
+          </Link>
+        </div>
+
+        <SidebarTrigger className="w-8 h-8 text-menu-mostrador hover:bg-transparent cursor-pointer shrink-0 group-data-[state=collapsed]:mt-6" />
+
+
+
+
+
+
       </SidebarHeader>
+
+
 
       <SidebarContent className="py-4 px-2">
         <SidebarMenu className="gap-3">
@@ -104,16 +118,18 @@ export function MenuSidebar() {
         </div>
 
         {/* Usuario */}
-        <div className="flex items-center gap-1 p-2 rounded-xl transition-colors cursor-pointer w-full group-data-[state=collapsed]:justify-center">
+        <div className="flex items-center justify-center p-2 rounded-xl transition-colors cursor-pointer w-full">
           <UserButton
             appearance={{
               elements: {
                 userButtonAvatarBox:
-                  "ml-20 mr-20 shadow-sm transition-transform",
+                  "shadow-sm transition-transform",
               },
             }}
           />
         </div>
+
+
       </SidebarFooter>
     </Sidebar>
   );

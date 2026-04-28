@@ -208,6 +208,41 @@
   --menu-lineas: #eaeaea;
   --menu-mostrador: #4a4a4a;
 
+  /* =========================
+   Menu Derecho
+========================= */
+  --menu-d-bg: #ffffff; /*bg general*/
+
+  --menu-d-ttl1: #155dfc; /*Quimica general - Nivel 1 y el numero de la racha*/
+  --menu-d-nivel1: #2c2a2a; /*Al nivel 2  y 72/100*/
+  --menu-d-nivel-bg: #155dfc; /*BG del numero del nivel*/
+  --menu-d-progreso1: #e9e9e9; /*Color del la linea del progreso*/
+  --menu-d-progreso-llenado: #155dfc; /*Color del llenado del progreso*/
+  --menu-d-racha1: #155dfc; /*icono del fuego de la racha*/
+  --menu-d-racha-num: #000000;
+
+  /**/
+  --menu-d-bg-tarjeta2: #ffffff; /*para el bg de la tarjeta general y el de las 3 tarjetas */
+  --menu-d-bordes2: #eeeeee; /*bordes de la tarjeta y de las 3 subtarjetas*/
+  --menu-d-ttl2: #155dfc; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
+  --menu-d-iconos2: #155dfc;
+  --menu-d-desc2: #2c2a2a; /* para la descripcioens de las 3 tarjetas*/
+
+  /**/
+  --menu-d-bg3: #e9e9e9; /*para el bg de las tarjetas y para el bg del boton*/
+  --menu-d-bordes3: #ffffff; /*bordes de las tarjetas y del boton*/
+  --menu-d-ttl3: #155dfc; /*titulos de las tarjetas */
+  --menu-d-desc3: #2c2a2a; /*descripciones de las tarjetas*/
+
+  /**/
+  --menu-d-bg4: #000000; /*Para el bg de la barra de abajo*/
+  --menu-d-borde4: #0f0f0f; /*Para los bordes de la tarjeta*/
+  --menu-d-iconos4: #f8f8f8; /*para  <, matraz, los puntos .. y >*/
+  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
+  --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
+  --menu-d-bg-boton4: #155dfc; /*para el bg del boton*/
+
+
   /* UI */
   --background: #ffffff;
   --muted: #e6e6e6; /*bg para el boton de las animaciones */
@@ -490,6 +525,39 @@
   --menu-lineas: #212121;
   --menu-mostrador: #ffffff;
 
+  /* =========================
+   Menu Derecho
+========================= */
+  --menu-d-bg: #000000; /*bg general*/
+
+  --menu-d-ttl1: #ffffff; /*Quimica general - Nivel 1 y el numero de la racha*/
+  --menu-d-nivel1: #dddddd; /*Al nivel 2  y 72/100*/
+  --menu-d-nivel-bg: #2a2a2a; /*BG del numero del nivel*/
+  --menu-d-progreso1: #212121; /*Color del la linea del progreso*/
+  --menu-d-progreso-llenado: #ffffff; /*Color del llenado del progreso*/
+  --menu-d-racha1: #ff8400; /*icono del fuego de la racha*/
+
+
+  /**/
+  --menu-d-bg-tarjeta2: #050505; /*para el bg de la tarjeta general y el de las 3 tarjetas */
+  --menu-d-bordes2: #1a1a1a; /*bordes de la tarjeta y de las 3 subtarjetas*/
+  --menu-d-ttl2: #ffffff; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
+  --menu-d-iconos2: #ecd20c;
+  --menu-d-desc2: #dddddd; /* para la descripcioens de las 3 tarjetas*/
+
+  /**/
+  --menu-d-bg3: #121212; /*para el bg de las tarjetas y para el bg del boton*/
+  --menu-d-bordes3: #1a1a1a; /*bordes de las tarjetas y del boton*/
+  --menu-d-ttl3: #ffffff; /*titulos de las tarjetas */
+  --menu-d-desc3: #dddddd; /*descripciones de las tarjetas*/
+
+  /**/
+  --menu-d-bg4: #111111; /*Para el bg de la barra de abajo*/
+  --menu-d-borde4: #222222; /*Para los bordes de la tarjeta*/
+  --menu-d-iconos4: #ffffff; /*para  <, matraz, los puntos .. y >*/
+  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
+  --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
+  --menu-d-bg-boton4: #2a2a2a; /*para el bg del boton*/
   /* UI */
   --background: #000000;
   --foreground: #fafafa;
@@ -779,6 +847,39 @@
   --input: #cccccc;
   --ring: #0072b2;
 
+  /* =========================
+   Menu Derecho
+========================= */
+  --menu-d-bg: #ffffff; /*bg general*/
+
+  --menu-d-ttl1: #0072b2; /*Quimica general - Nivel 1 y el numero de la racha*/
+  --menu-d-nivel1: #333333; /*Al nivel 2  y 72/100*/
+  --menu-d-progreso1: #f0f0f0; /*Color del la linea del progreso*/
+  --menu-d-progreso-llenado: #0072b2; /*Color del llenado del progreso*/
+
+  --menu-d-racha1: #d55e00; /*icono del fuego de la racha*/
+
+  /**/
+  --menu-d-bg-tarjeta2: #ffffff; /*para el bg de la tarjeta general y el de las 3 tarjetas */
+  --menu-d-bordes2: #cccccc; /*bordes de la tarjeta y de las 3 subtarjetas*/
+  --menu-d-ttl2: #000000; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
+  --menu-d-iconos2: #0072b2;
+  --menu-d-desc2: #333333; /* para la descripcioens de las 3 tarjetas*/
+
+  /**/
+  --menu-d-bg3: #f5f5f5; /*para el bg de las tarjetas y para el bg del boton*/
+  --menu-d-bordes3: #cccccc; /*bordes de las tarjetas y del boton*/
+  --menu-d-ttl3: #000000; /*titulos de las tarjetas */
+  --menu-d-desc3: #333333; /*descripciones de las tarjetas*/
+
+  /**/
+  --menu-d-bg4: #000000; /*Para el bg de la barra de abajo*/
+  --menu-d-borde4: #ffffff; /*Para los bordes de la tarjeta*/
+  --menu-d-iconos4: #ffffff; /*para  <, matraz, los puntos .. y >*/
+  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
+  --menu-d-desc4: #e0e0e0; /*para la descripcion, reconoce...*/
+  --menu-d-bg-boton4: #0072b2; /*para el bg del boton*/
+
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
   --dash-banner: #e69f00;
@@ -1009,10 +1110,50 @@
   --menu-bg: #ffffff;
   --menu-apartados: #155dfc;
   --menu-paginas: #2c2a2a;
-  --menu-paginas-hvr: #f1f1f1;
+  --menu-paginas-hvr: #f0f5ff;
   --menu-iconos: #155dfc;
   --menu-lineas: #eaeaea;
   --menu-mostrador: #000000;
+
+
+
+  /* =========================
+   Menu Derecho
+========================= */
+  --menu-d-bg: #ffffff; /*bg general*/
+
+  --menu-d-ttl1: #155dfc; /*Quimica general - Nivel 1 y el numero de la racha*/
+  --menu-d-nivel1: #2c2a2a; /*Al nivel 2  y 72/100*/
+  --menu-d-nivel-bg: #155dfc; /*BG del numero del nivel*/
+  --menu-d-progreso1: #e9e9e9; /*Color del la linea del progreso*/
+  --menu-d-progreso-llenado: #155dfc; /*Color del llenado del progreso*/
+  --menu-d-racha1: #155dfc; /*icono del fuego de la racha*/
+  --menu-d-racha-num: #000000;
+
+  /**/
+  --menu-d-bg-tarjeta2: #ffffff; /*para el bg de la tarjeta general y el de las 3 tarjetas */
+  --menu-d-bordes2: #eeeeee; /*bordes de la tarjeta y de las 3 subtarjetas*/
+  --menu-d-ttl2: #155dfc; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
+  --menu-d-iconos2: #155dfc;
+  --menu-d-desc2: #2c2a2a; /* para la descripcioens de las 3 tarjetas*/
+
+  /**/
+  --menu-d-bg3: #e9e9e9; /*para el bg de las tarjetas y para el bg del boton*/
+  --menu-d-bordes3: #ffffff; /*bordes de las tarjetas y del boton*/
+  --menu-d-ttl3: #155dfc; /*titulos de las tarjetas */
+  --menu-d-desc3: #2c2a2a; /*descripciones de las tarjetas*/
+
+  /**/
+  --menu-d-bg4: #000000; /*Para el bg de la barra de abajo*/
+  --menu-d-borde4: #0f0f0f; /*Para los bordes de la tarjeta*/
+  --menu-d-iconos4: #f8f8f8; /*para  <, matraz, los puntos .. y >*/
+  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
+  --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
+  --menu-d-bg-boton4: #155dfc; /*para el bg del boton*/
+
+
+
+
 
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
@@ -1237,10 +1378,50 @@
   --menu-bg: #000000;
   --menu-apartados: #155dfc;
   --menu-paginas: #ffffff;
-  --menu-paginas-hvr: #0f0f0f;
+  --menu-paginas-hvr: #050a1f;
   --menu-iconos: #155dfc;
   --menu-lineas: #212121;
-  --menu-mostrador: #000000;
+  --menu-mostrador: #ffffff;
+
+
+
+
+  /* =========================
+   Menu Derecho
+========================= */
+  --menu-d-bg: #000000; /*bg general*/
+
+  --menu-d-ttl1: #155dfc; /*Quimica general - Nivel 1 y el numero de la racha*/
+  --menu-d-nivel1: #bbbbbb; /*Al nivel 2  y 72/100*/
+  --menu-d-nivel-bg: #155dfc; /*BG del numero del nivel*/
+  --menu-d-progreso1: #212121; /*Color del la linea del progreso*/
+  --menu-d-progreso-llenado: #155dfc; /*Color del llenado del progreso*/
+  --menu-d-racha1: #155dfc; /*icono del fuego de la racha*/
+  --menu-d-racha-num: #ffffff;
+
+  /**/
+  --menu-d-bg-tarjeta2: #050505; /*para el bg de la tarjeta general y el de las 3 tarjetas */
+  --menu-d-bordes2: #1a1a1a; /*bordes de la tarjeta y de las 3 subtarjetas*/
+  --menu-d-ttl2: #155dfc; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
+  --menu-d-iconos2: #155dfc;
+  --menu-d-desc2: #bbbbbb; /* para la descripcioens de las 3 tarjetas*/
+
+  /**/
+  --menu-d-bg3: #121212; /*para el bg de las tarjetas y para el bg del boton*/
+  --menu-d-bordes3: #1a1a1a; /*bordes de las tarjetas y del boton*/
+  --menu-d-ttl3: #155dfc; /*titulos de las tarjetas */
+  --menu-d-desc3: #bbbbbb; /*descripciones de las tarjetas*/
+
+  /**/
+  --menu-d-bg4: #111111; /*Para el bg de la barra de abajo*/
+  --menu-d-borde4: #222222; /*Para los bordes de la tarjeta*/
+  --menu-d-iconos4: #ffffff; /*para  <, matraz, los puntos .. y >*/
+  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
+  --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
+  --menu-d-bg-boton4: #155dfc; /*para el bg del boton*/
+
+
+
 
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
@@ -1462,6 +1643,56 @@
 
   --ayuda-link: #8a0194;
 
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #ffffff;
+  --menu-apartados: #8a0194;
+  --menu-paginas: #2c2a2a;
+  --menu-paginas-hvr: #fdf2ff;
+  --menu-iconos: #8a0194;
+  --menu-lineas: #eaeaea;
+  --menu-mostrador: #000000;
+
+
+  /* =========================
+   Menu Derecho
+========================= */
+  --menu-d-bg: #ffffff; /*bg general*/
+
+  --menu-d-ttl1: #8a0194; /*Quimica general - Nivel 1 y el numero de la racha*/
+  --menu-d-nivel1: #2c2a2a; /*Al nivel 2  y 72/100*/
+  --menu-d-nivel-bg: #8a0194; /*BG del numero del nivel*/
+  --menu-d-progreso1: #e9e9e9; /*Color del la linea del progreso*/
+  --menu-d-progreso-llenado: #8a0194; /*Color del llenado del progreso*/
+  --menu-d-racha1: #8a0194; /*icono del fuego de la racha*/
+  --menu-d-racha-num: #000000;
+
+  /**/
+  --menu-d-bg-tarjeta2: #ffffff; /*para el bg de la tarjeta general y el de las 3 tarjetas */
+  --menu-d-bordes2: #eeeeee; /*bordes de la tarjeta y de las 3 subtarjetas*/
+  --menu-d-ttl2: #8a0194; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
+  --menu-d-iconos2: #8a0194;
+  --menu-d-desc2: #2c2a2a; /* para la descripcioens de las 3 tarjetas*/
+
+  /**/
+  --menu-d-bg3: #e9e9e9; /*para el bg de las tarjetas y para el bg del boton*/
+  --menu-d-bordes3: #ffffff; /*bordes de las tarjetas y del boton*/
+  --menu-d-ttl3: #8a0194; /*titulos de las tarjetas */
+  --menu-d-desc3: #2c2a2a; /*descripciones de las tarjetas*/
+
+  /**/
+  --menu-d-bg4: #000000; /*Para el bg de la barra de abajo*/
+  --menu-d-borde4: #0f0f0f; /*Para los bordes de la tarjeta*/
+  --menu-d-iconos4: #f8f8f8; /*para  <, matraz, los puntos .. y >*/
+  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
+  --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
+  --menu-d-bg-boton4: #8a0194; /*para el bg del boton*/
+
+
+
+
+
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
   --dash-banner: #fce04b;
@@ -1681,6 +1912,55 @@
   --ayuda-preg-txt: #dddddd;
 
   --ayuda-link: #a800b7;
+
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #000000;
+  --menu-apartados: #8a0194;
+  --menu-paginas: #ffffff;
+  --menu-paginas-hvr: #1a011a;
+  --menu-iconos: #8a0194;
+  --menu-lineas: #212121;
+  --menu-mostrador: #ffffff;
+
+
+  /* =========================
+   Menu Derecho
+========================= */
+  --menu-d-bg: #000000; /*bg general*/
+
+  --menu-d-ttl1: #a800b7; /*Quimica general - Nivel 1 y el numero de la racha*/
+  --menu-d-nivel1: #bbbbbb; /*Al nivel 2  y 72/100*/
+  --menu-d-nivel-bg: #8a0194; /*BG del numero del nivel*/
+  --menu-d-progreso1: #212121; /*Color del la linea del progreso*/
+  --menu-d-progreso-llenado: #a800b7; /*Color del llenado del progreso*/
+  --menu-d-racha1: #a800b7; /*icono del fuego de la racha*/
+  --menu-d-racha-num: #ffffff;
+
+  /**/
+  --menu-d-bg-tarjeta2: #050505; /*para el bg de la tarjeta general y el de las 3 tarjetas */
+  --menu-d-bordes2: #1a1a1a; /*bordes de la tarjeta y de las 3 subtarjetas*/
+  --menu-d-ttl2: #a800b7; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
+  --menu-d-iconos2: #a800b7;
+  --menu-d-desc2: #bbbbbb; /* para la descripcioens de las 3 tarjetas*/
+
+  /**/
+  --menu-d-bg3: #121212; /*para el bg de las tarjetas y para el bg del boton*/
+  --menu-d-bordes3: #1a1a1a; /*bordes de las tarjetas y del boton*/
+  --menu-d-ttl3: #a800b7; /*titulos de las tarjetas */
+  --menu-d-desc3: #bbbbbb; /*descripciones de las tarjetas*/
+
+  /**/
+  --menu-d-bg4: #111111; /*Para el bg de la barra de abajo*/
+  --menu-d-borde4: #222222; /*Para los bordes de la tarjeta*/
+  --menu-d-iconos4: #ffffff; /*para  <, matraz, los puntos .. y >*/
+  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
+  --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
+  --menu-d-bg-boton4: #a800b7; /*para el bg del boton*/
+
+
+
 
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
@@ -1902,6 +2182,57 @@
 
   --ayuda-link: #fdc700;
 
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #ffffff;
+  --menu-apartados: #fdc700;
+  --menu-paginas: #2c2a2a;
+  --menu-paginas-hvr: #fffbeb;
+  --menu-iconos: #fdc700;
+  --menu-lineas: #eaeaea;
+  --menu-mostrador: #000000;
+
+
+
+  /* =========================
+   Menu Derecho
+========================= */
+  --menu-d-bg: #ffffff; /*bg general*/
+
+  --menu-d-ttl1: #fdc700; /*Quimica general - Nivel 1 y el numero de la racha*/
+  --menu-d-nivel1: #2c2a2a; /*Al nivel 2  y 72/100*/
+  --menu-d-nivel-bg: #fdc700; /*BG del numero del nivel*/
+  --menu-d-progreso1: #e9e9e9; /*Color del la linea del progreso*/
+  --menu-d-progreso-llenado: #fdc700; /*Color del llenado del progreso*/
+  --menu-d-racha1: #fdc700; /*icono del fuego de la racha*/
+  --menu-d-racha-num: #000000;
+
+  /**/
+  --menu-d-bg-tarjeta2: #ffffff; /*para el bg de la tarjeta general y el de las 3 tarjetas */
+  --menu-d-bordes2: #eeeeee; /*bordes de la tarjeta y de las 3 subtarjetas*/
+  --menu-d-ttl2: #fdc700; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
+  --menu-d-iconos2: #fdc700;
+  --menu-d-desc2: #2c2a2a; /* para la descripcioens de las 3 tarjetas*/
+
+  /**/
+  --menu-d-bg3: #e9e9e9; /*para el bg de las tarjetas y para el bg del boton*/
+  --menu-d-bordes3: #ffffff; /*bordes de las tarjetas y del boton*/
+  --menu-d-ttl3: #fdc700; /*titulos de las tarjetas */
+  --menu-d-desc3: #2c2a2a; /*descripciones de las tarjetas*/
+
+  /**/
+  --menu-d-bg4: #000000; /*Para el bg de la barra de abajo*/
+  --menu-d-borde4: #0f0f0f; /*Para los bordes de la tarjeta*/
+  --menu-d-iconos4: #f8f8f8; /*para  <, matraz, los puntos .. y >*/
+  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
+  --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
+  --menu-d-bg-boton4: #fdc700; /*para el bg del boton*/
+
+
+
+
+
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
   --dash-banner: #fce04b;
@@ -2121,6 +2452,56 @@
   --ayuda-preg-txt: #dddddd;
 
   --ayuda-link: #fdc700;
+
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #000000;
+  --menu-apartados: #fdc700;
+  --menu-paginas: #ffffff;
+  --menu-paginas-hvr: #1a1601;
+  --menu-iconos: #fdc700;
+  --menu-lineas: #212121;
+  --menu-mostrador: #ffffff;
+
+
+
+
+  /* =========================
+   Menu Derecho
+========================= */
+  --menu-d-bg: #000000; /*bg general*/
+
+  --menu-d-ttl1: #fdc700; /*Quimica general - Nivel 1 y el numero de la racha*/
+  --menu-d-nivel1: #bbbbbb; /*Al nivel 2  y 72/100*/
+  --menu-d-nivel-bg: #fdc700; /*BG del numero del nivel*/
+  --menu-d-progreso1: #212121; /*Color del la linea del progreso*/
+  --menu-d-progreso-llenado: #fdc700; /*Color del llenado del progreso*/
+  --menu-d-racha1: #fdc700; /*icono del fuego de la racha*/
+  --menu-d-racha-num: #ffffff;
+
+  /**/
+  --menu-d-bg-tarjeta2: #050505; /*para el bg de la tarjeta general y el de las 3 tarjetas */
+  --menu-d-bordes2: #1a1a1a; /*bordes de la tarjeta y de las 3 subtarjetas*/
+  --menu-d-ttl2: #fdc700; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
+  --menu-d-iconos2: #fdc700;
+  --menu-d-desc2: #bbbbbb; /* para la descripcioens de las 3 tarjetas*/
+
+  /**/
+  --menu-d-bg3: #121212; /*para el bg de las tarjetas y para el bg del boton*/
+  --menu-d-bordes3: #1a1a1a; /*bordes de las tarjetas y del boton*/
+  --menu-d-ttl3: #fdc700; /*titulos de las tarjetas */
+  --menu-d-desc3: #bbbbbb; /*descripciones de las tarjetas*/
+
+  /**/
+  --menu-d-bg4: #111111; /*Para el bg de la barra de abajo*/
+  --menu-d-borde4: #222222; /*Para los bordes de la tarjeta*/
+  --menu-d-iconos4: #ffffff; /*para  <, matraz, los puntos .. y >*/
+  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
+  --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
+  --menu-d-bg-boton4: #fdc700; /*para el bg del boton*/
+
+
 
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
@@ -2343,6 +2724,56 @@
 
   --ayuda-link: #f77817;
 
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #ffffff;
+  --menu-apartados: #f77817;
+  --menu-paginas: #2c2a2a;
+  --menu-paginas-hvr: #fff7ed;
+  --menu-iconos: #f77817;
+  --menu-lineas: #eaeaea;
+  --menu-mostrador: #000000;
+
+
+
+  /* =========================
+   Menu Derecho
+========================= */
+  --menu-d-bg: #ffffff; /*bg general*/
+
+  --menu-d-ttl1: #f77817; /*Quimica general - Nivel 1 y el numero de la racha*/
+  --menu-d-nivel1: #2c2a2a; /*Al nivel 2  y 72/100*/
+  --menu-d-nivel-bg: #f77817; /*BG del numero del nivel*/
+  --menu-d-progreso1: #e9e9e9; /*Color del la linea del progreso*/
+  --menu-d-progreso-llenado: #f77817; /*Color del llenado del progreso*/
+  --menu-d-racha1: #f77817; /*icono del fuego de la racha*/
+  --menu-d-racha-num: #000000;
+
+  /**/
+  --menu-d-bg-tarjeta2: #ffffff; /*para el bg de la tarjeta general y el de las 3 tarjetas */
+  --menu-d-bordes2: #eeeeee; /*bordes de la tarjeta y de las 3 subtarjetas*/
+  --menu-d-ttl2: #f77817; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
+  --menu-d-iconos2: #f77817;
+  --menu-d-desc2: #2c2a2a; /* para la descripcioens de las 3 tarjetas*/
+
+  /**/
+  --menu-d-bg3: #e9e9e9; /*para el bg de las tarjetas y para el bg del boton*/
+  --menu-d-bordes3: #ffffff; /*bordes de las tarjetas y del boton*/
+  --menu-d-ttl3: #f77817; /*titulos de las tarjetas */
+  --menu-d-desc3: #2c2a2a; /*descripciones de las tarjetas*/
+
+  /**/
+  --menu-d-bg4: #000000; /*Para el bg de la barra de abajo*/
+  --menu-d-borde4: #0f0f0f; /*Para los bordes de la tarjeta*/
+  --menu-d-iconos4: #f8f8f8; /*para  <, matraz, los puntos .. y >*/
+  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
+  --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
+  --menu-d-bg-boton4: #f77817; /*para el bg del boton*/
+
+
+
+
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
   --dash-banner: #fce04b;
@@ -2564,6 +2995,57 @@
 
   --ayuda-link: #ff8400;
 
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #000000;
+  --menu-apartados: #ff8400;
+  --menu-paginas: #ffffff;
+  --menu-paginas-hvr: #1a0a01;
+  --menu-iconos: #ff8400;
+  --menu-lineas: #212121;
+  --menu-mostrador: #ffffff;
+
+
+
+
+  /* =========================
+   Menu Derecho
+========================= */
+  --menu-d-bg: #000000; /*bg general*/
+
+  --menu-d-ttl1: #ff8400; /*Quimica general - Nivel 1 y el numero de la racha*/
+  --menu-d-nivel1: #bbbbbb; /*Al nivel 2  y 72/100*/
+  --menu-d-nivel-bg: #ff8400; /*BG del numero del nivel*/
+  --menu-d-progreso1: #212121; /*Color del la linea del progreso*/
+  --menu-d-progreso-llenado: #ff8400; /*Color del llenado del progreso*/
+  --menu-d-racha1: #ff8400; /*icono del fuego de la racha*/
+  --menu-d-racha-num: #ffffff;
+
+  /**/
+  --menu-d-bg-tarjeta2: #050505; /*para el bg de la tarjeta general y el de las 3 tarjetas */
+  --menu-d-bordes2: #1a1a1a; /*bordes de la tarjeta y de las 3 subtarjetas*/
+  --menu-d-ttl2: #ff8400; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
+  --menu-d-iconos2: #ff8400;
+  --menu-d-desc2: #bbbbbb; /* para la descripcioens de las 3 tarjetas*/
+
+  /**/
+  --menu-d-bg3: #121212; /*para el bg de las tarjetas y para el bg del boton*/
+  --menu-d-bordes3: #1a1a1a; /*bordes de las tarjetas y del boton*/
+  --menu-d-ttl3: #ff8400; /*titulos de las tarjetas */
+  --menu-d-desc3: #bbbbbb; /*descripciones de las tarjetas*/
+
+  /**/
+  --menu-d-bg4: #111111; /*Para el bg de la barra de abajo*/
+  --menu-d-borde4: #222222; /*Para los bordes de la tarjeta*/
+  --menu-d-iconos4: #ffffff; /*para  <, matraz, los puntos .. y >*/
+  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
+  --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
+  --menu-d-bg-boton4: #ff8400; /*para el bg del boton*/
+
+
+
+
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
   --dash-banner: #4b6554;
@@ -2783,6 +3265,56 @@
   --ayuda-preg-txt: #616161;
 
   --ayuda-link: #ec003f;
+
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #ffffff;
+  --menu-apartados: #ec003f;
+  --menu-paginas: #2c2a2a;
+  --menu-paginas-hvr: #fff1f2;
+  --menu-iconos: #ec003f;
+  --menu-lineas: #eaeaea;
+  --menu-mostrador: #000000;
+
+
+
+  /* =========================
+   Menu Derecho
+========================= */
+  --menu-d-bg: #ffffff; /*bg general*/
+
+  --menu-d-ttl1: #ec003f; /*Quimica general - Nivel 1 y el numero de la racha*/
+  --menu-d-nivel1: #2c2a2a; /*Al nivel 2  y 72/100*/
+  --menu-d-nivel-bg: #ec003f; /*BG del numero del nivel*/
+  --menu-d-progreso1: #e9e9e9; /*Color del la linea del progreso*/
+  --menu-d-progreso-llenado: #ec003f; /*Color del llenado del progreso*/
+  --menu-d-racha1: #ec003f; /*icono del fuego de la racha*/
+  --menu-d-racha-num: #000000;
+
+  /**/
+  --menu-d-bg-tarjeta2: #ffffff; /*para el bg de la tarjeta general y el de las 3 tarjetas */
+  --menu-d-bordes2: #eeeeee; /*bordes de la tarjeta y de las 3 subtarjetas*/
+  --menu-d-ttl2: #ec003f; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
+  --menu-d-iconos2: #ec003f;
+  --menu-d-desc2: #2c2a2a; /* para la descripcioens de las 3 tarjetas*/
+
+  /**/
+  --menu-d-bg3: #e9e9e9; /*para el bg de las tarjetas y para el bg del boton*/
+  --menu-d-bordes3: #ffffff; /*bordes de las tarjetas y del boton*/
+  --menu-d-ttl3: #ec003f; /*titulos de las tarjetas */
+  --menu-d-desc3: #2c2a2a; /*descripciones de las tarjetas*/
+
+  /**/
+  --menu-d-bg4: #000000; /*Para el bg de la barra de abajo*/
+  --menu-d-borde4: #0f0f0f; /*Para los bordes de la tarjeta*/
+  --menu-d-iconos4: #f8f8f8; /*para  <, matraz, los puntos .. y >*/
+  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
+  --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
+  --menu-d-bg-boton4: #ec003f; /*para el bg del boton*/
+
+
+
 
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
@@ -3005,6 +3537,57 @@
 
   --ayuda-link: #ec003f;
 
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #000000;
+  --menu-apartados: #ec003f;
+  --menu-paginas: #ffffff;
+  --menu-paginas-hvr: #1a0105;
+  --menu-iconos: #ec003f;
+  --menu-lineas: #212121;
+  --menu-mostrador: #ffffff;
+
+
+
+
+  /* =========================
+   Menu Derecho
+========================= */
+  --menu-d-bg: #000000; /*bg general*/
+
+  --menu-d-ttl1: #ec003f; /*Quimica general - Nivel 1 y el numero de la racha*/
+  --menu-d-nivel1: #bbbbbb; /*Al nivel 2  y 72/100*/
+  --menu-d-nivel-bg: #ec003f; /*BG del numero del nivel*/
+  --menu-d-progreso1: #212121; /*Color del la linea del progreso*/
+  --menu-d-progreso-llenado: #ec003f; /*Color del llenado del progreso*/
+  --menu-d-racha1: #ec003f; /*icono del fuego de la racha*/
+  --menu-d-racha-num: #ffffff;
+
+  /**/
+  --menu-d-bg-tarjeta2: #050505; /*para el bg de la tarjeta general y el de las 3 tarjetas */
+  --menu-d-bordes2: #1a1a1a; /*bordes de la tarjeta y de las 3 subtarjetas*/
+  --menu-d-ttl2: #ec003f; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
+  --menu-d-iconos2: #ec003f;
+  --menu-d-desc2: #bbbbbb; /* para la descripcioens de las 3 tarjetas*/
+
+  /**/
+  --menu-d-bg3: #121212; /*para el bg de las tarjetas y para el bg del boton*/
+  --menu-d-bordes3: #1a1a1a; /*bordes de las tarjetas y del boton*/
+  --menu-d-ttl3: #ec003f; /*titulos de las tarjetas */
+  --menu-d-desc3: #bbbbbb; /*descripciones de las tarjetas*/
+
+  /**/
+  --menu-d-bg4: #111111; /*Para el bg de la barra de abajo*/
+  --menu-d-borde4: #222222; /*Para los bordes de la tarjeta*/
+  --menu-d-iconos4: #ffffff; /*para  <, matraz, los puntos .. y >*/
+  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
+  --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
+  --menu-d-bg-boton4: #ec003f; /*para el bg del boton*/
+
+
+
+
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
   --dash-banner: #4b6554;
@@ -3225,6 +3808,57 @@
 
   --ayuda-link: #5ea500;
 
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #ffffff;
+  --menu-apartados: #5ea500;
+  --menu-paginas: #2c2a2a;
+  --menu-paginas-hvr: #f0fdf4;
+  --menu-iconos: #5ea500;
+  --menu-lineas: #eaeaea;
+  --menu-mostrador: #000000;
+
+
+
+  /* =========================
+   Menu Derecho
+========================= */
+  --menu-d-bg: #ffffff; /*bg general*/
+
+  --menu-d-ttl1: #5ea500; /*Quimica general - Nivel 1 y el numero de la racha*/
+  --menu-d-nivel1: #2c2a2a; /*Al nivel 2  y 72/100*/
+  --menu-d-nivel-bg: #5ea500; /*BG del numero del nivel*/
+  --menu-d-progreso1: #e9e9e9; /*Color del la linea del progreso*/
+  --menu-d-progreso-llenado: #5ea500; /*Color del llenado del progreso*/
+  --menu-d-racha1: #5ea500; /*icono del fuego de la racha*/
+  --menu-d-racha-num: #000000;
+
+  /**/
+  --menu-d-bg-tarjeta2: #ffffff; /*para el bg de la tarjeta general y el de las 3 tarjetas */
+  --menu-d-bordes2: #eeeeee; /*bordes de la tarjeta y de las 3 subtarjetas*/
+  --menu-d-ttl2: #5ea500; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
+  --menu-d-iconos2: #5ea500;
+  --menu-d-desc2: #2c2a2a; /* para la descripcioens de las 3 tarjetas*/
+
+  /**/
+  --menu-d-bg3: #e9e9e9; /*para el bg de las tarjetas y para el bg del boton*/
+  --menu-d-bordes3: #ffffff; /*bordes de las tarjetas y del boton*/
+  --menu-d-ttl3: #5ea500; /*titulos de las tarjetas */
+  --menu-d-desc3: #2c2a2a; /*descripciones de las tarjetas*/
+
+  /**/
+  --menu-d-bg4: #000000; /*Para el bg de la barra de abajo*/
+  --menu-d-borde4: #0f0f0f; /*Para los bordes de la tarjeta*/
+  --menu-d-iconos4: #f8f8f8; /*para  <, matraz, los puntos .. y >*/
+  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
+  --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
+  --menu-d-bg-boton4: #5ea500; /*para el bg del boton*/
+
+
+
+
+
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
   --dash-banner: #fce04b;
@@ -3444,6 +4078,57 @@
   --ayuda-preg-txt: #dddddd;
 
   --ayuda-link: #7ccf00;
+
+  /* =========================
+   Menu Izquierdo
+========================= */
+  --menu-bg: #000000;
+  --menu-apartados: #7ccf00;
+  --menu-paginas: #ffffff;
+  --menu-paginas-hvr: #0a1a01;
+  --menu-iconos: #7ccf00;
+  --menu-lineas: #212121;
+  --menu-mostrador: #ffffff;
+
+
+
+
+  /* =========================
+   Menu Derecho
+========================= */
+  --menu-d-bg: #000000; /*bg general*/
+
+  --menu-d-ttl1: #7ccf00; /*Quimica general - Nivel 1 y el numero de la racha*/
+  --menu-d-nivel1: #bbbbbb; /*Al nivel 2  y 72/100*/
+  --menu-d-nivel-bg: #7ccf00; /*BG del numero del nivel*/
+  --menu-d-progreso1: #212121; /*Color del la linea del progreso*/
+  --menu-d-progreso-llenado: #7ccf00; /*Color del llenado del progreso*/
+  --menu-d-racha1: #7ccf00; /*icono del fuego de la racha*/
+  --menu-d-racha-num: #ffffff;
+
+  /**/
+  --menu-d-bg-tarjeta2: #050505; /*para el bg de la tarjeta general y el de las 3 tarjetas */
+  --menu-d-bordes2: #1a1a1a; /*bordes de la tarjeta y de las 3 subtarjetas*/
+  --menu-d-ttl2: #7ccf00; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
+  --menu-d-iconos2: #7ccf00;
+  --menu-d-desc2: #bbbbbb; /* para la descripcioens de las 3 tarjetas*/
+
+  /**/
+  --menu-d-bg3: #121212; /*para el bg de las tarjetas y para el bg del boton*/
+  --menu-d-bordes3: #1a1a1a; /*bordes de las tarjetas y del boton*/
+  --menu-d-ttl3: #7ccf00; /*titulos de las tarjetas */
+  --menu-d-desc3: #bbbbbb; /*descripciones de las tarjetas*/
+
+  /**/
+  --menu-d-bg4: #111111; /*Para el bg de la barra de abajo*/
+  --menu-d-borde4: #222222; /*Para los bordes de la tarjeta*/
+  --menu-d-iconos4: #ffffff; /*para  <, matraz, los puntos .. y >*/
+  --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
+  --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
+  --menu-d-bg-boton4: #7ccf00; /*para el bg del boton*/
+
+
+
 
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
@@ -3697,6 +4382,30 @@
   /* --color-mockup-bg: var(--mockup-bg);
   --color-mockup-ttl: var(--mockup-ttl);
   --color-mockup-desc: var(--mockup-desc); */
+  /* Menu Derecho */
+  --color-menu-d-bg: var(--menu-d-bg);
+  --color-menu-d-ttl1: var(--menu-d-ttl1);
+  --color-menu-d-nivel1: var(--menu-d-nivel1);
+  --color-menu-d-progreso1: var(--menu-d-progreso1);
+  --color-menu-d-racha1: var(--menu-d-racha1);
+  --color-menu-d-bg-tarjeta2: var(--menu-d-bg-tarjeta2);
+  --color-menu-d-bordes2: var(--menu-d-bordes2);
+  --color-menu-d-ttl2: var(--menu-d-ttl2);
+  --color-menu-d-iconos2: var(--menu-d-iconos2);
+  --color-menu-d-desc2: var(--menu-d-desc2);
+  --color-menu-d-bg3: var(--menu-d-bg3);
+  --color-menu-d-bordes3: var(--menu-d-bordes3);
+  --color-menu-d-ttl3: var(--menu-d-ttl3);
+  --color-menu-d-desc3: var(--menu-d-desc3);
+  --color-menu-d-bg4: var(--menu-d-bg4);
+  --color-menu-d-borde4: var(--menu-d-borde4);
+  --color-menu-d-iconos4: var(--menu-d-iconos4);
+  --color-menu-d-ttl4: var(--menu-d-ttl4);
+  --color-menu-d-desc4: var(--menu-d-desc4);
+  --color-menu-d-bg-boton4: var(--menu-d-bg-boton4);
+  --color-menu-d-progreso-llenado: var(--menu-d-progreso-llenado);
+  --color-menu-d-nivel-bg: var(--menu-d-nivel-bg);
+  --color-menu-d-racha-num: var(--menu-d-racha-num);
 }
 
 @layer base {
