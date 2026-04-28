@@ -27,7 +27,7 @@ Una plataforma educativa de vanguardia construida con **Next.js**, diseñada par
 ### 🌎 Internacionalización Completa (i18n)
 
 - **Multilingüe**: Soporte nativo para **Español**, **Portugués** e **Inglés**.
-- **Selector de Idioma Custom**: Selector animado con banderas circulares personalizadas (`Mexico.png`, `Brasil.png`, `EU.png`).
+- **Selector de Idioma Custom**: Selector animado con banderas circulares personalizadas (`Mexico`, `Brasil`, `USA`).
 - **Persistencia de Idioma**: El idioma seleccionado se guarda automáticamente en `localStorage` para futuras visitas.
 - **Localización Dinámica**: Todos los componentes, desde el Hero hasta los documentos legales, están completamente traducidos.
 
