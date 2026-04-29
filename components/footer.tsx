@@ -17,14 +17,14 @@ export default function Footer() {
               <span className="bg font-bold lg:inline-block">
                 {/* Logo claro */}
                 <img
-                  src="/logos/logo-verde.png"
+                  src="/logos/ralq-verde.png"
                   alt="RALQ logo"
                   className="-ml-1 h-10 w-auto dark:hidden"
                 />
 
                 {/* Logo oscuro */}
                 <img
-                  src="/logos/logo-blanco.png"
+                  src="/logos/ralq-blanco.png"
                   alt="RALQ logo"
                   className="px-0 hidden h-10 w-auto dark:block"
                 />

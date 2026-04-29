@@ -22,23 +22,23 @@ import { useTranslations } from "next-intl";
 
 const carouselImages = [
   {
-    src: "/img/sections/tabla.png",
+    src: "/img/carrusel2/tabla.png",
     alt: "Interfaz educativa de exploración científica",
   },
   {
-    src: "/img/sections/tabla.png",
+    src: "/img/carrusel2/tabla.png",
     alt: "Exploración visual de instrumentos de laboratorio",
   },
   {
-    src: "/img/sections/tabla.png",
+    src: "/img/carrusel2/tabla.png",
     alt: "Visualización interactiva de contenido científico",
   },
   {
-    src: "/img/sections/tabla.png",
+    src: "/img/carrusel2/tabla.png",
     alt: "Interfaz digital para aprendizaje de química",
   },
   {
-    src: "/img/sections/tabla.png",
+    src: "/img/carrusel2/tabla.png",
     alt: "Exploración educativa de recursos de laboratorio",
   },
 ];
@@ -100,7 +100,9 @@ function Feature() {
             <div className="flex gap-1.5 flex-col items-center lg:items-start">
               <h2 className="text-balance text-2xl font-semibold leading-[1.1] tracking-tight md:text-4xl lg:text-6xl">
                 <span className="block text-titulos">{t("titleLine1")}</span>
-                <span className="block text-carrusel2-ttl">{t("titleLine2")}</span>
+                <span className="block text-carrusel2-ttl">
+                  {t("titleLine2")}
+                </span>
               </h2>
 
               <div className="text-carrusel2-desc text-sm lg:text-base px-3.5 md:px-0 lg:max-w-xl max-w-xl leading-relaxed tracking-tight text-justify mx-auto lg:mx-0 lg:text-left [text-align-last:center] lg:[text-align-last:left]">

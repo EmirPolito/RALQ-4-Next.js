@@ -52,7 +52,7 @@ const tech = [
   },
 ];
 
-export default function ImgCursorDemo2() {
+export default function ImgCursor() {
   const t = useTranslations("imgCursor");
   const reducedMotion = useReducedMotion();
 

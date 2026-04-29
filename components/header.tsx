@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Logo } from "@/components/logo";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ThemeControls } from "@/components/theme-controls";
-import { LanguageSelector } from "@/components/language-selector";
+import { ThemeControls } from "@/components/botones-generales";
+import { LanguageSelector } from "@/components/boton-lenguage";
 import React from "react";
 import { useScroll, motion, AnimatePresence } from "motion/react";
 import { cn } from "@/lib/utils";
@@ -17,7 +17,7 @@ export const HeroHeader = () => {
   const { scrollY } = useScroll();
 
   const menuItems = [
-    { name: t("nosotros"), href: "/nosotros" },
+    { name: t("nosotros"), href: "/sobre-nosotros" },
     { name: t("contacto"), href: "/contacto" },
     { name: t("ayuda"), href: "/ayuda" },
   ];

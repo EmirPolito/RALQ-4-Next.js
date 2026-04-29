@@ -19,9 +19,9 @@ const colorOptions = [
 ];
 
 const LANGUAGES: { code: Locale; img: string; country: string }[] = [
-  { code: "es", img: "/icons/Mexico.png", country: "México" },
-  { code: "pt", img: "/icons/Brasil.png", country: "Brasil" },
-  { code: "en", img: "/icons/EU.png", country: "USA" },
+  { code: "es", img: "/icons/lenguage/Mexico.png", country: "México" },
+  { code: "pt", img: "/icons/lenguage/Brasil.png", country: "Brasil" },
+  { code: "en", img: "/icons/lenguage/EU.png", country: "USA" },
 ];
 
 export function SidebarControls({ className }: { className?: string }) {

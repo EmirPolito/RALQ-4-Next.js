@@ -6,9 +6,9 @@ import { cn } from "@/lib/utils";
 import { useReducedMotion } from "@/hooks/use-reduced-motion";
 import { useTranslations } from "next-intl";
 
-import img1 from "../public/img/quimica/img1.jpg";
-import img2 from "../public/img/quimica/img2.jpg";
-import img3 from "../public/img/quimica/img3.jpg";
+import img1 from "../public/img/tresPasos/paso1.jpg";
+import img2 from "../public/img/tresPasos/paso2.jpg";
+import img3 from "../public/img/tresPasos/paso3.jpg";
 
 export default function TresPasosLaboratorio() {
   const t = useTranslations("tresPasos");

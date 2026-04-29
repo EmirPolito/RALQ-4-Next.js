@@ -13,12 +13,12 @@ export function Carousel() {
   const items = t.raw("items") as { title: string }[];
 
   const images = [
-    "/img/carrusel/carrusel1.png",
-    "/img/carrusel/carrusel2.png",
-    "/img/carrusel/carrusel4.png",
-    "/img/carrusel/carrusel5.png",
-    "/img/carrusel/carrusel6.png",
-    "/img/carrusel/carrusel7.png",
+    "/img/carrusel1/carrusel1.png",
+    "/img/carrusel1/carrusel2.png",
+    "/img/carrusel1/carrusel3.png",
+    "/img/carrusel1/carrusel4.png",
+    "/img/carrusel1/carrusel5.png",
+    "/img/carrusel1/carrusel6.png",
   ];
 
   React.useEffect(() => {

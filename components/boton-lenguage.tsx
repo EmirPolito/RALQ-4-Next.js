@@ -18,28 +18,28 @@ const LANGUAGES: {
     label: "Español",
     flag: "🇲🇽",
     country: "México",
-    img: "/icons/Mexico.png",
+    img: "/icons/lenguage/Mexico.png",
   },
   {
     code: "pt",
     label: "Português",
     flag: "🇧🇷",
     country: "Brasil",
-    img: "/icons/Brasil.png",
+    img: "/icons/lenguage/Brasil.png",
   },
   {
     code: "en",
     label: "English",
     flag: "🇺🇸",
     country: "USA",
-    img: "/icons/EU.png",
+    img: "/icons/lenguage/EU.png",
   },
 ];
 
-export function LanguageSelector({ 
+export function LanguageSelector({
   isMobile = false,
-  className 
-}: { 
+  className,
+}: {
   isMobile?: boolean;
   className?: string;
 }) {

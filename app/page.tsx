@@ -4,10 +4,10 @@ import React from "react";
 import { ScrollAnimation } from "@/components/motion-primitives/scroll-animation";
 import { Hero } from "@/components/hero";
 import { Carousel } from "@/components/carrusel-1";
-import PinCardsSection from "@/components/3d-pin-demo";
-import TresPasosLaboratorio from "@/components/tres-secciones";
 import { Feature } from "@/components/carrusel-2";
-import ImgCursorDemo2 from "@/components/img-cursor-2";
+import PinCardsSection from "@/components/3d-pin-demo";
+import TresPasosLaboratorio from "@/components/tres-pasos";
+import ImgCursor from "@/components/img-cursor";
 import Preguntas1 from "@/components/preguntas-frecuentes";
 import Footer from "@/components/footer";
 
@@ -32,7 +32,7 @@ export default function Page() {
       <TresPasosLaboratorio />
 
       {/* Tecnologias utilizadas*/}
-      <ImgCursorDemo2 />
+      <ImgCursor />
 
       {/*Preguntas frecuentes 2*/}
       <Preguntas1 />
