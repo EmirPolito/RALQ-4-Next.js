@@ -18,7 +18,6 @@
 
   --header-login-bg-2: #fffdfd;
   --header-login-txt: #060606;
-
   --header-regis-bg: #60806b;
   --header-regis-txt: #ffffff;
 
@@ -35,6 +34,16 @@
   --carrusel-bg: #9cc2a9;
   --carrusel-ttl: #3b3d3c;
   --carrusel-desc: #2c2a2a;
+
+  /* --carrusel 2 */
+  --carrusel2-bg: #ffffff;
+  --carrusel2-mini-bg: #0866b3;
+  --carrusel2-mini-txt: #fefefe;
+
+  --carrusel2-ttl: #000000;
+  --carrusel2-desc: #2c2a2a;
+  --carrusel2-sig: #000000;
+  --carrusel2-sig-txt: #ffffff;
 
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #000000;
@@ -56,16 +65,6 @@
 
   --pin-line: #1472bf;
   --pin-wave: #1472bf;
-
-  /* --carrusel 2 */
-  --carrusel2-bg: #ffffff;
-  --carrusel2-mini-bg: #0866b3;
-  --carrusel2-mini-txt: #fefefe;
-
-  --carrusel2-ttl: #000000;
-  --carrusel2-desc: #2c2a2a;
-  --carrusel2-sig: #000000;
-  --carrusel2-sig-txt: #ffffff;
 
   /* 3 secciones general*/
   --tres-bg: #ffffff;
@@ -132,7 +131,6 @@
   --footer-ttl: #000000;
   --footer-pag: #2c2a2a;
   --footer-pag-hov: #000000;
-
   --footer-ralq: #88a695;
 
   /* demo/demo.tsx */
@@ -155,7 +153,6 @@
 ========================= */
   --nos-ttl: #000000;
   --nos-desc: #2c2a2a;
-
   --nos-fechas: #000000;
   --nos-txt: #2c2a2a;
 
@@ -188,18 +185,18 @@
   --contact-social: #000000;
   --contact-social-hvr: #1e1e1e;
 
-  /* =========================
+  /* ====================================
    Ayuda
-========================= */
+========================================= */
   --ayuda-ttl: #000000;
   --ayuda-desc: #2c2a2a;
   --ayuda-preg-ttl: #000000;
   --ayuda-preg-txt: #2c2a2a;
   --ayuda-link: #000000;
 
-  /* =========================
+  /* ====================================
    Menu Izquierdo
-========================= */
+=========================================*/
   --menu-bg: #ffffff;
   --menu-apartados: #4a4a4a;
   --menu-paginas: #2c2a2a;
@@ -208,9 +205,9 @@
   --menu-lineas: #eaeaea;
   --menu-mostrador: #4a4a4a;
 
-  /* =========================
+  /* ===================================
    Menu Derecho
-========================= */
+========================================*/
   --menu-d-bg: #ffffff; /*bg general*/
 
   --menu-d-ttl1: #000000; /*Quimica general - Nivel 1 y el numero de la racha*/
@@ -277,25 +274,6 @@
   --sidebar-border: #e2e8f0;
   --sidebar-ring: #3b82f6;
 
-  /* 2 mockup cada lado
-  --mockup-bg: #4b6554;
-  --mockup-ttl: #000000;
-  --mockup-desc: #2c2a2a;
-
-
-  /* wobble 4 */
-  /* --wobble-ttl: #000000;
-  --wobble-desc: #2c2a2a;
-
-  --wobble-bg-1: #eeeeee;
-  --wobble-bg-2: #dae5de;
-  --wobble-bg-3: #dae5de;
-  --wobble-bg-4: #eeeeee;
-
-  --wobble-ttl-5: #000000;
-  --wobble-desc-6: #2c2a2a;
-  --wobble-dmas-7: #ffffff;  */
-
   /* RALQ Content Properties */
   --ttl: var(--titulos);
   --desc: #2c2a2a;
@@ -307,6 +285,7 @@
   --bg-fondo: #000000;
   --titulos: #ffffff;
   --descripciones: #dad9d9;
+  --clerk-input-border: #1a1a1a;
 
   /* Header */
   --header-login-bg: transparent;
@@ -574,6 +553,7 @@
   --border: #1a1a1a;
   --input: #1a1a1a;
   --ring: #60806b;
+  --radius: 0.5rem;
   --chart-1: #3b82f6;
   --chart-2: #10b981;
   --chart-3: #f97316;
@@ -607,6 +587,7 @@
   --bg-fondo: #ffffff;
   --titulos: #000000;
   --descripciones: #333333;
+  --clerk-input-border: #cccccc;
 
   /* Header */
   --header-login-bg: transparent;
@@ -842,6 +823,20 @@
   --border: #cccccc;
   --input: #cccccc;
   --ring: #0072b2;
+  --chart-1: #f97316;
+  --chart-2: #10b981;
+  --chart-3: #3b82f6;
+  --chart-4: #eab308;
+  --chart-5: #ef4444;
+  --radius: 0.5rem;
+  --sidebar: var(--menu-bg);
+  --sidebar-foreground: #334155;
+  --sidebar-primary: #0072b2;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e6f4ff;
+  --sidebar-accent-foreground: #0072b2;
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: #0072b2;
 
   /* =========================
    Menu Derecho
@@ -854,6 +849,8 @@
   --menu-d-progreso-llenado: #0072b2; /*Color del llenado del progreso*/
 
   --menu-d-racha1: #d55e00; /*icono del fuego de la racha*/
+  --menu-d-nivel-bg: #0072b2; /*BG del numero del nivel*/
+  --menu-d-racha-num: #000000;
 
   /**/
   --menu-d-bg-tarjeta2: #e9e9e9; /*para el bg de la tarjeta general y el de las 3 tarjetas */
@@ -915,6 +912,7 @@
   --header-regis-txt: #ffffff;
 
   /* Hero */
+  --hero-bg: #ffffff;
   --hero-ttl: #155dfc;
   --hero-desc: #2c2a2a;
 
@@ -965,11 +963,14 @@
   --wobble-desc-6: #efefef;
 
   /* --carrusel 2 */
+  --carrusel2-bg: #ffffff;
   --carrusel2-mini-bg: #155dfc;
   --carrusel2-mini-txt: #ffffff;
 
   --carrusel2-ttl: #155dfc;
   --carrusel2-desc: #2c2a2a;
+  --carrusel2-sig: #155dfc;
+  --carrusel2-sig-txt: #ffffff;
 
   /* 3 secciones*/
   --tres-bg: #ffffff;
@@ -1019,6 +1020,7 @@
   --imgcursor-der-desc: #2c2a2a;
 
   /* Preguntas frecuentes */
+  --preg-bg: #ffffff;
   --preg-ttl: #155dfc;
   --preg-desc: #2c2a2a;
   --preg-link: #155dfc;
@@ -1027,6 +1029,7 @@
   --preg-txt: #2c2a2a;
 
   /* Footer */
+  --footer-bg: #ffffff;
   --footer-txt: #2c2a2a;
   --footer-link: #155dfc;
   --footer-derechos: #2c2a2a;
@@ -1145,9 +1148,43 @@
   --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #155dfc; /*para el bg del boton*/
 
+  /* UI */
+  --background: #ffffff;
+  --muted: #e6e6e6;
+  --foreground: #09090b;
+  --card: #ffffff;
+  --card-foreground: #09090b;
+  --popover: #ffffff;
+  --popover-foreground: #09090b;
+  --primary: #155dfc;
+  --primary-foreground: #ffffff;
+  --secondary: #f4f4f5;
+  --secondary-foreground: #18181b;
+  --muted-foreground: #71717a;
+  --accent: #f4f4f5;
+  --accent-foreground: #18181b;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e4e4e7;
+  --input: #e4e4e7;
+  --ring: #155dfc;
+  --chart-1: #f97316;
+  --chart-2: #10b981;
+  --chart-3: #3b82f6;
+  --chart-4: #eab308;
+  --chart-5: #ef4444;
+  --radius: 0.5rem;
+  --sidebar: var(--menu-bg);
+  --sidebar-foreground: #334155;
+  --sidebar-primary: #1e293b;
+  --sidebar-primary-foreground: #f8fafc;
+  --sidebar-accent: #f1f5f9;
+  --sidebar-accent-foreground: #1e293b;
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: #155dfc;
+
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
-  --dash-banner: #155dfc;
   --dash-banner-txt: #ffffff;
   --dash-card-1: #ebf4ff;
   --dash-card-2: #e0f2fe;
@@ -1179,6 +1216,7 @@
   --header-regis-txt: #ffffff;
 
   /* Hero */
+  --hero-bg: #000000;
   --hero-ttl: #155dfc;
   --hero-desc: #dddddd;
 
@@ -1229,11 +1267,14 @@
   --wobble-desc-6: #efefef;
 
   /* --carrusel 2 */
+  --carrusel2-bg: #000000;
   --carrusel2-mini-bg: #155dfc;
   --carrusel2-mini-txt: #ffffff;
 
   --carrusel2-ttl: #155dfc;
   --carrusel2-desc: #dddddd;
+  --carrusel2-sig: #155dfc;
+  --carrusel2-sig-txt: #ffffff;
 
   /* 3 secciones*/
   --tres-bg: #000000;
@@ -1283,16 +1324,16 @@
   --imgcursor-der-desc: #dddddd;
 
   /* Preguntas frecuentes */
+  --preg-bg: #000000;
   --preg-ttl: #155dfc;
-  --preg-desc: #dddddd;
   --preg-link: #155dfc;
 
   --preg-preg: #155dfc;
   --preg-txt: #dddddd;
 
   /* Footer */
+  --footer-bg: #000000;
   --footer-txt: #dddddd;
-  --footer-link: #155dfc;
   --footer-derechos: #dddddd;
 
   --footer-ttl: #155dfc;
@@ -1407,6 +1448,41 @@
   --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #155dfc; /*para el bg del boton*/
 
+  /* UI */
+  --background: #000000;
+  --muted: #27272a;
+  --foreground: #fafafa;
+  --card: #050505;
+  --card-foreground: #fafafa;
+  --popover: #050505;
+  --popover-foreground: #fafafa;
+  --primary: #155dfc;
+  --primary-foreground: #ffffff;
+  --secondary: #27272a;
+  --secondary-foreground: #fafafa;
+  --muted-foreground: #a1a1aa;
+  --accent: #27272a;
+  --accent-foreground: #fafafa;
+  --destructive: #7f1d1d;
+  --destructive-foreground: #fafafa;
+  --border: #1a1a1a;
+  --input: #1a1a1a;
+  --ring: #155dfc;
+  --chart-1: #3b82f6;
+  --chart-2: #10b981;
+  --chart-3: #f97316;
+  --chart-4: #eab308;
+  --chart-5: #ef4444;
+  --radius: 0.5rem;
+  --sidebar: var(--menu-bg);
+  --sidebar-foreground: #94a3b8;
+  --sidebar-primary: #155dfc;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #1e293b;
+  --sidebar-accent-foreground: #f8fafc;
+  --sidebar-border: var(--menu-lineas);
+  --sidebar-ring: #155dfc;
+
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
   --dash-banner: #4b6554;
@@ -1492,11 +1568,14 @@
   --wobble-desc-6: #efefef;
 
   /* --carrusel 2 */
+  --carrusel2-bg: #ffffff;
   --carrusel2-mini-bg: #8a0194;
   --carrusel2-mini-txt: #ffffff;
 
   --carrusel2-ttl: #8a0194;
   --carrusel2-desc: #2c2a2a;
+  --carrusel2-sig: #8a0194;
+  --carrusel2-sig-txt: #ffffff;
 
   /* 3 secciones*/
   --tres-bg: #ffffff;
@@ -1546,6 +1625,7 @@
   --imgcursor-der-desc: #2c2a2a;
 
   /* Preguntas frecuentes */
+  --preg-bg: #ffffff;
   --preg-ttl: #8a0194;
   --preg-desc: #2c2a2a;
   --preg-link: #8a0194;
@@ -1554,6 +1634,7 @@
   --preg-txt: #2c2a2a;
 
   /* Footer */
+  --footer-bg: #ffffff;
   --footer-txt: #2c2a2a;
   --footer-link: #8a0194;
   --footer-derechos: #2c2a2a;
@@ -1672,6 +1753,41 @@
   --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #8a0194; /*para el bg del boton*/
 
+  /* UI */
+  --background: #ffffff;
+  --muted: #e6e6e6;
+  --foreground: #09090b;
+  --card: #ffffff;
+  --card-foreground: #09090b;
+  --popover: #ffffff;
+  --popover-foreground: #09090b;
+  --primary: #8a0194;
+  --primary-foreground: #ffffff;
+  --secondary: #f4f4f5;
+  --secondary-foreground: #18181b;
+  --muted-foreground: #71717a;
+  --accent: #f4f4f5;
+  --accent-foreground: #18181b;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e4e4e7;
+  --input: #e4e4e7;
+  --ring: #8a0194;
+  --chart-1: #f97316;
+  --chart-2: #10b981;
+  --chart-3: #3b82f6;
+  --chart-4: #eab308;
+  --chart-5: #ef4444;
+  --radius: 0.5rem;
+  --sidebar: var(--menu-bg);
+  --sidebar-foreground: #334155;
+  --sidebar-primary: #1e293b;
+  --sidebar-primary-foreground: #f8fafc;
+  --sidebar-accent: #f1f5f9;
+  --sidebar-accent-foreground: #1e293b;
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: #8a0194;
+
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
   --dash-banner: #fce04b;
@@ -1757,11 +1873,14 @@
   --wobble-desc-6: #efefef;
 
   /* --carrusel 2 */
+  --carrusel2-bg: #000000;
   --carrusel2-mini-bg: #8a0194;
   --carrusel2-mini-txt: #ffffff;
 
   --carrusel2-ttl: #a800b7;
   --carrusel2-desc: #dddddd;
+  --carrusel2-sig: #a800b7;
+  --carrusel2-sig-txt: #ffffff;
 
   /* 3 secciones*/
   --tres-bg: #000000;
@@ -1811,6 +1930,7 @@
   --imgcursor-der-desc: #dddddd;
 
   /* Preguntas frecuentes */
+  --preg-bg: #000000;
   --preg-ttl: #a800b7;
   --preg-desc: #dddddd;
   --preg-link: #a800b7;
@@ -1819,6 +1939,7 @@
   --preg-txt: #dddddd;
 
   /* Footer */
+  --footer-bg: #000000;
   --footer-txt: #dddddd;
   --footer-link: #a800b7;
   --footer-derechos: #dddddd;
@@ -1937,6 +2058,41 @@
   --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #a800b7; /*para el bg del boton*/
 
+  /* UI */
+  --background: #000000;
+  --muted: #27272a;
+  --foreground: #fafafa;
+  --card: #050505;
+  --card-foreground: #fafafa;
+  --popover: #050505;
+  --popover-foreground: #fafafa;
+  --primary: #a800b7;
+  --primary-foreground: #ffffff;
+  --secondary: #27272a;
+  --secondary-foreground: #fafafa;
+  --muted-foreground: #a1a1aa;
+  --accent: #27272a;
+  --accent-foreground: #fafafa;
+  --destructive: #7f1d1d;
+  --destructive-foreground: #fafafa;
+  --border: #1a1a1a;
+  --input: #1a1a1a;
+  --ring: #a800b7;
+  --chart-1: #3b82f6;
+  --chart-2: #10b981;
+  --chart-3: #f97316;
+  --chart-4: #eab308;
+  --chart-5: #ef4444;
+  --radius: 0.5rem;
+  --sidebar: var(--menu-bg);
+  --sidebar-foreground: #94a3b8;
+  --sidebar-primary: #a800b7;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #1e293b;
+  --sidebar-accent-foreground: #f8fafc;
+  --sidebar-border: var(--menu-lineas);
+  --sidebar-ring: #a800b7;
+
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
   --dash-banner: #4b6554;
@@ -2022,11 +2178,14 @@
   --wobble-desc-6: #efefef;
 
   /* --carrusel 2 */
+  --carrusel2-bg: #ffffff;
   --carrusel2-mini-bg: #fdc700;
   --carrusel2-mini-txt: #ffffff;
 
   --carrusel2-ttl: #fdc700;
   --carrusel2-desc: #2c2a2a;
+  --carrusel2-sig: #fdc700;
+  --carrusel2-sig-txt: #ffffff;
 
   /* 3 secciones*/
   --tres-bg: #ffffff;
@@ -2076,14 +2235,14 @@
   --imgcursor-der-desc: #2c2a2a;
 
   /* Preguntas frecuentes */
+  --preg-bg: #ffffff;
   --preg-ttl: #fdc700;
-  --preg-desc: #2c2a2a;
-  --preg-link: #fdc700;
 
   --preg-preg: #fdc700;
   --preg-txt: #2c2a2a;
 
   /* Footer */
+  --footer-bg: #ffffff;
   --footer-txt: #2c2a2a;
   --footer-link: #fdc700;
   --footer-derechos: #2c2a2a;
@@ -2202,6 +2361,41 @@
   --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #fdc700; /*para el bg del boton*/
 
+  /* UI */
+  --background: #ffffff;
+  --muted: #e6e6e6;
+  --foreground: #09090b;
+  --card: #ffffff;
+  --card-foreground: #09090b;
+  --popover: #ffffff;
+  --popover-foreground: #09090b;
+  --primary: #fdc700;
+  --primary-foreground: #ffffff;
+  --secondary: #f4f4f5;
+  --secondary-foreground: #18181b;
+  --muted-foreground: #71717a;
+  --accent: #f4f4f5;
+  --accent-foreground: #18181b;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e4e4e7;
+  --input: #e4e4e7;
+  --ring: #fdc700;
+  --chart-1: #f97316;
+  --chart-2: #10b981;
+  --chart-3: #3b82f6;
+  --chart-4: #eab308;
+  --chart-5: #ef4444;
+  --radius: 0.5rem;
+  --sidebar: var(--menu-bg);
+  --sidebar-foreground: #334155;
+  --sidebar-primary: #1e293b;
+  --sidebar-primary-foreground: #f8fafc;
+  --sidebar-accent: #f1f5f9;
+  --sidebar-accent-foreground: #1e293b;
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: #fdc700;
+
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
   --dash-banner: #fce04b;
@@ -2287,11 +2481,14 @@
   --wobble-desc-6: #efefef;
 
   /* --carrusel 2 */
+  --carrusel2-bg: #000000;
   --carrusel2-mini-bg: #fdc700;
   --carrusel2-mini-txt: #ffffff;
 
   --carrusel2-ttl: #fdc700;
   --carrusel2-desc: #dddddd;
+  --carrusel2-sig: #fdc700;
+  --carrusel2-sig-txt: #ffffff;
 
   /* 3 secciones*/
   --tres-bg: #000000;
@@ -2341,14 +2538,14 @@
   --imgcursor-der-desc: #dddddd;
 
   /* Preguntas frecuentes */
+  --preg-bg: #000000;
   --preg-ttl: #fdc700;
-  --preg-desc: #dddddd;
-  --preg-link: #fdc700;
 
   --preg-preg: #fdc700;
   --preg-txt: #dddddd;
 
   /* Footer */
+  --footer-bg: #000000;
   --footer-txt: #dddddd;
   --footer-link: #fdc700;
   --footer-derechos: #dddddd;
@@ -2553,11 +2750,14 @@
   --wobble-desc-6: #efefef;
 
   /* --carrusel 2 */
+  --carrusel2-bg: #ffffff;
   --carrusel2-mini-bg: #f77817;
   --carrusel2-mini-txt: #ffffff;
 
   --carrusel2-ttl: #f77817;
   --carrusel2-desc: #2c2a2a;
+  --carrusel2-sig: #f77817;
+  --carrusel2-sig-txt: #ffffff;
 
   /* 3 secciones*/
   --tres-bg: #ffffff;
@@ -2607,6 +2807,7 @@
   --imgcursor-der-desc: #2c2a2a;
 
   /* Preguntas frecuentes */
+  --preg-bg: #ffffff;
   --preg-ttl: #f77817;
   --preg-desc: #2c2a2a;
   --preg-link: #f77817;
@@ -2615,6 +2816,7 @@
   --preg-txt: #2c2a2a;
 
   /* Footer */
+  --footer-bg: #ffffff;
   --footer-txt: #2c2a2a;
   --footer-link: #f77817;
   --footer-derechos: #2c2a2a;
@@ -2733,6 +2935,41 @@
   --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #f77817; /*para el bg del boton*/
 
+  /* UI */
+  --background: #ffffff;
+  --muted: #e6e6e6;
+  --foreground: #09090b;
+  --card: #ffffff;
+  --card-foreground: #09090b;
+  --popover: #ffffff;
+  --popover-foreground: #09090b;
+  --primary: #f77817;
+  --primary-foreground: #ffffff;
+  --secondary: #f4f4f5;
+  --secondary-foreground: #18181b;
+  --muted-foreground: #71717a;
+  --accent: #f4f4f5;
+  --accent-foreground: #18181b;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e4e4e7;
+  --input: #e4e4e7;
+  --ring: #f77817;
+  --chart-1: #f97316;
+  --chart-2: #10b981;
+  --chart-3: #3b82f6;
+  --chart-4: #eab308;
+  --chart-5: #ef4444;
+  --radius: 0.5rem;
+  --sidebar: var(--menu-bg);
+  --sidebar-foreground: #334155;
+  --sidebar-primary: #1e293b;
+  --sidebar-primary-foreground: #f8fafc;
+  --sidebar-accent: #f1f5f9;
+  --sidebar-accent-foreground: #1e293b;
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: #f77817;
+
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
   --dash-banner: #fce04b;
@@ -2768,6 +3005,7 @@
   --header-regis-txt: #ffffff;
 
   /* Hero */
+  --hero-bg: #000000;
   --hero-ttl: #ff8400;
   --hero-desc: #dddddd;
 
@@ -2818,11 +3056,14 @@
   --wobble-desc-6: #efefef;
 
   /* --carrusel 2 */
+  --carrusel2-bg: #000000;
   --carrusel2-mini-bg: #ff9100;
   --carrusel2-mini-txt: #ffffff;
 
   --carrusel2-ttl: #ff9100;
   --carrusel2-desc: #dddddd;
+  --carrusel2-sig: #ff8400;
+  --carrusel2-sig-txt: #ffffff;
 
   /* 3 secciones*/
   --tres-bg: #000000;
@@ -2872,6 +3113,7 @@
   --imgcursor-der-desc: #dddddd;
 
   /* Preguntas frecuentes */
+  --preg-bg: #000000;
   --preg-ttl: #ff9100;
   --preg-desc: #dddddd;
   --preg-link: #ff9100;
@@ -2880,6 +3122,7 @@
   --preg-txt: #dddddd;
 
   /* Footer */
+  --footer-bg: #000000;
   --footer-txt: #dddddd;
   --footer-link: #ff9100;
   --footer-derechos: #dddddd;
@@ -2999,6 +3242,41 @@
   --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #ff8400; /*para el bg del boton*/
 
+  /* UI */
+  --background: #000000;
+  --muted: #27272a;
+  --foreground: #fafafa;
+  --card: #050505;
+  --card-foreground: #fafafa;
+  --popover: #050505;
+  --popover-foreground: #fafafa;
+  --primary: #ff8400;
+  --primary-foreground: #ffffff;
+  --secondary: #27272a;
+  --secondary-foreground: #fafafa;
+  --muted-foreground: #a1a1aa;
+  --accent: #27272a;
+  --accent-foreground: #fafafa;
+  --destructive: #7f1d1d;
+  --destructive-foreground: #fafafa;
+  --border: #1a1a1a;
+  --input: #1a1a1a;
+  --ring: #ff8400;
+  --chart-1: #3b82f6;
+  --chart-2: #10b981;
+  --chart-3: #f97316;
+  --chart-4: #eab308;
+  --chart-5: #ef4444;
+  --radius: 0.5rem;
+  --sidebar: var(--menu-bg);
+  --sidebar-foreground: #94a3b8;
+  --sidebar-primary: #ff8400;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #1e293b;
+  --sidebar-accent-foreground: #f8fafc;
+  --sidebar-border: var(--menu-lineas);
+  --sidebar-ring: #ff8400;
+
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
   --dash-banner: #4b6554;
@@ -3034,8 +3312,9 @@
   --header-regis-txt: #ffffff;
 
   /* Hero */
+  --hero-bg: #ffffff;
   --hero-ttl: #ec003f;
-  --hero-desc: #2c2a2a;
+  --hero-desc: #616161;
 
   --hero-bg-demo: #ec003f;
   --hero-txt-demo: #fcfcfc;
@@ -3084,11 +3363,14 @@
   --wobble-desc-6: #efefef;
 
   /* --carrusel 2 */
+  --carrusel2-bg: #ffffff;
   --carrusel2-mini-bg: #ec003f;
   --carrusel2-mini-txt: #ffffff;
 
   --carrusel2-ttl: #ec003f;
   --carrusel2-desc: #2c2a2a;
+  --carrusel2-sig: #ec003f;
+  --carrusel2-sig-txt: #ffffff;
 
   /* 3 secciones*/
   --tres-bg: #ffffff;
@@ -3138,14 +3420,15 @@
   --imgcursor-der-desc: #2c2a2a;
 
   /* Preguntas frecuentes */
+  --preg-bg: #ffffff;
   --preg-ttl: #ec003f;
-  --preg-desc: #2c2a2a;
   --preg-link: #ec003f;
 
   --preg-preg: #ec003f;
   --preg-txt: #2c2a2a;
 
   /* Footer */
+  --footer-bg: #ffffff;
   --footer-txt: #2c2a2a;
   --footer-link: #ec003f;
   --footer-derechos: #2c2a2a;
@@ -3264,6 +3547,41 @@
   --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #ec003f; /*para el bg del boton*/
 
+  /* UI */
+  --background: #ffffff;
+  --muted: #e6e6e6;
+  --foreground: #09090b;
+  --card: #ffffff;
+  --card-foreground: #09090b;
+  --popover: #ffffff;
+  --popover-foreground: #09090b;
+  --primary: #ec003f;
+  --primary-foreground: #ffffff;
+  --secondary: #f4f4f5;
+  --secondary-foreground: #18181b;
+  --muted-foreground: #71717a;
+  --accent: #f4f4f5;
+  --accent-foreground: #18181b;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e4e4e7;
+  --input: #e4e4e7;
+  --ring: #ec003f;
+  --chart-1: #f97316;
+  --chart-2: #10b981;
+  --chart-3: #3b82f6;
+  --chart-4: #eab308;
+  --chart-5: #ef4444;
+  --radius: 0.5rem;
+  --sidebar: var(--menu-bg);
+  --sidebar-foreground: #334155;
+  --sidebar-primary: #1e293b;
+  --sidebar-primary-foreground: #f8fafc;
+  --sidebar-accent: #f1f5f9;
+  --sidebar-accent-foreground: #1e293b;
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: #ec003f;
+
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
   --dash-banner: #fce04b;
@@ -3299,6 +3617,7 @@
   --header-regis-txt: #ffffff;
 
   /* Hero */
+  --hero-bg: #000000;
   --hero-ttl: #ec003f;
   --hero-desc: #dddddd;
 
@@ -3349,11 +3668,14 @@
   --wobble-desc-6: #efefef;
 
   /* --carrusel 2 */
+  --carrusel2-bg: #000000;
   --carrusel2-mini-bg: #ec003f;
   --carrusel2-mini-txt: #ffffff;
 
   --carrusel2-ttl: #ec003f;
   --carrusel2-desc: #dddddd;
+  --carrusel2-sig: #ec003f;
+  --carrusel2-sig-txt: #ffffff;
 
   /* 3 secciones*/
   --tres-bg: #000000;
@@ -3403,14 +3725,15 @@
   --imgcursor-der-desc: #dddddd;
 
   /* Preguntas frecuentes */
+  --preg-bg: #000000;
   --preg-ttl: #ec003f;
-  --preg-desc: #dddddd;
   --preg-link: #ec003f;
 
   --preg-preg: #ec003f;
   --preg-txt: #dddddd;
 
   /* Footer */
+  --footer-bg: #000000;
   --footer-txt: #dddddd;
   --footer-link: #ec003f;
   --footer-derechos: #dddddd;
@@ -3530,6 +3853,41 @@
   --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #ec003f; /*para el bg del boton*/
 
+  /* UI */
+  --background: #000000;
+  --muted: #27272a;
+  --foreground: #fafafa;
+  --card: #050505;
+  --card-foreground: #fafafa;
+  --popover: #050505;
+  --popover-foreground: #fafafa;
+  --primary: #ec003f;
+  --primary-foreground: #ffffff;
+  --secondary: #27272a;
+  --secondary-foreground: #fafafa;
+  --muted-foreground: #a1a1aa;
+  --accent: #27272a;
+  --accent-foreground: #fafafa;
+  --destructive: #7f1d1d;
+  --destructive-foreground: #fafafa;
+  --border: #1a1a1a;
+  --input: #1a1a1a;
+  --ring: #ec003f;
+  --chart-1: #3b82f6;
+  --chart-2: #10b981;
+  --chart-3: #f97316;
+  --chart-4: #eab308;
+  --chart-5: #ef4444;
+  --radius: 0.5rem;
+  --sidebar: var(--menu-bg);
+  --sidebar-foreground: #94a3b8;
+  --sidebar-primary: #ec003f;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #1e293b;
+  --sidebar-accent-foreground: #f8fafc;
+  --sidebar-border: var(--menu-lineas);
+  --sidebar-ring: #ec003f;
+
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
   --dash-banner: #4b6554;
@@ -3565,6 +3923,7 @@
   --header-regis-txt: #ffffff;
 
   /* Hero */
+  --hero-bg: #ffffff;
   --hero-ttl: #5ea500;
   --hero-desc: #2c2a2a;
 
@@ -3615,11 +3974,14 @@
   --wobble-desc-6: #efefef;
 
   /* --carrusel 2 */
+  --carrusel2-bg: #ffffff;
   --carrusel2-mini-bg: #5ea500;
   --carrusel2-mini-txt: #ffffff;
 
   --carrusel2-ttl: #5ea500;
   --carrusel2-desc: #2c2a2a;
+  --carrusel2-sig: #5ea500;
+  --carrusel2-sig-txt: #ffffff;
 
   /* 3 secciones*/
   --tres-bg: #ffffff;
@@ -3669,6 +4031,7 @@
   --imgcursor-der-desc: #2c2a2a;
 
   /* Preguntas frecuentes */
+  --preg-bg: #ffffff;
   --preg-ttl: #5ea500;
   --preg-desc: #2c2a2a;
   --preg-link: #5ea500;
@@ -3677,6 +4040,7 @@
   --preg-txt: #2c2a2a;
 
   /* Footer */
+  --footer-bg: #ffffff;
   --footer-txt: #2c2a2a;
   --footer-link: #5ea500;
   --footer-derechos: #2c2a2a;
@@ -3795,6 +4159,41 @@
   --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #5ea500; /*para el bg del boton*/
 
+  /* UI */
+  --background: #ffffff;
+  --muted: #e6e6e6;
+  --foreground: #09090b;
+  --card: #ffffff;
+  --card-foreground: #09090b;
+  --popover: #ffffff;
+  --popover-foreground: #09090b;
+  --primary: #5ea500;
+  --primary-foreground: #ffffff;
+  --secondary: #f4f4f5;
+  --secondary-foreground: #18181b;
+  --muted-foreground: #71717a;
+  --accent: #f4f4f5;
+  --accent-foreground: #18181b;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e4e4e7;
+  --input: #e4e4e7;
+  --ring: #5ea500;
+  --chart-1: #f97316;
+  --chart-2: #10b981;
+  --chart-3: #3b82f6;
+  --chart-4: #eab308;
+  --chart-5: #ef4444;
+  --radius: 0.5rem;
+  --sidebar: var(--menu-bg);
+  --sidebar-foreground: #334155;
+  --sidebar-primary: #1e293b;
+  --sidebar-primary-foreground: #f8fafc;
+  --sidebar-accent: #f1f5f9;
+  --sidebar-accent-foreground: #1e293b;
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: #5ea500;
+
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
   --dash-banner: #fce04b;
@@ -3830,6 +4229,7 @@
   --header-regis-txt: #ffffff;
 
   /* Hero */
+  --hero-bg: #000000;
   --hero-ttl: #7ccf00;
   --hero-desc: #dddddd;
 
@@ -3880,11 +4280,14 @@
   --wobble-desc-6: #efefef;
 
   /* --carrusel 2 */
+  --carrusel2-bg: #000000;
   --carrusel2-mini-bg: #5ea500;
   --carrusel2-mini-txt: #ffffff;
 
   --carrusel2-ttl: #7ccf00;
   --carrusel2-desc: #dddddd;
+  --carrusel2-sig: #7ccf00;
+  --carrusel2-sig-txt: #ffffff;
 
   /* 3 secciones*/
   --tres-bg: #000000;
@@ -3934,6 +4337,7 @@
   --imgcursor-der-desc: #dddddd;
 
   /* Preguntas frecuentes */
+  --preg-bg: #000000;
   --preg-ttl: #7ccf00;
   --preg-desc: #dddddd;
   --preg-link: #7ccf00;
@@ -3942,6 +4346,7 @@
   --preg-txt: #dddddd;
 
   /* Footer */
+  --footer-bg: #000000;
   --footer-txt: #dddddd;
   --footer-link: #7ccf00;
   --footer-derechos: #dddddd;
@@ -4059,6 +4464,41 @@
   --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
   --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #7ccf00; /*para el bg del boton*/
+
+  /* UI */
+  --background: #000000;
+  --muted: #27272a;
+  --foreground: #fafafa;
+  --card: #050505;
+  --card-foreground: #fafafa;
+  --popover: #050505;
+  --popover-foreground: #fafafa;
+  --primary: #7ccf00;
+  --primary-foreground: #ffffff;
+  --secondary: #27272a;
+  --secondary-foreground: #fafafa;
+  --muted-foreground: #a1a1aa;
+  --accent: #27272a;
+  --accent-foreground: #fafafa;
+  --destructive: #7f1d1d;
+  --destructive-foreground: #fafafa;
+  --border: #1a1a1a;
+  --input: #1a1a1a;
+  --ring: #7ccf00;
+  --chart-1: #3b82f6;
+  --chart-2: #10b981;
+  --chart-3: #f97316;
+  --chart-4: #eab308;
+  --chart-5: #ef4444;
+  --radius: 0.5rem;
+  --sidebar: var(--menu-bg);
+  --sidebar-foreground: #94a3b8;
+  --sidebar-primary: #7ccf00;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #1e293b;
+  --sidebar-accent-foreground: #f8fafc;
+  --sidebar-border: var(--menu-lineas);
+  --sidebar-ring: #7ccf00;
 
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
