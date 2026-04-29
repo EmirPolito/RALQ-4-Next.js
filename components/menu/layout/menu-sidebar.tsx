@@ -41,37 +41,25 @@ export function MenuSidebar() {
       <SidebarHeader className="h-21 flex flex-row items-center px-4 pt-3.5 pb-2 group-data-[state=collapsed]:flex-col group-data-[state=collapsed]:px-2 group-data-[state=collapsed]:justify-start">
         <div className="w-8 h-8 shrink-0 group-data-[state=collapsed]:hidden" />
         <div className="flex-1 flex justify-center group-data-[state=collapsed]:hidden">
-        <Link
-          href="/menu"
-          className="flex items-center justify-center"
-        >
-
-          {mounted ? (
-            <img
-              src={
-                resolvedTheme === "dark"
-                  ? "/logos/logo-blanco.png"
-                  : "/logos/logo-verde.png"
-              }
-              alt="RALQ Logo"
-              className="h-12 w-auto object-contain"
-            />
-          ) : (
-            <div className="h-12" />
-          )}
+          <Link href="/menu" className="flex items-center justify-center">
+            {mounted ? (
+              <img
+                src={
+                  resolvedTheme === "dark"
+                    ? "/logos/logo-blanco.png"
+                    : "/logos/logo-verde.png"
+                }
+                alt="RALQ Logo"
+                className="h-12 w-auto object-contain"
+              />
+            ) : (
+              <div className="h-12" />
+            )}
           </Link>
         </div>
 
-        <SidebarTrigger className="w-8 h-8 text-menu-mostrador hover:bg-transparent cursor-pointer shrink-0 group-data-[state=collapsed]:mt-6" />
-
-
-
-
-
-
+        <SidebarTrigger className="w-8 h-8 mt-4.5 text-menu-mostrador hover:bg-transparent cursor-pointer shrink-0 group-data-[state=collapsed]:mt-6" />
       </SidebarHeader>
-
-
 
       <SidebarContent className="py-4 px-2">
         <SidebarMenu className="gap-3">
@@ -122,14 +110,11 @@ export function MenuSidebar() {
           <UserButton
             appearance={{
               elements: {
-                userButtonAvatarBox:
-                  "shadow-sm transition-transform",
+                userButtonAvatarBox: "shadow-sm transition-transform",
               },
             }}
           />
         </div>
-
-
       </SidebarFooter>
     </Sidebar>
   );
