@@ -14,7 +14,7 @@ import {
 import Link from "next/link";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 
-export function ContenidoHome() {
+export function ContenidoMenu() {
   return (
     <div className="w-full flex flex-col items-center pt-5 px-4 md:px-8 pb-5 bg-menu-d-bg">
       <div className="w-full max-w-5xl pl-0 pr-2">
@@ -30,11 +30,12 @@ export function ContenidoHome() {
           <div className="flex items-center gap-3 md:gap-5 text-muted-foreground mr-1 md:mr-4 ml-auto">
             <div className="flex items-center gap-1 cursor-pointer hover:opacity-80 transition-opacity">
               <Flame className="w-4 h-4 md:w-5 md:h-5 text-menu-d-racha1" />
-              <span className="font-semibold text-sm md:text-base text-menu-d-racha-num">0</span>
+              <span className="font-semibold text-sm md:text-base text-menu-d-racha-num">
+                0
+              </span>
             </div>
           </div>
         </div>
-
 
         {/* Progress Bar Row */}
         <div className="flex items-center gap-2 md:gap-4 mb-6">
@@ -166,7 +167,6 @@ export function ContenidoHome() {
 
       {/* ------------------ BOTTOM STICKY ACTION BAR ------------------ */}
       <div className="mt-4 sticky bottom-[16px] xl:left-auto z-50 w-full max-w-5xl mx-auto bg-menu-d-bg4 text-menu-d-ttl4 py-2.5 md:py-3 px-3 md:px-6 flex items-center justify-between shadow-2xl rounded-xl border border-menu-d-borde4 bg-opacity-100">
-
         <div className="flex items-center gap-2 md:gap-4">
           <button className="cursor-pointer w-8 h-8 md:w-10 md:h-10 rounded-full hover:bg-menu-d-ttl4/20 flex items-center justify-center transition-colors">
             <ChevronRight className="w-5 h-5 md:w-6 md:h-6 rotate-180 text-menu-d-iconos4" />

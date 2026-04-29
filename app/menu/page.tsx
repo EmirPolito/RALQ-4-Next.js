@@ -1,11 +1,11 @@
 "use client";
 
-import { ContenidoHome } from "@/components/menu/views/home/contenido-home";
+import { ContenidoMenu } from "@/components/menu/views/home/contenido-menu";
 
 export default function MenuPage() {
   return (
-    <div>
-      <ContenidoHome />
-    </div>
+    <>
+      <ContenidoMenu />
+    </>
   );
 }

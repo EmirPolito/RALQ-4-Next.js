@@ -1,6 +1,6 @@
 "use client";
 
-import { MenuSidebar } from "@/components/menu/layout/menu-sidebar";
+import { MenuSidebar } from "@/components/menu/layout/menu-izquierdo";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
 import "../globals.css";
 
@@ -13,9 +13,7 @@ export default function HeaderLayout({
     <SidebarProvider>
       <MenuSidebar />
       <SidebarInset className="bg-[#fefcf8] dark:bg-[#0c0c0e]">
-        <main className="w-full h-full flex-1">
-          {children}
-        </main>
+        <main className="w-full h-full flex-1">{children}</main>
       </SidebarInset>
     </SidebarProvider>
   );

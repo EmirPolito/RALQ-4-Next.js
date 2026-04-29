@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 import { UserButton } from "@clerk/nextjs";
 import { Home, FlaskConical, Dna, LayoutGrid } from "lucide-react";
 import { useState, useEffect } from "react";
-import { SidebarControls } from "@/components/menu/layout/sidebar-controls";
+import { SidebarControls } from "@/components/menu/layout/menu-izquierdo-controls";
 import {
   Sidebar,
   SidebarContent,
