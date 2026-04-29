@@ -2,9 +2,10 @@
 
 import React from "react";
 import { ScrollAnimation } from "@/components/motion-primitives/scroll-animation";
+
 import { Hero } from "@/components/hero";
-import { Carousel } from "@/components/carrusel-1";
-import { Feature } from "@/components/carrusel-2";
+import { Carousel1 } from "@/components/carrusel-1";
+import { Carrusel2 } from "@/components/carrusel-2";
 import PinCardsSection from "@/components/3d-pin-demo";
 import TresPasosLaboratorio from "@/components/tres-pasos";
 import ImgCursor from "@/components/img-cursor";
@@ -18,11 +19,11 @@ export default function Page() {
       <Hero />
 
       {/* Carrusel 1*/}
-      <Carousel />
+      <Carousel1 />
 
       {/* imagene automatico*/}
       <ScrollAnimation direction="up" delay={0.1}>
-        <Feature />
+        <Carrusel2 />
       </ScrollAnimation>
 
       {/* 3 tarjetas pin */}

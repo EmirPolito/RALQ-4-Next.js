@@ -43,7 +43,7 @@ const carouselImages = [
   },
 ];
 
-function Feature() {
+function Carrusel2() {
   const t = useTranslations("feature");
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
@@ -188,4 +188,4 @@ function Feature() {
   );
 }
 
-export { Feature };
+export { Carrusel2 };

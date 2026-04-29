@@ -6,7 +6,7 @@ import { InfiniteSlider } from "@/components/motion-primitives/infinite-slider";
 import { ProgressiveBlur } from "@/components/motion-primitives/progressive-blur";
 import { useTranslations } from "next-intl";
 
-export function Carousel() {
+export function Carousel1() {
   const t = useTranslations("carrusel1");
   const [gap, setGap] = React.useState(56);
 
