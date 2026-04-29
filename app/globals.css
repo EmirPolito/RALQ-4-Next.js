@@ -242,7 +242,6 @@
   --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #155dfc; /*para el bg del boton*/
 
-
   /* UI */
   --background: #ffffff;
   --muted: #e6e6e6; /*bg para el boton de las animaciones */
@@ -435,7 +434,6 @@
   --preg-ttl: #ffffff;
   --preg-desc: #dad9d9;
   --preg-link: #1472bf;
-
   --preg-preg: #ffffff;
   --preg-txt: #c9c6c6;
 
@@ -444,11 +442,9 @@
   --footer-txt: #dddddd;
   --footer-link: #1472bf;
   --footer-derechos: #dddddd;
-
   --footer-ttl: #ffffff;
   --footer-pag: #dddddd;
   --footer-pag-hov: #ffffff;
-
   --footer-ralq: #999999;
 
   /* demo/demo.tsx */
@@ -481,8 +477,8 @@
   --contact-ttl: #ffffff;
   --clerk-input-border: #1a1a1a;
   --clerk-border-fixed: #262626;
-  --contact-desc: #dddddd;
 
+  --contact-desc: #dddddd;
   --contact-card-bg: #0a0a0a;
   --contact-card-border: #1f1f1f;
 
@@ -538,10 +534,9 @@
   --menu-d-racha1: #ff8400; /*icono del fuego de la racha*/
   --menu-d-racha-num: #ffffff; /*numero de la racha*/
 
-
   /**/
-  --menu-d-bg-tarjeta2: #050505; /*para el bg de la tarjeta general y el de las 3 tarjetas */
-  --menu-d-bordes2: #1a1a1a; /*bordes de la tarjeta y de las 3 subtarjetas*/
+  --menu-d-bg-tarjeta2: #121212; /*para el bg de la tarjeta general y el de las 3 tarjetas */
+  --menu-d-bordes2: #1f1f1f; /*bordes de la tarjeta y de las 3 subtarjetas*/
   --menu-d-ttl2: #ffffff; /*Mi puntuacion y Aprende, Visualiza, Evalua y los puntos 72pts,0pts,0pts*/
   --menu-d-iconos2: #ecd20c;
   --menu-d-desc2: #dddddd; /* para la descripcioens de las 3 tarjetas*/
@@ -1116,8 +1111,6 @@
   --menu-lineas: #eaeaea;
   --menu-mostrador: #000000;
 
-
-
   /* =========================
    Menu Derecho
 ========================= */
@@ -1151,10 +1144,6 @@
   --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
   --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #155dfc; /*para el bg del boton*/
-
-
-
-
 
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
@@ -1384,9 +1373,6 @@
   --menu-lineas: #212121;
   --menu-mostrador: #ffffff;
 
-
-
-
   /* =========================
    Menu Derecho
 ========================= */
@@ -1420,9 +1406,6 @@
   --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
   --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #155dfc; /*para el bg del boton*/
-
-
-
 
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
@@ -1655,7 +1638,6 @@
   --menu-lineas: #eaeaea;
   --menu-mostrador: #000000;
 
-
   /* =========================
    Menu Derecho
 ========================= */
@@ -1689,10 +1671,6 @@
   --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
   --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #8a0194; /*para el bg del boton*/
-
-
-
-
 
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
@@ -1925,7 +1903,6 @@
   --menu-lineas: #212121;
   --menu-mostrador: #ffffff;
 
-
   /* =========================
    Menu Derecho
 ========================= */
@@ -1959,9 +1936,6 @@
   --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
   --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #a800b7; /*para el bg del boton*/
-
-
-
 
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
@@ -2194,8 +2168,6 @@
   --menu-lineas: #eaeaea;
   --menu-mostrador: #000000;
 
-
-
   /* =========================
    Menu Derecho
 ========================= */
@@ -2229,10 +2201,6 @@
   --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
   --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #fdc700; /*para el bg del boton*/
-
-
-
-
 
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
@@ -2465,9 +2433,6 @@
   --menu-lineas: #212121;
   --menu-mostrador: #ffffff;
 
-
-
-
   /* =========================
    Menu Derecho
 ========================= */
@@ -2501,8 +2466,6 @@
   --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
   --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #fdc700; /*para el bg del boton*/
-
-
 
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
@@ -2736,8 +2699,6 @@
   --menu-lineas: #eaeaea;
   --menu-mostrador: #000000;
 
-
-
   /* =========================
    Menu Derecho
 ========================= */
@@ -2771,9 +2732,6 @@
   --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
   --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #f77817; /*para el bg del boton*/
-
-
-
 
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
@@ -3007,9 +2965,6 @@
   --menu-lineas: #212121;
   --menu-mostrador: #ffffff;
 
-
-
-
   /* =========================
    Menu Derecho
 ========================= */
@@ -3043,9 +2998,6 @@
   --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
   --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #ff8400; /*para el bg del boton*/
-
-
-
 
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
@@ -3278,8 +3230,6 @@
   --menu-lineas: #eaeaea;
   --menu-mostrador: #000000;
 
-
-
   /* =========================
    Menu Derecho
 ========================= */
@@ -3313,9 +3263,6 @@
   --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
   --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #ec003f; /*para el bg del boton*/
-
-
-
 
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
@@ -3549,9 +3496,6 @@
   --menu-lineas: #212121;
   --menu-mostrador: #ffffff;
 
-
-
-
   /* =========================
    Menu Derecho
 ========================= */
@@ -3585,9 +3529,6 @@
   --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
   --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #ec003f; /*para el bg del boton*/
-
-
-
 
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
@@ -3820,8 +3761,6 @@
   --menu-lineas: #eaeaea;
   --menu-mostrador: #000000;
 
-
-
   /* =========================
    Menu Derecho
 ========================= */
@@ -3855,10 +3794,6 @@
   --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
   --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #5ea500; /*para el bg del boton*/
-
-
-
-
 
   /* Dashboard Custom Properties */
   --dash-bg: #fefcf8;
@@ -4091,9 +4026,6 @@
   --menu-lineas: #212121;
   --menu-mostrador: #ffffff;
 
-
-
-
   /* =========================
    Menu Derecho
 ========================= */
@@ -4127,9 +4059,6 @@
   --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
   --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #7ccf00; /*para el bg del boton*/
-
-
-
 
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
