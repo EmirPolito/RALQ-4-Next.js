@@ -102,19 +102,20 @@ export default function TresPasosLaboratorio() {
         <div className="flex flex-col gap-0">
           {steps.map((step, index) => (
             <motion.div
-              key={`${step.step}-${reducedMotion}`}
-              initial={reducedMotion ? { y: 0 } : { y: 30 }}
-              whileInView={reducedMotion ? { y: 0 } : { y: 0 }}
+              key={step.step}
+              initial={reducedMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
+              whileInView={reducedMotion ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
               transition={
                 reducedMotion
                   ? { duration: 0 }
                   : {
-                      duration: 0.7,
+                      duration: 0.6,
                       ease: [0.16, 1, 0.3, 1],
-                      delay: index * 0.08,
+                      delay: index * 0.07,
                     }
               }
-              viewport={{ once: true, margin: "-80px" }}
+              viewport={{ once: true, margin: "0px" }}
+              style={{ willChange: "transform, opacity" }}
               className={cn(
                 "group relative grid grid-cols-1 gap-12 py-12 md:py-16 lg:pt-10 lg:pb-24 lg:grid-cols-2 lg:gap-24 lg:gap-y-0",
                 step.align === "right" &&
@@ -168,7 +169,7 @@ export default function TresPasosLaboratorio() {
 
               {/* Visual side */}
               {/* Imagen lado derecho */}
-              <div className="w-full relative">
+              <div className="w-full relative will-change-transform">
                 <div
                   className={cn(
                     "relative overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-900 border aspect-[16/10] w-full",
@@ -182,11 +183,11 @@ export default function TresPasosLaboratorio() {
                     width={800}
                     height={500}
                     quality={75}
-                    loading="lazy"
+                    loading={index === 0 ? "eager" : "lazy"}
                     decoding="async"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
                     className={cn(
-                      "h-full w-full object-cover transition duration-700 dark:opacity-90 [transform:translateZ(0)] [backface-visibility:hidden]",
+                      "h-full w-full object-cover transition duration-500 dark:opacity-90 [transform:translateZ(0)] [backface-visibility:hidden]",
                       !reducedMotion && "group-hover:scale-[1.03]",
                     )}
                   />
