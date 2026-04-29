@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 import { UserButton } from "@clerk/nextjs";
 import { Home, FlaskConical, Dna, LayoutGrid } from "lucide-react";
 import { useState, useEffect } from "react";
-import { ThemeControls } from "@/components/theme-controls";
+import { SidebarControls } from "@/components/menu/layout/sidebar-controls";
 import {
   Sidebar,
   SidebarContent,
@@ -100,9 +100,9 @@ export function MenuSidebar() {
       </SidebarContent>
 
       <SidebarFooter className="p-4 border-t border-menu-lineas flex flex-col gap-5">
-        {/* Controles de Animación/Color/Tema (escondidos cuando colapsa) */}
+        {/* Controles de Animación/Color/Tema/Idioma (escondidos cuando colapsa) */}
         <div className="w-full flex justify-center group-data-[state=collapsed]:hidden">
-          <ThemeControls />
+          <SidebarControls />
         </div>
 
         {/* Usuario */}

@@ -23,7 +23,7 @@ export function ContenidoHome() {
           <h1 className="text-lg md:text-3xl font-extrabold text-menu-d-ttl1 tracking-tight leading-tight">
             Química General - Nivel
           </h1>
-          <div className="w-7 h-7 md:w-9 md:h-9 shrink-0 rounded-full bg-menu-d-nivel-bg flex items-center justify-center text-base md:text-xl font-bold text-menu-d-ttl4 border-2 border-transparent shadow-sm">
+          <div className="w-7 h-7 md:w-9 md:h-9 shrink-0 rounded-full bg-menu-d-nivel-bg flex items-center justify-center text-base md:text-xl font-bold text-menu-d-bg border-2 border-transparent shadow-sm">
             1
           </div>
 

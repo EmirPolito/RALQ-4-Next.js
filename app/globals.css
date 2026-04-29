@@ -532,10 +532,11 @@
 
   --menu-d-ttl1: #ffffff; /*Quimica general - Nivel 1 y el numero de la racha*/
   --menu-d-nivel1: #dddddd; /*Al nivel 2  y 72/100*/
-  --menu-d-nivel-bg: #2a2a2a; /*BG del numero del nivel*/
+  --menu-d-nivel-bg: #ffffff; /*BG del numero del nivel*/
   --menu-d-progreso1: #212121; /*Color del la linea del progreso*/
   --menu-d-progreso-llenado: #ffffff; /*Color del llenado del progreso*/
   --menu-d-racha1: #ff8400; /*icono del fuego de la racha*/
+  --menu-d-racha-num: #ffffff; /*numero de la racha*/
 
 
   /**/
