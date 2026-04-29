@@ -46,8 +46,8 @@ export function MenuSidebar() {
               <img
                 src={
                   resolvedTheme === "dark"
-                    ? "/logos/logo-blanco.png"
-                    : "/logos/logo-verde.png"
+                    ? "/logos/ralq-blanco.png"
+                    : "/logos/ralq-verde.png"
                 }
                 alt="RALQ Logo"
                 className="h-12 w-auto object-contain"
