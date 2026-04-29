@@ -83,7 +83,7 @@ export function MenuSidebar() {
                   asChild
                   isActive={isActive}
                   tooltip={item.name}
-                  className={`h-18 px-5 transition-colors duration-200 hover:bg-menu-paginas-hover data-[active=true]:bg-menu-paginas-hover ${
+                  className={`h-18 px-5 transition-colors duration-200 hover:bg-transparent active:bg-transparent focus-visible:ring-0 focus-visible:outline-none data-[active=true]:bg-menu-paginas-hover ${
                     isActive
                       ? "text-menu-paginas font-bold relative"
                       : "text-menu-paginas font-medium"
