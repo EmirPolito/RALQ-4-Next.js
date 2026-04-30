@@ -637,7 +637,7 @@
   --pin-line: #0072b2;
   --pin-wave: #56b4e9;
 
-  /* 3 secciones*/
+  /* 3 pasos*/
   --tres-bg: #ffffff;
   --tres-num: #e0e0e0;
   --tres-mini-bg: #f5f5f5;
@@ -699,7 +699,6 @@
   --footer-ttl: #000000;
   --footer-pag: #333333;
   --footer-pag-hov: #d55e00;
-
   --footer-ralq: #0072b2;
 
   /* demo/demo.tsx */
@@ -722,7 +721,6 @@
 ========================= */
   --nos-ttl: #0072b2;
   --nos-desc: #333333;
-
   --nos-fechas: #0072b2;
   --nos-txt: #333333;
 
@@ -731,7 +729,6 @@
 ========================= */
   --contact-ttl: #0072b2;
   --contact-desc: #333333;
-
   --contact-card-bg: #ffffff;
   --contact-card-border: #d1d1d1;
 
@@ -847,14 +844,6 @@
   --menu-d-desc4: #e0e0e0; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #0072b2; /*para el bg del boton*/
 
-  /* Dashboard Custom Properties */
-  --dash-bg: #fefcf8;
-  --dash-banner: #e69f00;
-  --dash-banner-txt: #000000;
-  --dash-card-1: #e6fbf4;
-  --dash-card-2: #e0fcfb;
-  --dash-card-3: #fff9e6;
-
   /* RALQ Content Properties */
   --ttl: #0072b2;
   --desc: #333333;
@@ -899,6 +888,16 @@
   --carrusel-ttl: #155dfc;
   --carrusel-desc: #155dfc;
 
+  /* --carrusel 2 */
+  --carrusel2-bg: #ffffff;
+  --carrusel2-mini-bg: #155dfc;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #155dfc;
+  --carrusel2-desc: #2c2a2a;
+  --carrusel2-sig: #155dfc;
+  --carrusel2-sig-txt: #ffffff;
+
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #155dfc;
   --tarjetas-desc2: #2c2a2a;
@@ -920,33 +919,7 @@
   --pin-line: #1c6aa9;
   --pin-wave: #1c6aa9;
 
-  /* 2 mockup cada lado */
-  --mockup-ttl: #155dfc;
-  --mockup-desc: #2c2a2a;
-
-  /* wobble 4 */
-  --wobble-ttl: #155dfc;
-  --wobble-desc: #616161;
-
-  --wobble-bg-1: #2c2d2c;
-  --wobble-bg-2: #155dfc;
-  --wobble-bg-3: #155dfc;
-  --wobble-bg-4: #2c2d2c;
-
-  --wobble-ttl-5: #ffffff;
-  --wobble-desc-6: #efefef;
-
-  /* --carrusel 2 */
-  --carrusel2-bg: #ffffff;
-  --carrusel2-mini-bg: #155dfc;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #155dfc;
-  --carrusel2-desc: #2c2a2a;
-  --carrusel2-sig: #155dfc;
-  --carrusel2-sig-txt: #ffffff;
-
-  /* 3 secciones*/
+  /* 3 pasos*/
   --tres-bg: #ffffff;
   --tres-ttl: #155dfc;
   --tres-desc: #616161;
@@ -1011,7 +984,6 @@
   --footer-ttl: #155dfc;
   --footer-pag: #2c2a2a;
   --footer-pag-hov: #155dfc;
-
   --footer-ralq: #155dfc;
 
   /* demo/demo.tsx */
@@ -1034,7 +1006,6 @@
 ========================= */
   --nos-ttl: #155dfc;
   --nos-desc: #616161;
-
   --nos-fechas: #155dfc;
   --nos-txt: #616161;
 
@@ -1043,7 +1014,6 @@
 ========================= */
   --contact-ttl: #155dfc;
   --contact-desc: #2c2a2a;
-
   --contact-card-bg: #ffffff;
   --contact-card-border: #d1d1d1;
 
@@ -1156,13 +1126,6 @@
   --sidebar-accent-foreground: #1e293b;
   --sidebar-border: #e2e8f0;
   --sidebar-ring: #155dfc;
-
-  /* Dashboard Custom Properties */
-  --dash-bg: #fefcf8;
-  --dash-banner-txt: #ffffff;
-  --dash-card-1: #ebf4ff;
-  --dash-card-2: #e0f2fe;
-  --dash-card-3: #f0f9ff;
 }
 
 [data-color="blue"].dark,
@@ -1203,6 +1166,16 @@
   --carrusel-ttl: #155dfc;
   --carrusel-desc: #155dfc;
 
+  /* --carrusel 2 */
+  --carrusel2-bg: #000000;
+  --carrusel2-mini-bg: #155dfc;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #155dfc;
+  --carrusel2-desc: #dddddd;
+  --carrusel2-sig: #155dfc;
+  --carrusel2-sig-txt: #ffffff;
+
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #155dfc;
   --tarjetas-desc2: #dddddd;
@@ -1224,33 +1197,7 @@
   --pin-line: #3680d1;
   --pin-wave: #3680d1;
 
-  /* 2 mockup cada lado */
-  --mockup-ttl: #155dfc;
-  --mockup-desc: #dddddd;
-
-  /* wobble 4 */
-  --wobble-ttl: #155dfc;
-  --wobble-desc: #dddddd;
-
-  --wobble-bg-1: #1a1818;
-  --wobble-bg-2: #155dfc;
-  --wobble-bg-3: #155dfc;
-  --wobble-bg-4: #1a1818;
-
-  --wobble-ttl-5: #ffffff;
-  --wobble-desc-6: #efefef;
-
-  /* --carrusel 2 */
-  --carrusel2-bg: #000000;
-  --carrusel2-mini-bg: #155dfc;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #155dfc;
-  --carrusel2-desc: #dddddd;
-  --carrusel2-sig: #155dfc;
-  --carrusel2-sig-txt: #ffffff;
-
-  /* 3 secciones*/
+  /* 3 pasos*/
   --tres-bg: #000000;
   --tres-ttl: #155dfc;
   --tres-desc: #dddddd;
@@ -1301,7 +1248,6 @@
   --preg-bg: #000000;
   --preg-ttl: #155dfc;
   --preg-link: #155dfc;
-
   --preg-preg: #155dfc;
   --preg-txt: #dddddd;
 
@@ -1313,7 +1259,6 @@
   --footer-ttl: #155dfc;
   --footer-pag: #dddddd;
   --footer-pag-hov: #155dfc;
-
   --footer-ralq: #1567bf;
 
   /* demo/demo.tsx */
@@ -1345,7 +1290,6 @@
 ========================= */
   --contact-ttl: #155dfc;
   --contact-desc: #dddddd;
-
   --contact-card-bg: #0a0a0a;
   --contact-card-border: #1f1f1f;
 
@@ -1456,14 +1400,6 @@
   --sidebar-accent-foreground: #f8fafc;
   --sidebar-border: var(--menu-lineas);
   --sidebar-ring: #155dfc;
-
-  /* Dashboard Custom Properties */
-  --dash-bg: #121318;
-  --dash-banner: #4b6554;
-  --dash-banner-txt: #ffffff;
-  --dash-card-1: #062d22;
-  --dash-card-2: #042838;
-  --dash-card-3: #3d2503;
 }
 
 /* Morado */
@@ -1504,6 +1440,16 @@
   --carrusel-ttl: #8a0194;
   --carrusel-desc: #8a0194;
 
+  /* --carrusel 2 */
+  --carrusel2-bg: #ffffff;
+  --carrusel2-mini-bg: #8a0194;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #8a0194;
+  --carrusel2-desc: #2c2a2a;
+  --carrusel2-sig: #8a0194;
+  --carrusel2-sig-txt: #ffffff;
+
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #8a0194;
   --tarjetas-desc2: #2c2a2a;
@@ -1525,33 +1471,7 @@
   --pin-line: #6326a0;
   --pin-wave: #6326a0;
 
-  /* 2 mockup cada lado */
-  --mockup-ttl: #8a0194;
-  --mockup-desc: #2c2a2a;
-
-  /* wobble 4 */
-  --wobble-ttl: #8a0194;
-  --wobble-desc: #2c2a2a;
-
-  --wobble-bg-1: #2c2d2c;
-  --wobble-bg-2: #8a0194;
-  --wobble-bg-3: #8a0194;
-  --wobble-bg-4: #2c2d2c;
-
-  --wobble-ttl-5: #ffffff;
-  --wobble-desc-6: #efefef;
-
-  /* --carrusel 2 */
-  --carrusel2-bg: #ffffff;
-  --carrusel2-mini-bg: #8a0194;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #8a0194;
-  --carrusel2-desc: #2c2a2a;
-  --carrusel2-sig: #8a0194;
-  --carrusel2-sig-txt: #ffffff;
-
-  /* 3 secciones*/
+  /* 3 pasos*/
   --tres-bg: #ffffff;
   --tres-ttl: #8a0194;
   --tres-desc: #2c2a2a;
@@ -1639,7 +1559,6 @@
 ========================= */
   --nos-ttl: #8a0194;
   --nos-desc: #2c2a2a;
-
   --nos-fechas: #8a0194;
   --nos-txt: #2c2a2a;
 
@@ -1648,7 +1567,6 @@
 ========================= */
   --contact-ttl: #8a0194;
   --contact-desc: #2c2a2a;
-
   --contact-card-bg: #ffffff;
   --contact-card-border: #d1d1d1;
 
@@ -1679,7 +1597,6 @@
 
   --ayuda-preg-ttl: #8a0194;
   --ayuda-preg-txt: #2c2a2a;
-
   --ayuda-link: #8a0194;
 
   /* =========================
@@ -1761,14 +1678,6 @@
   --sidebar-accent-foreground: #1e293b;
   --sidebar-border: #e2e8f0;
   --sidebar-ring: #8a0194;
-
-  /* Dashboard Custom Properties */
-  --dash-bg: #fefcf8;
-  --dash-banner: #fce04b;
-  --dash-banner-txt: #000000;
-  --dash-card-1: #e6fbf4;
-  --dash-card-2: #e0fcfb;
-  --dash-card-3: #fff9e6;
 }
 
 [data-color="purple"].dark,
@@ -1809,6 +1718,16 @@
   --carrusel-ttl: #a800b7;
   --carrusel-desc: #a800b7;
 
+  /* --carrusel 2 */
+  --carrusel2-bg: #000000;
+  --carrusel2-mini-bg: #8a0194;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #a800b7;
+  --carrusel2-desc: #dddddd;
+  --carrusel2-sig: #a800b7;
+  --carrusel2-sig-txt: #ffffff;
+
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #a800b7;
   --tarjetas-desc2: #dddddd;
@@ -1830,33 +1749,7 @@
   --pin-line: #c800de;
   --pin-wave: #c800de;
 
-  /* 2 mockup cada lado */
-  --mockup-ttl: #a800b7;
-  --mockup-desc: #dddddd;
-
-  /* wobble 4 */
-  --wobble-ttl: #a800b7;
-  --wobble-desc: #dddddd;
-
-  --wobble-bg-1: #1a1818;
-  --wobble-bg-2: #8a0194;
-  --wobble-bg-3: #8a0194;
-  --wobble-bg-4: #1a1818;
-
-  --wobble-ttl-5: #ffffff;
-  --wobble-desc-6: #efefef;
-
-  /* --carrusel 2 */
-  --carrusel2-bg: #000000;
-  --carrusel2-mini-bg: #8a0194;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #a800b7;
-  --carrusel2-desc: #dddddd;
-  --carrusel2-sig: #a800b7;
-  --carrusel2-sig-txt: #ffffff;
-
-  /* 3 secciones*/
+  /* 3 pasos*/
   --tres-bg: #000000;
   --tres-ttl: #a800b7;
   --tres-desc: #dddddd;
@@ -1944,7 +1837,6 @@
 ========================= */
   --nos-ttl: #a800b7;
   --nos-desc: #dddddd;
-
   --nos-fechas: #a800b7;
   --nos-txt: #dddddd;
 
@@ -1984,7 +1876,6 @@
 
   --ayuda-preg-ttl: #a800b7;
   --ayuda-preg-txt: #dddddd;
-
   --ayuda-link: #a800b7;
 
   /* =========================
@@ -2066,14 +1957,6 @@
   --sidebar-accent-foreground: #f8fafc;
   --sidebar-border: var(--menu-lineas);
   --sidebar-ring: #a800b7;
-
-  /* Dashboard Custom Properties */
-  --dash-bg: #121318;
-  --dash-banner: #4b6554;
-  --dash-banner-txt: #ffffff;
-  --dash-card-1: #062d22;
-  --dash-card-2: #042838;
-  --dash-card-3: #3d2503;
 }
 
 /* Amarillo */
@@ -2114,6 +1997,16 @@
   --carrusel-ttl: #fdc700;
   --carrusel-desc: #fdc700;
 
+  /* --carrusel 2 */
+  --carrusel2-bg: #ffffff;
+  --carrusel2-mini-bg: #fdc700;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #fdc700;
+  --carrusel2-desc: #2c2a2a;
+  --carrusel2-sig: #fdc700;
+  --carrusel2-sig-txt: #ffffff;
+
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #fdc700;
   --tarjetas-desc2: #2c2a2a;
@@ -2135,33 +2028,7 @@
   --pin-line: #fdc700;
   --pin-wave: #fdc700;
 
-  /* 2 mockup cada lado */
-  --mockup-ttl: #fdc700;
-  --mockup-desc: #2c2a2a;
-
-  /* wobble 4 */
-  --wobble-ttl: #fdc700;
-  --wobble-desc: #2c2a2a;
-
-  --wobble-bg-1: #2c2d2c;
-  --wobble-bg-2: #fdc700;
-  --wobble-bg-3: #fdc700;
-  --wobble-bg-4: #2c2d2c;
-
-  --wobble-ttl-5: #ffffff;
-  --wobble-desc-6: #efefef;
-
-  /* --carrusel 2 */
-  --carrusel2-bg: #ffffff;
-  --carrusel2-mini-bg: #fdc700;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #fdc700;
-  --carrusel2-desc: #2c2a2a;
-  --carrusel2-sig: #fdc700;
-  --carrusel2-sig-txt: #ffffff;
-
-  /* 3 secciones*/
+  /* 3 pasos*/
   --tres-bg: #ffffff;
   --tres-ttl: #fdc700;
   --tres-desc: #2c2a2a;
@@ -2224,7 +2091,6 @@
   --footer-ttl: #fdc700;
   --footer-pag: #2c2a2a;
   --footer-pag-hov: #fdc700;
-
   --footer-ralq: #fdc700;
 
   /* demo/demo.tsx */
@@ -2247,7 +2113,6 @@
 ========================= */
   --nos-ttl: #fdc700;
   --nos-desc: #2c2a2a;
-
   --nos-fechas: #fdc700;
   --nos-txt: #2c2a2a;
 
@@ -2369,14 +2234,6 @@
   --sidebar-accent-foreground: #1e293b;
   --sidebar-border: #e2e8f0;
   --sidebar-ring: #fdc700;
-
-  /* Dashboard Custom Properties */
-  --dash-bg: #fefcf8;
-  --dash-banner: #fce04b;
-  --dash-banner-txt: #000000;
-  --dash-card-1: #e6fbf4;
-  --dash-card-2: #e0fcfb;
-  --dash-card-3: #fff9e6;
 }
 
 [data-color="yellow"].dark,
@@ -2417,6 +2274,16 @@
   --carrusel-ttl: #fdc700;
   --carrusel-desc: #fdc700;
 
+  /* --carrusel 2 */
+  --carrusel2-bg: #000000;
+  --carrusel2-mini-bg: #fdc700;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #fdc700;
+  --carrusel2-desc: #dddddd;
+  --carrusel2-sig: #fdc700;
+  --carrusel2-sig-txt: #ffffff;
+
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #fdc700;
   --tarjetas-desc2: #dddddd;
@@ -2438,33 +2305,7 @@
   --pin-line: #f0b100;
   --pin-wave: #f0b100;
 
-  /* 2 mockup cada lado */
-  --mockup-ttl: #fdc700;
-  --mockup-desc: #dddddd;
-
-  /* wobble 4 */
-  --wobble-ttl: #fdc700;
-  --wobble-desc: #dddddd;
-
-  --wobble-bg-1: #1a1818;
-  --wobble-bg-2: #fdc700;
-  --wobble-bg-3: #fdc700;
-  --wobble-bg-4: #1a1818;
-
-  --wobble-ttl-5: #ffffff;
-  --wobble-desc-6: #efefef;
-
-  /* --carrusel 2 */
-  --carrusel2-bg: #000000;
-  --carrusel2-mini-bg: #fdc700;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #fdc700;
-  --carrusel2-desc: #dddddd;
-  --carrusel2-sig: #fdc700;
-  --carrusel2-sig-txt: #ffffff;
-
-  /* 3 secciones*/
+  /* 3 pasos*/
   --tres-bg: #000000;
   --tres-ttl: #fdc700;
   --tres-desc: #dddddd;
@@ -2527,7 +2368,6 @@
   --footer-ttl: #fdc700;
   --footer-pag: #dddddd;
   --footer-pag-hov: #fdc700;
-
   --footer-ralq: #fdc700;
 
   /* demo/demo.tsx */
@@ -2550,7 +2390,6 @@
 ========================= */
   --nos-ttl: #fdc700;
   --nos-desc: #dddddd;
-
   --nos-fechas: #fdc700;
   --nos-txt: #dddddd;
 
@@ -2559,7 +2398,6 @@
 ========================= */
   --contact-ttl: #fdc700;
   --contact-desc: #dddddd;
-
   --contact-card-bg: #0a0a0a;
   --contact-card-border: #1f1f1f;
 
@@ -2590,7 +2428,6 @@
 
   --ayuda-preg-ttl: #fdc700;
   --ayuda-preg-txt: #dddddd;
-
   --ayuda-link: #fdc700;
 
   /* =========================
@@ -2672,14 +2509,6 @@
   --sidebar-accent-foreground: #f8fafc;
   --sidebar-border: var(--menu-lineas);
   --sidebar-ring: #fdc700;
-
-  /* Dashboard Custom Properties */
-  --dash-bg: #121318;
-  --dash-banner: #4b6554;
-  --dash-banner-txt: #ffffff;
-  --dash-card-1: #062d22;
-  --dash-card-2: #042838;
-  --dash-card-3: #3d2503;
 }
 
 /* Naranja */
@@ -2721,6 +2550,16 @@
   --carrusel-ttl: #f77817;
   --carrusel-desc: #f77817;
 
+  /* --carrusel 2 */
+  --carrusel2-bg: #ffffff;
+  --carrusel2-mini-bg: #f77817;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #f77817;
+  --carrusel2-desc: #2c2a2a;
+  --carrusel2-sig: #f77817;
+  --carrusel2-sig-txt: #ffffff;
+
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #f77817;
   --tarjetas-desc2: #2c2a2a;
@@ -2742,33 +2581,7 @@
   --pin-line: #f77817;
   --pin-wave: #f77817;
 
-  /* 2 mockup cada lado */
-  --mockup-ttl: #f77817;
-  --mockup-desc: #2c2a2a;
-
-  /* wobble 4 */
-  --wobble-ttl: #f77817;
-  --wobble-desc: #2c2a2a;
-
-  --wobble-bg-1: #2c2d2c;
-  --wobble-bg-2: #f77817;
-  --wobble-bg-3: #f77817;
-  --wobble-bg-4: #2c2d2c;
-
-  --wobble-ttl-5: #ffffff;
-  --wobble-desc-6: #efefef;
-
-  /* --carrusel 2 */
-  --carrusel2-bg: #ffffff;
-  --carrusel2-mini-bg: #f77817;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #f77817;
-  --carrusel2-desc: #2c2a2a;
-  --carrusel2-sig: #f77817;
-  --carrusel2-sig-txt: #ffffff;
-
-  /* 3 secciones*/
+  /* 3 pasos*/
   --tres-bg: #ffffff;
   --tres-ttl: #f77817;
   --tres-desc: #2c2a2a;
@@ -2833,7 +2646,6 @@
   --footer-ttl: #f77817;
   --footer-pag: #2c2a2a;
   --footer-pag-hov: #f77817;
-
   --footer-ralq: #f77817;
 
   /* demo/demo.tsx */
@@ -2856,7 +2668,6 @@
 ========================= */
   --nos-ttl: #f77817;
   --nos-desc: #2c2a2a;
-
   --nos-fechas: #f77817;
   --nos-txt: #2c2a2a;
 
@@ -2896,7 +2707,6 @@
 
   --ayuda-preg-ttl: #f77817;
   --ayuda-preg-txt: #2c2a2a;
-
   --ayuda-link: #f77817;
 
   /* =========================
@@ -2978,14 +2788,6 @@
   --sidebar-accent-foreground: #1e293b;
   --sidebar-border: #e2e8f0;
   --sidebar-ring: #f77817;
-
-  /* Dashboard Custom Properties */
-  --dash-bg: #fefcf8;
-  --dash-banner: #fce04b;
-  --dash-banner-txt: #000000;
-  --dash-card-1: #e6fbf4;
-  --dash-card-2: #e0fcfb;
-  --dash-card-3: #fff9e6;
 }
 
 [data-color="orange"].dark,
@@ -3027,6 +2829,16 @@
   --carrusel-ttl: #ff9100;
   --carrusel-desc: #ff9100;
 
+  /* --carrusel 2 */
+  --carrusel2-bg: #000000;
+  --carrusel2-mini-bg: #ff9100;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #ff9100;
+  --carrusel2-desc: #dddddd;
+  --carrusel2-sig: #ff8400;
+  --carrusel2-sig-txt: #ffffff;
+
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #ff9100;
   --tarjetas-desc2: #dddddd;
@@ -3048,33 +2860,7 @@
   --pin-line: #ff9100;
   --pin-wave: #ff9100;
 
-  /* 2 mockup cada lado */
-  --mockup-ttl: #ff9100;
-  --mockup-desc: #dddddd;
-
-  /* wobble 4 */
-  --wobble-ttl: #ff9100;
-  --wobble-desc: #dddddd;
-
-  --wobble-bg-1: #1a1818;
-  --wobble-bg-2: #ff9100;
-  --wobble-bg-3: #ff9100;
-  --wobble-bg-4: #1a1818;
-
-  --wobble-ttl-5: #ffffff;
-  --wobble-desc-6: #efefef;
-
-  /* --carrusel 2 */
-  --carrusel2-bg: #000000;
-  --carrusel2-mini-bg: #ff9100;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #ff9100;
-  --carrusel2-desc: #dddddd;
-  --carrusel2-sig: #ff8400;
-  --carrusel2-sig-txt: #ffffff;
-
-  /* 3 secciones*/
+  /* 3 pasos*/
   --tres-bg: #000000;
   --tres-ttl: #ff8400;
   --tres-desc: #dddddd;
@@ -3139,7 +2925,6 @@
   --footer-ttl: #ff9100;
   --footer-pag: #dddddd;
   --footer-pag-hov: #ff9100;
-
   --footer-ralq: #ff9100;
 
   /* demo/demo.tsx */
@@ -3162,7 +2947,6 @@
 ========================= */
   --nos-ttl: #ff8400;
   --nos-desc: #dddddd;
-
   --nos-fechas: #ff8400;
   --nos-txt: #dddddd;
 
@@ -3203,7 +2987,6 @@
 
   --ayuda-preg-ttl: #ff8400;
   --ayuda-preg-txt: #dddddd;
-
   --ayuda-link: #ff8400;
 
   /* =========================
@@ -3285,14 +3068,6 @@
   --sidebar-accent-foreground: #f8fafc;
   --sidebar-border: var(--menu-lineas);
   --sidebar-ring: #ff8400;
-
-  /* Dashboard Custom Properties */
-  --dash-bg: #121318;
-  --dash-banner: #4b6554;
-  --dash-banner-txt: #ffffff;
-  --dash-card-1: #062d22;
-  --dash-card-2: #042838;
-  --dash-card-3: #3d2503;
 }
 
 /* Rosa */
@@ -3334,6 +3109,16 @@
   --carrusel-ttl: #ec003f;
   --carrusel-desc: #ec003f;
 
+  /* --carrusel 2 */
+  --carrusel2-bg: #ffffff;
+  --carrusel2-mini-bg: #ec003f;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #ec003f;
+  --carrusel2-desc: #2c2a2a;
+  --carrusel2-sig: #ec003f;
+  --carrusel2-sig-txt: #ffffff;
+
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #ec003f;
   --tarjetas-desc2: #2c2a2a;
@@ -3355,33 +3140,7 @@
   --pin-line: #ec003f;
   --pin-wave: #ec003f;
 
-  /* 2 mockup cada lado */
-  --mockup-ttl: #ec003f;
-  --mockup-desc: #2c2a2a;
-
-  /* wobble 4 */
-  --wobble-ttl: #ec003f;
-  --wobble-desc: #616161;
-
-  --wobble-bg-1: #2c2d2c;
-  --wobble-bg-2: #ec003f;
-  --wobble-bg-3: #ec003f;
-  --wobble-bg-4: #2c2d2c;
-
-  --wobble-ttl-5: #ffffff;
-  --wobble-desc-6: #efefef;
-
-  /* --carrusel 2 */
-  --carrusel2-bg: #ffffff;
-  --carrusel2-mini-bg: #ec003f;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #ec003f;
-  --carrusel2-desc: #2c2a2a;
-  --carrusel2-sig: #ec003f;
-  --carrusel2-sig-txt: #ffffff;
-
-  /* 3 secciones*/
+  /* 3 pasos*/
   --tres-bg: #ffffff;
   --tres-ttl: #ec003f;
   --tres-desc: #2c2a2a;
@@ -3445,7 +3204,6 @@
   --footer-ttl: #ec003f;
   --footer-pag: #2c2a2a;
   --footer-pag-hov: #ec003f;
-
   --footer-ralq: #ec003f;
 
   /* demo/demo.tsx */
@@ -3468,7 +3226,6 @@
 ========================= */
   --nos-ttl: #ec003f;
   --nos-desc: #616161;
-
   --nos-fechas: #ec003f;
   --nos-txt: #616161;
 
@@ -3508,7 +3265,6 @@
 
   --ayuda-preg-ttl: #ec003f;
   --ayuda-preg-txt: #616161;
-
   --ayuda-link: #ec003f;
 
   /* =========================
@@ -3590,14 +3346,6 @@
   --sidebar-accent-foreground: #1e293b;
   --sidebar-border: #e2e8f0;
   --sidebar-ring: #ec003f;
-
-  /* Dashboard Custom Properties */
-  --dash-bg: #fefcf8;
-  --dash-banner: #fce04b;
-  --dash-banner-txt: #000000;
-  --dash-card-1: #e6fbf4;
-  --dash-card-2: #e0fcfb;
-  --dash-card-3: #fff9e6;
 }
 
 [data-color="pink"].dark,
@@ -3639,6 +3387,16 @@
   --carrusel-ttl: #ec003f;
   --carrusel-desc: #ec003f;
 
+  /* --carrusel 2 */
+  --carrusel2-bg: #000000;
+  --carrusel2-mini-bg: #ec003f;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #ec003f;
+  --carrusel2-desc: #dddddd;
+  --carrusel2-sig: #ec003f;
+  --carrusel2-sig-txt: #ffffff;
+
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #ec003f;
   --tarjetas-desc2: #dddddd;
@@ -3660,33 +3418,7 @@
   --pin-line: #ec003f;
   --pin-wave: #ec003f;
 
-  /* 2 mockup cada lado */
-  --mockup-ttl: #ec003f;
-  --mockup-desc: #dddddd;
-
-  /* wobble 4 */
-  --wobble-ttl: #ec003f;
-  --wobble-desc: #dddddd;
-
-  --wobble-bg-1: #1a1818;
-  --wobble-bg-2: #ec003f;
-  --wobble-bg-3: #ec003f;
-  --wobble-bg-4: #1a1818;
-
-  --wobble-ttl-5: #ffffff;
-  --wobble-desc-6: #efefef;
-
-  /* --carrusel 2 */
-  --carrusel2-bg: #000000;
-  --carrusel2-mini-bg: #ec003f;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #ec003f;
-  --carrusel2-desc: #dddddd;
-  --carrusel2-sig: #ec003f;
-  --carrusel2-sig-txt: #ffffff;
-
-  /* 3 secciones*/
+  /* 3 pasos*/
   --tres-bg: #000000;
   --tres-ttl: #ec003f;
   --tres-desc: #dddddd;
@@ -3750,7 +3482,6 @@
   --footer-ttl: #ec003f;
   --footer-pag: #dddddd;
   --footer-pag-hov: #ec003f;
-
   --footer-ralq: #ec003f;
 
   /* demo/demo.tsx */
@@ -3773,7 +3504,6 @@
 ========================= */
   --nos-ttl: #ec003f;
   --nos-desc: #dddddd;
-
   --nos-fechas: #ec003f;
   --nos-txt: #dddddd;
 
@@ -3814,7 +3544,6 @@
 
   --ayuda-preg-ttl: #ec003f;
   --ayuda-preg-txt: #dddddd;
-
   --ayuda-link: #ec003f;
 
   /* =========================
@@ -3896,14 +3625,6 @@
   --sidebar-accent-foreground: #f8fafc;
   --sidebar-border: var(--menu-lineas);
   --sidebar-ring: #ec003f;
-
-  /* Dashboard Custom Properties */
-  --dash-bg: #121318;
-  --dash-banner: #4b6554;
-  --dash-banner-txt: #ffffff;
-  --dash-card-1: #062d22;
-  --dash-card-2: #042838;
-  --dash-card-3: #3d2503;
 }
 
 /* Verde  */
@@ -3945,6 +3666,16 @@
   --carrusel-ttl: #5ea500;
   --carrusel-desc: #5ea500;
 
+  /* --carrusel 2 */
+  --carrusel2-bg: #ffffff;
+  --carrusel2-mini-bg: #5ea500;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #5ea500;
+  --carrusel2-desc: #2c2a2a;
+  --carrusel2-sig: #5ea500;
+  --carrusel2-sig-txt: #ffffff;
+
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #5ea500;
   --tarjetas-desc2: #2c2a2a;
@@ -3966,33 +3697,7 @@
   --pin-line: #7ccf00;
   --pin-wave: #7ccf00;
 
-  /* 2 mockup cada lado */
-  --mockup-ttl: #5ea500;
-  --mockup-desc: #2c2a2a;
-
-  /* wobble 4 */
-  --wobble-ttl: #5ea500;
-  --wobble-desc: #2c2a2a;
-
-  --wobble-bg-1: #98a29b;
-  --wobble-bg-2: #5ea500;
-  --wobble-bg-3: #5ea500;
-  --wobble-bg-4: #98a29b;
-
-  --wobble-ttl-5: #ffffff;
-  --wobble-desc-6: #efefef;
-
-  /* --carrusel 2 */
-  --carrusel2-bg: #ffffff;
-  --carrusel2-mini-bg: #5ea500;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #5ea500;
-  --carrusel2-desc: #2c2a2a;
-  --carrusel2-sig: #5ea500;
-  --carrusel2-sig-txt: #ffffff;
-
-  /* 3 secciones*/
+  /* 3 pasos*/
   --tres-bg: #ffffff;
   --tres-ttl: #5ea500;
   --tres-desc: #2c2a2a;
@@ -4057,7 +3762,6 @@
   --footer-ttl: #5ea500;
   --footer-pag: #2c2a2a;
   --footer-pag-hov: #5ea500;
-
   --footer-ralq: #5ea500;
 
   /* demo/demo.tsx */
@@ -4080,7 +3784,6 @@
 ========================= */
   --nos-ttl: #5ea500;
   --nos-desc: #2c2a2a;
-
   --nos-fechas: #5ea500;
   --nos-txt: #2c2a2a;
 
@@ -4120,7 +3823,6 @@
 
   --ayuda-preg-ttl: #5ea500;
   --ayuda-preg-txt: #2c2a2a;
-
   --ayuda-link: #5ea500;
 
   /* =========================
@@ -4202,14 +3904,6 @@
   --sidebar-accent-foreground: #1e293b;
   --sidebar-border: #e2e8f0;
   --sidebar-ring: #5ea500;
-
-  /* Dashboard Custom Properties */
-  --dash-bg: #fefcf8;
-  --dash-banner: #fce04b;
-  --dash-banner-txt: #000000;
-  --dash-card-1: #e6fbf4;
-  --dash-card-2: #e0fcfb;
-  --dash-card-3: #fff9e6;
 }
 
 [data-color="green"].dark,
@@ -4251,6 +3945,16 @@
   --carrusel-ttl: #7ccf00;
   --carrusel-desc: #7ccf00;
 
+  /* --carrusel 2 */
+  --carrusel2-bg: #000000;
+  --carrusel2-mini-bg: #5ea500;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #7ccf00;
+  --carrusel2-desc: #dddddd;
+  --carrusel2-sig: #7ccf00;
+  --carrusel2-sig-txt: #ffffff;
+
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #7ccf00;
   --tarjetas-desc2: #dddddd;
@@ -4272,33 +3976,7 @@
   --pin-line: #7ccf00;
   --pin-wave: #7ccf00;
 
-  /* 2 mockup cada lado */
-  --mockup-ttl: #7ccf00;
-  --mockup-desc: #dddddd;
-
-  /* wobble 4 */
-  --wobble-ttl: #7ccf00;
-  --wobble-desc: #dddddd;
-
-  --wobble-bg-1: #1a1818;
-  --wobble-bg-2: #5ea500;
-  --wobble-bg-3: #5ea500;
-  --wobble-bg-4: #1a1818;
-
-  --wobble-ttl-5: #ffffff;
-  --wobble-desc-6: #efefef;
-
-  /* --carrusel 2 */
-  --carrusel2-bg: #000000;
-  --carrusel2-mini-bg: #5ea500;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #7ccf00;
-  --carrusel2-desc: #dddddd;
-  --carrusel2-sig: #7ccf00;
-  --carrusel2-sig-txt: #ffffff;
-
-  /* 3 secciones*/
+  /* 3 pasos*/
   --tres-bg: #000000;
   --tres-ttl: #7ccf00;
   --tres-desc: #dddddd;
@@ -4363,7 +4041,6 @@
   --footer-ttl: #7ccf00;
   --footer-pag: #dddddd;
   --footer-pag-hov: #7ccf00;
-
   --footer-ralq: #7ccf00;
 
   /* demo/demo.tsx */
@@ -4386,7 +4063,6 @@
 ========================= */
   --nos-ttl: #7ccf00;
   --nos-desc: #dddddd;
-
   --nos-fechas: #7ccf00;
   --nos-txt: #dddddd;
 
@@ -4426,7 +4102,6 @@
 
   --ayuda-preg-ttl: #7ccf00;
   --ayuda-preg-txt: #dddddd;
-
   --ayuda-link: #7ccf00;
 
   /* =========================
@@ -4508,14 +4183,6 @@
   --sidebar-accent-foreground: #f8fafc;
   --sidebar-border: var(--menu-lineas);
   --sidebar-ring: #7ccf00;
-
-  /* Dashboard Custom Properties */
-  --dash-bg: #121318;
-  --dash-banner: #4b6554;
-  --dash-banner-txt: #ffffff;
-  --dash-card-1: #062d22;
-  --dash-card-2: #042838;
-  --dash-card-3: #3d2503;
 }
 
 @theme inline {

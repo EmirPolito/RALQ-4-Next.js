@@ -190,7 +190,7 @@ export function ContenidoMenu() {
             <div className="w-1.5 h-1.5 rounded-full bg-menu-d-iconos4/50" />
             <div className="w-1.5 h-1.5 rounded-full bg-menu-d-iconos4/50" />
           </div>
-          <button className="bg-menu-d-bg-boton4 hover:opacity-90 text-menu-d-ttl4 font-extrabold px-5 md:px-8 py-2 md:py-2.5 rounded-lg md:rounded-xl transition-colors shadow-lg active:scale-95 flex items-center gap-2 border-2 border-menu-d-borde4 text-xs md:text-base">
+          <button className="bg-menu-d-bg-boton4 cursor-pointer hover:opacity-90 text-menu-d-ttl4 font-extrabold px-5 md:px-8 py-2 md:py-2.5 rounded-lg md:rounded-xl transition-colors shadow-lg active:scale-95 flex items-center gap-2 border-2 border-menu-d-borde4 text-xs md:text-base">
             Empezar
           </button>
           <button className="cursor-pointer hidden md:flex w-10 h-10 rounded-full hover:bg-menu-d-ttl4/20 items-center justify-center transition-colors">
