@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
+import { memo, useMemo } from "react";
 import { cn } from "@/lib/utils";
 import { useReducedMotion } from "@/hooks/use-reduced-motion";
 import { useTranslations } from "next-intl";
@@ -10,11 +11,12 @@ import img1 from "../public/img/tresPasos/paso1.jpg";
 import img2 from "../public/img/tresPasos/paso2.jpg";
 import img3 from "../public/img/tresPasos/paso3.jpg";
 
-export default function TresPasosLaboratorio() {
+function TresPasosLaboratorioComponent() {
   const t = useTranslations("tresPasos");
   const reducedMotion = useReducedMotion();
 
-  const steps = [
+  const steps = useMemo(
+    () => [
     {
       step: "01",
       title: t("step1.title"),
@@ -81,7 +83,9 @@ export default function TresPasosLaboratorio() {
       varMarcosTxt: "text-tres-caracteristicas-txt",
       varPuntos: "bg-tres-caracteristicas-puntos",
     },
-  ];
+    ],
+    [t],
+  );
 
   return (
     <section
@@ -104,21 +108,19 @@ export default function TresPasosLaboratorio() {
             <motion.div
               key={step.step}
               initial={
-                reducedMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }
+                reducedMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
               }
-              whileInView={
-                reducedMotion ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }
-              }
+              whileInView={{ opacity: 1, y: 0 }}
               transition={
                 reducedMotion
                   ? { duration: 0 }
                   : {
-                      duration: 0.8,
-                      ease: [0.215, 0.61, 0.355, 1], // Smoother easeOutCubic/Quart
-                      delay: index * 0.1,
+                      duration: 0.7,
+                      ease: [0.16, 1, 0.3, 1],
+                      delay: index * 0.05,
                     }
               }
-              viewport={{ once: true, amount: 0.15 }}
+              viewport={{ once: true, amount: 0.1, margin: "-20px" }}
               style={{ willChange: "transform, opacity" }}
               className={cn(
                 "group relative grid grid-cols-1 gap-12 py-12 md:py-16 lg:pt-10 lg:pb-24 lg:grid-cols-2 lg:gap-24 lg:gap-y-0",
@@ -173,10 +175,24 @@ export default function TresPasosLaboratorio() {
 
               {/* Visual side */}
               {/* Imagen lado derecho */}
-              <div className="w-full relative will-change-transform">
-                <div
+              <div className="w-full relative">
+                <motion.div
+                  initial={
+                    reducedMotion ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.97, y: 10 }
+                  }
+                  whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                  transition={
+                    reducedMotion
+                      ? { duration: 0 }
+                      : {
+                          duration: 0.9,
+                          ease: [0.16, 1, 0.3, 1],
+                          delay: 0.1,
+                        }
+                  }
+                  viewport={{ once: true, amount: 0.2 }}
                   className={cn(
-                    "relative overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-900 border aspect-[16/10] w-full",
+                    "relative overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-900 border aspect-[16/10] w-full will-change-transform",
                     step.varMiniBorder,
                   )}
                 >
@@ -186,23 +202,24 @@ export default function TresPasosLaboratorio() {
                     placeholder="blur"
                     width={800}
                     height={500}
-                    quality={75}
-                    priority={index === 0}
-                    loading={index === 0 ? "eager" : "lazy"}
+                    quality={80}
+                    priority={index < 2}
+                    loading={index < 2 ? "eager" : "lazy"}
                     decoding="async"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
                     className={cn(
-                      "h-full w-full object-cover transition duration-700 ease-out dark:opacity-90 [transform:translateZ(0)] [backface-visibility:hidden]",
-                      !reducedMotion && "group-hover:scale-[1.03]",
+                      "h-full w-full object-cover dark:opacity-90 [transform:translate3d(0,0,0)] [backface-visibility:hidden]",
                     )}
                   />
-                </div>
+                </motion.div>
               </div>
             </motion.div>
           ))}
         </div>
-
       </div>
     </section>
   );
 }
+
+const TresPasosLaboratorio = memo(TresPasosLaboratorioComponent);
+export default TresPasosLaboratorio;

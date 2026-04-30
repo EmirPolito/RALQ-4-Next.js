@@ -126,7 +126,8 @@
     "connectionError": "Could not connect to the server."
   },
   "faq": {
-    "title": "Frequently Asked Questions",
+    "titlePart1": "Frequently Asked",
+    "titlePart2": "Questions",
     "subtitle": "Need more help?",
     "contactLink": "Contact us",
     "items": [

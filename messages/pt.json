@@ -126,7 +126,8 @@
     "connectionError": "Não foi possível conectar ao servidor."
   },
   "faq": {
-    "title": "Perguntas Frequentes",
+    "titlePart1": "Perguntas",
+    "titlePart2": "Frequentes",
     "subtitle": "Precisa de mais ajuda?",
     "contactLink": "Fale conosco",
     "items": [

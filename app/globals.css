@@ -1247,6 +1247,8 @@
   /* Preguntas frecuentes */
   --preg-bg: #000000;
   --preg-ttl: #155dfc;
+  --preg-desc: #dddddd;
+
   --preg-link: #155dfc;
   --preg-preg: #155dfc;
   --preg-txt: #dddddd;
@@ -2078,9 +2080,11 @@
   /* Preguntas frecuentes */
   --preg-bg: #ffffff;
   --preg-ttl: #fdc700;
+  --preg-desc: #2c2a2a;
 
   --preg-preg: #fdc700;
   --preg-txt: #2c2a2a;
+  --preg-link: #fdc700;
 
   /* Footer */
   --footer-bg: #ffffff;
@@ -2355,6 +2359,8 @@
   /* Preguntas frecuentes */
   --preg-bg: #000000;
   --preg-ttl: #fdc700;
+  --preg-desc: #dddddd;
+  --preg-link: #fdc700;
 
   --preg-preg: #fdc700;
   --preg-txt: #dddddd;
@@ -3732,10 +3738,10 @@
 
   --imgcursor-der-des: #2c2a2a;
   --imgcursor-der-cursor1: #5ea500;
-  --imgcursor-der-cursor2: #ff4100;
-  --imgcursor-der-cursor3: #ff9d00;
-  --imgcursor-der-cursor4: #138a00;
-  --imgcursor-der-cursor5: #ffd500;
+  --imgcursor-der-cursor2: #5ea500;
+  --imgcursor-der-cursor3: #5ea500;
+  --imgcursor-der-cursor4: #5ea500;
+  --imgcursor-der-cursor5: #5ea500;
 
   --imgcursor-der-linea: #d9d9d9;
 
@@ -4011,10 +4017,10 @@
 
   --imgcursor-der-des: #dddddd;
   --imgcursor-der-cursor1: #7ccf00;
-  --imgcursor-der-cursor2: #ff4100;
-  --imgcursor-der-cursor3: #ff9d00;
-  --imgcursor-der-cursor4: #138a00;
-  --imgcursor-der-cursor5: #ffd500;
+  --imgcursor-der-cursor2: #5ea500;
+  --imgcursor-der-cursor3: #5ea500;
+  --imgcursor-der-cursor4: #5ea500;
+  --imgcursor-der-cursor5: #5ea500;
 
   --imgcursor-der-linea: #333333;
 
@@ -4411,23 +4417,6 @@
   --color-menu-lineas: var(--menu-lineas);
   --color-menu-mostrador: var(--menu-mostrador);
 
-  /* wobble 4 */
-  /* --color-wobble-ttl: var(--wobble-ttl);
-  --color-wobble-desc: var(--wobble-desc);
-
-  --color-wobble-bg-1: var(--wobble-bg-1);
-  --color-wobble-bg-2: var(--wobble-bg-2);
-  --color-wobble-bg-3: var(--wobble-bg-3);
-  --color-wobble-bg-4: var(--wobble-bg-4);
-
-  --color-wobble-ttl-5: var(--wobble-ttl-5);
-  --color-wobble-desc-6: var(--wobble-desc-6);
-  --color-wobble-dmas-7: var(--wobble-dmas-7); */
-
-  /* 2 mockup cada lado */
-  /* --color-mockup-bg: var(--mockup-bg);
-  --color-mockup-ttl: var(--mockup-ttl);
-  --color-mockup-desc: var(--mockup-desc); */
   /* Menu Derecho */
   --color-menu-d-bg: var(--menu-d-bg);
   --color-menu-d-ttl1: var(--menu-d-ttl1);

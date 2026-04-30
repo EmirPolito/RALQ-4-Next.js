@@ -33,9 +33,10 @@ export default function Preguntas1() {
             delay={0.1}
             className="@xl:sticky @xl:top-24 lg:w-96 shrink-0"
           >
-            {/* Título — faq.title */}
-            <h2 className="text-preg-ttl font-semibold text-2xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-center @xl:text-left">
-              {t("title")}
+            {/* Título — faq.titlePart1 + faq.titlePart2 */}
+            <h2 className="font-semibold text-2xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-center @xl:text-left">
+              <span className="block text-foreground">{t("titlePart1")}</span>
+              <span className="block text-preg-ttl">{t("titlePart2")}</span>
             </h2>
 
             {/* Subtítulo + link a contacto — faq.subtitle + faq.contactLink */}
