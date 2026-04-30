@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
-import { memo, useMemo } from "react";
+import { memo, useMemo, useState } from "react";
 import { cn } from "@/lib/utils";
 import { useReducedMotion } from "@/hooks/use-reduced-motion";
 import { useTranslations } from "next-intl";
@@ -10,6 +10,69 @@ import { useTranslations } from "next-intl";
 import img1 from "../public/img/tresPasos/paso1.jpg";
 import img2 from "../public/img/tresPasos/paso2.jpg";
 import img3 from "../public/img/tresPasos/paso3.jpg";
+
+const StepImage = memo(({ 
+  src, 
+  alt, 
+  priority, 
+  index, 
+  varMiniBorder,
+  reducedMotion 
+}: { 
+  src: any; 
+  alt: string; 
+  priority: boolean; 
+  index: number;
+  varMiniBorder: string;
+  reducedMotion: boolean;
+}) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  return (
+    <motion.div
+      initial={reducedMotion ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.98, y: 10 }}
+      whileInView={{ opacity: 1, scale: 1, y: 0 }}
+      transition={
+        reducedMotion
+          ? { duration: 0 }
+          : {
+              duration: 0.8,
+              ease: [0.16, 1, 0.3, 1],
+              delay: 0.1,
+            }
+      }
+      viewport={{ once: true, amount: 0.2 }}
+      className={cn(
+        "relative overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-800 border aspect-[16/10] w-full will-change-transform",
+        varMiniBorder,
+      )}
+    >
+      <Image
+        src={src}
+        alt={alt}
+        placeholder="blur"
+        width={800}
+        height={500}
+        quality={85}
+        priority={priority}
+        onLoad={() => setIsLoaded(true)}
+        className={cn(
+          "h-full w-full object-cover transition-all duration-1000 ease-out",
+          isLoaded ? "opacity-100 scale-100 blur-0" : "opacity-0 scale-105 blur-sm",
+          "dark:opacity-90"
+        )}
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+      />
+      
+      {/* Loading Overlay - optional but helps for smoothness */}
+      {!isLoaded && (
+        <div className="absolute inset-0 bg-neutral-200/50 dark:bg-neutral-800/50 animate-pulse" />
+      )}
+    </motion.div>
+  );
+});
+
+StepImage.displayName = "StepImage";
 
 function TresPasosLaboratorioComponent() {
   const t = useTranslations("tresPasos");
@@ -174,44 +237,15 @@ function TresPasosLaboratorioComponent() {
               </div>
 
               {/* Visual side */}
-              {/* Imagen lado derecho */}
               <div className="w-full relative">
-                <motion.div
-                  initial={
-                    reducedMotion ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.97, y: 10 }
-                  }
-                  whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                  transition={
-                    reducedMotion
-                      ? { duration: 0 }
-                      : {
-                          duration: 0.9,
-                          ease: [0.16, 1, 0.3, 1],
-                          delay: 0.1,
-                        }
-                  }
-                  viewport={{ once: true, amount: 0.2 }}
-                  className={cn(
-                    "relative overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-900 border aspect-[16/10] w-full will-change-transform",
-                    step.varMiniBorder,
-                  )}
-                >
-                  <Image
-                    src={step.image}
-                    alt={step.title}
-                    placeholder="blur"
-                    width={800}
-                    height={500}
-                    quality={80}
-                    priority={index < 2}
-                    loading={index < 2 ? "eager" : "lazy"}
-                    decoding="async"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
-                    className={cn(
-                      "h-full w-full object-cover dark:opacity-90 [transform:translate3d(0,0,0)] [backface-visibility:hidden]",
-                    )}
-                  />
-                </motion.div>
+                <StepImage
+                  src={step.image}
+                  alt={step.title}
+                  priority={index < 1} // Only first image eager
+                  index={index}
+                  varMiniBorder={step.varMiniBorder}
+                  reducedMotion={reducedMotion}
+                />
               </div>
             </motion.div>
           ))}
