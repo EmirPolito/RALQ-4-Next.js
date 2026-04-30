@@ -568,14 +568,6 @@
   --sidebar-border: var(--menu-lineas);
   --sidebar-ring: #3b82f6;
 
-  /* Dashboard Custom Properties */
-  --dash-bg: #121318;
-  --dash-banner: #4b6554;
-  --dash-banner-txt: #ffffff;
-  --dash-card-1: #062d22;
-  --dash-card-2: #042838;
-  --dash-card-3: #3d2503;
-
   /* RALQ Content Properties */
   --ttl: var(--titulos);
   --desc: #dad9d9;
@@ -614,6 +606,16 @@
   --carrusel-ttl: #000000;
   --carrusel-desc: #333333;
 
+  /* --carrusel 2 */
+  --carrusel2-bg: #ffffff;
+  --carrusel2-mini-bg: #0072b2;
+  --carrusel2-mini-txt: #ffffff;
+
+  --carrusel2-ttl: #000000;
+  --carrusel2-desc: #333333;
+  --carrusel2-sig: #000000;
+  --carrusel2-sig-txt: #ffffff;
+
   /* Tarjetas pin3d */
   --tarjetas-ttl1: #0072b2;
   --tarjetas-desc2: #333333;
@@ -634,34 +636,6 @@
 
   --pin-line: #0072b2;
   --pin-wave: #56b4e9;
-
-  /* 2 mockup cada lado */
-  --mockup-bg: #ffffff;
-  --mockup-ttl: #000000;
-  --mockup-desc: #333333;
-
-  /* wobble 4 */
-  --wobble-ttl: #000000;
-  --wobble-desc: #333333;
-
-  --wobble-bg-1: #f2f2f2;
-  --wobble-bg-2: #e0e6e3;
-  --wobble-bg-3: #e0e6e3;
-  --wobble-bg-4: #f3f3f3;
-
-  --wobble-ttl-5: #000000;
-  --wobble-desc-6: #333333;
-  --wobble-dmas-7: #0072b2;
-
-  /* --carrusel 2 */
-  --carrusel2-bg: #ffffff;
-  --carrusel2-mini-bg: #0072b2;
-  --carrusel2-mini-txt: #ffffff;
-
-  --carrusel2-ttl: #000000;
-  --carrusel2-desc: #333333;
-  --carrusel2-sig: #000000;
-  --carrusel2-sig-txt: #ffffff;
 
   /* 3 secciones*/
   --tres-bg: #ffffff;
@@ -1233,7 +1207,7 @@
   --tarjetas-ttl1: #155dfc;
   --tarjetas-desc2: #dddddd;
 
-  --tarjetas-bg: #131313;
+  --tarjetas-bg: #090909;
   --tarjetas-border: #e2e8e3;
 
   --tarjetas-txt3: #dddddd;
@@ -1839,7 +1813,7 @@
   --tarjetas-ttl1: #a800b7;
   --tarjetas-desc2: #dddddd;
 
-  --tarjetas-bg: #131313;
+  --tarjetas-bg: #090909;
   --tarjetas-border: #e2e8e3;
 
   --tarjetas-txt3: #dddddd;
@@ -2447,7 +2421,7 @@
   --tarjetas-ttl1: #fdc700;
   --tarjetas-desc2: #dddddd;
 
-  --tarjetas-bg: #131313;
+  --tarjetas-bg: #090909;
   --tarjetas-border: #e2e8e3;
 
   --tarjetas-txt3: #dddddd;
@@ -2663,6 +2637,41 @@
   --menu-d-ttl4: #ffffff; /*Continuar: laboratorios y el texto del boton empezar*/
   --menu-d-desc4: #bbbbbb; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #fdc700; /*para el bg del boton*/
+
+  /* UI */
+  --background: #000000;
+  --muted: #27272a;
+  --foreground: #fafafa;
+  --card: #050505;
+  --card-foreground: #fafafa;
+  --popover: #050505;
+  --popover-foreground: #fafafa;
+  --primary: #fdc700;
+  --primary-foreground: #ffffff;
+  --secondary: #27272a;
+  --secondary-foreground: #fafafa;
+  --muted-foreground: #a1a1aa;
+  --accent: #27272a;
+  --accent-foreground: #fafafa;
+  --destructive: #7f1d1d;
+  --destructive-foreground: #fafafa;
+  --border: #1a1a1a;
+  --input: #1a1a1a;
+  --ring: #fdc700;
+  --radius: 0.5rem;
+  --chart-1: #3b82f6;
+  --chart-2: #10b981;
+  --chart-3: #f97316;
+  --chart-4: #eab308;
+  --chart-5: #ef4444;
+  --sidebar: var(--menu-bg);
+  --sidebar-foreground: #94a3b8;
+  --sidebar-primary: #fdc700;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #1e293b;
+  --sidebar-accent-foreground: #f8fafc;
+  --sidebar-border: var(--menu-lineas);
+  --sidebar-ring: #fdc700;
 
   /* Dashboard Custom Properties */
   --dash-bg: #121318;
@@ -3022,7 +3031,7 @@
   --tarjetas-ttl1: #ff9100;
   --tarjetas-desc2: #dddddd;
 
-  --tarjetas-bg: #131313;
+  --tarjetas-bg: #090909;
   --tarjetas-border: #e2e8e3;
 
   --tarjetas-txt3: #dddddd;
@@ -3634,7 +3643,7 @@
   --tarjetas-ttl1: #ec003f;
   --tarjetas-desc2: #dddddd;
 
-  --tarjetas-bg: #131313;
+  --tarjetas-bg: #090909;
   --tarjetas-border: #e2e8e3;
 
   --tarjetas-txt3: #dddddd;
@@ -4246,7 +4255,7 @@
   --tarjetas-ttl1: #7ccf00;
   --tarjetas-desc2: #dddddd;
 
-  --tarjetas-bg: #131313;
+  --tarjetas-bg: #090909;
   --tarjetas-border: #e2e8e3;
 
   --tarjetas-txt3: #dddddd;
