@@ -154,6 +154,7 @@
   --nos-ttl: #000000;
   --nos-desc: #2c2a2a;
   --nos-fechas: #000000;
+  --nos-lineas: #000000;
   --nos-txt: #2c2a2a;
 
   /* =========================
@@ -446,6 +447,7 @@
 ========================= */
   --nos-ttl: #ffffff;
   --nos-desc: #dad9d9;
+  --nos-lineas: #ffffff;
 
   --nos-fechas: #ffffff;
   --nos-txt: #dad9d9;
@@ -721,6 +723,8 @@
 ========================= */
   --nos-ttl: #0072b2;
   --nos-desc: #333333;
+  --nos-lineas: #0072b2;
+
   --nos-fechas: #0072b2;
   --nos-txt: #333333;
 
@@ -1006,6 +1010,7 @@
 ========================= */
   --nos-ttl: #155dfc;
   --nos-desc: #616161;
+  --nos-lineas: #155dfc;
   --nos-fechas: #155dfc;
   --nos-txt: #616161;
 
@@ -1283,6 +1288,7 @@
 ========================= */
   --nos-ttl: #155dfc;
   --nos-desc: #dddddd;
+  --nos-lineas: #155dfc;
 
   --nos-fechas: #155dfc;
   --nos-txt: #dddddd;
@@ -1561,6 +1567,7 @@
 ========================= */
   --nos-ttl: #8a0194;
   --nos-desc: #2c2a2a;
+  --nos-lineas: #8a0194;
   --nos-fechas: #8a0194;
   --nos-txt: #2c2a2a;
 
@@ -1839,6 +1846,7 @@
 ========================= */
   --nos-ttl: #a800b7;
   --nos-desc: #dddddd;
+  --nos-lineas: #a800b7;
   --nos-fechas: #a800b7;
   --nos-txt: #dddddd;
 
@@ -2117,6 +2125,7 @@
 ========================= */
   --nos-ttl: #fdc700;
   --nos-desc: #2c2a2a;
+  --nos-lineas: #fdc700;
   --nos-fechas: #fdc700;
   --nos-txt: #2c2a2a;
 
@@ -2396,6 +2405,7 @@
 ========================= */
   --nos-ttl: #fdc700;
   --nos-desc: #dddddd;
+  --nos-lineas: #fdc700;
   --nos-fechas: #fdc700;
   --nos-txt: #dddddd;
 
@@ -2674,6 +2684,7 @@
 ========================= */
   --nos-ttl: #f77817;
   --nos-desc: #2c2a2a;
+  --nos-lineas: #f77817;
   --nos-fechas: #f77817;
   --nos-txt: #2c2a2a;
 
@@ -2953,6 +2964,7 @@
 ========================= */
   --nos-ttl: #ff8400;
   --nos-desc: #dddddd;
+  --nos-lineas: #ff8400;
   --nos-fechas: #ff8400;
   --nos-txt: #dddddd;
 
@@ -3232,6 +3244,7 @@
 ========================= */
   --nos-ttl: #ec003f;
   --nos-desc: #616161;
+  --nos-lineas: #ec003f;
   --nos-fechas: #ec003f;
   --nos-txt: #616161;
 
@@ -3510,6 +3523,7 @@
 ========================= */
   --nos-ttl: #ec003f;
   --nos-desc: #dddddd;
+  --nos-lineas: #ec003f;
   --nos-fechas: #ec003f;
   --nos-txt: #dddddd;
 
@@ -3790,6 +3804,7 @@
 ========================= */
   --nos-ttl: #5ea500;
   --nos-desc: #2c2a2a;
+  --nos-lineas: #5ea500;
   --nos-fechas: #5ea500;
   --nos-txt: #2c2a2a;
 
@@ -4069,6 +4084,7 @@
 ========================= */
   --nos-ttl: #7ccf00;
   --nos-desc: #dddddd;
+  --nos-lineas: #7ccf00;
   --nos-fechas: #7ccf00;
   --nos-txt: #dddddd;
 
@@ -4368,6 +4384,7 @@
   /* Sobre Nosotros */
   --color-nos-ttl: var(--nos-ttl);
   --color-nos-desc: var(--nos-desc);
+  --color-nos-lineas: var(--nos-lineas);
 
   --color-nos-fechas: var(--nos-fechas);
   --color-nos-txt: var(--nos-txt);

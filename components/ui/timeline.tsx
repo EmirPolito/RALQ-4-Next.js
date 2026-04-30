@@ -144,7 +144,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           className="absolute md:left-8 left-8 top-[-100px] overflow-hidden w-[2px] 
           bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] 
           from-transparent from-[0%] 
-          via-neutral-200 dark:via-neutral-700 
+          via-[var(--nos-lineas)] 
           to-transparent to-[99%]  
           [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_98%,transparent_100%)]"
         >
@@ -152,7 +152,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             <div
               style={{ height: "100%", opacity: 1 }}
               className="absolute inset-x-0 top-0 w-[2px] 
-              bg-gradient-to-t from-purple-500 via-blue-500 to-transparent 
+              bg-gradient-to-t from-[var(--nos-lineas)] via-[var(--nos-lineas)] to-transparent 
               from-[0%] via-[10%] rounded-full"
             />
           ) : (
@@ -162,7 +162,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                 opacity: opacityTransform,
               }}
               className="absolute inset-x-0 top-0 w-[2px] 
-              bg-gradient-to-t from-purple-500 via-blue-500 to-transparent 
+              bg-gradient-to-t from-[var(--nos-lineas)] via-[var(--nos-lineas)] to-transparent 
               from-[0%] via-[10%] rounded-full"
             />
           )}

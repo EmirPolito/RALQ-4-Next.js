@@ -106,11 +106,15 @@ export function MenuSidebar() {
         </div>
 
         {/* Usuario */}
-        <div className="flex items-center justify-center p-2 rounded-xl transition-colors cursor-pointer w-full">
+        <div className="flex items-center justify-center p-2 rounded-xl transition-colors w-full">
           <UserButton
+            showName={true}
             appearance={{
               elements: {
                 userButtonAvatarBox: "shadow-sm transition-transform",
+                userButtonPopoverMain: {
+                  zIndex: 99999,
+                },
               },
             }}
           />
