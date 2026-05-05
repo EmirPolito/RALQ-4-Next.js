@@ -1,7 +1,0 @@
-// {
-//   "github.copilot.chat.commitMessageGeneration.instructions": [
-//     {
-//       "text": "Genera siempre el mensaje de commit en español. Usa el formato convencional: tipo(alcance): descripción breve en español."
-//     }
-//   ]
-// }
