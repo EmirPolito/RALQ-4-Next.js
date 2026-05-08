@@ -25,7 +25,10 @@ export default function RootLayout({
   return (
     <html lang="es" suppressHydrationWarning>
       <body className="font-sans antialiased">
-        <ClerkProvider>
+        <ClerkProvider
+          signInUrl="/login"
+          signUpUrl="/registro"
+        >
           <ThemeProvider
             attribute="class"
             defaultTheme="system"

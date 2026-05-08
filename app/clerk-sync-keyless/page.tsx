@@ -13,8 +13,8 @@ function ClerkSyncKeylessContent() {
       // Redirect back to the return URL
       window.location.href = returnUrl
     } else {
-      // Fallback to home
-      router.push("/")
+      // Fallback to menu
+      router.push("/menu")
     }
   }, [searchParams, router])
 

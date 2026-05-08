@@ -4,7 +4,6 @@ export default function LoginPage() {
   return (
     <main className="flex justify-center items-center min-h-screen bg-background pt-20 px-4">
       <SignIn
-        forceRedirectUrl="/menu"
         signUpUrl="/registro"
         appearance={{
           variables: {
