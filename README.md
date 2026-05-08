@@ -17,7 +17,6 @@ Una plataforma educativa de vanguardia construida con **Next.js**, diseñada par
     <br />
   <img width="1600" height="724" alt="RALQ 3D Models" src="https://github.com/user-attachments/assets/b059f6f5-3b02-45c5-ac82-e8096a215d90"/>
   <br />
-  <p><i>https://ralq-4-next-js.vercel.app/</i></p>
 </div>
 
 ---
