@@ -177,8 +177,8 @@ export default function ContactForm() {
       </AnimatePresence>
 
       {/* Título de sección — contacto.title + contacto.description */}
-      <motion.div className="text-center mb-30" variants={fadeInUp} custom={0}>
-        <h1 className="text-contact-ttl text-2xl lg:text-6xl font-semibold mb-2 text-balance">
+      <motion.div className="text-center mb-25" variants={fadeInUp} custom={0}>
+        <h1 className="text-contact-ttl text-2xl lg:text-6xl font-semibold mb-1 md:mb-2 text-balance">
           {t("title")}
         </h1>
 
@@ -187,7 +187,7 @@ export default function ContactForm() {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 max-w-6xl mx-auto transform -translate-y-11">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 md:gap-0 max-w-6xl mx-auto transform -translate-y-11">
         <motion.div
           className="
             rounded-[15px]
@@ -202,11 +202,13 @@ export default function ContactForm() {
           custom={0.1}
         >
           {/* Título del formulario — contacto.formTitle + contacto.formSubtitle */}
-          <h1 className="text-contact-ttl text-2xl font-semibold mb-0">
+          <h1 className="text-contact-ttl text-xl font-semibold mb-0">
             {t("formTitle")}
           </h1>
 
-          <p className="text-contact-desc text-sm lg:text-base mb-8">{t("formSubtitle")}</p>
+          <p className="text-contact-desc text-sm lg:text-base mb-8">
+            {t("formSubtitle")}
+          </p>
 
           <form onSubmit={handleSubmit} className=" space-y-6.5">
             <motion.div variants={fadeInUp} custom={0.2}>
@@ -295,11 +297,11 @@ export default function ContactForm() {
         </motion.div>
 
         <motion.div
-          className="mt-20 lg:mt-0 pl-0 md:pl-23 lg:pl-40"
+          className="mt-15 lg:mt-0  pl-0.5 md:pl-23 lg:pl-40"
           variants={fadeInUp}
           custom={0.6}
         >
-          <h3 className="text-contact-team-ttl text-2xl font-semibold mb-9">
+          <h3 className="text-contact-team-ttl text-xl font-semibold mb-5 md:mb-7">
             {t("teamTitle")}
           </h3>
 

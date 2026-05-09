@@ -66,13 +66,13 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   return (
     <div className="w-full md:px-10 pb-6" ref={containerRef}>
       {/* TÍTULO */}
-      <div className="max-w-7xl mx-auto pt-32 pb-12 md:pt-32 md:pb-12 px-4 md:px-8 lg:px-10 text-center">
+      <div className="max-w-7xl mx-auto pt-32 pb-10 md:pt-32 md:pb-12 px-4 md:px-8 lg:px-10 text-center">
         <motion.h1
           initial={staticInitial}
           whileInView={staticAnimate}
           transition={staticTransition}
           viewport={{ once: true }}
-          className="text-nos-ttl text-2xl lg:text-6xl font-semibold mb-3 text-balance"
+          className="text-nos-ttl text-2xl lg:text-6xl font-semibold mb-1 md:mb-3 text-balance"
         >
           {t("title")}
         </motion.h1>
@@ -86,7 +86,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               : { duration: 0.7, ease: "easeOut", delay: 0.15 }
           }
           viewport={{ once: true }}
-          className="text-nos-desc text-sm lg:text-base text-balance max-w-1xl mx-auto font-normal px-2 lg:px-0 lg:text-center"
+          className="text-nos-desc text-sm lg:text-base text-balance max-w-1xl mx-auto font-normal px-5 lg:px-0 lg:text-center"
         >
           {t("description")}
         </motion.p>

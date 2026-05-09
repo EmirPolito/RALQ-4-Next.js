@@ -47,10 +47,10 @@ export default function ContenidoBlog() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="text-center mb-18 md:mb-23"
+          className="text-center mb-11 md:mb-23"
         >
           {/* Título — ayuda.title */}
-          <h1 className="text-ayuda-ttl text-2xl lg:text-6xl font-semibold mb-3 text-balance">
+          <h1 className="text-ayuda-ttl text-2xl lg:text-6xl font-semibold mb-1 md:mb-3 text-balance">
             {t("title")}
           </h1>
 
