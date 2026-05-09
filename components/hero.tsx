@@ -79,7 +79,7 @@ export function Hero() {
             brightness-90
             dark:invert-0 
             dark:brightness-64"
-            src="https://videos.pexels.com/video-files/35968183/15249566_1920_1080_30fps.mp4"
+            src="/videos/video-hero.mp4"
           />
         </div>
       </div>
