@@ -35,11 +35,11 @@ const StepImage = memo(({
       transition={
         reducedMotion
           ? { duration: 0 }
-          : {
-              duration: 0.8,
-              ease: [0.16, 1, 0.3, 1],
-              delay: 0.1,
-            }
+            : {
+                duration: 0.5,
+                ease: [0.16, 1, 0.3, 1],
+                delay: 0.05,
+              }
       }
       viewport={{ once: true, amount: 0.2 }}
       className={cn(
@@ -51,17 +51,15 @@ const StepImage = memo(({
         src={src}
         alt={alt}
         placeholder="blur"
-        width={800}
-        height={500}
-        quality={85}
+        quality={75}
         priority={priority}
         onLoad={() => setIsLoaded(true)}
         className={cn(
-          "h-full w-full object-cover transition-all duration-1000 ease-out",
+          "h-full w-full object-cover transition-all duration-500 ease-out",
           isLoaded ? "opacity-100 scale-100 blur-0" : "opacity-0 scale-105 blur-sm",
           "dark:opacity-90"
         )}
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+        sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 650px"
       />
       
       {/* Loading Overlay - optional but helps for smoothness */}
@@ -178,7 +176,7 @@ function TresPasosLaboratorioComponent() {
                 reducedMotion
                   ? { duration: 0 }
                   : {
-                      duration: 0.7,
+                      duration: 0.5,
                       ease: [0.16, 1, 0.3, 1],
                       delay: index * 0.05,
                     }
