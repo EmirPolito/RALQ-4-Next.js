@@ -203,7 +203,7 @@ function TresPasosLaboratorioComponent() {
                 <div className="flex items-start gap-3.5 md:gap-6">
                   {/* Step number — large */}
                   <span
-                    className={`shrink-0 text-7xl font-black leading-none ${step.varNum} mt-1`}
+                    className={`shrink-0 text-7xl font-black leading-none ${step.varNum} mt-0 md:mt-0`}
                   >
                     {step.step}
                   </span>
