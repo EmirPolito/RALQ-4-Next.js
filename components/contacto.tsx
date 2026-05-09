@@ -104,7 +104,7 @@ export default function ContactForm() {
 
   return (
     <motion.section
-      className="relative min-h-screen font-inter px-5 pt-32 md:pt-32 pb-10"
+      className="relative min-h-screen font-inter px-5 pt-33 md:pt-32 pb-10"
       initial="hidden"
       animate="visible"
     >

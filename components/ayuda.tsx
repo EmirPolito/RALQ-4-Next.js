@@ -40,7 +40,7 @@ export default function ContenidoBlog() {
   }
 
   return (
-    <div className="w-full bg-background pt-32 md:pt-32 pb-20 px-0  transition-colors">
+    <div className="w-full bg-background pt-33 md:pt-32 pb-20 px-0  transition-colors">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
