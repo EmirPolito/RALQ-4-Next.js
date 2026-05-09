@@ -10,7 +10,7 @@ export default function PinCardsSection() {
   const t = useTranslations("pinCards");
 
   return (
-    <section className="py-18 lg:py-17 overflow-hidden">
+    <section className="py-16.5 lg:py-17 overflow-hidden">
       <div className="container mx-auto px-6 md:px-8">
         <ScrollAnimation direction="up" delay={0.1}>
           <div className="text-center -mb-5.5 sm:mb-3.5  relative -top-8 md:top-3">
