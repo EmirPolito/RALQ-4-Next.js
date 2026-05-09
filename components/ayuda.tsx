@@ -47,7 +47,7 @@ export default function ContenidoBlog() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="text-center mb-11 md:mb-23"
+          className="text-center mb-9.5 md:mb-23"
         >
           {/* Título — ayuda.title */}
           <h1 className="text-ayuda-ttl text-2xl lg:text-6xl font-semibold mb-1 md:mb-3 text-balance">
@@ -83,9 +83,9 @@ export default function ContenidoBlog() {
                   onMouseEnter={() => setHoveredId(id)}
                   onMouseLeave={() => setHoveredId(null)}
                 >
-                  <div className="mb-2 md:mb-8">
+                  <div className="mb-3.5 md:mb-8">
                     {/* Título de cada item — ayuda.items.[id].title */}
-                    <h2 className="text-ayuda-preg-ttl text-2xl font-semibold mb-3">
+                    <h2 className="text-ayuda-preg-ttl text-2xl font-semibold mb-0.5 md:mb-3">
                       {t(`items.${id}.title`)}
                     </h2>
                     <p className="text-ayuda-preg-txt text-sm lg:text-base leading-relaxed md:text-left">

@@ -66,7 +66,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   return (
     <div className="w-full md:px-10 pb-6" ref={containerRef}>
       {/* TÍTULO */}
-      <div className="max-w-7xl mx-auto pt-32 pb-10 md:pt-32 md:pb-12 px-4 md:px-8 lg:px-10 text-center">
+      <div className="max-w-7xl mx-auto pt-32 pb-6 md:pt-32 md:pb-12 px-4 md:px-8 lg:px-10 text-center">
         <motion.h1
           initial={staticInitial}
           whileInView={staticAnimate}
