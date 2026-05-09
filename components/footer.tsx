@@ -41,12 +41,12 @@ export default function Footer() {
           </div>
 
           {/* Columnas de links — Páginas / Redes / Legales */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-10">
             <div>
-              <h3 className="text-footer-ttl font-semibold mb-4">
+              <h3 className="text-footer-ttl font-semibold mb-4 sm:mb-4">
                 {t("sections.pages")}
               </h3>
-              <ul className="space-y-2">
+              <ul className="space-y-1 sm:space-y-2">
                 <li>
                   <Link
                     href="/nosotros"
@@ -75,10 +75,10 @@ export default function Footer() {
             </div>
 
             <div>
-              <h3 className="text-footer-ttl font-semibold mb-4">
+              <h3 className="text-footer-ttl font-semibold mb-4 sm:mb-4">
                 {t("sections.networks")}
               </h3>
-              <ul className="space-y-2">
+              <ul className="space-y-1 sm:space-y-2">
                 <li>
                   <Link
                     href="https://www.facebook.com/profile.php?id=61563746413453"
@@ -106,10 +106,10 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h3 className="text-footer-ttl font-semibold mb-4">
+              <h3 className="text-footer-ttl font-semibold mb-4 sm:mb-4">
                 {t("sections.legal")}
               </h3>
-              <ul className="space-y-2">
+              <ul className="space-y-1.5 sm:space-y-2">
                 <li>
                   <Link
                     href="/politica-privacidad"
