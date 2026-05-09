@@ -77,7 +77,7 @@ export default function ContenidoBlog() {
                     ease: "easeOut",
                     delay: (rowIndex * 3 + itemIndex) * 0.08,
                   }}
-                  className={`py-2 px-5.5 transition-all duration-300 relative group border-border
+                  className={`py-2 px-5 transition-all duration-300 relative group border-border
                     ${itemIndex !== row.length - 1 ? "md:border-r" : ""}
                   `}
                   onMouseEnter={() => setHoveredId(id)}
