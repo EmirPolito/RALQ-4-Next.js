@@ -62,7 +62,7 @@ export const HeroHeader = () => {
               <Link
                 href="/"
                 aria-label="home"
-                className="-ml-2 md:ml-1 relative z-[110] flex items-center space-x-2"
+                className="-ml-2 md:ml-5 relative z-[110] flex items-center space-x-2"
               >
                 <Logo />
               </Link>
