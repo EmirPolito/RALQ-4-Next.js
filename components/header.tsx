@@ -43,7 +43,7 @@ export const HeroHeader = () => {
 
   return (
     <header>
-      <nav className="fixed z-[120] w-full pt-2">
+      <nav className="fixed z-[120] w-full pt-1">
         <div
           className={cn(
             "mx-auto max-w-8xl rounded-2xl px-4.5 transition-colors duration-300 lg:px-9",
@@ -58,11 +58,11 @@ export const HeroHeader = () => {
               "relative flex flex-wrap items-center justify-between gap-6 py-3 duration-200 lg:gap-0 lg:py-6",
             )}
           >
-            <div className="flex w-full items-center justify-between gap-18 lg:w-auto">
+            <div className="flex w-full items-center justify-between gap-16 lg:w-auto">
               <Link
                 href="/"
                 aria-label="home"
-                className="-ml-1 md:ml-5 relative z-[110] flex items-center space-x-2"
+                className="-ml-1 md:ml-6 relative z-[110] flex items-center space-x-2"
               >
                 <Logo />
               </Link>
