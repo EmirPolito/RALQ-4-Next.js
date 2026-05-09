@@ -26,7 +26,7 @@ export function Hero() {
   return (
     <section>
       <div>
-        <div className="relative z-10 flex min-h-[84.5vh] lg:min-h-screen flex-col justify-end pt-20 pb-4 lg:pt-0 lg:pb-0 px-5 sm:px-6 md:px-12 lg:px-20">
+        <div className="relative z-10 flex min-h-[85.5vh] lg:min-h-screen flex-col justify-end pt-20 pb-4 lg:pt-0 lg:pb-0 px-5 sm:px-6 md:px-12 lg:px-20">
           <div className="mx-auto w-full max-w-8xl pb-4 lg:pb-33 sm:pb-20 md:pb-32">
             <ScrollAnimation direction="up" delay={0.2}>
               <div
@@ -46,7 +46,7 @@ export function Hero() {
                 </p>
 
                 {/* Botón CTA — hero.cta → /demo */}
-                <div className="mt-9 flex items-center justify-start gap-4">
+                <div className="mt-7.5 flex items-center justify-start gap-4">
                   <Button
                     asChild
                     size="lg"
