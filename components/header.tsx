@@ -79,7 +79,7 @@ export const HeroHeader = () => {
                 <button
                   onClick={() => setMenuState(!menuState)}
                   aria-label={menuState ? "Close Menu" : "Open Menu"}
-                  className="relative z-[110] -m-2.5 -mr-2 block cursor-pointer p-2.5"
+                  className="relative z-[110] -m-2.5 -mr-2.5 block cursor-pointer p-2.5"
                 >
                   <div className="relative size-6 flex items-center justify-center">
                     <AnimatePresence mode="wait" initial={false}>
