@@ -46,7 +46,7 @@ export const HeroHeader = () => {
       <nav className="fixed z-[120] w-full pt-2">
         <div
           className={cn(
-            "mx-auto max-w-8xl rounded-2xl px-4.5 transition-all duration-300 lg:px-9",
+            "mx-auto max-w-8xl rounded-2xl px-4.5 transition-colors duration-300 lg:px-9",
             scrolled && !menuState && "bg-background/10 backdrop-blur-2xl",
             !scrolled &&
               !menuState &&
