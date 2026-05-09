@@ -498,39 +498,59 @@ export function ThemeControls({
               </PopoverContent>
             </Popover>
           )}
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <button
-                className={cn(
-                  "relative inline-flex h-6 w-12 items-center rounded-full cursor-pointer transition-colors focus:outline-none outline-none focus-visible:ring-0 focus-visible:outline-none",
-                  isMobile ? "bg-muted/75 mt-1" : "bg-muted hover:bg-muted/80",
-                )}
-                onClick={toggleReducedMotion}
-                aria-label="Reducir animaciones"
-              >
-                <span
-                  className={`inline-block h-4.5 w-4.5 transform rounded-full transition-transform ${
-                    reducedMotion
-                      ? "translate-x-6 bg-muted-foreground"
-                      : "translate-x-1"
-                  }`}
-                  style={{
-                    backgroundColor: reducedMotion
-                      ? undefined
-                      : toggleCircleColor,
-                  }}
-                />
-              </button>
-            </TooltipTrigger>
-            <TooltipContent
-              side="top"
-              sideOffset={2}
-              avoidCollisions={false}
-              className="z-[200]"
+          {isMobile ? (
+            <button
+              className={cn(
+                "relative inline-flex h-6 w-12 items-center rounded-full cursor-pointer transition-colors focus:outline-none outline-none focus-visible:ring-0 focus-visible:outline-none",
+                "bg-muted/75 mt-1",
+              )}
+              onClick={toggleReducedMotion}
+              aria-label="Reducir animaciones"
             >
-              <p>{t("motion.tooltip")}</p>
-            </TooltipContent>
-          </Tooltip>
+              <span
+                className={`inline-block h-4.5 w-4.5 transform rounded-full transition-transform ${
+                  reducedMotion
+                    ? "translate-x-6 bg-muted-foreground"
+                    : "translate-x-1"
+                }`}
+                style={{
+                  backgroundColor: reducedMotion ? undefined : toggleCircleColor,
+                }}
+              />
+            </button>
+          ) : (
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <button
+                  className={cn(
+                    "relative inline-flex h-6 w-12 items-center rounded-full cursor-pointer transition-colors focus:outline-none outline-none focus-visible:ring-0 focus-visible:outline-none",
+                    "bg-muted hover:bg-muted/80",
+                  )}
+                  onClick={toggleReducedMotion}
+                  aria-label="Reducir animaciones"
+                >
+                  <span
+                    className={`inline-block h-4.5 w-4.5 transform rounded-full transition-transform ${
+                      reducedMotion
+                        ? "translate-x-6 bg-muted-foreground"
+                        : "translate-x-1"
+                    }`}
+                    style={{
+                      backgroundColor: reducedMotion ? undefined : toggleCircleColor,
+                    }}
+                  />
+                </button>
+              </TooltipTrigger>
+              <TooltipContent
+                side="top"
+                sideOffset={2}
+                avoidCollisions={false}
+                className="z-[200]"
+              >
+                <p>{t("motion.tooltip")}</p>
+              </TooltipContent>
+            </Tooltip>
+          )}
         </div>
       </div>
     </TooltipProvider>
