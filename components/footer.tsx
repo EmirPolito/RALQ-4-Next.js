@@ -49,7 +49,7 @@ export default function Footer() {
               <ul className="space-y-1 sm:space-y-2">
                 <li>
                   <Link
-                    href="/nosotros"
+                    href="/sobre-nosotros"
                     className="text-footer-pag text-sm lg:text-base hover:text-footer-pag-hov"
                   >
                     {t("links.nosotros")}
