@@ -83,7 +83,7 @@ export default function ContenidoBlog() {
                   onMouseEnter={() => setHoveredId(id)}
                   onMouseLeave={() => setHoveredId(null)}
                 >
-                  <div className="mb-3.5 md:mb-8">
+                  <div className="mb-3.5 md:mb-6.5">
                     {/* Título de cada item — ayuda.items.[id].title */}
                     <h2 className="text-ayuda-preg-ttl text-2xl font-semibold mb-0.5 md:mb-3">
                       {t(`items.${id}.title`)}
