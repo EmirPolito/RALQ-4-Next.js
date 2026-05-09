@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ThemeControls } from "@/components/botones-generales";
 import { LanguageSelector } from "@/components/boton-lenguage";
 import React from "react";
-import { useScroll, motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 
@@ -14,7 +14,6 @@ export const HeroHeader = () => {
   const t = useTranslations("nav");
   const [menuState, setMenuState] = React.useState(false);
   const [scrolled, setScrolled] = React.useState(false);
-  const { scrollY } = useScroll();
 
   const menuItems = [
     { name: t("nosotros"), href: "/sobre-nosotros" },
@@ -23,11 +22,14 @@ export const HeroHeader = () => {
   ];
 
   React.useEffect(() => {
-    const unsubscribe = scrollY.on("change", (latest) => {
-      setScrolled(latest > 10);
-    });
-    return () => unsubscribe();
-  }, [scrollY]);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    // Evaluar el estado inicial (por si la página carga ya scrolleada)
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Bloquear scroll cuando el menú está abierto
   React.useEffect(() => {
