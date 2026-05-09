@@ -8,7 +8,7 @@ export default function Footer() {
   const t = useTranslations("footer");
 
   return (
-    <footer className="py-13 md:py-15.5 px-5 md:px-10 z-50 bg-[var(--footer-bg)] border-t border-border">
+    <footer className="py-13 md:py-15.5 px-5 md:px-13.5 z-50 bg-[var(--footer-bg)] border-t border-border">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between">
           {/* Logo + tagline + copyright */}
