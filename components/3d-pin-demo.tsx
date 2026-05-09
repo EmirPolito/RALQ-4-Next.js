@@ -10,10 +10,10 @@ export default function PinCardsSection() {
   const t = useTranslations("pinCards");
 
   return (
-    <section className="py-20 lg:py-17 overflow-hidden">
+    <section className="py-18 lg:py-17 overflow-hidden">
       <div className="container mx-auto px-6 md:px-8">
         <ScrollAnimation direction="up" delay={0.1}>
-          <div className="text-center -mb-1  relative -top-8 md:top-3">
+          <div className="text-center -mb-5.5 sm:mb-3.5  relative -top-8 md:top-3">
             {/* Título — pinCards.sectionLine1 (blanco) + pinCards.sectionLine2 (color) */}
             <h2 className="text-2xl md:text-4xl lg:text-6xl font-semibold tracking-tight">
               <span className="block text-titulos">{t("sectionLine1")}</span>
@@ -31,7 +31,7 @@ export default function PinCardsSection() {
           </div>
         </ScrollAnimation>
 
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-17 lg:gap-38 will-change-transform">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-38 will-change-transform">
           {/* Pin 1 */}
           <ScrollAnimation
             direction="up"

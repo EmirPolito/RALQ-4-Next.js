@@ -82,9 +82,6 @@ function Carrusel2() {
     [api],
   );
 
-  // Fondo según tema
-  const bgColor = resolvedTheme === "light" ? "#dff4e5" : "var(--background)";
-
   return (
     <div className="w-full py-0 lg:py-0">
       <div className="container mx-auto px-5 md:px-14">
@@ -111,7 +108,7 @@ function Carrusel2() {
             </div>
 
             {/* Botón opcional */}
-            <Button
+            {/* <Button
               asChild
               size="sm"
               className="h-10 rounded-full px-4 text-sm bg-background hover:bg-background text-titulos mt-3 lg:-mx-2"
@@ -120,7 +117,7 @@ function Carrusel2() {
                 <span>{t("cta")}</span>
                 <ChevronRight className="h-4 w-4" />
               </Link>
-            </Button>
+            </Button> */}
           </div>
 
           {/* Carrusel */}

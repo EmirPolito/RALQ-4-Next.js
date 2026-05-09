@@ -31,7 +31,7 @@ export function Carousel1() {
   }, []);
 
   return (
-    <section className="bg-background py-17">
+    <section className="bg-background py-10 md:py-15">
       <div className="group relative m-auto max-w-8xl px-0 mt-9 md:-mt-15">
         <div className="flex flex-col items-center md:flex-row">
           <div className="relative py-13 w-full">
