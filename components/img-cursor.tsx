@@ -59,7 +59,7 @@ export default function ImgCursor() {
   return (
     <section
       id="resources"
-      className="relative bg-imgcursor-bg px-4 py-8 md:px-8 md:py-1"
+      className="relative bg-imgcursor-bg px-5 py-4 md:px-8 md:py-1"
     >
       <div className="mx-auto max-w-[1400px]">
         {/* Centered Title */}
@@ -77,6 +77,7 @@ export default function ImgCursor() {
               : { duration: 0.8, ease: [0.21, 0.47, 0.32, 0.98] }
           }
           viewport={{ once: true }}
+          /* Distancia de la descripción del titulo*/
           className="mb-1.5 md:mb-12 text-center"
         >
           {/* Título — "Construido sobre / las mejores tecnologías" */}
@@ -87,8 +88,8 @@ export default function ImgCursor() {
           </h2>
         </motion.div>
 
-        {/* Two-col layout */}
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_1.5fr] lg:gap-20 items-start">
+        {/* Tarjeta grande */}
+        <div className="grid grid-cols-1 gap-11 lg:gap-20 lg:grid-cols-[1fr_1.5fr] items-start">
           {/* Left Column */}
           <div className="flex flex-col items-center lg:items-start">
             <motion.div
@@ -107,12 +108,12 @@ export default function ImgCursor() {
               viewport={{ once: true }}
               className="flex flex-col items-center lg:items-start"
             >
-              <p className=" px-2 md:px-0 mb-11 text-center text-sm lg:text-base leading-relaxed text-imgcursor-desc lg:text-left max-w-[510px]">
+              <p className=" px-2 md:px-0 mb-8 md:mb-11.5 text-center text-sm lg:text-base leading-relaxed text-imgcursor-desc lg:text-left max-w-[510px]">
                 {t("description")}
               </p>
 
               {/* Tech grid - Row 1 (4 items) */}
-              <div className="flex flex-wrap justify-center lg:justify-start gap-5 mb-6">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-5  md:gap-5  mb-6 md:mb-6">
                 {tech.slice(3).map((t, i) => (
                   <motion.div
                     key={`tech-top-${i}-${reducedMotion}`}

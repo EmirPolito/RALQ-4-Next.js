@@ -24,9 +24,9 @@ export default function Preguntas1() {
   const items = t.raw("items") as { question: string; answer: string }[];
 
   return (
-    <section className="bg-background @container py-18 md:py-24 lg:py-40">
+    <section className="bg-background @container py-17 md:py-24 lg:py-40">
       <div className="mx-auto max-w-8xl px-5 md:px-12 lg:px-15">
-        <div className="@xl:flex-row @xl:items-start lg:gap-5 flex flex-col gap-5">
+        <div className="@xl:flex-row @xl:items-start lg:gap-5 flex flex-col gap-1">
           {/* LADO IZQUIERDO */}
           <ScrollAnimation
             direction="up"
@@ -34,13 +34,15 @@ export default function Preguntas1() {
             className="@xl:sticky @xl:top-24 lg:w-96 shrink-0"
           >
             {/* Título — faq.titlePart1 + faq.titlePart2 */}
-            <h2 className="font-semibold text-2xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-center @xl:text-left">
-              <span className="block text-foreground">{t("titlePart1")}</span>
-              <span className="block text-preg-ttl">{t("titlePart2")}</span>
+            <h2 className="font-semibold text-2xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-center @xl:text-left whitespace-nowrap lg:whitespace-normal">
+              <span className="text-foreground lg:block">
+                {t("titlePart1")}
+              </span>{" "}
+              <span className="text-preg-ttl lg:block">{t("titlePart2")}</span>
             </h2>
 
             {/* Subtítulo + link a contacto — faq.subtitle + faq.contactLink */}
-            <p className="text-preg-desc mt-2 text-sm lg:text-base text-center @xl:text-left">
+            <p className="text-preg-desc mt-1.5 md:mt-2 text-sm lg:text-base text-center @xl:text-left">
               {t("subtitle")}{" "}
               <Link
                 href="/contacto"
