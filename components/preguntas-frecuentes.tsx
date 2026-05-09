@@ -31,7 +31,7 @@ export default function Preguntas1() {
           <ScrollAnimation
             direction="up"
             delay={0.1}
-            className="@xl:sticky @xl:top-24 lg:w-96 shrink-0"
+            className="lg:sticky lg:top-24 lg:w-96 shrink-0"
           >
             {/* Título — faq.titlePart1 + faq.titlePart2 */}
             <h2 className="font-semibold text-2xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight text-center @xl:text-left whitespace-nowrap lg:whitespace-normal">
