@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ThemeControls } from "@/components/botones-generales";
 import { LanguageSelector } from "@/components/boton-lenguage";
 import React from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { useScroll, motion, AnimatePresence } from "motion/react";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 
@@ -14,6 +14,7 @@ export const HeroHeader = () => {
   const t = useTranslations("nav");
   const [menuState, setMenuState] = React.useState(false);
   const [scrolled, setScrolled] = React.useState(false);
+  const { scrollY } = useScroll();
 
   const menuItems = [
     { name: t("nosotros"), href: "/sobre-nosotros" },
@@ -22,14 +23,11 @@ export const HeroHeader = () => {
   ];
 
   React.useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    // Evaluar el estado inicial (por si la página carga ya scrolleada)
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    const unsubscribe = scrollY.on("change", (latest) => {
+      setScrolled(latest > 10);
+    });
+    return () => unsubscribe();
+  }, [scrollY]);
 
   // Bloquear scroll cuando el menú está abierto
   React.useEffect(() => {
@@ -47,22 +45,24 @@ export const HeroHeader = () => {
     <header>
       <nav className="fixed z-[120] w-full pt-2">
         <div
-          style={{ willChange: "backdrop-filter" }}
           className={cn(
-            "mx-auto max-w-8xl rounded-2xl px-4.5 transition-colors duration-300 lg:px-9",
-            scrolled && !menuState && "backdrop-blur-2xl bg-background/10",
+            "mx-auto max-w-8xl rounded-2xl px-4.5 transition-all duration-300 lg:px-9",
+            scrolled && !menuState && "bg-background/10 backdrop-blur-2xl",
+            !scrolled &&
+              !menuState &&
+              "max-lg:bg-background/10 max-lg:backdrop-blur-2xl",
           )}
         >
           <div
             className={cn(
-              "relative flex flex-wrap items-center justify-between gap-6 py-3 duration-200 lg:gap-0 lg:py-5",
+              "relative flex flex-wrap items-center justify-between gap-6 py-3 duration-200 lg:gap-0 lg:py-6",
             )}
           >
             <div className="flex w-full items-center justify-between gap-18 lg:w-auto">
               <Link
                 href="/"
                 aria-label="home"
-                className="-ml-1 md:ml-1 relative z-[110] flex items-center space-x-2"
+                className="-ml-2 md:ml-1 relative z-[110] flex items-center space-x-2"
               >
                 <Logo />
               </Link>
