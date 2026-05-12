@@ -27,21 +27,21 @@ export function Hero() {
     <section>
       <div>
         <div className="relative z-10 flex min-h-[84.5vh] lg:min-h-screen flex-col justify-end pt-20 pb-4 lg:pt-0 lg:pb-0 px-5 sm:px-6 md:px-12 lg:px-20">
-          <div className="mx-auto w-full max-w-8xl pb-4 lg:pb-33 sm:pb-20">
+          <div className="mx-auto max-w-8xl w-full pb-3 lg:pb-32 sm:pb-20">
             <ScrollAnimation direction="up" delay={0.2}>
               <div
                 className="flex flex-col items-start text-left lg:items-start lg:text-left"
                 style={{ willChange: "transform, opacity" }}
               >
                 {/* Título principal — hero.titleLine1 + hero.titleLine2 */}
-                <h1 className="text-hero-ttl text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-medium leading-tight tracking-tight">
+                <h1 className="text-hero-ttl text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-medium leading-[1.05] lg:leading-[1.07] tracking-[0.2] lg:tracking-[0]">
                   {t("titleLine1")}
                   <br />
                   {t("titleLine2")}
                 </h1>
 
                 {/* Descripción — hero.description */}
-                <p className="text-hero-desc w-full text-sm  sm:text-lg mt-1.5 sm:mt-2  md:text-xl sm:max-w-md md:max-w-xl leading-relaxed">
+                <p className="text-hero-desc text-sm  lg:text-lg mt-1.5 sm:mt-2 md:max-w-xl  w-full leading-relaxed">
                   {t("description")}
                 </p>
 
