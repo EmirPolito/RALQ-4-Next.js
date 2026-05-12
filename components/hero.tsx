@@ -27,7 +27,7 @@ export function Hero() {
     <section>
       <div>
         <div className="relative z-10 flex min-h-[84.5vh] lg:min-h-screen flex-col justify-end pt-20 pb-4 lg:pt-0 lg:pb-0 px-5 sm:px-6 md:px-12 lg:px-20">
-          <div className="mx-auto max-w-8xl w-full pb-3 lg:pb-32 sm:pb-20">
+          <div className="mx-auto max-w-8xl w-full pb-3.5 lg:pb-32 sm:pb-20">
             <ScrollAnimation direction="up" delay={0.2}>
               <div
                 className="flex flex-col items-start text-left lg:items-start lg:text-left"
