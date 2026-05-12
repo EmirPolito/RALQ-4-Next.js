@@ -66,3 +66,9 @@ Una plataforma educativa de vanguardia construida con **Next.js**, diseñada par
 **Cristian Daniel Barraza** - Diseñador de experiencia de usuario.
 
 - GitHub: [@CristianDanielBarraza](https://github.com/CristianDanielBarraza)
+
+<br>
+
+> [!Note]
+> Proyecto en desarrollo
+
