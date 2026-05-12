@@ -10,37 +10,37 @@ const tech = [
   {
     name: "Next.js",
     url: "https://nextjs.org",
-    role: "Web Framework",
+    roleKey: "nextjs",
     imageSrc: "/img/img-cursor/Next.png",
   },
   {
     name: "Blender",
     url: "https://www.blender.org",
-    role: "Modelado 3D",
+    roleKey: "blender",
     imageSrc: "/img/img-cursor/Blender.png",
   },
   {
     name: "Sketchfab",
     url: "https://sketchfab.com",
-    role: "Modelos subidos",
+    roleKey: "sketchfab",
     imageSrc: "/img/img-cursor/Sketchfab.png",
   },
   {
     name: "Avogadro",
     url: "https://avogadro.cc",
-    role: "Moleculas",
+    roleKey: "avogadro",
     imageSrc: "/img/img-cursor/Avogadro.png",
   },
   {
     name: "Tripo.ai",
     url: "https://www.tripo3d.ai",
-    role: "Modelos 3D con IA",
+    roleKey: "tripo",
     imageSrc: "/img/img-cursor/Tripo.png",
   },
   {
     name: "MyWebAR",
     url: "https://miwebar.com/",
-    role: "Herramienta RA",
+    roleKey: "mywebar",
     imageSrc: "/img/img-cursor/MiWebAR.jpg",
   },
 ];
@@ -107,7 +107,7 @@ export default function ImgCursor() {
 
               {/* Tech grid - 6 items in rectangular format */}
               <div className="flex flex-wrap justify-center lg:justify-start gap-4.5 md:gap-5">
-                {tech.map((t, i) => (
+                {tech.map((item, i) => (
                   <motion.div
                     key={`tech-grid-${i}-${reducedMotion}`}
                     initial={
@@ -128,9 +128,9 @@ export default function ImgCursor() {
                     viewport={{ once: true }}
                   >
                     <LinkPreview
-                      url={t.url}
+                      url={item.url}
                       isStatic
-                      imageSrc={t.imageSrc}
+                      imageSrc={item.imageSrc}
                       disabled={reducedMotion}
                       className={cn(
                         "group inline-flex flex-col rounded-xl border border-imgcursor-izq-borde bg-imgcursor-izq-bg px-3 md:px-8.5 py-4 transition-all cursor-pointer no-underline w-[120px] md:w-[150px]",
@@ -139,10 +139,10 @@ export default function ImgCursor() {
                       )}
                     >
                       <span className="text-[14px] font-bold text-imgcursor-izq-ttl group-hover:text-imgcursor-izq-hvr transition-colors truncate">
-                        {t.name}
+                        {item.name}
                       </span>
                       <span className="text-[9.5px] text-imgcursor-izq-desc truncate">
-                        {t.role}
+                        {t(`roles.${item.roleKey}`)}
                       </span>
                     </LinkPreview>
                   </motion.div>
@@ -175,7 +175,7 @@ export default function ImgCursor() {
               </div>
 
               <p className="relative text-sm lg:text-base leading-[1.8] text-imgcursor-der-des font-semibold tracking-tight">
-                {"RALQ utiliza "}
+                {t("quote.p1")}
                 <LinkPreview
                   url="https://nextjs.org"
                   isStatic
@@ -185,9 +185,7 @@ export default function ImgCursor() {
                 >
                   Next.js
                 </LinkPreview>
-                {
-                  " para desarrollar una experiencia rápida, moderna y escalable, de la mano de "
-                }
+                {t("quote.p2")}
                 <LinkPreview
                   url="https://www.blender.org"
                   isStatic
@@ -197,7 +195,7 @@ export default function ImgCursor() {
                 >
                   Blender
                 </LinkPreview>
-                {", "}
+                {t("quote.p3")}
                 <LinkPreview
                   url="https://sketchfab.com"
                   isStatic
@@ -207,7 +205,7 @@ export default function ImgCursor() {
                 >
                   Sketchfab
                 </LinkPreview>
-                {" y "}
+                {t("quote.p4")}
                 <LinkPreview
                   url="https://avogadro.cc"
                   isStatic
@@ -217,9 +215,7 @@ export default function ImgCursor() {
                 >
                   Avogadro
                 </LinkPreview>
-                {
-                  " para modelar y visualizar moleculas 3D. Además de tecnologías como "
-                }
+                {t("quote.p5")}
                 <LinkPreview
                   url="https://mywebar.com"
                   isStatic
@@ -229,9 +225,7 @@ export default function ImgCursor() {
                 >
                   MyWebAR
                 </LinkPreview>
-                {
-                  " para integrar experiencias de Realidad Aumentada directamente desde el navegador. También con tecnologías como "
-                }
+                {t("quote.p6")}
                 <LinkPreview
                   url="https://www.tripo3d.ai"
                   isStatic
@@ -241,7 +235,7 @@ export default function ImgCursor() {
                 >
                   Tripo.ai
                 </LinkPreview>
-                {" para acelerar la creación de modelos 3D."}
+                {t("quote.p7")}
               </p>
 
               {/* Attribution */}
@@ -253,10 +247,10 @@ export default function ImgCursor() {
                 </div>
                 <div>
                   <p className="text-sm font-bold text-imgcursor-der-ttl">
-                    Equipo RALQ
+                    {t("attribution.team")}
                   </p>
                   <p className="text-[11px] text-imgcursor-der-desc opacity-70 font-medium">
-                    Decisiones de arquitectura técnica
+                    {t("attribution.role")}
                   </p>
                 </div>
               </div>

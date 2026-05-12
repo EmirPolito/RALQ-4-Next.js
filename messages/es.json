@@ -20,15 +20,15 @@
     "step1": {
       "tag": "Catálogo educativo",
       "title": "Explora instrumentos y moléculas",
-      "description": "Accede a diferentes catálogos interactivos con modelos 3D de instrumentos de laboratorio, estructuras moleculares y recursos educativos diseñados para facilitar el aprendizaje visual.",
-      "detail1": "Modelos organizados por categorías",
-      "detail2": "Información educativa integrada",
-      "detail3": "Experiencia simple e intuitiva"
+      "description": "Accede a diferentes catálogos con modelos 3D de instrumentos y estructuras moleculares con recursos diseñados para facilitar el aprendizaje de la química.",
+      "detail1": "Modelos por categorías",
+      "detail2": "Información educativa",
+      "detail3": "Visualización interactiva"
     },
     "step2": {
       "tag": "Visualización 3D",
       "title": "Observa cada modelo en detalle",
-      "description": "Interactúa libremente con cada modelo desde cualquier ángulo. Rota, acerca y explora instrumentos y moléculas como si estuvieran frente a ti dentro de un laboratorio real.",
+      "description": "Interactúa con cada modelo desde cualquier ángulo. Rota, acerca y explora instrumentos y moléculas como si estuviera frente a ti en un laboratorio real.",
       "detail1": "Rotación libre 360°",
       "detail2": "Modelos interactivos",
       "detail3": "Visualización optimizada"
@@ -36,9 +36,9 @@
     "step3": {
       "tag": "Realidad Aumentada",
       "title": "Lleva el laboratorio a tu entorno",
-      "description": "Visualiza modelos directamente sobre superficies reales utilizando la cámara de tu dispositivo. Aprende química de una forma más dinámica, visual e inmersiva.",
-      "detail1": "Compatible con dispositivos móviles",
-      "detail2": "Sin aplicaciones externas",
+      "description": "Visualiza modelos sobre superficies reales utilizando la cámara de tu dispositivo. Aprende química de una forma más dinámica, visual e inmersiva.",
+      "detail1": "Multiplataforma",
+      "detail2": "Contenido interactivo",
       "detail3": "Experiencia inmersiva"
     }
   },
@@ -400,7 +400,28 @@
 
     "description": "Cada tecnología utilizada en RALQ permite ofrecer una experiencia rápida, visual e interactiva enfocada en estudiantes.",
 
-    "techRole": "Tecnologías"
+    "techRole": "Tecnologías",
+    "roles": {
+      "nextjs": "Web Framework",
+      "blender": "Modelado 3D",
+      "sketchfab": "Modelos subidos",
+      "avogadro": "Moleculas",
+      "tripo": "Modelos 3D con IA",
+      "mywebar": "Herramienta RA"
+    },
+    "quote": {
+      "p1": "RALQ utiliza ",
+      "p2": " para desarrollar una experiencia rápida, moderna y escalable, de la mano de ",
+      "p3": ", ",
+      "p4": " y ",
+      "p5": " para modelar y visualizar moleculas 3D. Además de tecnologías como ",
+      "p6": " para integrar experiencias de Realidad Aumentada directamente desde el navegador. También con tecnologías como ",
+      "p7": " para acelerar la creación de modelos 3D."
+    },
+    "attribution": {
+      "team": "Equipo RALQ",
+      "role": "Decisiones de arquitectura técnica"
+    }
   },
 
   "themeControls": {
