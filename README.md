@@ -10,7 +10,7 @@
 </div>
   <br />
 
-Una plataforma educativa de vanguardia construida con **Next.js**, diseñada para transformar la enseñanza de la química mediante experiencias visuales inmersivas, modelos 3D interactivos y realidad aumentada.
+RALQ es una plataforma educativa de vanguardia construida con **Next.js**, diseñada para transformar la enseñanza de la química mediante experiencias visuales inmersivas, modelos 3D interactivos y realidad aumentada.
 
 <div align="center">
   <img width="1600" height="728" alt="RALQ Hero Section" src="https://github.com/user-attachments/assets/3611f1a9-df49-425c-84fe-79c41c34f6f0"/>
@@ -21,54 +21,45 @@ Una plataforma educativa de vanguardia construida con **Next.js**, diseñada par
 
 ---
 
-## 🌟 Características principales
+### Características principales
 
-### 🔬 Química Interactiva 3D con Realidad Aumentada
-
-- **Modelos Moleculares 3D**: Explora estructuras químicas con detalle atómico gracias a **Three.js** — rota, acerca y analiza cada enlace en tiempo real.
-- **Realidad Aumentada**: Proyecta instrumentos y moléculas en tu entorno real con **A-Frame** desde la cámara de tu dispositivo.
-- **80+ Instrumentos de Laboratorio**: Desde matraces Erlenmeyer hasta espectrofotómetros, con anotaciones técnicas y guías de uso.
-- **Datos Científicos Verificados**: Información molecular proviente de **PubChem** y contenido educativo de **Khan Academy**.
-
-### 🌎 Internacionalización Completa (i18n)
+## Internacionalización Completa (i18n)
 
 - **Selector de idiomas**: `Español`, `Portugués` e `Inglés`.
 - **Persistencia de Idioma**: El idioma seleccionado se guarda automáticamente en `localStorage` para futuras visitas.
 - **Localización Dinámica**: Todos los componentes, desde el Hero hasta los documentos legales, están completamente traducidos.
 
-### 🎨 Diseño Premium & UX
+## Accesibilidad y Experiencia de Usuario (UX)
 
-- **Deep Dark Mode**: Interfaz "True Black" optimizada para pantallas OLED con contraste perfecto.
-- **Modo Daltónico**: Paleta de colores accesible siguiendo estándares WCAG.
-- **Reducción de Movimiento**: Respeta las preferencias del sistema operativo del usuario.
-- **Animaciones Físicas**: Spring animations con **Framer Motion** para una navegación orgánica.
+- **Modo Claro**: Diseño con colores claros y cómodos para usuarios que prefieren una apariencia más iluminada.
+- **Modo Oscuro**: Interfaz oscura que reduce el brillo visual y mejora la experiencia en ambientes con poca luz.
+- **Modo Daltónico**: Colores adaptados para facilitar la visualización y mejorar la accesibilidad para personas con daltonismo. siguiendo estándares WCAG.
+- **Reductor de Movimiento**: Opción para reducir el movimiento de la interfaz para usuarios con sensibilidad al movimiento.
 
-### 🔐 Seguridad y Rendimiento
+## Seguridad y Rendimiento
 
-- **Autenticación con Clerk**: Flujos de Login/Registro personalizados con validación robusta.
+- **Autenticación con Clerk**: Flujos de Login/Registro personalizados con validación por correo electrónico, Google, Facebook y Apple.
 - **App Router + Turbopack**: Arquitectura de Next.js 15 para máxima velocidad de carga.
-- **Optimización de Imágenes**: `next/image` con carga diferida para recursos de alta resolución.
-- **Vercel Analytics**: Métricas de rendimiento anónimas integradas.
+- **Despliegue en Vercel**: Desplegado en Vercel con actualizaciones automáticas.
 
 ---
 
-## 👨‍💻 Desarrolladores
+## Desarrolladores
 
-**Emir Polito** - Desarrollador full stack.
+**Emir Polito** - Desarrollador Fullstack & QA Tester.
 
 - GitHub: [@EmirPolito](https://github.com/EmirPolito)
 - LinkedIn: [Emir Polito](https://www.linkedin.com/in/emir-polito-g/)
 
-**Irving Esteban Méndez** - Diseñador UI/UX designer.
+**Irving Esteban Méndez** - Diseñador UI/UX.
 
 - GitHub: [@IrvingEsteban](https://github.com/1RV1N6-M3ND3Z)
 
-**Cristian Daniel Barraza** - Diseñador de experiencia de usuario.
+**Cristian Daniel Barraza** - Analista de Sistemas.
 
 - GitHub: [@CristianDanielBarraza](https://github.com/CristianDanielBarraza)
 
 <br>
 
-> [!Note]
-> Proyecto en desarrollo
-
+> [!NOTE]
+> 🚧 Proyecto en desarrollo.
