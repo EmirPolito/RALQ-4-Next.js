@@ -27,7 +27,7 @@ export function Hero() {
     <section>
       <div>
         <div className="relative z-10 flex min-h-[84.5vh] lg:min-h-screen flex-col justify-end pt-20 pb-4 lg:pt-0 lg:pb-0 px-5 sm:px-6 md:px-12 lg:px-20">
-          <div className="mx-auto w-full max-w-8xl pb-4 lg:pb-33 sm:pb-20 md:pb-32">
+          <div className="mx-auto w-full max-w-8xl pb-4 lg:pb-33 sm:pb-20">
             <ScrollAnimation direction="up" delay={0.2}>
               <div
                 className="flex flex-col items-start text-left lg:items-start lg:text-left"
@@ -41,20 +41,20 @@ export function Hero() {
                 </h1>
 
                 {/* Descripción — hero.description */}
-                <p className="text-hero-desc w-full sm:max-w-md md:max-w-2xl text-sm sm:text-lg md:text-xl mt-2 leading-relaxed">
+                <p className="text-hero-desc w-full text-sm  sm:text-lg mt-1.5 sm:mt-2  md:text-xl sm:max-w-md md:max-w-xl leading-relaxed">
                   {t("description")}
                 </p>
 
-                {/* Botón CTA — hero.cta → /demo */}
-                <div className="mt-7.5 flex items-center justify-start gap-4">
+                {/* Botón demo */}
+                <div className="mt-7.5 sm:mt-7.5">
                   <Button
                     asChild
                     size="lg"
-                    className="h-10 lg:h-11.5 rounded-full px-6 lg:px-8 text-sm lg:text-base font-medium shadow-lg transition-all hover:scale-100 active:scale-95 bg-hero-bg-demo text-hero-txt-demo hover:bg-hero-hvr-demo"
+                    className="h-11 lg:h-12 text-sm lg:text-base rounded-4xl bg-hero-bg-demo text-hero-txt-demo hover:bg-hero-hvr-demo"
                   >
                     <Link href="/demo">
                       <span className="text-nowrap">{t("cta")}</span>
-                      <ChevronRight className="ml-0 size-4 lg:size-4.5" />
+                      <ChevronRight className="ml-0 sm:ml-0 size-4 lg:size-4.5" />
                     </Link>
                   </Button>
                 </div>
@@ -72,15 +72,15 @@ export function Hero() {
             muted
             playsInline
             className="
-            absolute inset-0 lg:inset-5
+            absolute inset-0 
+            lg:inset-5   
             w-full h-full object-cover
             -scale-x-100
             invert contrast-115 
             brightness-90
             dark:invert-0 
-            dark:brightness-64"
+            dark:brightness-60" /*Mientras menos tenga menos se verá en modo oscuro*/
             src="/videos/video-hero.mp4"
-            // src="https://videos.pexels.com/video-files/35968183/15249566_1920_1080_30fps.mp4"
           />
         </div>
       </div>
