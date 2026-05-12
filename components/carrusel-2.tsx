@@ -102,22 +102,10 @@ function Carrusel2() {
                 </span>
               </h2>
 
-              <div className="text-carrusel2-desc text-sm lg:text-base px-3.5 md:px-0 lg:max-w-xl max-w-xl leading-relaxed tracking-tight text-justify mx-auto lg:mx-0 lg:text-left [text-align-last:center] lg:[text-align-last:left]">
+              <div className="text-carrusel2-desc text-sm lg:text-base px-0 md:px-0 lg:max-w-xl max-w-xl leading-relaxed tracking-tight mx-auto lg:mx-0 lg:text-left [text-align-last:center] lg:[text-align-last:left]">
                 {t("description")}
               </div>
             </div>
-
-            {/* Botón opcional */}
-            {/* <Button
-              asChild
-              size="sm"
-              className="h-10 rounded-full px-4 text-sm bg-background hover:bg-background text-titulos mt-3 lg:-mx-2"
-            >
-              <Link href="/demo" className="flex items-center gap-1">
-                <span>{t("cta")}</span>
-                <ChevronRight className="h-4 w-4" />
-              </Link>
-            </Button> */}
           </div>
 
           {/* Carrusel */}
