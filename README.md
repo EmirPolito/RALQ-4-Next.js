@@ -21,22 +21,22 @@ RALQ es una plataforma educativa de vanguardia construida con **Next.js**, dise�
 
 ---
 
-# Características principales
+## Características principales
 
-### Internacionalización Completa (i18n)
-
-- **Selector de idiomas**: `Español`, `Portugués` e `Inglés`.
-- **Persistencia de Idioma**: El idioma seleccionado se guarda automáticamente en `localStorage` para futuras visitas.
-- **Localización Dinámica**: Todos los componentes, desde el Hero hasta los documentos legales, están completamente traducidos.
-
-### Accesibilidad y Experiencia de Usuario (UX)
+#### Accesibilidad y Experiencia de Usuario (UX)
 
 - **Modo Claro**: Diseño con colores claros y cómodos para usuarios que prefieren una apariencia más iluminada.
 - **Modo Oscuro**: Interfaz oscura que reduce el brillo visual y mejora la experiencia en ambientes con poca luz.
 - **Modo Daltónico**: Colores adaptados para facilitar la visualización y mejorar la accesibilidad para personas con daltonismo. siguiendo estándares WCAG.
 - **Reductor de Movimiento**: Opción para reducir el movimiento de la interfaz para usuarios con sensibilidad al movimiento.
 
-### Seguridad y Rendimiento
+#### Internacionalización
+
+- **Selector de idiomas**: `Español`, `Portugués` e `Inglés`.
+- **Persistencia de Idioma**: El idioma seleccionado se guarda automáticamente en `localStorage` para futuras visitas.
+- **Localización Dinámica**: Todos los componentes, desde el Hero hasta los documentos legales, están completamente traducidos.
+
+#### Seguridad y Rendimiento
 
 - **Autenticación con Clerk**: Flujos de Login/Registro personalizados con validación por correo electrónico, Google, Facebook y Apple.
 - **App Router + Turbopack**: Arquitectura de Next.js 15 para máxima velocidad de carga.
@@ -44,7 +44,7 @@ RALQ es una plataforma educativa de vanguardia construida con **Next.js**, dise�
 
 ---
 
-### Desarrolladores
+## Desarrolladores
 
 **Emir Polito** - Desarrollador Fullstack & QA Tester.
 
