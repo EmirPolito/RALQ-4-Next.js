@@ -8,10 +8,10 @@ export default clerkMiddleware(async (auth, req) => {
   const { userId } = await auth()
   
   // LOG PARA DIAGNÓSTICO
-  console.log('--- PROXY LOG ---', { 
-    userId: userId ? 'DETECTADO' : 'NULO', 
-    path: req.nextUrl.pathname 
-  })
+  // console.log('--- PROXY LOG ---', { 
+  //   userId: userId ? 'DETECTADO' : 'NULO', 
+  //   path: req.nextUrl.pathname 
+  // })
 
   // Si hay sesión y estamos en una página pública (incluida la raíz), forzar ir al menú
   if (userId && (isPublicRoute(req) || req.nextUrl.pathname === '/')) {
