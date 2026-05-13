@@ -52,7 +52,7 @@ RALQ es una plataforma educativa de vanguardia construida con **Next.js**, dise�
 **Emir Polito** - Desarrollador Fullstack & QA Tester.
 
 - GitHub: [@EmirPolito](https://github.com/EmirPolito)
-- LinkedIn: [Emir Polito](https://www.linkedin.com/in/emir-polito)
+- LinkedIn: [Emir Polito](https://www.linkedin.com/in/emirpolitog)
 
 **Irving Esteban Méndez** - Diseñador UI/UX.
 
