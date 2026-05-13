@@ -14,9 +14,12 @@ RALQ es una plataforma educativa de vanguardia construida con **Next.js**, dise√
 
 <div align="center">
   <img width="1600" height="728" alt="RALQ Hero Section" src="https://github.com/user-attachments/assets/3611f1a9-df49-425c-84fe-79c41c34f6f0"/>
-    <br />
+  
+  <br/>
+  <br/>
+
   <img width="1600" height="724" alt="RALQ 3D Models" src="https://github.com/user-attachments/assets/b059f6f5-3b02-45c5-ac82-e8096a215d90"/>
-  <br />
+  <br/>
 </div>
 
 ---
