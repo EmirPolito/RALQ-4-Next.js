@@ -2,7 +2,7 @@
 
 import { HeroHeader } from "@/components/header";
 import ContenidoAyuda from "@/components/ayuda";
-import Footer from "@/components/footer";
+// import Footer from "@/components/footer";
 
 export default function AyudaPage() {
   return (
@@ -10,7 +10,7 @@ export default function AyudaPage() {
       <HeroHeader />
       <ContenidoAyuda />
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

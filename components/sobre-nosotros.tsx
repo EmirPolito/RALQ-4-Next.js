@@ -3,7 +3,6 @@
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import { useTranslations } from "next-intl";
-import Footer from "@/components/footer";
 
 export function SobreNosotros() {
   const t = useTranslations("nosotros");
@@ -13,8 +12,12 @@ export function SobreNosotros() {
       title: t("y2023.title"),
       content: (
         <div>
-          <p className="text-nos-txt mb-2 text-sm lg:text-base px-2 lg:px-0">{t("y2023.p1")}</p>
-          <p className="text-nos-txt mb-8 text-sm lg:text-base px-2 lg:px-0">{t("y2023.p2")}</p>
+          <p className="text-nos-txt mb-2 text-sm lg:text-base px-2 lg:px-0">
+            {t("y2023.p1")}
+          </p>
+          <p className="text-nos-txt mb-8 text-sm lg:text-base px-2 lg:px-0">
+            {t("y2023.p2")}
+          </p>
           <div className="grid grid-cols-2 gap-4">
             <img
               src="https://assets.aceternity.com/templates/startup-1.webp"
@@ -98,7 +101,6 @@ export function SobreNosotros() {
   return (
     <div className="w-full">
       <Timeline data={data} />
-      <Footer />
     </div>
   );
 }
