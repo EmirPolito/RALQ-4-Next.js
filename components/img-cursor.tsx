@@ -52,7 +52,7 @@ export default function ImgCursor() {
   return (
     <section
       id="resources"
-      className="relative bg-imgcursor-bg px-5 py-7.5 md:px-8 md:py-1"
+      className="relative bg-imgcursor-bg px-5 py-7.5 md:px-8 md:py-0"
     >
       <div className="mx-auto max-w-[1400px]">
         {/* Centered Title */}
