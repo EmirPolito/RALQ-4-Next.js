@@ -204,38 +204,16 @@ export function InstrumentViewer({
         </div>
 
         {/* Action Bottom Bar */}
-        <div className="absolute bottom-63 right-2 flex justify-between items-center z-20">
-          <div className="flex gap-2">
-            <ActionButton
-              icon={<Maximize className="w-3.5 h-3.5" />}
-              label=""
-            />
-          </div>
+        <div className="absolute bottom-60 -right-2 p-6 flex justify-end items-center z-20">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="flex items-center justify-center cursor-pointer text-white"
+          >
+            <Maximize className="w-4 h-4" />
+          </motion.button>
         </div>
       </div>
     </div>
-  );
-}
-
-function ActionButton({
-  icon,
-  label,
-  secondary,
-}: {
-  icon: React.ReactNode;
-  label: string;
-  secondary?: boolean;
-}) {
-  return (
-    <motion.button
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      className={cn(
-        "flex items-center cursor-pointer px-2.5 py-3",
-        secondary ? " text-white " : "text-white",
-      )}
-    >
-      {icon}
-    </motion.button>
   );
 }
