@@ -61,7 +61,7 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
           <div className="space-y-7 pb-6" style={{ contentVisibility: "auto" }}>
             <div className="space-y-0">
               {/* Título movido aquí: justo arriba de los iconos circulares */}
-              <h2 className="text-[9px] font-bold text-slate-300 tracking-[0.2em] uppercase mb-4 px-1">
+              <h2 className="text-[9px] font-semibold text-slate-300 tracking-[0.2em] mb-3 px-1">
                 ESPECIFICACIONES TÉCNICAS
               </h2>
 
@@ -89,7 +89,7 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
 
             {/* SECCIÓN SEGURIDAD */}
             <div className="pt-3 transform-gpu">
-              <h4 className="text-[9px] font-bold text-slate-300 tracking-[0.2em] uppercase mb-4 px-1">
+              <h4 className="text-[9px] font-bold text-slate-300 tracking-[0.2em] uppercase mb-3 px-1">
                 SEGURIDAD Y CUMPLIMIENTO
               </h4>
               <div className="grid grid-cols-1 gap-2.5">
@@ -110,7 +110,7 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
 
             {/* SECCIÓN LABORATORIO */}
             <div className="pt-3 transform-gpu">
-              <h4 className="text-[9px] font-bold text-slate-300 tracking-[0.2em] uppercase mb-4 px-1">
+              <h4 className="text-[9px] font-bold text-slate-300 tracking-[0.2em] uppercase mb-3 px-1">
                 DATOS DE LABORATORIO
               </h4>
               <div className="space-y-4 px-2">
