@@ -7,9 +7,9 @@ import { Library, Book, Settings, User, LayoutGrid } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-import { MoleculeSidebar } from "./molecule-sidebar";
-import { MoleculeViewer } from "./molecule-viewer";
-import { MoleculeDetails } from "./molecule-details";
+import { MoleculeSidebar } from "./izquierda";
+import { MoleculeViewer } from "./centro";
+import { MoleculeDetails } from "./derecha";
 import { BottomSections } from "@/components/menu2/bottom-sections";
 import { moleculesData } from "../data";
 

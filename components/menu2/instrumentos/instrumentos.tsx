@@ -7,9 +7,9 @@ import { Library, Book, Settings, User, LayoutGrid } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-import { InstrumentSidebar } from "./instrument-sidebar";
-import { InstrumentViewer } from "./instrument-viewer";
-import { InstrumentDetails } from "./instrument-details";
+import { InstrumentSidebar } from "./izquierda";
+import { InstrumentViewer } from "./centro";
+import { InstrumentDetails } from "./derecha";
 import { BottomSections } from "@/components/menu2/bottom-sections";
 import { instrumentsData } from "../data";
 

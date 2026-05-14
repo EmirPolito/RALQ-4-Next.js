@@ -29,7 +29,7 @@ export function InstrumentViewer({ activeItem }: { activeItem: ItemData }) {
     <div className="flex flex-col gap-4 px-0">
       {/* Header Info */}
       <div className="flex justify-between items-end px-4">
-        <div className="flex flex-col">
+        <div className="flex flex-col mt-2">
           <h1 className="text-2xl md:text-2xl font-bold text-slate-800">
             {activeItem.name}
           </h1>
