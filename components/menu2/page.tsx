@@ -184,10 +184,10 @@ function NavItem({
       <motion.button
         whileHover={{ y: -1 }}
         className={cn(
-          "flex items-center gap-2 px-4 py-2 rounded-2xl transition-all text-sm cursor-pointer",
+          "flex items-center gap-2 px-3 py-1.5 rounded-xl transition-all text-xs cursor-pointer",
           active
-            ? "bg-blue-50 text-[#1a88c3] shadow-sm shadow-blue-100"
-            : "text-slate-400 hover:text-slate-600 hover:bg-slate-50",
+            ? "bg-blue-50 text-[#1a88c3]"
+            : "text-slate-400 hover:text-slate-600",
         )}
       >
         {icon}

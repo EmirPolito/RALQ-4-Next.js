@@ -25,7 +25,7 @@ export function MoleculeDetails({ activeItem }: { activeItem: ItemData }) {
 
   return (
     <div className="flex flex-col h-full min-h-0 font-sans w-full max-w-[380px] ml-auto">
-      <div className="flex-1 bg-white border border-slate-100 rounded-[2.5rem] p-8 shadow-sm overflow-hidden flex flex-col min-h-0 transform-gpu">
+      <div className="flex-1 bg-white border border-slate-100 rounded-xl p-7 shadow-sm overflow-hidden flex flex-col min-h-0 transform-gpu">
         
         {/* Cabecera Horizontal - Icono a la izquierda, Texto a la derecha */}
         <div className="flex flex-row items-center gap-4 mb-8 mt-0 flex-shrink-0">

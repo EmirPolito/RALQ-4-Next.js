@@ -21,9 +21,9 @@ export default function MoleculasPage() {
     moleculesData.find((s) => s.id === activeSpeciesId) || moleculesData[0];
 
   return (
-    <div className="h-screen bg-[#e8f1f8] font-sans flex flex-col p-5 gap-5 overflow-hidden">
+    <div className="h-screen bg-[#e8f1f8] font-sans flex flex-col p-5 gap-6.5 overflow-hidden">
       {/* 1. HEADER */}
-      <header className="h-[60px] flex-shrink-0 flex items-center justify-between px-4 bg-white/80 backdrop-blur-md rounded-2xl border border-white shadow-sm">
+      <header className="h-[70px] flex-shrink-0 flex items-center justify-between px-4 bg-white/80 backdrop-blur-md rounded-xl border border-white shadow-sm">
         <div className="flex items-center gap-4">
           <Image
             src="/logos/ralq-verde.png"
@@ -69,7 +69,7 @@ export default function MoleculasPage() {
       </header>
 
       {/* 2. MAIN AREA */}
-      <main className="flex-1 grid grid-cols-12 gap-5 min-h-0">
+      <main className="flex-1 grid grid-cols-12 gap-3 min-h-0">
         <aside className="col-span-2 min-h-0">
           <MoleculeSidebar
             activeId={activeSpeciesId}
@@ -80,8 +80,8 @@ export default function MoleculasPage() {
         </aside>
 
         {/* Centro: Visor 3D y Sección Inferior */}
-        <section className="col-span-7 flex flex-col gap-5 min-h-0">
-          <div className="flex-1 bg-white/50 backdrop-blur-md rounded-3xl border border-white shadow-sm overflow-hidden min-h-0">
+        <section className="col-span-7 flex flex-col gap-3 min-h-0">
+          <div className="flex-1 bg-white/50 backdrop-blur-md rounded-xl border border-white shadow-sm overflow-hidden min-h-0">
             <MoleculeViewer activeItem={activeItem} />
           </div>
 
