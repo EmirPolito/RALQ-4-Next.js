@@ -21,16 +21,16 @@ export default function InstrumentosPage() {
     instrumentsData.find((s) => s.id === activeSpeciesId) || instrumentsData[0];
 
   return (
-    <div className="h-screen bg-[#e8f1f8] font-sans flex flex-col p-5 gap-4 overflow-hidden">
+    <div className="h-screen bg-[#e8f1f8] font-sans flex flex-col p-5 gap-6.5 overflow-hidden">
       {/* 1. HEADER */}
-      <header className="h-[60px] flex-shrink-0 flex items-center justify-between px-4 bg-white/80 backdrop-blur-md rounded-xl border border-white shadow-sm">
+      <header className="h-[70px] flex-shrink-0 flex items-center justify-between px-4 bg-white/80 backdrop-blur-md rounded-xl border border-white shadow-sm">
         <div className="flex items-center gap-4">
           <Image
             src="/logos/ralq-verde.png"
             alt="RALQ logo"
             width={100}
             height={36}
-            className="object-contain -mt-1 h-12.5 "
+            className="object-contain -mt-1 h-12.5"
           />
         </div>
 
@@ -79,7 +79,7 @@ export default function InstrumentosPage() {
         </aside>
 
         {/* Centro: Visor 3D y Sección Inferior */}
-        <section className="col-span-7 flex flex-col gap-5 min-h-0">
+        <section className="col-span-7 flex flex-col gap-3 min-h-0">
           <div className="flex-1 bg-white/50 backdrop-blur-md rounded-xl border border-white shadow-sm overflow-hidden min-h-0">
             <InstrumentViewer activeItem={activeItem} />
           </div>

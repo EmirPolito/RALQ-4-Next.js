@@ -24,16 +24,16 @@ export default function StudioDashboard() {
   const pathname = usePathname();
 
   return (
-    <div className="px-10 min-h-screen bg-fondo font-sans selection:bg-blue-100 selection:text-blue-900 flex flex-col p-4 gap-5 overflow-hidden">
+    <div className="h-screen bg-[#e8f1f8] font-sans flex flex-col p-5 gap-6.5 overflow-hidden">
       {/* Top Navigation */}
-      <header className="flex items-center justify-between px-5 py-3 bg-white/70 backdrop-blur-md rounded-2xl border border-white/50 shadow-sm">
+      <header className="h-[70px] flex-shrink-0 flex items-center justify-between px-4 bg-white/80 backdrop-blur-md rounded-xl border border-white shadow-sm">
         <div className="flex items-center gap-4">
           <Image
             src="/logos/ralq-verde.png"
             alt="RALQ logo"
             width={100}
             height={36}
-            className="object-contain -mt-1"
+            className="object-contain  -mt-1 h-12.5"
           />
         </div>
 
@@ -184,7 +184,7 @@ function NavItem({
       <motion.button
         whileHover={{ y: -1 }}
         className={cn(
-          "flex items-center gap-2 px-4 py-2 rounded-2xl transition-all font-semibold text-sm cursor-pointer",
+          "flex items-center gap-2 px-4 py-2 rounded-2xl transition-all text-sm cursor-pointer",
           active
             ? "bg-blue-50 text-[#1a88c3] shadow-sm shadow-blue-100"
             : "text-slate-400 hover:text-slate-600 hover:bg-slate-50",
