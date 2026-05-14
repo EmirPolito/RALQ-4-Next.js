@@ -165,8 +165,8 @@ export function InstrumentViewer({ activeItem }: { activeItem: ItemData }) {
         </div>
 
         {/* Botones de izquierda y derecha */}
-        <div className="absolute bottom-6 left-4 right-4 flex justify-between items-center z-20">
-          <div className="flex gap-3">
+        <div className="absolute bottom-7 left-1.5 right-4 flex justify-between items-center z-20">
+          <div className="flex gap-1.5">
             <ActionButton
               icon={<RotateCcw className="w-4 h-4" />}
               label="Reset"
@@ -177,14 +177,14 @@ export function InstrumentViewer({ activeItem }: { activeItem: ItemData }) {
             />
           </div>
 
-          <div className="flex gap-2 text-white/50 bg-black/20 backdrop-blur-md p-1 rounded-xl border border-white/5">
-            <button className="cursor-pointer px-3 py-1 text-[10px] font-bold hover:text-white transition-colors">
+          <div className="flex gap-3 text-white/50 bg-black/20 backdrop-blur-md p-1.5 rounded-xl border border-white/5">
+            <button className="cursor-pointer px-2.5 py-1 text-[10px] font-bold hover:text-white transition-colors">
               PNG
             </button>
-            <button className="cursor-pointer px-3 py-1 text-[10px] font-bold hover:text-white transition-colors">
+            <button className="cursor-pointer px-2.5 py-1 text-[10px] font-bold hover:text-white transition-colors">
               GLB
             </button>
-            <button className="cursor-pointer px-3 py-1 text-[10px] font-bold hover:text-white transition-colors">
+            <button className="cursor-pointer px-2.5 py-1 text-[10px] font-bold hover:text-white transition-colors">
               USDZ
             </button>
           </div>

@@ -38,7 +38,9 @@ export function MoleculeViewer({ activeItem }: { activeItem: ItemData }) {
           </span>
         </div>
 
+        {/* Contenido del header */}
         <div className="flex items-center gap-5 bg-white/50 backdrop-blur-sm p-1.5 rounded-xl border border-slate-100 shadow-sm">
+          {/* Opciones de vista 3D, AR y 360 */}
           <div className="flex items-center gap-1">
             <span className="text-xs md:text-xs font-semibold text-slate-400 px-2">
               Ver modelo en
@@ -49,9 +51,9 @@ export function MoleculeViewer({ activeItem }: { activeItem: ItemData }) {
                   key={mode}
                   onClick={() => setViewMode(mode)}
                   className={cn(
-                    "px-4 py-1 text-xs font-bold rounded-lg transition-all",
+                    "cursor-pointer px-4 py-1 text-xs font-bold rounded-lg transition-all",
                     viewMode === mode
-                      ? "bg-cyan-600 text-white shadow-md"
+                      ? "bg-[#1a88c3] text-white shadow-md"
                       : "text-slate-500 hover:text-slate-700",
                   )}
                 >
@@ -160,30 +162,28 @@ export function MoleculeViewer({ activeItem }: { activeItem: ItemData }) {
           </div>
         </div>
 
-        {/* Action Buttons */}
-        <div className="absolute bottom-6 left-4 right-4 flex justify-between items-center z-20">
-          <div className="flex gap-2">
+        {/* Botones de izquierda y derecha */}
+        <div className="absolute bottom-7 left-1.5 right-4 flex justify-between items-center z-20">
+          <div className="flex gap-1.5">
             <ActionButton
               icon={<RotateCcw className="w-4 h-4" />}
               label="Reset"
-              isCyan
             />
             <ActionButton
               icon={<Maximize className="w-4 h-4" />}
               label="Expandir"
-              isCyan
             />
           </div>
 
-          <div className="flex gap-2 text-white/50 bg-black/20 backdrop-blur-md p-1 rounded-xl border border-white/5">
-            <button className="px-3 py-1 text-[10px] font-bold hover:text-white transition-colors">
+          <div className="flex gap-3 text-white/50 bg-black/20 backdrop-blur-md p-1.5 rounded-xl border border-white/5">
+            <button className="cursor-pointer px-2.5 py-1 text-[10px] font-bold hover:text-white transition-colors">
               PNG
             </button>
-            <button className="px-3 py-1 text-[10px] font-bold hover:text-white transition-colors">
-              PDB
+            <button className="cursor-pointer px-2.5 py-1 text-[10px] font-bold hover:text-white transition-colors">
+              GLB
             </button>
-            <button className="px-3 py-1 text-[10px] font-bold hover:text-white transition-colors">
-              XYZ
+            <button className="cursor-pointer px-2.5 py-1 text-[10px] font-bold hover:text-white transition-colors">
+              USDZ
             </button>
           </div>
         </div>
