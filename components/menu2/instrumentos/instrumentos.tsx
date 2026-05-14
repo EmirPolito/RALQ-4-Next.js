@@ -15,6 +15,7 @@ import { instrumentsData } from "../data";
 
 export default function InstrumentosPage() {
   const [activeSpeciesId, setActiveSpeciesId] = useState("microscopio");
+  const [viewMode, setViewMode] = useState("normal");
   const pathname = usePathname();
 
   const activeItem =
@@ -82,7 +83,7 @@ export default function InstrumentosPage() {
         {/* Centro: Visor 3D y Sección Inferior */}
         <section className="col-span-7 flex flex-col gap-3 min-h-0">
           <div className="flex-1 bg-white/50 backdrop-blur-md rounded-xl border border-white shadow-sm overflow-hidden min-h-0">
-            <InstrumentViewer activeItem={activeItem} />
+            <InstrumentViewer activeItem={activeItem} viewMode={viewMode} />
           </div>
 
           <div className="flex-1 min-h-[160px] max-h-[200px]">
@@ -91,6 +92,8 @@ export default function InstrumentosPage() {
               activeItem={activeItem}
               compareLabel="INSTRUMENTOS"
               isInstrument={true}
+              viewMode={viewMode}
+              onViewModeChange={setViewMode}
             />
           </div>
         </section>

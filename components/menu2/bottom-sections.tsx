@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { ChevronDown, ChevronRight, BookOpen, BarChart2, ShieldCheck, Lightbulb, Zap, Info } from "lucide-react";
+import { ChevronDown, ChevronRight, BookOpen, BarChart2, ShieldCheck, Zap, Info, Settings, Activity, Calendar, Play, Clock, User as UserIcon, LayoutGrid, Box, Lightbulb } from "lucide-react";
 import { ItemData } from "./data";
 
 // ─── Props ────────────────────────────────────────────────────────────────────
@@ -13,6 +13,8 @@ interface BottomSectionsProps {
   activeItem: ItemData;
   compareLabel?: string;
   isInstrument?: boolean;
+  viewMode?: string;
+  onViewModeChange?: (mode: string) => void;
 }
 
 // ─── Gallery cards config (Molecules only) ────────────────────────────────────
@@ -28,7 +30,9 @@ export function BottomSections({
   data, 
   activeItem,
   compareLabel = "INSTRUMENTOS",
-  isInstrument = false 
+  isInstrument = false,
+  viewMode = "normal",
+  onViewModeChange
 }: BottomSectionsProps) {
   // Logic for Molecules
   const [activeGallery, setActiveGallery]   = useState("specs");
@@ -39,80 +43,57 @@ export function BottomSections({
   const itemB = data.find(i => i.id === compareB) ?? data[1];
 
   if (isInstrument) {
-    const { learningContent } = activeItem;
-    
+    const modes = [
+      { id: "normal",  label: "Vista Normal",  emoji: "📦", bg: "bg-blue-50" },
+      { id: "details", label: "Detalles",      emoji: "🔍", bg: "bg-emerald-50" },
+      { id: "anatomy", label: "Anatomía",      emoji: "🧬", bg: "bg-slate-50" },
+    ];
+
     return (
-      <div className="grid grid-cols-12 gap-3 h-full">
-        {/* ── GUÍA DE OPERACIÓN SEGURA (Left) ───────────────────────── */}
-        <div className="col-span-7 bg-white/80 backdrop-blur-md border border-slate-200 rounded-2xl p-4 shadow-lg flex flex-col gap-3 min-h-0">
-          <div className="flex items-center justify-between mb-1">
-            <div className="flex items-center gap-2">
-              <div className="w-6 h-6 rounded-lg bg-emerald-100 flex items-center justify-center">
-                <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-              </div>
-              <h2 className="text-[10px] font-bold text-slate-600 tracking-wider uppercase">
-                Guía de Operación Segura
-              </h2>
-            </div>
-            <span className="text-[8px] font-bold px-2 py-0.5 bg-emerald-50 text-emerald-600 rounded-full border border-emerald-100">
-              PASO A PASO
-            </span>
+      <div className="w-full h-full bg-white/80 backdrop-blur-md border border-slate-200 rounded-2xl p-3 shadow-lg flex flex-col gap-2 min-h-0 animate-in fade-in slide-in-from-bottom-2 duration-500">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-1.5">
+            <BookOpen className="w-3 h-3 text-[#1a88c3]" />
+            <h2 className="text-[9px] font-bold text-slate-500 tracking-widest uppercase">
+              Galería Educativa
+            </h2>
           </div>
-
-          <div className="flex-1 flex flex-col gap-2 overflow-y-auto pr-1 custom-scrollbar">
-            {learningContent?.steps.map((step, i) => (
-              <div key={i} className="flex gap-3 items-start p-2 rounded-xl bg-slate-50/50 border border-slate-100 group hover:bg-white hover:shadow-sm transition-all">
-                <div className="w-5 h-5 rounded-full bg-white border border-slate-200 flex items-center justify-center text-[10px] font-black text-[#1a88c3] shrink-0 group-hover:border-[#1a88c3] transition-colors">
-                  {i + 1}
-                </div>
-                <p className="text-[11px] text-slate-600 leading-tight pt-0.5">
-                  {step}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="flex items-center gap-3 mt-1 p-2 bg-blue-50/50 rounded-xl border border-blue-100/50">
-            <Lightbulb className="w-3.5 h-3.5 text-blue-500 shrink-0" />
-            <div className="flex flex-col">
-              <span className="text-[8px] font-bold text-blue-600 uppercase tracking-tighter">Pro Tip</span>
-              <p className="text-[10px] text-blue-800 leading-tight italic">
-                "{learningContent?.tips[0]}"
-              </p>
-            </div>
-          </div>
+          <button className="p-1 rounded-lg bg-slate-50 text-slate-400 hover:text-slate-600 transition-colors">
+            <ChevronDown className="w-3 h-3" />
+          </button>
         </div>
 
-        {/* ── CÁPSULA DE CONOCIMIENTO (Right) ────────────────────────── */}
-        <div className="col-span-5 flex flex-col gap-3">
-          {/* Scientific Principle Card */}
-          <div className="flex-1 bg-gradient-to-br from-[#1a88c3] to-[#1577ab] rounded-2xl p-4 shadow-lg text-white flex flex-col justify-between relative overflow-hidden group">
-            <div className="absolute top-0 right-0 p-4 opacity-10 transform group-hover:scale-110 transition-transform">
-              <Zap className="w-16 h-16" />
-            </div>
-            
-            <div className="relative">
-              <div className="flex items-center gap-1.5 mb-2">
-                <Info className="w-3 h-3 text-blue-100" />
-                <h3 className="text-[9px] font-bold text-blue-100 tracking-widest uppercase">
-                  Principio Científico
-                </h3>
+        <div className="flex gap-3 flex-1 min-h-0">
+          {modes.map((mode) => (
+            <motion.button
+              key={mode.id}
+              whileHover={{ y: -3 }}
+              onClick={() => onViewModeChange?.(mode.id)}
+              className={cn(
+                "flex-1 flex flex-col rounded-xl overflow-hidden border transition-all cursor-pointer relative",
+                viewMode === mode.id
+                  ? "border-blue-300 shadow-md shadow-blue-50"
+                  : "border-slate-100 hover:border-slate-200 shadow-sm"
+              )}
+            >
+              <div className={cn("flex-1 flex items-center justify-center", mode.bg)}>
+                <span className="text-4xl drop-shadow">{mode.emoji}</span>
+                {viewMode === mode.id && (
+                  <div className="absolute inset-0 bg-blue-400/5" />
+                )}
               </div>
-              <p className="text-[13px] font-medium leading-snug">
-                {learningContent?.principle}
-              </p>
-            </div>
-
-            <div className="mt-4 pt-3 border-t border-white/10 relative">
-               <div className="flex items-center justify-between">
-                 <span className="text-[8px] font-bold text-blue-200 uppercase">Dato Curioso</span>
-                 <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-               </div>
-               <p className="text-[10px] text-blue-50 leading-tight mt-1 line-clamp-2">
-                 {learningContent?.fact}
-               </p>
-            </div>
-          </div>
+              <div className="py-1.5 bg-white flex items-center justify-center border-t border-slate-100">
+                <span
+                  className={cn(
+                    "text-[10px] font-bold",
+                    viewMode === mode.id ? "text-[#1a88c3]" : "text-slate-500"
+                  )}
+                >
+                  {mode.label}
+                </span>
+              </div>
+            </motion.button>
+          ))}
         </div>
       </div>
     );
@@ -249,5 +230,6 @@ export function BottomSections({
     </div>
   );
 }
+
 
 
