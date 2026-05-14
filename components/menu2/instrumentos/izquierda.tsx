@@ -26,7 +26,7 @@ export function InstrumentSidebar({
   );
 
   return (
-    <div className="flex flex-col h-full bg-white/90 backdrop-blur-md border border-slate-200 rounded-2xl p-3.5 shadow-xl overflow-hidden">
+    <div className="flex flex-col h-full bg-white/90 backdrop-blur-md border border-slate-200 rounded-xl p-3.5 shadow-xl overflow-hidden">
       <h2 className="text-xs font-bold md:text-xs text-slate-500 tracking-widest uppercase mb-4 px-2.5">
         {title}
       </h2>
