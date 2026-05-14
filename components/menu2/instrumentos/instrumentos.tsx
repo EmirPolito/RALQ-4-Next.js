@@ -21,7 +21,7 @@ export default function InstrumentosPage() {
     instrumentsData.find((s) => s.id === activeSpeciesId) || instrumentsData[0];
 
   return (
-    <div className="h-screen bg-[#e8f1f8] font-sans flex flex-col p-5 gap-5 overflow-hidden">
+    <div className="h-screen bg-[#e8f1f8] font-sans flex flex-col p-5 gap-4 overflow-hidden">
       {/* 1. HEADER */}
       <header className="h-[60px] flex-shrink-0 flex items-center justify-between px-4 bg-white/80 backdrop-blur-md rounded-xl border border-white shadow-sm">
         <div className="flex items-center gap-4">
@@ -61,7 +61,6 @@ export default function InstrumentosPage() {
           />
 
           <div className="w-[1px] h-6 bg-slate-200 mx-2" />
-
           <button className="w-9 h-9 rounded-full bg-slate-800 text-white flex items-center justify-center shadow-md">
             <User className="w-4 h-4" />
           </button>
@@ -69,7 +68,7 @@ export default function InstrumentosPage() {
       </header>
 
       {/* 2. MAIN AREA */}
-      <main className="flex-1 grid grid-cols-12 gap-5 min-h-0">
+      <main className="flex-1 grid grid-cols-12 gap-3 min-h-0">
         <aside className="col-span-2 min-h-0">
           <InstrumentSidebar
             activeId={activeSpeciesId}
