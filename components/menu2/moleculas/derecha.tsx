@@ -27,17 +27,19 @@ export function MoleculeDetails({ activeItem }: { activeItem: ItemData }) {
     <div className="flex flex-col h-full min-h-0 font-sans w-full max-w-[380px] ml-auto">
       <div className="flex-1 bg-white border border-slate-100 rounded-[2.5rem] p-8 shadow-sm overflow-hidden flex flex-col min-h-0 transform-gpu">
         
-        {/* Cabecera Centrada - Sin título arriba y sin punto */}
-        <div className="flex flex-col items-center text-center mb-10 mt-4 flex-shrink-0">
-          <div className="w-16 h-16 rounded-2xl bg-cyan-50 flex items-center justify-center border border-cyan-100 mb-4 shadow-inner">
+        {/* Cabecera Horizontal - Icono a la izquierda, Texto a la derecha */}
+        <div className="flex flex-row items-center gap-4 mb-8 mt-0 flex-shrink-0">
+          <div className="w-16 h-16 rounded-xl bg-cyan-50 flex items-center justify-center border border-cyan-100 shadow-inner flex-shrink-0">
             <span className="text-4xl">{activeItem.emoji}</span>
           </div>
-          <h3 className="text-xl font-semibold text-[#004a77] leading-tight">
-            {activeItem.name}
-          </h3>
-          <p className="text-[12px] italic text-cyan-600 font-medium mt-1">
-            {activeItem.scientificName || activeItem.group}
-          </p>
+          <div className="flex flex-col min-w-0">
+            <h3 className="text-xl font-semibold text-[#004a77] leading-tight truncate">
+              {activeItem.name}
+            </h3>
+            <p className="text-[12px] italic text-cyan-600 font-medium mt-1">
+              {activeItem.scientificName || activeItem.group}
+            </p>
+          </div>
         </div>
 
         {/* Contenedor de Scroll */}
