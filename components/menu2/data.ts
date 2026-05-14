@@ -28,7 +28,8 @@ export const instrumentsData: ItemData[] = [
       "Aplicación": "Citología y Microbiología",
       "Mantenimiento": "Limpieza de lentes mensual",
       "Estado": "Operativo",
-      "Ubicación": "Laboratorio A1"
+      "Ubicación": "Laboratorio A1",
+      "Notas": "Se requiere calibración anual"
     }
   },
   {

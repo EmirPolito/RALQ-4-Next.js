@@ -24,9 +24,9 @@ export default function StudioDashboard() {
   const pathname = usePathname();
 
   return (
-    <div className="min-h-screen bg-[#f0f5f9] font-sans selection:bg-blue-100 selection:text-blue-900 flex flex-col p-4 gap-6 overflow-hidden">
+    <div className="px-10 min-h-screen bg-fondo font-sans selection:bg-blue-100 selection:text-blue-900 flex flex-col p-4 gap-5 overflow-hidden">
       {/* Top Navigation */}
-      <header className="flex items-center justify-between px-6 py-3 bg-white/70 backdrop-blur-md rounded-2xl border border-white/50 shadow-sm">
+      <header className="flex items-center justify-between px-5 py-3 bg-white/70 backdrop-blur-md rounded-2xl border border-white/50 shadow-sm">
         <div className="flex items-center gap-4">
           <Image
             src="/logos/ralq-verde.png"
@@ -37,7 +37,7 @@ export default function StudioDashboard() {
           />
         </div>
 
-        <nav className="flex items-center gap-2">
+        <nav className="flex items-center gap-3">
           <NavItem
             icon={<Library className="w-4 h-4" />}
             label="Instrumentos"
@@ -70,19 +70,19 @@ export default function StudioDashboard() {
       </header>
 
       {/* Main Content Area - General Overview */}
-      <main className="flex-1 flex flex-col gap-4 max-w-7xl mx-auto w-full py-4">
+      <main className="px-1 flex-1 flex flex-col gap-10 max-w-8xl mx-auto w-full py-5">
         <section className="flex flex-col gap-1">
-          <h2 className="text-3xl font-black text-slate-800">
+          <h2 className="text-3xl font-semibold text-titulos">
             Bienvenido al Estudio
           </h2>
-          <p className="text-xs text-slate-500 max-w-2xl">
+          <p className="text-descripciones max-w-5xl text-sm lg:text-lg ">
             Explora las diferentes secciones de nuestra plataforma de
             investigación digital. Desde el análisis técnico de instrumentos de
             laboratorio hasta la visualización molecular avanzada en 3D.
           </p>
         </section>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           <FeatureCard
             title="Instrumentos"
             description="Visualiza y estudia los instrumentos de laboratorio más avanzados en 3D interactivo."
@@ -105,48 +105,12 @@ export default function StudioDashboard() {
             color="bg-slate-50"
           />
         </div>
-
-        <section className="bg-white/80 backdrop-blur-md border border-slate-200 rounded-[32px] p-6 shadow-xl">
-          <div className="flex items-center justify-between mb-4">
-            <h3 className="text-lg font-bold text-slate-800">
-              Actividad Reciente
-            </h3>
-            <button className="text-xs font-bold text-blue-500 hover:underline">
-              Ver historial
-            </button>
-          </div>
-          <div className="flex flex-col gap-3">
-            {[1, 2].map((i) => (
-              <div
-                key={i}
-                className="flex items-center justify-between p-3 rounded-2xl bg-slate-50 border border-slate-100"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-xl bg-white flex items-center justify-center shadow-sm">
-                    <Compass className="w-4 h-4 text-slate-400" />
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="font-bold text-slate-700 text-xs">
-                      {i === 1
-                        ? "Análisis de Microscopio completado"
-                        : "Exploración de molécula ADN finalizada"}
-                    </span>
-                    <span className="text-[10px] text-slate-400">
-                      Hace {i * 2} horas
-                    </span>
-                  </div>
-                </div>
-                <ArrowRight className="w-4 h-4 text-slate-300" />
-              </div>
-            ))}
-          </div>
-        </section>
       </main>
 
       {/* Custom Global Styles for the scrollbar */}
       <style jsx global>{`
         .custom-scrollbar::-webkit-scrollbar {
-          width: 4px;
+          width: 5px;
         }
         .custom-scrollbar::-webkit-scrollbar-track {
           background: transparent;
@@ -220,7 +184,7 @@ function NavItem({
       <motion.button
         whileHover={{ y: -1 }}
         className={cn(
-          "flex items-center gap-2 px-4 py-2 rounded-2xl transition-all font-bold text-xs",
+          "flex items-center gap-2 px-4 py-2 rounded-2xl transition-all font-semibold text-sm cursor-pointer",
           active
             ? "bg-blue-50 text-[#1a88c3] shadow-sm shadow-blue-100"
             : "text-slate-400 hover:text-slate-600 hover:bg-slate-50",

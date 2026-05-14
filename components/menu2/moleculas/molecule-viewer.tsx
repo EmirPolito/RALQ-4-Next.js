@@ -17,11 +17,11 @@ export function MoleculeViewer({ activeItem }: { activeItem: ItemData }) {
   }, []);
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 px-0">
       {/* Header Info */}
-      <div className="flex justify-between items-end px-2">
+      <div className="flex justify-between items-end px-4">
         <div className="flex flex-col">
-          <h1 className="text-3xl font-bold text-slate-800">{activeItem.name}</h1>
+          <h1 className="text-2xl md:text-2xl font-bold text-slate-800">{activeItem.name}</h1>
           <span className="text-sm font-medium text-cyan-500">{activeItem.category} • {activeItem.group}</span>
         </div>
         
@@ -63,7 +63,7 @@ export function MoleculeViewer({ activeItem }: { activeItem: ItemData }) {
       </div>
 
       {/* Main Viewer - Reduced height */}
-      <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-2xl border border-slate-200 group">
+      <div className="relative h-[290px] rounded-3xl overflow-hidden shadow-2xl border border-slate-200 group">
         {/* Mock 3D Background */}
         <div className={cn(
           "absolute inset-0 transition-all duration-1000",

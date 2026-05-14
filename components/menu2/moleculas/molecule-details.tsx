@@ -1,78 +1,112 @@
 "use client";
 
-import React from "react";
-import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
+import React, { useMemo } from "react";
 import { 
-  Users, 
-  Wind, 
-  Move, 
-  Apple, 
-  Heart, 
-  Maximize2, 
-  Anchor, 
-  ShieldCheck,
-  ChevronRight,
-  LayoutGrid,
-  Atom
+  Atom, Zap, Droplets, Wind, Thermometer, ShieldAlert,
+  Dna, Beaker, Binary, Microscope, Activity
 } from "lucide-react";
 
 import { ItemData } from "../data";
 
 export function MoleculeDetails({ activeItem }: { activeItem: ItemData }) {
-  const detailEntries = Object.entries(activeItem.details);
+  const detailEntries = Object.entries(activeItem.details).filter(([key]) => key !== "Notas");
+
+  // Optimizamos los iconos para que no se recalculen durante el scroll
+  const moleculeIcons = useMemo(() => [
+    <Atom key="atom" className="w-3 h-3" />,
+    <Zap key="zap" className="w-3 h-3" />,
+    <Droplets key="drop" className="w-3 h-3" />,
+    <Wind key="wind" className="w-3 h-3" />,
+    <Thermometer key="thermo" className="w-3 h-3" />,
+    <ShieldAlert key="shield" className="w-3 h-3" />,
+    <Dna key="dna" className="w-3 h-3" />,
+    <Beaker key="beaker" className="w-3 h-3" />,
+    <Binary key="binary" className="w-3 h-3" />
+  ], []);
 
   return (
-    <div className="flex flex-col h-full gap-4">
-      {/* Details Card */}
-      <div className="flex-1 bg-white/80 backdrop-blur-md border border-slate-200 rounded-3xl p-5 shadow-xl overflow-hidden flex flex-col">
-        <h2 className="text-[10px] font-bold text-slate-500 tracking-widest uppercase mb-6 px-1">PROPIEDADES QUÍMICAS</h2>
+    <div className="flex flex-col h-full min-h-0 font-sans w-full max-w-[380px] ml-auto">
+      {/* Tarjeta con optimización de hardware extrema */}
+      <div className="flex-1 bg-white border border-slate-100 rounded-[2.5rem] p-8 shadow-sm overflow-hidden flex flex-col min-h-0 transform-gpu">
         
-        {/* Profile Header */}
-        <div className="flex items-center gap-4 mb-4">
-          <div className="w-14 h-14 rounded-2xl bg-cyan-50 flex items-center justify-center border border-cyan-100 shadow-inner overflow-hidden">
-             <span className="text-3xl">{activeItem.emoji}</span>
-          </div>
-          <div className="flex flex-col">
-            <h3 className="text-lg font-bold text-slate-800 leading-tight">{activeItem.name}</h3>
-            <span className="text-[10px] italic text-cyan-600">{activeItem.scientificName || activeItem.group}</span>
-          </div>
+        <div className="flex items-center justify-between mb-7 flex-shrink-0">
+          <h2 className="text-[9px] font-bold text-slate-400 tracking-[0.2em] uppercase">
+            PROPIEDADES QUÍMICAS
+          </h2>
+          <div className="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.5)]" />
         </div>
 
-        {/* Stats List */}
-        <div className="flex-1 overflow-y-auto space-y-3 pr-2 custom-scrollbar">
-          {detailEntries.map(([key, value], i) => (
-            <motion.div 
-              key={activeItem.id + i}
-              initial={{ x: 20, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: i * 0.05 }}
-              className="flex flex-col gap-1 group"
-            >
-              <div className="flex items-center gap-2">
-                <div className="w-5 h-5 rounded-lg bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-cyan-600 group-hover:text-white transition-colors">
-                  <Atom className="w-2.5 h-2.5" />
+        {/* Cabecera Centrada */}
+        <div className="flex flex-col items-center text-center mb-10 flex-shrink-0">
+          <div className="w-16 h-16 rounded-2xl bg-cyan-50 flex items-center justify-center border border-cyan-100 mb-4 shadow-inner">
+            <span className="text-4xl">{activeItem.emoji}</span>
+          </div>
+          <h3 className="text-xl font-semibold text-[#004a77] leading-tight">
+            {activeItem.name}
+          </h3>
+          <p className="text-[12px] italic text-cyan-600 font-medium mt-1">
+            {activeItem.scientificName || activeItem.group}
+          </p>
+        </div>
+
+        {/* Contenedor de Scroll con Aceleración por Hardware */}
+        <div className="flex-1 overflow-y-auto pr-3 custom-scrollbar overscroll-contain will-change-transform scrolling-touch">
+          <div className="space-y-7 pb-6" style={{ contentVisibility: 'auto' }}>
+            
+            <div className="space-y-0">
+              {detailEntries.map(([key, value], i) => (
+                <div key={activeItem.id + i} className="transform-gpu">
+                  <div className="flex items-center gap-5 py-3.5 px-1">
+                    <div className="w-8 h-8 rounded-full bg-[#0081a7] flex items-center justify-center text-white flex-shrink-0 shadow-sm">
+                      {moleculeIcons[i % moleculeIcons.length]}
+                    </div>
+                    <div className="flex flex-col min-w-0">
+                      <span className="text-[8px] font-bold text-slate-400 tracking-wider uppercase leading-none mb-1.5">{key}</span>
+                      <p className="text-[14px] font-semibold text-[#004a77] leading-tight truncate">{value}</p>
+                    </div>
+                  </div>
+                  {i < detailEntries.length - 1 && (
+                    <div className="border-t border-dashed border-slate-100 ml-14" />
+                  )}
                 </div>
-                <span className="text-[9px] font-bold text-slate-400 tracking-wider uppercase">{key}</span>
-              </div>
-              <p className="text-[11px] font-semibold text-slate-700 pl-7 leading-snug">
-                {value}
-              </p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
+              ))}
+            </div>
 
-      {/* Lab Notes Section */}
-      <div className="bg-cyan-600/5 border border-cyan-100 rounded-3xl p-4 flex items-center justify-between group cursor-pointer hover:bg-white transition-colors">
-        <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-xl bg-cyan-600 flex items-center justify-center text-white shadow-lg shadow-cyan-200">
-            <ChevronRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+            {/* SECCIÓN SEGURIDAD */}
+            <div className="pt-3 transform-gpu">
+              <h4 className="text-[9px] font-bold text-slate-300 tracking-[0.2em] uppercase mb-4 px-1">
+                SEGURIDAD Y RIESGOS
+              </h4>
+              <div className="grid grid-cols-1 gap-2.5">
+                <div className="bg-cyan-50 p-4 rounded-2xl border border-cyan-100 flex items-center gap-3">
+                   <ShieldAlert className="w-4 h-4 text-[#0081a7]" />
+                   <span className="text-[12px] font-semibold text-slate-600">NFPA 704: Nivel 0</span>
+                </div>
+                <div className="bg-cyan-50 p-4 rounded-2xl border border-cyan-100 flex items-center gap-3">
+                   <Activity className="w-4 h-4 text-[#0081a7]" />
+                   <span className="text-[12px] font-semibold text-slate-600">No reactivo al aire</span>
+                </div>
+              </div>
+            </div>
+
+            {/* SECCIÓN DATOS TÉCNICOS */}
+            <div className="pt-3 transform-gpu">
+              <h4 className="text-[9px] font-bold text-slate-300 tracking-[0.2em] uppercase mb-4 px-1">
+                DATOS TÉCNICOS
+              </h4>
+              <div className="space-y-4 px-2">
+                <div className="flex justify-between items-center">
+                  <span className="text-[12px] font-medium text-slate-400">Pureza</span>
+                  <span className="text-[12px] font-semibold text-[#004a77]">99.9% (ACS)</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-[12px] font-medium text-slate-400">Stock</span>
+                  <span className="text-[12px] font-semibold text-emerald-500">Disponible</span>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <span className="text-[10px] font-bold text-slate-700 uppercase tracking-widest">NOTAS BIOQUÍMICAS</span>
-        </div>
-        <div className="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center text-slate-400">
-          <ChevronRight className="w-3 h-3" />
         </div>
       </div>
     </div>
