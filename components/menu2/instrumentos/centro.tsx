@@ -26,22 +26,24 @@ export function InstrumentViewer({ activeItem }: { activeItem: ItemData }) {
   }, []);
 
   return (
-    <div className="flex flex-col gap-4 px-0">
+    <div className="flex flex-col gap-3 px-0">
       {/* Header Info */}
       <div className="flex justify-between items-end px-4">
         <div className="flex flex-col mt-2">
           <h1 className="text-2xl md:text-2xl font-bold text-slate-800">
             {activeItem.name}
           </h1>
-          <span className="text-sm md:text-sm font-medium text-slate-500">
+          <span className="text-sm md:text-xs font-normal text-slate-500">
             {activeItem.category} • {activeItem.group}
           </span>
         </div>
 
-        <div className="flex items-center gap-6 bg-white/50 backdrop-blur-sm p-1.5 rounded-2xl border border-slate-100 shadow-sm">
+        {/* Contenido del header */}
+        <div className="flex items-center gap-5 bg-white/50 backdrop-blur-sm p-1.5 rounded-xl border border-slate-100 shadow-sm">
+          {/* Opciones de vista 3D, AR y 360 */}
           <div className="flex items-center gap-1">
-            <span className="text-xs md:text-xs font-bold text-slate-400 uppercase px-2">
-              Modo de vista
+            <span className="text-xs md:text-xs font-semibold text-slate-400 px-2">
+              Ver modelo en
             </span>
             <div className="flex bg-slate-100 rounded-xl p-1">
               {(["3D", "AR", "360"] as const).map((mode) => (
@@ -49,7 +51,7 @@ export function InstrumentViewer({ activeItem }: { activeItem: ItemData }) {
                   key={mode}
                   onClick={() => setViewMode(mode)}
                   className={cn(
-                    "px-4 py-1 text-xs font-bold rounded-lg transition-all",
+                    "cursor-pointer px-4 py-1 text-xs font-bold rounded-lg transition-all",
                     viewMode === mode
                       ? "bg-[#1a88c3] text-white shadow-md"
                       : "text-slate-500 hover:text-slate-700",
@@ -61,11 +63,12 @@ export function InstrumentViewer({ activeItem }: { activeItem: ItemData }) {
             </div>
           </div>
 
+          {/* Boton toggle efectos */}
           <div className="flex items-center gap-3 pr-2">
             <button
               onClick={() => setShowHabitat(!showHabitat)}
               className={cn(
-                "relative w-10 h-5 rounded-full transition-colors duration-300 focus:outline-none",
+                "cursor-pointer relative w-10 h-5 rounded-full transition-colors duration-300 focus:outline-none",
                 showHabitat ? "bg-[#1a88c3]" : "bg-slate-300",
               )}
             >
@@ -83,8 +86,8 @@ export function InstrumentViewer({ activeItem }: { activeItem: ItemData }) {
         </div>
       </div>
 
-      {/* Main Viewer - Reduced height */}
-      <div className="relative h-[290px] rounded-3xl overflow-hidden shadow-2xl border border-slate-200 group">
+      {/* Visualizador de modelo 3D  */}
+      <div className="relative h-[295px] rounded-xl overflow-hidden shadow-2xl border border-slate-200 group">
         {/* Mock 3D Background */}
         <div
           className={cn(
@@ -146,7 +149,7 @@ export function InstrumentViewer({ activeItem }: { activeItem: ItemData }) {
           </motion.div>
         </div>
 
-        {/* Info Overlay */}
+        {/* Descripción de arriba i */}
         <div className="absolute top-6 left-6 z-20">
           <div className="bg-white/10 backdrop-blur-md p-3 rounded-2xl shadow-xl border border-white/10 max-w-[220px]">
             <div className="flex gap-2">
@@ -154,16 +157,16 @@ export function InstrumentViewer({ activeItem }: { activeItem: ItemData }) {
                 <Info className="w-2.5 h-2.5 text-white" />
               </div>
               <p className="text-[10px] text-white/80 leading-tight">
-                Análisis técnico: explora los detalles internos del{" "}
+                Puedes explora los detalles internos del{" "}
                 {activeItem.name.toLowerCase()}.
               </p>
             </div>
           </div>
         </div>
 
-        {/* Action Buttons */}
-        <div className="absolute bottom-6 left-6 right-6 flex justify-between items-center z-20">
-          <div className="flex gap-2">
+        {/* Botones de izquierda y derecha */}
+        <div className="absolute bottom-6 left-4 right-4 flex justify-between items-center z-20">
+          <div className="flex gap-3">
             <ActionButton
               icon={<RotateCcw className="w-4 h-4" />}
               label="Reset"
@@ -175,13 +178,13 @@ export function InstrumentViewer({ activeItem }: { activeItem: ItemData }) {
           </div>
 
           <div className="flex gap-2 text-white/50 bg-black/20 backdrop-blur-md p-1 rounded-xl border border-white/5">
-            <button className="px-3 py-1 text-[10px] font-bold hover:text-white transition-colors">
+            <button className="cursor-pointer px-3 py-1 text-[10px] font-bold hover:text-white transition-colors">
               PNG
             </button>
-            <button className="px-3 py-1 text-[10px] font-bold hover:text-white transition-colors">
+            <button className="cursor-pointer px-3 py-1 text-[10px] font-bold hover:text-white transition-colors">
               GLB
             </button>
-            <button className="px-3 py-1 text-[10px] font-bold hover:text-white transition-colors">
+            <button className="cursor-pointer px-3 py-1 text-[10px] font-bold hover:text-white transition-colors">
               USDZ
             </button>
           </div>
@@ -205,7 +208,7 @@ function ActionButton({
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       className={cn(
-        "flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all shadow-lg",
+        "flex items-center gap-2 cursor-pointer px-4 py-2 rounded-xl text-xs font-semibold transition-all shadow-lg",
         secondary
           ? "bg-slate-800/80 text-white backdrop-blur-md hover:bg-slate-900"
           : "bg-white/80 text-slate-700 backdrop-blur-md hover:bg-white border border-slate-100",
