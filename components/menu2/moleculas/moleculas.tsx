@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { Library, Book, Settings, User, LayoutGrid } from "lucide-react";
+import { Home, FlaskConical, Dna, LayoutGrid, User } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
@@ -21,7 +21,7 @@ export default function MoleculasPage() {
     moleculesData.find((s) => s.id === activeSpeciesId) || moleculesData[0];
 
   return (
-    <div className="h-screen bg-[#e8f1f8] font-sans flex flex-col p-5 gap-6.5 overflow-hidden">
+    <div className="h-screen bg-[#e8f1f8] font-sans flex flex-col p-5 gap-4 overflow-hidden">
       {/* 1. HEADER */}
       <header className="h-[70px] flex-shrink-0 flex items-center justify-between px-4 bg-white/80 backdrop-blur-md rounded-xl border border-white shadow-sm">
         <div className="flex items-center gap-4">
@@ -36,26 +36,26 @@ export default function MoleculasPage() {
 
         <nav className="flex items-center gap-2">
           <NavItem
-            icon={<LayoutGrid className="w-4 h-4" />}
+            icon={<Home className="w-4 h-4" />}
             label="Home"
             href="/menu2"
             active={pathname === "/menu2"}
           />
           <NavItem
-            icon={<Library className="w-4 h-4" />}
+            icon={<FlaskConical className="w-4 h-4" />}
             label="Instrumentos"
             href="/menu2/instrumentos"
             active={pathname === "/menu2/instrumentos"}
           />
           <NavItem
-            icon={<Book className="w-4 h-4" />}
+            icon={<Dna className="w-4 h-4" />}
             label="Moleculas"
             href="/menu2/moleculas"
             active={pathname === "/menu2/moleculas"}
           />
           <NavItem
-            icon={<Settings className="w-4 h-4" />}
-            label="Tabla"
+            icon={<LayoutGrid className="w-4 h-4" />}
+            label="Tabla periódica"
             href="/menu2/tabla"
             active={pathname === "/menu2/tabla"}
           />
@@ -86,7 +86,11 @@ export default function MoleculasPage() {
           </div>
 
           <div className="flex-1 min-h-[160px] max-h-[200px]">
-            <BottomSections data={moleculesData} compareLabel="MOLÉCULAS" />
+            <BottomSections
+              data={moleculesData}
+              activeItem={activeItem}
+              compareLabel="MOLÉCULAS"
+            />
           </div>
         </section>
 

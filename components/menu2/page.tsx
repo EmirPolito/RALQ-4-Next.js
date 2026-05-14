@@ -4,14 +4,13 @@ import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import {
-  Compass,
-  Library,
-  Book,
-  Settings,
+  Home,
+  FlaskConical,
+  Dna,
+  LayoutGrid,
   Search,
   Bell,
   User,
-  LayoutGrid,
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -39,19 +38,19 @@ export default function StudioDashboard() {
 
         <nav className="flex items-center gap-3">
           <NavItem
-            icon={<Library className="w-4 h-4" />}
+            icon={<FlaskConical className="w-4 h-4" />}
             label="Instrumentos"
             href="/menu2/instrumentos"
             active={pathname === "/menu2/instrumentos"}
           />
           <NavItem
-            icon={<Book className="w-4 h-4" />}
+            icon={<Dna className="w-4 h-4" />}
             label="Moleculas"
             href="/menu2/moleculas"
             active={pathname === "/menu2/moleculas"}
           />
           <NavItem
-            icon={<Settings className="w-4 h-4" />}
+            icon={<LayoutGrid className="w-4 h-4" />}
             label="Tabla periodica"
             href="/menu2/tabla-periodica"
             active={pathname === "/menu2/tabla-periodica"}
@@ -86,21 +85,21 @@ export default function StudioDashboard() {
           <FeatureCard
             title="Instrumentos"
             description="Visualiza y estudia los instrumentos de laboratorio más avanzados en 3D interactivo."
-            icon={<Library className="w-6 h-6 text-blue-500" />}
+            icon={<FlaskConical className="w-6 h-6 text-blue-500" />}
             href="/menu2/instrumentos"
             color="bg-blue-50"
           />
           <FeatureCard
             title="Moléculas"
             description="Explora las complejas estructuras moleculares y sus propiedades químicas."
-            icon={<Book className="w-6 h-6 text-cyan-500" />}
+            icon={<Dna className="w-6 h-6 text-cyan-500" />}
             href="/menu2/moleculas"
             color="bg-cyan-50"
           />
           <FeatureCard
             title="Tabla Periódica"
             description="Consulta los elementos químicos esenciales para la investigación y la vida."
-            icon={<Settings className="w-6 h-6 text-slate-500" />}
+            icon={<LayoutGrid className="w-6 h-6 text-slate-500" />}
             href="/menu2/tabla-periodica"
             color="bg-slate-50"
           />

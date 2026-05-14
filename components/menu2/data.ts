@@ -12,6 +12,12 @@ export interface ItemData {
   details: {
     [key: string]: string;
   };
+  learningContent?: {
+    steps: string[];
+    tips: string[];
+    fact: string;
+    principle: string;
+  };
 }
 
 export const instrumentsData: ItemData[] = [
@@ -30,6 +36,19 @@ export const instrumentsData: ItemData[] = [
       "Estado": "Operativo",
       "Ubicación": "Laboratorio A1",
       "Notas": "Se requiere calibración anual"
+    },
+    learningContent: {
+      steps: [
+        "Limpiar los lentes con papel seda antes de usar.",
+        "Colocar la muestra y ajustar con el objetivo de 4x.",
+        "Usar el tornillo micrométrico para el enfoque fino."
+      ],
+      tips: [
+        "Nunca toques los lentes con los dedos.",
+        "Apaga la luz después de terminar."
+      ],
+      fact: "El primer microscopio fue inventado por Zacharias Janssen en 1590.",
+      principle: "Refracción de la luz a través de lentes convexos."
     }
   },
   {
@@ -46,6 +65,19 @@ export const instrumentsData: ItemData[] = [
       "Rango de Temp": "-10°C a 40°C",
       "Marca": "CentriTech",
       "Calibración": "Anual"
+    },
+    learningContent: {
+      steps: [
+        "Cargar los tubos en pares opuestos para balancear.",
+        "Cerrar la tapa de seguridad herméticamente.",
+        "Programar tiempo y RPM según el protocolo."
+      ],
+      tips: [
+        "No abrir la tapa hasta que el rotor se detenga.",
+        "Verificar que el equipo esté en una superficie nivelada."
+      ],
+      fact: "La fuerza centrífuga puede ser miles de veces más fuerte que la gravedad.",
+      principle: "Sedimentación acelerada por fuerza rotacional."
     }
   },
   {
@@ -62,6 +94,19 @@ export const instrumentsData: ItemData[] = [
       "Software": "SpectralPro 4.0",
       "Fuente": "Lámpara de Deuterio",
       "Estado": "En uso"
+    },
+    learningContent: {
+      steps: [
+        "Encender y esperar 15 min para calentar lámparas.",
+        "Calibrar el blanco con solvente puro.",
+        "Insertar la cubeta con la muestra sin burbujas."
+      ],
+      tips: [
+        "Sujetar la cubeta solo por los lados opacos.",
+        "Limpiar la cubeta con agua desionizada."
+      ],
+      fact: "Permite identificar sustancias midiendo cómo absorben la luz.",
+      principle: "Ley de Beer-Lambert sobre absorción de fotones."
     }
   },
   {
@@ -78,6 +123,19 @@ export const instrumentsData: ItemData[] = [
       "Puntas": "Tipo universal",
       "Material": "Autoclavable",
       "Última Calibración": "05/2026"
+    },
+    learningContent: {
+      steps: [
+        "Ajustar el volumen girando el selector.",
+        "Colocar la punta presionando firmemente.",
+        "Presionar al primer tope para aspirar y al segundo para expulsar."
+      ],
+      tips: [
+        "Mantener siempre la pipeta en posición vertical.",
+        "Soltar el pulsador suavemente al aspirar."
+      ],
+      fact: "Una gota de agua pesa aproximadamente 50 µL.",
+      principle: "Desplazamiento de aire mediante un pistón interno."
     }
   },
   {
@@ -94,9 +152,21 @@ export const instrumentsData: ItemData[] = [
       "Canales": "6 canales de detección",
       "Conectividad": "Ethernet/USB",
       "Estado": "Disponible"
+    },
+    learningContent: {
+      steps: [
+        "Cargar la placa de PCR asegurando el sellado.",
+        "Configurar el protocolo de ciclos (Denat, Anneal, Ext).",
+        "Iniciar el programa y monitorear la curva."
+      ],
+      tips: [
+        "Usar guantes para evitar contaminación con nucleasas.",
+        "Limpiar el bloque térmico con alcohol isopropílico."
+      ],
+      fact: "Kary Mullis ganó el Nobel por inventar la PCR en 1983.",
+      principle: "Amplificación enzimática de ADN mediante ciclos térmicos."
     }
   }
-  // ... more instruments can be added here
 ];
 
 export const moleculesData: ItemData[] = [
