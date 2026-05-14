@@ -32,25 +32,23 @@ export function InstrumentViewer({
   }, []);
 
   return (
-    <div className="flex flex-col gap-5.5 px-0">
+    <div className="flex flex-col gap-3.5 px-0">
       {/* Header Info */}
-      <div className="flex justify-between items-end px-4">
-        <div className="flex flex-col mt-2">
-          <h1 className="text-2xl md:text-2xl font-bold text-slate-800">
+      <div className="flex justify-between items-end px-3.5">
+        <div className="flex flex-col mt-3">
+          <h1 className="text-2xl md:text-xl font-bold text-slate-800">
             {activeItem.name}
           </h1>
-          <span className="text-sm md:text-xs font-normal text-slate-500 uppercase tracking-widest">
-            {activeItem.category} • {activeItem.group} •{" "}
-            <span className="text-[#1a88c3] font-black">
-              {externalViewMode}
-            </span>
+
+          <span className="text-sm md:text-sm font-normal text-slate-500">
+            {activeItem.category}
           </span>
         </div>
 
         <div className="flex items-center gap-5 bg-white/50 backdrop-blur-sm p-1.5 rounded-xl border border-slate-100 shadow-sm">
           <div className="flex items-center gap-1">
-            <span className="text-xs md:text-xs font-semibold text-slate-400 px-2 uppercase tracking-tighter">
-              Formato
+            <span className="text-xs md:text-xs font-medium text-slate-400 px-2 uppercase">
+              Ver en
             </span>
             <div className="flex bg-slate-100 rounded-xl p-1">
               {(["3D", "AR"] as const).map((mode) => (
@@ -85,7 +83,7 @@ export function InstrumentViewer({
                 )}
               />
             </button>
-            <span className="text-[10px] font-bold text-slate-500 uppercase">
+            <span className="text-xs md:text-xs font-medium text-slate-400 uppercase">
               Filtros
             </span>
           </div>
@@ -93,7 +91,7 @@ export function InstrumentViewer({
       </div>
 
       {/* Visualizador de modelo 3D  */}
-      <div className="relative h-[295px] rounded-2xl overflow-hidden shadow-2xl border border-slate-200 group bg-slate-950">
+      <div className="relative h-[295px] rounded-xl overflow-hidden shadow-2xl border border-slate-200 group bg-slate-950">
         {/* Dynamic Background based on mode */}
         <AnimatePresence mode="wait">
           <motion.div
@@ -188,7 +186,7 @@ export function InstrumentViewer({
                 <Info className="w-2.5 h-2.5 text-white" />
               </div>
               <div>
-                <p className="text-[9px] font-black text-white uppercase tracking-widest opacity-60 mb-0.5">
+                <p className="text-xs md:text-xs font-semibold text-slate-400">
                   Estado
                 </p>
                 <p className="text-[10px] text-white/90 leading-tight font-medium">

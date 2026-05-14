@@ -42,7 +42,7 @@ export const instrumentsData: ItemData[] = [
     id: "microscopio",
     name: "Microscopio",
     group: "Óptico",
-    category: "Instrumentos",
+    category: "Instrumento muy utilizado",
     icon: React.createElement(Microscope, { className: "w-5 h-5" }),
     emoji: "🔬",
     details: {
