@@ -33,7 +33,7 @@ export function MoleculeViewer({ activeItem }: { activeItem: ItemData }) {
           <h1 className="text-2xl md:text-2xl font-bold text-slate-800">
             {activeItem.name}
           </h1>
-          <span className="text-sm font-medium text-cyan-500">
+          <span className="text-sm md:text-xs font-normal text-slate-500">
             {activeItem.category} • {activeItem.group}
           </span>
         </div>
@@ -67,8 +67,8 @@ export function MoleculeViewer({ activeItem }: { activeItem: ItemData }) {
             <button
               onClick={() => setShowHabitat(!showHabitat)}
               className={cn(
-                "relative w-10 h-5 rounded-full transition-colors duration-300 focus:outline-none",
-                showHabitat ? "bg-cyan-600" : "bg-slate-300",
+                "cursor-pointer relative w-10 h-5 rounded-full transition-colors duration-300 focus:outline-none",
+                showHabitat ? "bg-[#1a88c3]" : "bg-slate-300",
               )}
             >
               <div
@@ -78,7 +78,9 @@ export function MoleculeViewer({ activeItem }: { activeItem: ItemData }) {
                 )}
               />
             </button>
-            <span className="text-xs font-semibold text-slate-500">Átomos</span>
+            <span className="text-xs font-semibold text-slate-500">
+              Efectos
+            </span>
           </div>
         </div>
       </div>
@@ -151,7 +153,7 @@ export function MoleculeViewer({ activeItem }: { activeItem: ItemData }) {
         <div className="absolute top-6 left-6 z-20">
           <div className="bg-white/10 backdrop-blur-md p-3 rounded-2xl shadow-xl border border-white/10 max-w-[220px]">
             <div className="flex gap-2">
-              <div className="w-4 h-4 rounded-full bg-cyan-500 flex items-center justify-center flex-shrink-0">
+              <div className="w-4 h-4 rounded-full bg-blue-500 flex items-center justify-center flex-shrink-0">
                 <Info className="w-2.5 h-2.5 text-white" />
               </div>
               <p className="text-[10px] text-white/80 leading-tight">
