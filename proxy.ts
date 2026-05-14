@@ -2,7 +2,7 @@ import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
 import { NextResponse } from 'next/server'
 
 const isProtectedRoute = createRouteMatcher(['/menu(.*)'])
-const isPublicRoute = createRouteMatcher(['/login(.*)', '/registro(.*)', '/'])
+const isPublicRoute = createRouteMatcher(['/login(.*)', '/registro(.*)', '/', '/menu2(.*)'])
 
 export default clerkMiddleware(async (auth, req) => {
   const { userId } = await auth()
@@ -18,8 +18,8 @@ export default clerkMiddleware(async (auth, req) => {
     return NextResponse.redirect(new URL('/menu', req.url))
   }
 
-  // Proteger rutas de menú
-  if (isProtectedRoute(req)) {
+  // Proteger rutas de menú, excepto las públicas como /menu2
+  if (isProtectedRoute(req) && !isPublicRoute(req)) {
     await auth.protect()
   }
 })
