@@ -7,10 +7,10 @@ import { Home, Microscope, Dna, LayoutGrid, User } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-import { InstrumentSidebar } from "./izquierda";
-import { InstrumentViewer, BottomSections } from "./centro";
-import { InstrumentDetails } from "./derecha";
-import { instrumentsData, moleculesData } from "../data";
+import { InstrumentSidebar } from "./laboratorio/izquierda";
+import { InstrumentViewer, BottomSections } from "./laboratorio/centro";
+import { InstrumentDetails } from "./laboratorio/derecha";
+import { instrumentsData, moleculesData } from "./data";
 
 const combinedData = [...instrumentsData, ...moleculesData];
 
