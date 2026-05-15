@@ -28,7 +28,7 @@ export function InstrumentSidebar({
   return (
     /* bg de la terjeta*/
     <div className="bg-menu2-izq-bg flex flex-col h-full  border border-menu2-izq-buscador-borde rounded-xl p-3.5 shadow-xl overflow-hidden">
-      <h2 className="text-menu2-izq-ttl text-xs font-medium md:text-xs tracking-[0.1em] uppercase mb-4 px-1.5 pt-2">
+      <h2 className="text-menu2-izq-ttl text-xs font-medium md:text-xs uppercase mb-4 px-1.5 pt-2">
         {title}
       </h2>
 
@@ -39,7 +39,7 @@ export function InstrumentSidebar({
         </div>
         <input
           type="text"
-          placeholder="Buscar instrumento..."
+          placeholder="Buscar..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className="w-full bg-menu2-izq-buscador-bg border border-menu2-izq-buscador-borde rounded-xl py-2.5 pl-9 pr-3 text-xs transition-all placeholder:text-menu2-izq-buscador-contenido"

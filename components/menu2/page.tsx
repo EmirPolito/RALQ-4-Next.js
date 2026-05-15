@@ -77,7 +77,7 @@ export default function LaboratorioPage() {
             activeId={activeSpeciesId}
             onSelect={setActiveSpeciesId}
             data={combinedData}
-            title="LABORATORIO"
+            title="Instrumentos y Moleculas"
           />
         </aside>
 
