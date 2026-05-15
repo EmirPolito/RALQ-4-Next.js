@@ -10,7 +10,7 @@
 </div>
   <br />
 
-RALQ-2 es una plataforma educativa de vanguardia construida con **Next.js**, diseñada para transformar la enseñanza de la química mediante experiencias visuales inmersivas, modelos 3D interactivos y realidad aumentada.
+RALQ 2 es una plataforma educativa de vanguardia construida con **Next.js**, diseñada para transformar la enseñanza de la química mediante experiencias visuales inmersivas, modelos 3D interactivos y realidad aumentada.
 
 <div align="center">
   <img width="1600" height="728" alt="RALQ Hero Section" src="https://github.com/user-attachments/assets/3611f1a9-df49-425c-84fe-79c41c34f6f0"/>
