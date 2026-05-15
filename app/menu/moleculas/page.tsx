@@ -1,11 +1,11 @@
 "use client";
 
-import { ContenidoMoleculas } from "@/components/menu/views/moleculas/contenido-moleculas";
+import MoleculasPage from "@/components/menu/moleculas/moleculas";
 
-export default function MoleculasPage() {
+export default function MenuPage() {
   return (
-    <div>
-      <ContenidoMoleculas />
-    </div>
+    <>
+      <MoleculasPage />
+    </>
   );
 }

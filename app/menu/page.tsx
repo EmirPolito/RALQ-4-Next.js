@@ -1,11 +1,14 @@
 "use client";
 
-import { ContenidoMenu } from "@/components/menu/views/home/contenido-menu";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function MenuPage() {
-  return (
-    <>
-      <ContenidoMenu />
-    </>
-  );
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace("/menu/laboratorio");
+  }, [router]);
+
+  return null;
 }

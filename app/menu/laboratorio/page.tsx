@@ -1,6 +1,6 @@
 "use client";
 
-import InstrumentosPage from "@/components/menu2/instrumentos/instrumentos";
+import InstrumentosPage from "@/components/menu/page";
 
 export default function MenuPage() {
   return (

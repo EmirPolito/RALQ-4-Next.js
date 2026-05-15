@@ -2,7 +2,7 @@ import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
 import { NextResponse } from 'next/server'
 
 const isProtectedRoute = createRouteMatcher(['/menu(.*)'])
-const isPublicRoute = createRouteMatcher(['/login(.*)', '/registro(.*)', '/', '/menu2(.*)'])
+const isPublicRoute = createRouteMatcher(['/login(.*)', '/registro(.*)', '/'])
 
 export default clerkMiddleware(async (auth, req) => {
   const { userId } = await auth()
@@ -15,7 +15,7 @@ export default clerkMiddleware(async (auth, req) => {
 
   // Si hay sesión y estamos en una página pública (incluida la raíz), forzar ir al menú
   if (userId && (isPublicRoute(req) || req.nextUrl.pathname === '/')) {
-    return NextResponse.redirect(new URL('/menu', req.url))
+    return NextResponse.redirect(new URL('/menu/laboratorio', req.url))
   }
 
   // Proteger rutas de menú, excepto las públicas como /menu2

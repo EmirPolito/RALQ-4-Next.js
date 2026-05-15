@@ -1,11 +1,11 @@
 "use client";
 
-import InstrumentosPage from "@/components/menu2/page";
+import TablaPage from "@/components/menu/tabla/tabla";
 
 export default function MenuPage() {
   return (
     <>
-      <InstrumentosPage />
+      <TablaPage />
     </>
   );
 }

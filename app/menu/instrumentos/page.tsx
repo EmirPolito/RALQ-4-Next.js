@@ -1,11 +1,11 @@
 "use client";
 
-import { ContenidoInstrumentos } from "@/components/menu/views/instrumentos/contenido-instrumentos";
+import InstrumentosPage from "@/components/menu/instrumentos/instrumentos";
 
-export default function InstrumentosPage() {
+export default function MenuPage() {
   return (
-    <div>
-      <ContenidoInstrumentos />
-    </div>
+    <>
+      <InstrumentosPage />
+    </>
   );
 }
