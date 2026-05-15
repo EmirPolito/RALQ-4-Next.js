@@ -42,7 +42,7 @@ export function InstrumentSidebar({
           placeholder="Buscar instrumento..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full bg-menu2-izq-buscador-bg border border-menu2-izq-buscador-borde rounded-xl py-2.5 pl-9 pr-3 text-xs transition-all"
+          className="w-full bg-menu2-izq-buscador-bg border border-menu2-izq-buscador-borde rounded-xl py-2.5 pl-9 pr-3 text-xs transition-all placeholder:text-menu2-izq-buscador-contenido"
         />
       </div>
 
@@ -53,11 +53,12 @@ export function InstrumentSidebar({
             return (
               <motion.button
                 key={item.id}
-                whileHover={{ x: 4 }}
+                whileHover={{ x: 0 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => onSelect(item.id)}
                 className={cn(
-                  "cursor-pointer w-full flex items-center gap-2.5 p-2 rounded-xl transition-all duration-300",
+                  /**tarjeta rectagular*/
+                  "cursor-pointer w-full flex items-center gap-2.5 p-2.5 rounded-lg transition-all duration-200",
                   isActive ? "bg-menu2-izq-tarjeta-bg shadow-lg" : "",
                 )}
               >

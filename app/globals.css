@@ -243,7 +243,7 @@
   /* ===================================
    Menu 2
 ========================================*/
-  --menu2-bg-general: #ffffff;
+  --menu2-bg-general: #efefef;
 
   --menu2-header-bg: #f6f6f6;
   --menu2-header-paginas-bg: #eaeaea;
@@ -252,23 +252,39 @@
   --menu2-header-extra: #ffffff;
 
   /* Menu 2 izquierda  */
-  --menu2-izq-bg: #ffffff; /**/
-  --menu2-izq-ttl: #676767; /**/
+  --menu2-izq-bg: #ffffff; /*fondo de la tarjeta general*/
+  --menu2-izq-ttl: #676767; /*titulo instrumentos*/
 
-  --menu2-izq-buscador-borde: #ebebeb; /**/
-  --menu2-izq-buscador-bg: #ffffff; /**/
-  --menu2-izq-buscador-contenido: #a1a1a1; /**/
+  --menu2-izq-buscador-borde: #ebebeb; /*borde del intut y de la tarjeta general*/
+  --menu2-izq-buscador-bg: #ffffff; /*bg del input*/
+  --menu2-izq-buscador-contenido: #a1a1a1; /*lupa y texto del input*/
 
-  --menu2-izq-tarjeta-bg: #dfdfdf; /**/
-  --menu2-izq-tarjeta-borde: #e1e1e1;
+  --menu2-izq-tarjeta-bg: #ebebeb; /*bg de la tarjeta recatangular*/
 
-  --menu2-izq-bg-icono: #a0a0a0; /**/
-  --menu2-izq-contenido-icono: #ffffff; /**/
+  --menu2-izq-bg-icono: #010101; /*bg del icono*/
+  --menu2-izq-contenido-icono: #ffffff; /*color del icono dentro*/
 
   --menu2-izq-tarjeta-txt: #000000; /**/
   --menu2-izq-tarjeta-mini-txt: #3e3939;
 
-  --menu2-izq-deslizador: #322f2f;
+  /* Menu 2 centro  */
+  --menu2-centro-bg: #ffffff; /**/
+  --menu2-centro-txt: #676767; /**/
+  --menu2-centro-desc: #a1a1a1; /*descripcion*/
+
+  --menu2-centro-bgderecha: #e9e9e9; /**/
+  --menu2-centro-bgbg: #c8c8c8; /**/
+  --menu2-centro-bg-boton: #000000; /**/
+  --menu2-centro-3D: #ffffff; /**/
+  --menu2-centro-AR: #a1a1a1; /**/
+  --menu2-centro-expansor: #ffffff; /**/
+
+  --menu2-centro-mini-bg: #dddddd; /**/
+  --menu2-centro-mini-borde: #929292; /**/
+  --menu2-centro-mini-ttl: #ffffff; /**/
+  --menu2-centro-mini-txt: #a1a1a1; /**/
+  --menu2-centro-mini-bg-icono: #000000; /**/
+  --menu2-centro-mini-icono: #ffffff; /**/
 
   /* UI */
   --background: #ffffff;
@@ -4515,6 +4531,25 @@
   --color-menu2-izq-bg-icono: var(--menu2-izq-bg-icono);
   --color-menu2-izq-contenido-icono: var(--menu2-izq-contenido-icono);
   --color-menu2-izq-deslizador: var(--menu2-izq-deslizador);
+
+  /**/
+  --color-menu2-centro-bg: var(--menu2-centro-bg);
+  --color-menu2-centro-bgbg: var(--menu2-centro-bgbg);
+  --color-menu2-centro-txt: var(--menu2-centro-txt);
+  --color-menu2-centro-desc: var(--menu2-centro-desc);
+
+  --color-menu2-centro-bgderecha: var(--menu2-centro-bgderecha);
+  --color-menu2-centro-bg-boton: var(--menu2-centro-bg-boton);
+  --color-menu2-centro-3D: var(--menu2-centro-3D);
+  --color-menu2-centro-AR: var(--menu2-centro-AR);
+  --color-menu2-centro-expansor: var(--menu2-centro-expansor);
+
+  --color-menu2-centro-mini-bg: var(--menu2-centro-mini-bg);
+  --color-menu2-centro-mini-borde: var(--menu2-centro-mini-borde);
+  --color-menu2-centro-mini-ttl: var(--menu2-centro-mini-ttl);
+  --color-menu2-centro-mini-txt: var(--menu2-centro-mini-txt);
+  --color-menu2-centro-mini-bg-icono: var(--menu2-centro-mini-bg-icono);
+  --color-menu2-centro-mini-icono: var(--menu2-centro-mini-icono);
 }
 
 @layer base {
