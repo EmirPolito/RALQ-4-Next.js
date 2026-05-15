@@ -40,10 +40,10 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
 
   return (
     <div className="flex flex-col h-full min-h-0 font-sans w-full max-w-[380px] ml-auto">
-      <div className="bg-menu2-derecha-bg flex-1 border border-slate-100 rounded-xl p-7 shadow-sm overflow-hidden flex flex-col min-h-0 transform-gpu">
+      <div className="bg-menu2-derecha-bg flex-1 border border-menu2-izq-buscador-borde rounded-xl p-7 shadow-xl overflow-hidden flex flex-col min-h-0 transform-gpu">
         {/* Cabecera Horizontal - Icono a la izquierda, Texto a la derecha */}
         <div className="flex flex-row items-center gap-4 mb-8 mt-0 flex-shrink-0">
-          <div className="w-15 h-15 rounded-xl bg-slate-50 flex items-center justify-center border border-slate-100 shadow-inner flex-shrink-0">
+          <div className="w-15 h-15 rounded-xl bg-slate-50 flex items-center justify-center border border-menu2-izq-buscador-borde shadow-inner flex-shrink-0">
             <span className="text-3xl">{activeItem.emoji}</span>
           </div>
 
@@ -83,7 +83,7 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
                     </div>
                   </div>
                   {i < detailEntries.length - 1 && (
-                    <div className="border-t border-dashed border-slate-100 ml-14" />
+                    <div className="border-t border-dashed border-menu2-izq-buscador-borde ml-14" />
                   )}
                 </div>
               ))}
@@ -95,13 +95,13 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
                 SEGURIDAD Y CUMPLIMIENTO
               </h2>
               <div className="grid grid-cols-1 gap-2.5">
-                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100 flex items-center gap-3">
+                <div className="bg-slate-50 p-4 rounded-2xl border border-menu2-izq-buscador-borde flex items-center gap-3">
                   <ShieldAlert className="text-menu2-derecha-mini-txt w-4 h-4" />
                   <span className="text-menu2-derecha-mini-txt text-xs font-semibold">
                     Certificación ISO 9001
                   </span>
                 </div>
-                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100 flex items-center gap-3">
+                <div className="bg-slate-50 p-4 rounded-2xl border border-menu2-izq-buscador-borde flex items-center gap-3">
                   <Beaker className="text-menu2-derecha-mini-txt w-4 h-4" />
                   <span className="text-menu2-derecha-mini-txt text-xs font-semibold">
                     Protocolo GLP Activo

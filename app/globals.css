@@ -280,7 +280,7 @@
   --menu2-centro-expansor: #ffffff; /**/
 
   --menu2-centro-mini-bg: #dddddd; /**/
-  --menu2-centro-mini-borde: #ffffff; /**/
+  --menu2-centro-mini-borde: #ebebeb; /**/
   --menu2-centro-mini-ttl: #ffffff; /**/
   --menu2-centro-mini-txt: #ffffff; /**/
   --menu2-centro-mini-bg-icono: #ffffff; /**/
@@ -307,7 +307,7 @@
 
   --menu2-derecha-mini-ttl: #a1a1a1; /*mini texto arriba*/
   --menu2-derecha-mini-txt: #676767; /*textos abajo de los minitextos*/
-  --menu2-derecha-borde: #ffffff; /*borde de las tarjetas*/
+  --menu2-derecha-borde: #ebebeb; /*borde de las tarjetas*/
 
   /* UI */
   --background: #ffffff;

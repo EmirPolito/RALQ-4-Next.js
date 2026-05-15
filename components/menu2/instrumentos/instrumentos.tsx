@@ -24,7 +24,7 @@ export default function InstrumentosPage() {
   return (
     <div className="h-screen bg-menu2-bg-general font-sans flex flex-col p-5 gap-4 overflow-hidden">
       {/* 1. HEADER */}
-      <header className="bg-menu2-header-bg h-[70px] flex-shrink-0 flex items-center justify-between px-4  backdrop-blur-md rounded-xl border border-white shadow-sm">
+      <header className="bg-menu2-header-bg h-[70px] flex-shrink-0 flex items-center justify-between px-4  backdrop-blur-md rounded-xl border border-menu2-izq-buscador-borde shadow-sm">
         <div className="flex items-center gap-4">
           <Image
             src="/logos/ralq-verde.png"
@@ -82,7 +82,7 @@ export default function InstrumentosPage() {
 
         {/* Centro: Visor 3D y Sección Inferior */}
         <section className="col-span-7 flex flex-col gap-3 min-h-0">
-          <div className="bg-menu2-centro-bg flex-1 backdrop-blur-md rounded-xl border border-white shadow-sm overflow-hidden min-h-0">
+          <div className="bg-menu2-centro-bg flex-1 backdrop-blur-md rounded-xl border border-menu2-izq-buscador-borde shadow-xl overflow-hidden min-h-0">
             <InstrumentViewer activeItem={activeItem} viewMode={viewMode} />
           </div>
 

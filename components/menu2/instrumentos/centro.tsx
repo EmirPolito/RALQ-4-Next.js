@@ -45,7 +45,7 @@ export function InstrumentViewer({
           </span>
         </div>
 
-        <div className="bg-menu2-centro-bgderecha flex items-center gap-6 p-1.5 rounded-xl shadow-sm">
+        <div className="bg-menu2-centro-bgderecha flex items-center gap-6 p-1.5 rounded-xl shadow-sm border border-menu2-izq-buscador-borde">
           <div className="flex items-center">
             <div className="flex bg-menu2-centro-bgbg rounded-xl p-0.5">
               {(["3D", "AR"] as const).map((mode) => (
@@ -88,7 +88,7 @@ export function InstrumentViewer({
       </div>
 
       {/* Visualizador de modelo 3D  */}
-      <div className="relative h-[295px] rounded-xl overflow-hidden shadow-2xl border border-slate-200 group bg-slate-950">
+      <div className="relative h-[295px] rounded-xl overflow-hidden shadow-xl border border-menu2-izq-buscador-borde group bg-slate-950">
         {/* Dynamic Background based on mode */}
         <AnimatePresence mode="wait">
           <motion.div

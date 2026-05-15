@@ -67,7 +67,7 @@ export function BottomSections({
     ];
 
     return (
-      <div className="bg-menu2-abajo-bg w-full h-full backdrop-blur-md border border-menu2-abajo-borde rounded-xl p-3 shadow-lg flex flex-col gap-2 min-h-0 animate-in fade-in slide-in-from-bottom-2 duration-500">
+      <div className="bg-menu2-abajo-bg w-full h-full backdrop-blur-md border border-menu2-izq-buscador-borde rounded-xl p-3 shadow-xl flex flex-col gap-2 min-h-0 animate-in fade-in slide-in-from-bottom-2 duration-500">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1.5">
             <BookOpen className="w-3 h-3 text-menu2-abajo-txt" />

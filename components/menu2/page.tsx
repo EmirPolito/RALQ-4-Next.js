@@ -25,7 +25,7 @@ export default function StudioDashboard() {
   return (
     <div className="bg-menu2-general h-screen font-sans flex flex-col p-5 gap-6.5 overflow-hidden">
       {/* Top Navigation */}
-      <header className="bg-menu2-header h-[70px] flex-shrink-0 flex items-center justify-between px-4 backdrop-blur-md rounded-xl border border-white shadow-sm">
+      <header className="bg-menu2-header h-[70px] flex-shrink-0 flex items-center justify-between px-4 backdrop-blur-md rounded-xl border border-menu2-izq-buscador-borde shadow-sm">
         <div className="flex items-center gap-4">
           <Image
             src="/logos/ralq-verde.png"
