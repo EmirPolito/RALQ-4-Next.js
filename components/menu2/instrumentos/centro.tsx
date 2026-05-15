@@ -36,18 +36,18 @@ export function InstrumentViewer({
       {/* Header Info */}
       <div className="flex justify-between items-end px-3.5">
         <div className="flex flex-col mt-3">
-          <h1 className="text-2xl md:text-xl font-bold text-slate-800">
+          <h1 className="text-2xl md:text-xl font-bold text-menu2-centro-txt">
             {activeItem.name}
           </h1>
 
-          <span className="text-sm md:text-sm font-normal text-slate-500">
+          <span className="text-sm md:text-sm font-normal text-menu2-centro-desc">
             {activeItem.category}
           </span>
         </div>
 
-        <div className="flex items-center gap-5 bg-white/50 p-1.5 rounded-xl shadow-sm">
+        <div className="bg-menu2-centro-bgderecha flex items-center gap-5 p-1.5 rounded-xl shadow-sm">
           <div className="flex items-center">
-            <div className="flex bg-slate-100 rounded-xl p-1">
+            <div className="flex bg-menu2-centro-bgbg rounded-xl p-1">
               {(["3D", "AR"] as const).map((mode) => (
                 <button
                   key={mode}
@@ -55,8 +55,8 @@ export function InstrumentViewer({
                   className={cn(
                     "cursor-pointer px-3.5 py-1.5 text-xs font-medium rounded-lg",
                     viewType === mode
-                      ? "bg-[#1a88c3] text-white shadow-md"
-                      : "text-slate-500",
+                      ? "bg-menu2-centro-bg-boton text-menu2-centro-3D shadow-md"
+                      : "text-menu2-centro-AR",
                   )}
                 >
                   {mode}
@@ -70,7 +70,7 @@ export function InstrumentViewer({
               onClick={() => setShowHabitat(!showHabitat)}
               className={cn(
                 "cursor-pointer relative w-10 h-5 rounded-full transition-colors duration-300 focus:outline-none",
-                showHabitat ? "bg-[#1a88c3]" : "bg-slate-300",
+                showHabitat ? "bg-menu2-centro-bg-boton" : "bg-menu2-centro-AR",
               )}
             >
               <div
@@ -80,8 +80,8 @@ export function InstrumentViewer({
                 )}
               />
             </button>
-            <span className="text-xs md:text-xs font-medium text-slate-400 uppercase">
-              Filtros
+            <span className="text-xs md:text-xs font-medium text-menu2-centro-AR uppercase">
+              Fondo
             </span>
           </div>
         </div>
@@ -177,16 +177,16 @@ export function InstrumentViewer({
 
         {/* Labels info UI */}
         <div className="absolute top-6 left-6 z-20">
-          <div className="bg-white/5 backdrop-blur-xl p-3 rounded-2xl shadow-xl border border-white/10 max-w-[200px]">
+          <div className="bg-menu2-centro-mini-bg/5 backdrop-blur-xl p-3 rounded-xl shadow-xl border border-menu2-centro-mini-borde/10 max-w-[200px]">
             <div className="flex gap-2">
-              <div className="w-4 h-4 rounded-full bg-blue-500 flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-500/30">
-                <Info className="w-2.5 h-2.5 text-white" />
+              <div className="w-4 h-4 rounded-full bg-menu2-centro-mini-bg-icono flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-500/30">
+                <Info className="w-2.5 h-2.5 text-menu2-centro-mini-icono" />
               </div>
               <div>
-                <p className="text-xs md:text-xs font-semibold text-slate-400">
+                <p className="text-xs md:text-xs font-semibold text-menu2-centro-mini-ttl">
                   Estado
                 </p>
-                <p className="text-[10px] text-white/90 leading-tight font-medium">
+                <p className="text-[10.5px] text-menu2-centro-mini-txt/75 leading-tight font-normal">
                   {externalViewMode === "anatomy"
                     ? "Modo radiografía activado"
                     : externalViewMode === "details"

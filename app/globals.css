@@ -272,19 +272,19 @@
   --menu2-centro-txt: #676767; /**/
   --menu2-centro-desc: #a1a1a1; /*descripcion*/
 
-  --menu2-centro-bgderecha: #e9e9e9; /**/
-  --menu2-centro-bgbg: #c8c8c8; /**/
+  --menu2-centro-bgderecha: #ffffff; /**/
+  --menu2-centro-bgbg: #efefef; /**/
   --menu2-centro-bg-boton: #000000; /**/
   --menu2-centro-3D: #ffffff; /**/
   --menu2-centro-AR: #a1a1a1; /**/
   --menu2-centro-expansor: #ffffff; /**/
 
   --menu2-centro-mini-bg: #dddddd; /**/
-  --menu2-centro-mini-borde: #929292; /**/
+  --menu2-centro-mini-borde: #ffffff; /**/
   --menu2-centro-mini-ttl: #ffffff; /**/
-  --menu2-centro-mini-txt: #a1a1a1; /**/
-  --menu2-centro-mini-bg-icono: #000000; /**/
-  --menu2-centro-mini-icono: #ffffff; /**/
+  --menu2-centro-mini-txt: #ffffff; /**/
+  --menu2-centro-mini-bg-icono: #ffffff; /**/
+  --menu2-centro-mini-icono: #6d6d6d; /**/
 
   /* UI */
   --background: #ffffff;
