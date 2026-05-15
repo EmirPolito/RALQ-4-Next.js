@@ -65,4 +65,4 @@ RALQ-2 es una plataforma educativa de vanguardia construida con **Next.js**, dis
 <br>
 
 > [!NOTE]
-> 🚧 Proyecto en desarrollo.
+> Proyecto en desarrollo.
