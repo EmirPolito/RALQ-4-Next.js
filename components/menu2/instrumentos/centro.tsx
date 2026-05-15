@@ -45,21 +45,18 @@ export function InstrumentViewer({
           </span>
         </div>
 
-        <div className="flex items-center gap-5 bg-white/50 backdrop-blur-sm p-1.5 rounded-xl border border-slate-100 shadow-sm">
-          <div className="flex items-center gap-1">
-            <span className="text-xs md:text-xs font-medium text-slate-400 px-2 uppercase">
-              Ver en
-            </span>
+        <div className="flex items-center gap-5 bg-white/50 p-1.5 rounded-xl shadow-sm">
+          <div className="flex items-center">
             <div className="flex bg-slate-100 rounded-xl p-1">
               {(["3D", "AR"] as const).map((mode) => (
                 <button
                   key={mode}
                   onClick={() => setViewType(mode)}
                   className={cn(
-                    "cursor-pointer px-4 py-1 text-[10px] font-black rounded-lg transition-all uppercase",
+                    "cursor-pointer px-3.5 py-1.5 text-xs font-medium rounded-lg",
                     viewType === mode
                       ? "bg-[#1a88c3] text-white shadow-md"
-                      : "text-slate-500 hover:text-slate-700",
+                      : "text-slate-500",
                   )}
                 >
                   {mode}

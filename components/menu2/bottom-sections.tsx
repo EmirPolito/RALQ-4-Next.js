@@ -3,7 +3,24 @@
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { ChevronDown, ChevronRight, BookOpen, BarChart2, ShieldCheck, Zap, Info, Settings, Activity, Calendar, Play, Clock, User as UserIcon, LayoutGrid, Box, Lightbulb } from "lucide-react";
+import {
+  ChevronDown,
+  ChevronRight,
+  BookOpen,
+  BarChart2,
+  ShieldCheck,
+  Zap,
+  Info,
+  Settings,
+  Activity,
+  Calendar,
+  Play,
+  Clock,
+  User as UserIcon,
+  LayoutGrid,
+  Box,
+  Lightbulb,
+} from "lucide-react";
 import { ItemData } from "./data";
 
 // ─── Props ────────────────────────────────────────────────────────────────────
@@ -20,42 +37,42 @@ interface BottomSectionsProps {
 // ─── Gallery cards config (Molecules only) ────────────────────────────────────
 
 const MOLECULE_CARDS = [
-  { id: "specs",  label: "Especificaciones", emoji: "📋", bg: "bg-blue-50" },
-  { id: "3d",     label: "Visualización 3D", emoji: "🔷", bg: "bg-slate-50" },
+  { id: "specs", label: "Especificaciones", emoji: "📋", bg: "bg-blue-50" },
+  { id: "3d", label: "Visualización 3D", emoji: "🔷", bg: "bg-slate-50" },
 ];
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
-export function BottomSections({ 
-  data, 
+export function BottomSections({
+  data,
   activeItem,
   compareLabel = "INSTRUMENTOS",
   isInstrument = false,
   viewMode = "normal",
-  onViewModeChange
+  onViewModeChange,
 }: BottomSectionsProps) {
   // Logic for Molecules
-  const [activeGallery, setActiveGallery]   = useState("specs");
-  const [compareA,      setCompareA]        = useState(data[0]?.id ?? "");
-  const [compareB,      setCompareB]        = useState(data[1]?.id ?? "");
+  const [activeGallery, setActiveGallery] = useState("specs");
+  const [compareA, setCompareA] = useState(data[0]?.id ?? "");
+  const [compareB, setCompareB] = useState(data[1]?.id ?? "");
 
-  const itemA = data.find(i => i.id === compareA) ?? data[0];
-  const itemB = data.find(i => i.id === compareB) ?? data[1];
+  const itemA = data.find((i) => i.id === compareA) ?? data[0];
+  const itemB = data.find((i) => i.id === compareB) ?? data[1];
 
   if (isInstrument) {
     const modes = [
-      { id: "normal",  label: "Vista Normal",  emoji: "📦", bg: "bg-blue-50" },
-      { id: "details", label: "Detalles",      emoji: "🔍", bg: "bg-emerald-50" },
-      { id: "anatomy", label: "Anatomía",      emoji: "🧬", bg: "bg-slate-50" },
+      { id: "normal", label: "Vista Normal", emoji: "📦", bg: "bg-blue-50" },
+      { id: "details", label: "Detalles", emoji: "🔍", bg: "bg-emerald-50" },
+      { id: "anatomy", label: "Anatomía", emoji: "🧬", bg: "bg-slate-50" },
     ];
 
     return (
-      <div className="w-full h-full bg-white/80 backdrop-blur-md border border-slate-200 rounded-2xl p-3 shadow-lg flex flex-col gap-2 min-h-0 animate-in fade-in slide-in-from-bottom-2 duration-500">
+      <div className="w-full h-full bg-white/80 backdrop-blur-md border border-slate-200 rounded-xl p-3 shadow-lg flex flex-col gap-2 min-h-0 animate-in fade-in slide-in-from-bottom-2 duration-500">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1.5">
             <BookOpen className="w-3 h-3 text-[#1a88c3]" />
-            <h2 className="text-[9px] font-bold text-slate-500 tracking-widest uppercase">
-              Galería Educativa
+            <h2 className="text-xs font-medium uppercase text-slate-500 ">
+              Opciones de Visualización
             </h2>
           </div>
           <button className="p-1 rounded-lg bg-slate-50 text-slate-400 hover:text-slate-600 transition-colors">
@@ -73,10 +90,15 @@ export function BottomSections({
                 "flex-1 flex flex-col rounded-xl overflow-hidden border transition-all cursor-pointer relative",
                 viewMode === mode.id
                   ? "border-blue-300 shadow-md shadow-blue-50"
-                  : "border-slate-100 hover:border-slate-200 shadow-sm"
+                  : "border-slate-100 hover:border-slate-200 shadow-sm",
               )}
             >
-              <div className={cn("flex-1 flex items-center justify-center", mode.bg)}>
+              <div
+                className={cn(
+                  "flex-1 flex items-center justify-center",
+                  mode.bg,
+                )}
+              >
                 <span className="text-4xl drop-shadow">{mode.emoji}</span>
                 {viewMode === mode.id && (
                   <div className="absolute inset-0 bg-blue-400/5" />
@@ -85,8 +107,8 @@ export function BottomSections({
               <div className="py-1.5 bg-white flex items-center justify-center border-t border-slate-100">
                 <span
                   className={cn(
-                    "text-[10px] font-bold",
-                    viewMode === mode.id ? "text-[#1a88c3]" : "text-slate-500"
+                    "text-xs font-medium",
+                    viewMode === mode.id ? "text-[#1a88c3]" : "text-slate-500",
                   )}
                 >
                   {mode.label}
@@ -102,7 +124,6 @@ export function BottomSections({
   // Molecule Version (Original)
   return (
     <div className="grid grid-cols-12 gap-3 h-full">
-
       {/* ── GALERÍA EDUCATIVA ───────────────────────────────────────── */}
       <div className="col-span-7 bg-white/80 backdrop-blur-md border border-slate-200 rounded-2xl p-3 shadow-lg flex flex-col gap-2 min-h-0">
         <div className="flex items-center justify-between">
@@ -127,10 +148,15 @@ export function BottomSections({
                 "flex-1 flex flex-col rounded-xl overflow-hidden border transition-all cursor-pointer relative",
                 activeGallery === card.id
                   ? "border-blue-300 shadow-md shadow-blue-50"
-                  : "border-slate-100 hover:border-slate-200 shadow-sm"
+                  : "border-slate-100 hover:border-slate-200 shadow-sm",
               )}
             >
-              <div className={cn("flex-1 flex items-center justify-center", card.bg)}>
+              <div
+                className={cn(
+                  "flex-1 flex items-center justify-center",
+                  card.bg,
+                )}
+              >
                 <span className="text-4xl drop-shadow">{card.emoji}</span>
                 {activeGallery === card.id && (
                   <div className="absolute inset-0 bg-blue-400/5" />
@@ -140,7 +166,9 @@ export function BottomSections({
                 <span
                   className={cn(
                     "text-[10px] font-bold",
-                    activeGallery === card.id ? "text-[#1a88c3]" : "text-slate-500"
+                    activeGallery === card.id
+                      ? "text-[#1a88c3]"
+                      : "text-slate-500",
                   )}
                 >
                   {card.label}
@@ -184,7 +212,9 @@ export function BottomSections({
               className="w-full text-[9px] border border-slate-200 rounded-lg px-1.5 py-0.5 bg-white text-slate-600 font-semibold cursor-pointer"
             >
               {data.map((item) => (
-                <option key={item.id} value={item.id}>{item.name}</option>
+                <option key={item.id} value={item.id}>
+                  {item.name}
+                </option>
               ))}
             </select>
           </div>
@@ -211,7 +241,9 @@ export function BottomSections({
               className="w-full text-[9px] border border-slate-200 rounded-lg px-1.5 py-0.5 bg-white text-slate-600 font-semibold cursor-pointer"
             >
               {data.map((item) => (
-                <option key={item.id} value={item.id}>{item.name}</option>
+                <option key={item.id} value={item.id}>
+                  {item.name}
+                </option>
               ))}
             </select>
           </div>
@@ -226,10 +258,6 @@ export function BottomSections({
           Abrir comparación <ChevronRight className="w-3 h-3" />
         </motion.button>
       </div>
-
     </div>
   );
 }
-
-
-

@@ -43,14 +43,14 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
       <div className="flex-1 bg-white border border-slate-100 rounded-xl p-7 shadow-sm overflow-hidden flex flex-col min-h-0 transform-gpu">
         {/* Cabecera Horizontal - Icono a la izquierda, Texto a la derecha */}
         <div className="flex flex-row items-center gap-4 mb-8 mt-0 flex-shrink-0">
-          <div className="w-16 h-16 rounded-xl bg-slate-50 flex items-center justify-center border border-slate-100 shadow-inner flex-shrink-0">
-            <span className="text-4xl">{activeItem.emoji}</span>
+          <div className="w-15 h-15 rounded-xl bg-slate-50 flex items-center justify-center border border-slate-100 shadow-inner flex-shrink-0">
+            <span className="text-3xl">{activeItem.emoji}</span>
           </div>
           <div className="flex flex-col min-w-0">
-            <h3 className="text-xl font-semibold text-[#004a77] leading-tight truncate">
+            <h3 className="text-lg font-bold text-[#004a77] leading-tight truncate">
               {activeItem.name}
             </h3>
-            <p className="text-[12px] italic text-slate-400 font-medium mt-1">
+            <p className="text-xs text-slate-400 font-normal mt-0.5">
               {activeItem.scientificName || activeItem.group}
             </p>
           </div>
@@ -61,7 +61,7 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
           <div className="space-y-7 pb-6" style={{ contentVisibility: "auto" }}>
             <div className="space-y-0">
               {/* Título movido aquí: justo arriba de los iconos circulares */}
-              <h2 className="text-[9px] font-semibold text-slate-300 tracking-[0.2em] mb-3 px-1">
+              <h2 className="text-[10px] font-medium text-slate-400 tracking-[0.1em] mb-3 px-1">
                 ESPECIFICACIONES TÉCNICAS
               </h2>
 
@@ -72,10 +72,10 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
                       {iconList[i % iconList.length]}
                     </div>
                     <div className="flex flex-col min-w-0">
-                      <span className="text-[8px] font-bold text-slate-400 tracking-wider uppercase leading-none mb-1.5">
+                      <span className="text-xs font-normal text-slate-400 leading-none mb-1.5">
                         {key}
                       </span>
-                      <p className="text-[14px] font-semibold text-[#004a77] leading-tight truncate">
+                      <p className="text-sm font-semibold text-[#004a77] leading-tight">
                         {value}
                       </p>
                     </div>
@@ -89,19 +89,19 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
 
             {/* SECCIÓN SEGURIDAD */}
             <div className="pt-3 transform-gpu">
-              <h4 className="text-[9px] font-bold text-slate-300 tracking-[0.2em] uppercase mb-3 px-1">
+              <h2 className="text-[10px] font-medium text-slate-400 tracking-[0.1em] mb-3 px-1">
                 SEGURIDAD Y CUMPLIMIENTO
-              </h4>
+              </h2>
               <div className="grid grid-cols-1 gap-2.5">
                 <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100 flex items-center gap-3">
                   <ShieldAlert className="w-4 h-4 text-[#0081a7]" />
-                  <span className="text-[12px] font-semibold text-slate-600">
+                  <span className="text-xs font-semibold text-slate-600">
                     Certificación ISO 9001
                   </span>
                 </div>
                 <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100 flex items-center gap-3">
                   <Beaker className="w-4 h-4 text-[#0081a7]" />
-                  <span className="text-[12px] font-semibold text-slate-600">
+                  <span className="text-xs font-semibold text-slate-600">
                     Protocolo GLP Activo
                   </span>
                 </div>
@@ -110,23 +110,23 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
 
             {/* SECCIÓN LABORATORIO */}
             <div className="pt-3 transform-gpu">
-              <h4 className="text-[9px] font-bold text-slate-300 tracking-[0.2em] uppercase mb-3 px-1">
+              <h2 className="text-[10px] font-medium text-slate-400 tracking-[0.1em] mb-3 px-1">
                 DATOS DE LABORATORIO
-              </h4>
+              </h2>
               <div className="space-y-4 px-2">
                 <div className="flex justify-between items-center">
-                  <span className="text-[12px] font-medium text-slate-400">
+                  <span className="text-xs font-semibold text-slate-400">
                     Proveedor
                   </span>
-                  <span className="text-[12px] font-semibold text-[#004a77]">
+                  <span className="text-xs font-medium text-[#004a77]">
                     BioTech Corp
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[12px] font-medium text-slate-400">
+                  <span className="text-xs font-semibold text-slate-400">
                     Garantía
                   </span>
-                  <span className="text-[12px] font-semibold text-[#004a77]">
+                  <span className="text-xs font-medium text-[#004a77]">
                     24 Meses
                   </span>
                 </div>
