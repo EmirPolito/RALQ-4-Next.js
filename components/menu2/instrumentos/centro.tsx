@@ -45,9 +45,9 @@ export function InstrumentViewer({
           </span>
         </div>
 
-        <div className="bg-menu2-centro-bgderecha flex items-center gap-5 p-1.5 rounded-xl shadow-sm">
+        <div className="bg-menu2-centro-bgderecha flex items-center gap-6 p-1.5 rounded-xl shadow-sm">
           <div className="flex items-center">
-            <div className="flex bg-menu2-centro-bgbg rounded-xl p-1">
+            <div className="flex bg-menu2-centro-bgbg rounded-xl p-0.5">
               {(["3D", "AR"] as const).map((mode) => (
                 <button
                   key={mode}

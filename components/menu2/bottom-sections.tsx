@@ -67,48 +67,43 @@ export function BottomSections({
     ];
 
     return (
-      <div className="w-full h-full bg-white/80 backdrop-blur-md border border-slate-200 rounded-xl p-3 shadow-lg flex flex-col gap-2 min-h-0 animate-in fade-in slide-in-from-bottom-2 duration-500">
+      <div className="bg-menu2-abajo-bg w-full h-full backdrop-blur-md border border-menu2-abajo-borde rounded-xl p-3 shadow-lg flex flex-col gap-2 min-h-0 animate-in fade-in slide-in-from-bottom-2 duration-500">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1.5">
-            <BookOpen className="w-3 h-3 text-[#1a88c3]" />
-            <h2 className="text-xs font-medium uppercase text-slate-500 ">
+            <BookOpen className="w-3 h-3 text-menu2-abajo-txt" />
+            <h2 className="text-menu2-abajo-txt text-xs font-medium uppercase">
               Opciones de Visualización
             </h2>
           </div>
-          <button className="p-1 rounded-lg bg-slate-50 text-slate-400 hover:text-slate-600 transition-colors">
-            <ChevronDown className="w-3 h-3" />
-          </button>
         </div>
 
         <div className="flex gap-3 flex-1 min-h-0">
           {modes.map((mode) => (
             <motion.button
               key={mode.id}
-              whileHover={{ y: -3 }}
               onClick={() => onViewModeChange?.(mode.id)}
               className={cn(
-                "flex-1 flex flex-col rounded-xl overflow-hidden border transition-all cursor-pointer relative",
+                "flex-1 flex flex-col rounded-xl overflow-hidden border transition-all cursor-pointer relative ",
                 viewMode === mode.id
-                  ? "border-blue-300 shadow-md shadow-blue-50"
-                  : "border-slate-100 hover:border-slate-200 shadow-sm",
+                  ? "border-menu2-abajo-borde shadow-md"
+                  : "border-menu2-abajo-borde shadow-sm",
               )}
             >
               <div
                 className={cn(
                   "flex-1 flex items-center justify-center",
-                  mode.bg,
+                  "bg-menu2-abajo-bg-bgtarjeta",
                 )}
               >
                 <span className="text-4xl drop-shadow">{mode.emoji}</span>
                 {viewMode === mode.id && (
-                  <div className="absolute inset-0 bg-blue-400/5" />
+                  <div className="bg-menu2-abajo-bg-bgtarjeta absolute inset-0 opacity-10" />
                 )}
               </div>
-              <div className="py-1.5 bg-white flex items-center justify-center border-t border-slate-100">
+              <div className="bg-menu2-abajo-borde py-1.5 flex items-center justify-center border-t border-menu2-abajo-borde">
                 <span
                   className={cn(
-                    "text-xs font-medium",
-                    viewMode === mode.id ? "text-[#1a88c3]" : "text-slate-500",
+                    "text-xs font-medium text-menu2-abajo-txt-tarjeta",
                   )}
                 >
                   {mode.label}

@@ -40,17 +40,19 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
 
   return (
     <div className="flex flex-col h-full min-h-0 font-sans w-full max-w-[380px] ml-auto">
-      <div className="flex-1 bg-white border border-slate-100 rounded-xl p-7 shadow-sm overflow-hidden flex flex-col min-h-0 transform-gpu">
+      <div className="bg-menu2-derecha-bg flex-1 border border-slate-100 rounded-xl p-7 shadow-sm overflow-hidden flex flex-col min-h-0 transform-gpu">
         {/* Cabecera Horizontal - Icono a la izquierda, Texto a la derecha */}
         <div className="flex flex-row items-center gap-4 mb-8 mt-0 flex-shrink-0">
           <div className="w-15 h-15 rounded-xl bg-slate-50 flex items-center justify-center border border-slate-100 shadow-inner flex-shrink-0">
             <span className="text-3xl">{activeItem.emoji}</span>
           </div>
+
           <div className="flex flex-col min-w-0">
-            <h3 className="text-lg font-bold text-[#004a77] leading-tight truncate">
+            <h3 className="text-menu2-derecha-ttl text-lg font-bold leading-tight truncate">
               {activeItem.name}
             </h3>
-            <p className="text-xs text-slate-400 font-normal mt-0.5">
+
+            <p className="text-menu2-derecha-desc text-xs font-normal mt-0.5">
               {activeItem.scientificName || activeItem.group}
             </p>
           </div>
@@ -61,21 +63,21 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
           <div className="space-y-7 pb-6" style={{ contentVisibility: "auto" }}>
             <div className="space-y-0">
               {/* Título movido aquí: justo arriba de los iconos circulares */}
-              <h2 className="text-[10px] font-medium text-slate-400 tracking-[0.1em] mb-3 px-1">
+              <h2 className="text-menu2-derecha-txt-mayusculas text-[10px] font-medium tracking-[0.1em] mb-3 px-1">
                 ESPECIFICACIONES TÉCNICAS
               </h2>
 
               {detailEntries.map(([key, value], i) => (
                 <div key={activeItem.id + i} className="transform-gpu">
                   <div className="flex items-center gap-5 py-3.5 px-1">
-                    <div className="w-8 h-8 rounded-full bg-[#1a88c3] flex items-center justify-center text-white flex-shrink-0 shadow-sm">
+                    <div className="w-8 h-8 rounded-full bg-menu2-derecha-bg-iconos text-menu2-derecha-iconos flex items-center justify-center flex-shrink-0 shadow-sm">
                       {iconList[i % iconList.length]}
                     </div>
                     <div className="flex flex-col min-w-0">
-                      <span className="text-xs font-normal text-slate-400 leading-none mb-1.5">
+                      <span className="text-menu2-derecha-mini-ttl text-xs font-normal leading-none mb-1.5">
                         {key}
                       </span>
-                      <p className="text-sm font-semibold text-[#004a77] leading-tight">
+                      <p className="text-menu2-derecha-mini-txt text-sm font-semibold leading-tight">
                         {value}
                       </p>
                     </div>
@@ -89,19 +91,19 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
 
             {/* SECCIÓN SEGURIDAD */}
             <div className="pt-3 transform-gpu">
-              <h2 className="text-[10px] font-medium text-slate-400 tracking-[0.1em] mb-3 px-1">
+              <h2 className="text-menu2-derecha-txt-mayusculas text-[10px] font-medium tracking-[0.1em] mb-3 px-1">
                 SEGURIDAD Y CUMPLIMIENTO
               </h2>
               <div className="grid grid-cols-1 gap-2.5">
                 <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100 flex items-center gap-3">
-                  <ShieldAlert className="w-4 h-4 text-[#0081a7]" />
-                  <span className="text-xs font-semibold text-slate-600">
+                  <ShieldAlert className="text-menu2-derecha-mini-txt w-4 h-4" />
+                  <span className="text-menu2-derecha-mini-txt text-xs font-semibold">
                     Certificación ISO 9001
                   </span>
                 </div>
                 <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100 flex items-center gap-3">
-                  <Beaker className="w-4 h-4 text-[#0081a7]" />
-                  <span className="text-xs font-semibold text-slate-600">
+                  <Beaker className="text-menu2-derecha-mini-txt w-4 h-4" />
+                  <span className="text-menu2-derecha-mini-txt text-xs font-semibold">
                     Protocolo GLP Activo
                   </span>
                 </div>
@@ -110,23 +112,23 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
 
             {/* SECCIÓN LABORATORIO */}
             <div className="pt-3 transform-gpu">
-              <h2 className="text-[10px] font-medium text-slate-400 tracking-[0.1em] mb-3 px-1">
+              <h2 className="text-menu2-derecha-txt-mayusculas text-[10px] font-medium tracking-[0.1em] mb-3 px-1">
                 DATOS DE LABORATORIO
               </h2>
               <div className="space-y-4 px-2">
                 <div className="flex justify-between items-center">
-                  <span className="text-xs font-semibold text-slate-400">
+                  <span className="text-menu2-derecha-mini-txt text-xs font-semibold">
                     Proveedor
                   </span>
-                  <span className="text-xs font-medium text-[#004a77]">
+                  <span className="text-menu2-derecha-mini-ttl text-xs font-normal">
                     BioTech Corp
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-xs font-semibold text-slate-400">
+                  <span className="text-menu2-derecha-mini-txt text-xs font-semibold">
                     Garantía
                   </span>
-                  <span className="text-xs font-medium text-[#004a77]">
+                  <span className="text-menu2-derecha-mini-ttl text-xs font-normal">
                     24 Meses
                   </span>
                 </div>

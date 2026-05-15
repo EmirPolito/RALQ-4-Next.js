@@ -243,9 +243,9 @@
   /* ===================================
    Menu 2
 ========================================*/
-  --menu2-bg-general: #efefef;
+  --menu2-bg-general: #ffffff;
 
-  --menu2-header-bg: #f6f6f6;
+  --menu2-header-bg: #ffffff;
   --menu2-header-paginas-bg: #eaeaea;
   --menu2-header-paginas: #2c2a2a;
   --menu2-header-paginas-hvr: #524e4e;
@@ -259,7 +259,7 @@
   --menu2-izq-buscador-bg: #ffffff; /*bg del input*/
   --menu2-izq-buscador-contenido: #a1a1a1; /*lupa y texto del input*/
 
-  --menu2-izq-tarjeta-bg: #ebebeb; /*bg de la tarjeta recatangular*/
+  --menu2-izq-tarjeta-bg: #f3f3f3; /*bg de la tarjeta recatangular*/
 
   --menu2-izq-bg-icono: #010101; /*bg del icono*/
   --menu2-izq-contenido-icono: #ffffff; /*color del icono dentro*/
@@ -285,6 +285,29 @@
   --menu2-centro-mini-txt: #ffffff; /**/
   --menu2-centro-mini-bg-icono: #ffffff; /**/
   --menu2-centro-mini-icono: #6d6d6d; /**/
+
+  /*Abajo*/
+  --menu2-abajo-bg: #ffffff; /**/
+  --menu2-abajo-txt: #5c5c5c; /**/
+
+  --menu2-abajo-borde: #ebebeb; /**/
+  --menu2-abajo-bg-bgtarjeta: #ffffff; /**/
+  --menu2-abajo-txt-tarjeta: #393939; /**/
+  --menu2-abajo-hvr-tarjeta: #ffffff; /**/
+
+  /*--------------------------derecha ------------------------------------*/
+  --menu2-derecha-bg: #ffffff; /*bg de la tarjeta grande*/
+  --menu2-derecha-ttl: #676767; /*titulo del la imagen*/
+  --menu2-derecha-desc: #a1a1a1; /*descripcion de la imagen*/
+
+  --menu2-derecha-txt-mayusculas: #a1a1a1; /*texto en mayusculas*/
+
+  --menu2-derecha-bg-iconos: #000000; /*Color de fondo del icono circular*/
+  --menu2-derecha-iconos: #ffffff; /*Color del icono*/
+
+  --menu2-derecha-mini-ttl: #a1a1a1; /*mini texto arriba*/
+  --menu2-derecha-mini-txt: #676767; /*textos abajo de los minitextos*/
+  --menu2-derecha-borde: #ffffff; /*borde de las tarjetas*/
 
   /* UI */
   --background: #ffffff;
@@ -4550,6 +4573,30 @@
   --color-menu2-centro-mini-txt: var(--menu2-centro-mini-txt);
   --color-menu2-centro-mini-bg-icono: var(--menu2-centro-mini-bg-icono);
   --color-menu2-centro-mini-icono: var(--menu2-centro-mini-icono);
+
+  /*--------------------------*/
+  /* Menu 2 Abajo */
+  /*--------------------------*/
+  --color-menu2-abajo-bg: var(--menu2-abajo-bg);
+  --color-menu2-abajo-txt: var(--menu2-abajo-txt);
+
+  --color-menu2-abajo-borde: var(--menu2-abajo-borde);
+  --color-menu2-abajo-bg-bgtarjeta: var(--menu2-abajo-bg-bgtarjeta);
+  --color-menu2-abajo-txt-tarjeta: var(--menu2-abajo-txt-tarjeta);
+  --color-menu2-abajo-hvr-tarjeta: var(--menu2-abajo-hvr-tarjeta);
+
+  /*--------------------------*/
+  /* Menu 2 Derecha */
+  /*--------------------------*/
+  --color-menu2-derecha-bg: var(--menu2-derecha-bg);
+  --color-menu2-derecha-ttl: var(--menu2-derecha-ttl);
+  --color-menu2-derecha-desc: var(--menu2-derecha-desc);
+  --color-menu2-derecha-bg-iconos: var(--menu2-derecha-bg-iconos);
+  --color-menu2-derecha-iconos: var(--menu2-derecha-iconos);
+  --color-menu2-derecha-txt-mayusculas: var(--menu2-derecha-txt-mayusculas);
+  --color-menu2-derecha-mini-ttl: var(--menu2-derecha-mini-ttl);
+  --color-menu2-derecha-mini-txt: var(--menu2-derecha-mini-txt);
+  --color-menu2-derecha-borde: var(--menu2-derecha-borde);
 }
 
 @layer base {
