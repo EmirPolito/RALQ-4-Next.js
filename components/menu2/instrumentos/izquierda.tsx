@@ -27,8 +27,8 @@ export function InstrumentSidebar({
 
   return (
     /* bg de la terjeta*/
-    <div className="bg-menu2-izq-bg flex flex-col h-full  border border-slate-200 rounded-xl p-3.5 shadow-xl overflow-hidden">
-      <h2 className="text-menu2-izq-ttl text-xs font-medium md:text-xs tracking-[0.1em] uppercase mb-4 px-2.5 pt-1.5">
+    <div className="bg-menu2-izq-bg flex flex-col h-full  border border-menu2-izq-buscador-borde rounded-xl p-3.5 shadow-xl overflow-hidden">
+      <h2 className="text-menu2-izq-ttl text-xs font-medium md:text-xs tracking-[0.1em] uppercase mb-4 px-1.5 pt-2">
         {title}
       </h2>
 
@@ -46,7 +46,7 @@ export function InstrumentSidebar({
         />
       </div>
 
-      <div className="flex-1 overflow-y-auto space-y-1 pr-1 custom-scrollbar">
+      <div className="flex-2 overflow-y-auto space-y-1 pr-2 custom-scrollbar">
         {filteredData.length > 0 ? (
           filteredData.map((item) => {
             const isActive = activeId === item.id;
@@ -76,8 +76,8 @@ export function InstrumentSidebar({
                     className={cn(
                       "text-sm font-semibold truncate w-full",
                       isActive
-                        ? "text-menu2-izq-tarjeta-txt"
-                        : "text-menu2-izq-tarjeta-mini-txt",
+                        ? "text-menu2-izq-tarjeta-txt" /*texto cuando esta el cursor en la tarjeta*/
+                        : "text-menu2-izq-tarjeta-mini-txt" /*texto cuando no esta el cursor en la tarjeta*/,
                     )}
                   >
                     {item.name}
@@ -86,8 +86,8 @@ export function InstrumentSidebar({
                     className={cn(
                       "text-[10px] truncate w-full",
                       isActive
-                        ? "text-text-menu2-izq-tarjeta-mini-txt"
-                        : "text-text-menu2-izq-tarjeta-mini-txt",
+                        ? "text-menu2-izq-tarjeta-mini-txt"
+                        : "text-menu2-izq-tarjeta-mini-txt",
                     )}
                   >
                     {item.group}
@@ -97,9 +97,9 @@ export function InstrumentSidebar({
             );
           })
         ) : (
-          <div className="flex flex-col items-center justify-center py-8 text-slate-400 text-center">
-            <Search className="w-8 h-8 mb-2 opacity-20" />
-            <span className="text-[10px] font-medium uppercase">
+          <div className="flex flex-col items-center justify-center py-8 text-menu2-izq-buscador-contenido text-center">
+            <Search className="w-8 h-8 mb-2 text-menu2-izq-buscador-contenido" />
+            <span className="text-xs font-medium uppercase">
               Sin instrumentos
             </span>
           </div>

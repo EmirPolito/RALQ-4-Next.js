@@ -263,12 +263,12 @@
   --menu2-izq-tarjeta-borde: #e1e1e1;
 
   --menu2-izq-bg-icono: #a0a0a0; /**/
-  --menu2-izq-contenido-icono: #ffffff;
+  --menu2-izq-contenido-icono: #ffffff; /**/
 
-  --menu2-izq-tarjeta-txt: #000000;
-  --menu2-izq-tarjeta-mini-txt: #000000;
+  --menu2-izq-tarjeta-txt: #000000; /**/
+  --menu2-izq-tarjeta-mini-txt: #3e3939;
 
-  --menu2-izq-deslizador: #e1e1e1;
+  --menu2-izq-deslizador: #322f2f;
 
   /* UI */
   --background: #ffffff;
