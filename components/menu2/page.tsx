@@ -23,9 +23,9 @@ export default function StudioDashboard() {
   const pathname = usePathname();
 
   return (
-    <div className="h-screen bg-[#e8f1f8] font-sans flex flex-col p-5 gap-6.5 overflow-hidden">
+    <div className="bg-menu2-general h-screen font-sans flex flex-col p-5 gap-6.5 overflow-hidden">
       {/* Top Navigation */}
-      <header className="h-[70px] flex-shrink-0 flex items-center justify-between px-4 bg-white/80 backdrop-blur-md rounded-xl border border-white shadow-sm">
+      <header className="bg-menu2-header h-[70px] flex-shrink-0 flex items-center justify-between px-4 backdrop-blur-md rounded-xl border border-white shadow-sm">
         <div className="flex items-center gap-4">
           <Image
             src="/logos/ralq-verde.png"
@@ -185,8 +185,8 @@ function NavItem({
         className={cn(
           "flex items-center gap-2 px-3 py-1.5 rounded-xl transition-all text-xs cursor-pointer",
           active
-            ? "bg-blue-50 text-[#1a88c3]"
-            : "text-slate-400 hover:text-slate-600",
+            ? "bg-menu2-header-paginas-bg"
+            : "text-menu2-header-paginas hover:text-menu2-header-paginas-hvr",
         )}
       >
         {icon}

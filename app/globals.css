@@ -240,6 +240,36 @@
   --menu-d-desc4: #d6d6d6; /*para la descripcion, reconoce...*/
   --menu-d-bg-boton4: #0; /*para el bg del boton*/
 
+  /* ===================================
+   Menu 2
+========================================*/
+  --menu2-bg-general: #ffffff;
+
+  --menu2-header-bg: #f6f6f6;
+  --menu2-header-paginas-bg: #eaeaea;
+  --menu2-header-paginas: #2c2a2a;
+  --menu2-header-paginas-hvr: #524e4e;
+  --menu2-header-extra: #ffffff;
+
+  /* Menu 2 izquierda  */
+  --menu2-izq-bg: #ffffff; /**/
+  --menu2-izq-ttl: #676767; /**/
+
+  --menu2-izq-buscador-borde: #ebebeb; /**/
+  --menu2-izq-buscador-bg: #ffffff; /**/
+  --menu2-izq-buscador-contenido: #a1a1a1; /**/
+
+  --menu2-izq-tarjeta-bg: #dfdfdf; /**/
+  --menu2-izq-tarjeta-borde: #e1e1e1;
+
+  --menu2-izq-bg-icono: #a0a0a0; /**/
+  --menu2-izq-contenido-icono: #ffffff;
+
+  --menu2-izq-tarjeta-txt: #000000;
+  --menu2-izq-tarjeta-mini-txt: #000000;
+
+  --menu2-izq-deslizador: #e1e1e1;
+
   /* UI */
   --background: #ffffff;
   --muted: #e6e6e6; /*bg para el boton de las animaciones */
@@ -4458,6 +4488,33 @@
   --color-menu-d-progreso-llenado: var(--menu-d-progreso-llenado);
   --color-menu-d-nivel-bg: var(--menu-d-nivel-bg);
   --color-menu-d-racha-num: var(--menu-d-racha-num);
+
+  /*--------------------------*/
+  /* Menu 2 */
+  /*--------------------------*/
+  --color-menu2-bg-general: var(--menu2-bg-general);
+  --color-menu2-header-bg: var(--menu2-header-bg);
+  --color-menu2-header-paginas: var(--menu2-header-paginas);
+  --color-menu2-header-paginas-bg: var(--menu2-header-paginas-bg);
+  --color-menu2-header-paginas-hvr: var(--menu2-header-paginas-hvr);
+  --color-menu2-header-extra: var(--menu2-header-extra);
+
+  /*--------------------------*/
+  /* Menu 2 Izquierda */
+  /*--------------------------*/
+  --color-menu2-izq-bg: var(--menu2-izq-bg);
+  --color-menu2-izq-ttl: var(--menu2-izq-ttl);
+  --color-menu2-izq-buscador-borde: var(--menu2-izq-buscador-borde);
+  --color-menu2-izq-buscador-bg: var(--menu2-izq-buscador-bg);
+  --color-menu2-izq-buscador-contenido: var(--menu2-izq-buscador-contenido);
+  --color-menu2-izq-buscador-icono: var(--menu2-izq-buscador-icono);
+  --color-menu2-izq-tarjeta-bg: var(--menu2-izq-tarjeta-bg);
+  --color-menu2-izq-tarjeta-borde: var(--menu2-izq-tarjeta-borde);
+  --color-menu2-izq-tarjeta-txt: var(--menu2-izq-tarjeta-txt);
+  --color-menu2-izq-tarjeta-mini-txt: var(--menu2-izq-tarjeta-mini-txt);
+  --color-menu2-izq-bg-icono: var(--menu2-izq-bg-icono);
+  --color-menu2-izq-contenido-icono: var(--menu2-izq-contenido-icono);
+  --color-menu2-izq-deslizador: var(--menu2-izq-deslizador);
 }
 
 @layer base {

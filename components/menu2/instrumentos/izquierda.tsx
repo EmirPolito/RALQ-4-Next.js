@@ -26,14 +26,15 @@ export function InstrumentSidebar({
   );
 
   return (
-    <div className="flex flex-col h-full bg-white/90 backdrop-blur-md border border-slate-200 rounded-xl p-3.5 shadow-xl overflow-hidden">
-      <h2 className="text-xs font-medium md:text-xs text-slate-400 tracking-[0.1em] uppercase mb-4 px-2.5 pt-1.5">
+    /* bg de la terjeta*/
+    <div className="bg-menu2-izq-bg flex flex-col h-full  border border-slate-200 rounded-xl p-3.5 shadow-xl overflow-hidden">
+      <h2 className="text-menu2-izq-ttl text-xs font-medium md:text-xs tracking-[0.1em] uppercase mb-4 px-2.5 pt-1.5">
         {title}
       </h2>
 
-      {/* Search Bar */}
+      {/* Barra de busqueda */}
       <div className="relative mb-4 px-0.5">
-        <div className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
+        <div className="absolute left-3 top-1/2 -translate-y-1/2 text-menu2-izq-buscador-contenido">
           <Search className="w-3.5 h-3.5" />
         </div>
         <input
@@ -41,7 +42,7 @@ export function InstrumentSidebar({
           placeholder="Buscar instrumento..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full bg-slate-50 border border-slate-100 rounded-xl py-2.5 pl-9 pr-3 text-xs focus:outline-none focus:ring-2 focus:ring-blue-100 transition-all"
+          className="w-full bg-menu2-izq-buscador-bg border border-menu2-izq-buscador-borde rounded-xl py-2.5 pl-9 pr-3 text-xs transition-all"
         />
       </div>
 
@@ -56,18 +57,16 @@ export function InstrumentSidebar({
                 whileTap={{ scale: 0.98 }}
                 onClick={() => onSelect(item.id)}
                 className={cn(
-                  "w-full flex items-center gap-2.5 p-2 rounded-xl transition-all duration-300 group",
-                  isActive
-                    ? "bg-[#1a88c3] shadow-lg shadow-blue-200"
-                    : "hover:bg-slate-100",
+                  "cursor-pointer w-full flex items-center gap-2.5 p-2 rounded-xl transition-all duration-300",
+                  isActive ? "bg-menu2-izq-tarjeta-bg shadow-lg" : "",
                 )}
               >
                 <div
                   className={cn(
                     "w-8 h-8 rounded-xl flex items-center justify-center transition-colors",
                     isActive
-                      ? "bg-white/20 text-white"
-                      : "bg-slate-50 text-slate-400 group-hover:text-[#1a88c3]",
+                      ? "bg-menu2-izq-bg-icono text-menu2-izq-contenido-icono"
+                      : "bg-menu2-izq-bg-icono text-menu2-izq-contenido-icono",
                   )}
                 >
                   {item.icon}
@@ -76,7 +75,9 @@ export function InstrumentSidebar({
                   <span
                     className={cn(
                       "text-sm font-semibold truncate w-full",
-                      isActive ? "text-white" : "text-slate-700",
+                      isActive
+                        ? "text-menu2-izq-tarjeta-txt"
+                        : "text-menu2-izq-tarjeta-mini-txt",
                     )}
                   >
                     {item.name}
@@ -84,7 +85,9 @@ export function InstrumentSidebar({
                   <span
                     className={cn(
                       "text-[10px] truncate w-full",
-                      isActive ? "text-blue-100" : "text-slate-400",
+                      isActive
+                        ? "text-text-menu2-izq-tarjeta-mini-txt"
+                        : "text-text-menu2-izq-tarjeta-mini-txt",
                     )}
                   >
                     {item.group}
