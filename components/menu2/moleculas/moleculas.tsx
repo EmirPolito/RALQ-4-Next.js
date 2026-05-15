@@ -1,24 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Home, Microscope, Dna, LayoutGrid, User } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-import { MoleculeSidebar } from "./izquierda";
-import { MoleculeViewer } from "./centro";
-import { MoleculeDetails } from "./derecha";
-import { BottomSections } from "@/components/menu2/bottom-sections";
-import { moleculesData } from "../data";
-
 export default function MoleculasPage() {
-  const [activeSpeciesId, setActiveSpeciesId] = useState("agua");
   const pathname = usePathname();
-
-  const activeItem =
-    moleculesData.find((s) => s.id === activeSpeciesId) || moleculesData[0];
 
   return (
     <div className="bg-menu2-general h-screen font-sans flex flex-col p-5 gap-4 overflow-hidden">

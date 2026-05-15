@@ -8,14 +8,13 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 import { InstrumentSidebar } from "./izquierda";
-import { InstrumentViewer } from "./centro";
+import { InstrumentViewer, BottomSections } from "./centro";
 import { InstrumentDetails } from "./derecha";
-import { BottomSections } from "@/components/menu2/bottom-sections";
 import { instrumentsData, moleculesData } from "../data";
 
 const combinedData = [...instrumentsData, ...moleculesData];
 
-export default function InstrumentosPage() {
+export default function LaboratorioPage() {
   const [activeSpeciesId, setActiveSpeciesId] = useState("microscopio");
   const [viewMode, setViewMode] = useState("normal");
   const pathname = usePathname();
