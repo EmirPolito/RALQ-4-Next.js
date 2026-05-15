@@ -1,49 +1,38 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { Home, FlaskConical, Dna, LayoutGrid, User } from "lucide-react";
+import { Home, Microscope, Dna, LayoutGrid, User } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-import { InstrumentSidebar } from "./izquierda";
-import { InstrumentViewer } from "./centro";
-import { InstrumentDetails } from "./derecha";
-import { BottomSections } from "@/components/menu2/bottom-sections";
-import { instrumentsData } from "../data";
-
-export default function InstrumentosPage() {
-  const [activeSpeciesId, setActiveSpeciesId] = useState("microscopio");
-  const [viewMode, setViewMode] = useState("normal");
+export default function InstrumentosEmptyPage() {
   const pathname = usePathname();
 
-  const activeItem =
-    instrumentsData.find((s) => s.id === activeSpeciesId) || instrumentsData[0];
-
   return (
-    <div className="h-screen bg-menu2-bg-general font-sans flex flex-col p-5 gap-4 overflow-hidden">
+    <div className="bg-menu2-general h-screen font-sans flex flex-col p-5 gap-4 overflow-hidden">
       {/* 1. HEADER */}
-      <header className="bg-menu2-header-bg h-[70px] flex-shrink-0 flex items-center justify-between px-4  backdrop-blur-md rounded-xl border border-menu2-izq-buscador-borde shadow-sm">
+      <header className="bg-menu2-header h-[70px] flex-shrink-0 flex items-center justify-between px-4 backdrop-blur-md rounded-xl border border-menu2-izq-buscador-borde shadow-sm">
         <div className="flex items-center gap-4">
           <Image
             src="/logos/ralq-verde.png"
             alt="RALQ logo"
             width={100}
             height={36}
-            className="object-contain -mt-1 h-12.5"
+            className="object-contain -mt-1 h-12.5 "
           />
         </div>
 
         <nav className="flex items-center gap-2">
           <NavItem
             icon={<Home className="w-4 h-4" />}
-            label="Home"
-            href="/menu2"
-            active={pathname === "/menu2"}
+            label="Laboratorio"
+            href="/menu2/laboratorio"
+            active={pathname === "/menu2/laboratorio"}
           />
           <NavItem
-            icon={<FlaskConical className="w-4 h-4" />}
+            icon={<Microscope className="w-4 h-4" />}
             label="Instrumentos"
             href="/menu2/instrumentos"
             active={pathname === "/menu2/instrumentos"}
@@ -69,53 +58,12 @@ export default function InstrumentosPage() {
         </nav>
       </header>
 
-      {/* 2. MAIN AREA */}
-      <main className="flex-1 grid grid-cols-12 gap-3 min-h-0">
-        <aside className="col-span-2 min-h-0">
-          <InstrumentSidebar
-            activeId={activeSpeciesId}
-            onSelect={setActiveSpeciesId}
-            data={instrumentsData}
-            title="INSTRUMENTOS"
-          />
-        </aside>
-
-        {/* Centro: Visor 3D y Sección Inferior */}
-        <section className="col-span-7 flex flex-col gap-3 min-h-0">
-          <div className="bg-menu2-centro-bg flex-1 backdrop-blur-md rounded-xl border border-menu2-izq-buscador-borde shadow-xl overflow-hidden min-h-0">
-            <InstrumentViewer activeItem={activeItem} viewMode={viewMode} />
-          </div>
-
-          <div className="flex-1 min-h-[160px] max-h-[200px]">
-            <BottomSections
-              data={instrumentsData}
-              activeItem={activeItem}
-              compareLabel="INSTRUMENTOS"
-              isInstrument={true}
-              viewMode={viewMode}
-              onViewModeChange={setViewMode}
-            />
-          </div>
-        </section>
-
-        {/* Lado Derecho: Detalles */}
-        <aside className="col-span-3 h-full min-h-0">
-          <InstrumentDetails activeItem={activeItem} />
-        </aside>
+      {/* 2. MAIN AREA (Empty as requested) */}
+      <main className="flex-1 flex items-center justify-center min-h-0">
+        <div className="text-menu2-derecha-desc text-lg font-medium opacity-50">
+          Sección en mantenimiento
+        </div>
       </main>
-
-      <style jsx global>{`
-        .custom-scrollbar::-webkit-scrollbar {
-          width: 4px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-          background: transparent;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-          background: #cbd5e1;
-          border-radius: 10px;
-        }
-      `}</style>
     </div>
   );
 }

@@ -39,9 +39,9 @@ export default function StudioDashboard() {
         <nav className="flex items-center gap-3">
           <NavItem
             icon={<FlaskConical className="w-4 h-4" />}
-            label="Instrumentos"
-            href="/menu2/instrumentos"
-            active={pathname === "/menu2/instrumentos"}
+            label="Laboratorio"
+            href="/menu2/laboratorio"
+            active={pathname === "/menu2/laboratorio"}
           />
           <NavItem
             icon={<Dna className="w-4 h-4" />}
@@ -83,10 +83,10 @@ export default function StudioDashboard() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           <FeatureCard
-            title="Instrumentos"
-            description="Visualiza y estudia los instrumentos de laboratorio más avanzados en 3D interactivo."
+            title="Laboratorio"
+            description="Explora las diferentes secciones de nuestra plataforma de investigación digital."
             icon={<FlaskConical className="w-6 h-6 text-blue-500" />}
-            href="/menu2/instrumentos"
+            href="/menu2/laboratorio"
             color="bg-blue-50"
           />
           <FeatureCard

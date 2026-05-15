@@ -1,11 +1,14 @@
 "use client";
 
-import MarEspeciesPage from "@/components/menu2/page";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function MenuPage() {
-  return (
-    <>
-      <MarEspeciesPage />
-    </>
-  );
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace("/menu2/laboratorio");
+  }, [router]);
+
+  return null;
 }
