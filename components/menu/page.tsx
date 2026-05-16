@@ -25,7 +25,7 @@ export default function LaboratorioPage() {
   return (
     <>
       <main className="flex-1 grid grid-cols-12 gap-3.5 min-h-0">
-        <aside className="col-span-2 min-h-0 border border-slate-200/50 dark:border-menu2-izq-buscador-borde rounded-xl">
+        <aside className="col-span-2 min-h-0 bg-menu2-izq-bg rounded-xl border border-slate-200/50 dark:border-menu2-izq-buscador-borde shadow-xl p-3.5 overflow-hidden flex flex-col">
           <InstrumentSidebar
             activeId={activeSpeciesId}
             onSelect={setActiveSpeciesId}
