@@ -28,23 +28,23 @@ RALQ 2 es una plataforma educativa de vanguardia construida con **Next.js**, dis
 
 #### Páginas
 
-- **Home**: Página principal con `características` de la plataforma.
-- **Nosotros**: Información sobre el proyecto, sus `inicios` y su `evolución`.
-- **Contacto**: `Formulario de contacto` para enviar mensajes directamente al equipo.
-- **Ayuda**: `Preguntas frecuentes` y `guías` para el uso de la plataforma.
-- **Políticas de Privacidad**: Documento legal con el `tratamiento de datos` de los usuarios.
-- **Términos y Condiciones**: Documento legal con las `condiciones de uso` de la plataforma.
+- **Home**: Página principal donde se presentan las características y funciones de la plataforma.
+- **Nosotros**: Información sobre el proyecto, sus inicios, desarrollo y evolución.
+- **Contacto**: Formulario de contacto para enviar mensajes directamente al equipo.
+- **Ayuda**: Preguntas frecuentes y guías para el uso de la plataforma.
+- **Políticas de Privacidad**: Documento legal sobre el tratamiento y protección de los datos de los usuarios.
+- **Términos y Condiciones**: Documento legal con las condiciones de uso de la plataforma.
 
 #### Accesibilidad y Experiencia de Usuario (UX)
 
-- **Selector de Modos**: `Claro`, `Oscuro` y `Daltónico` se adapta la apariencia visual a cada entorno y necesidad, con soporte para daltonismo siguiendo estándares WCAG.
-- **Selector de Color**: `Azul`, `Morado`, `Amarillo`, `Naranja`, `Rosa` y `Verde` se adapta el color a partes de la plataforma.
-- **Reductor de Movimiento**: `Switch` para reducir las animaciones de la interfaz para mejorar la experiencia de usuarios con sensibilidad al movimiento.
-- **Selector de Idiomas**: `Español`, `Portugués` e `Inglés` el idioma se adapta a todos los componentes de la página.
+- **Selector de Modos**: Incluye modo `Claro`, `Oscuro` y `Daltónico` adaptando la apariencia visual a cada entorno y necesidad, con soporte para daltonismo siguiendo estándares WCAG.
+- **Selector de Color**: Permite personalizar los colores de la interfaz entre `Azul`, `Morado`, `Amarillo`, `Naranja`, `Rosa` y `Verde`.
+- **Reductor de Movimiento**: `Switch` para disminuir las animaciones de la interfaz y mejorar la experiencia de usuarios con sensibilidad al movimiento.
+- **Selector de Idiomas**: Soporte para `Español`, `Portugués` e `Inglés` adaptando toda la plataforma al idioma seleccionado.
 
 #### Seguridad y Rendimiento
 
-- **Autenticación con Clerk**: Flujos de Login/Registro personalizados con validación por correo electrónico, Google, Facebook y Apple.
+- **Autenticación con Clerk**: Flujos personalizados de inicio de sesión y registro con validación mediante correo electrónico, Google, Facebook y Apple.
 - **App Router + Turbopack**: Arquitectura de Next.js 15 para máxima velocidad de carga.
 - **Despliegue en Vercel**: Desplegado en Vercel con actualizaciones automáticas.
 
