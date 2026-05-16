@@ -35,7 +35,7 @@ RALQ 2 es una plataforma educativa de vanguardia construida con **Next.js**, dis
 - **Políticas de Privacidad**: Documento legal sobre el tratamiento y protección de los datos de los usuarios.
 - **Términos y Condiciones**: Documento legal con las condiciones de uso de la plataforma.
 
-#### Accesibilidad y Experiencia de Usuario (UX)
+#### Accesibilidad y Experiencia de Usuario
 
 - **Selector de Modos**: Incluye modo `Claro`, `Oscuro` y `Daltónico` adaptando la apariencia visual a cada entorno y necesidad, con soporte para daltonismo siguiendo estándares WCAG.
 - **Selector de Color**: Permite personalizar los colores de la interfaz entre `Azul`, `Morado`, `Amarillo`, `Naranja`, `Rosa` y `Verde`.
