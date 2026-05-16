@@ -28,10 +28,9 @@ RALQ 2 es una plataforma educativa de vanguardia construida con **Next.js**, dis
 
 #### Accesibilidad y Experiencia de Usuario (UX)
 
-- **Modo Claro**: Diseño con colores claros y cómodos para usuarios que prefieren una apariencia más iluminada.
-- **Modo Oscuro**: Interfaz oscura que reduce el brillo visual y mejora la experiencia en ambientes con poca luz.
-- **Modo Daltónico**: Colores adaptados para facilitar la visualización y mejorar la accesibilidad para personas con daltonismo. siguiendo estándares WCAG.
-- **Reductor de Movimiento**: Opción para reducir el movimiento de la interfaz para usuarios con sensibilidad al movimiento.
+**Selector de modos** — **Claro**, **Oscuro** y **Daltónico**: Botones que adaptan la apariencia visual a cada entorno y necesidad, con soporte para daltonismo siguiendo estándares WCAG.
+**Selector de Colores**: Botón para personalizar el color de la interfaz.
+**Reductor de Movimiento**: Botón para reducir las animaciones de la interfaz para usuarios con sensibilidad al movimiento.
 
 #### Internacionalización
 
