@@ -99,13 +99,13 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
                 SEGURIDAD Y CUMPLIMIENTO
               </h2>
               <div className="grid grid-cols-1 gap-2.5">
-                <div className=" p-4 rounded-2xl border border-menu2-izq-buscador-borde/55 flex items-center gap-3">
+                <div className=" p-4 rounded-2xl flex items-center gap-3">
                   <ShieldAlert className="text-menu2-derecha-mini-txt w-4 h-4" />
                   <span className="text-menu2-derecha-mini-txt text-xs font-semibold">
                     Certificación ISO 9001
                   </span>
                 </div>
-                <div className="p-4 rounded-2xl border border-menu2-izq-buscador-borde/55 flex items-center gap-3">
+                <div className="p-4 rounded-2xl flex items-center gap-3">
                   <Beaker className="text-menu2-derecha-mini-txt w-4 h-4" />
                   <span className="text-menu2-derecha-mini-txt text-xs font-semibold">
                     Protocolo GLP Activo
