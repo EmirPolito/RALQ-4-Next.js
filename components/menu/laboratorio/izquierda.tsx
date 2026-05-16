@@ -24,7 +24,7 @@ export function InstrumentSidebar({
     return (
       item.name.toLowerCase().includes(query) ||
       item.group.toLowerCase().includes(query) ||
-      (item.scientificName?.toLowerCase().includes(query)) ||
+      item.scientificName?.toLowerCase().includes(query) ||
       item.category.toLowerCase().includes(query)
     );
   });
@@ -107,7 +107,7 @@ export function InstrumentSidebar({
         ) : (
           <div className="flex flex-col items-center justify-center py-8 text-menu2-izq-buscador-contenido text-center">
             <Search className="w-8 h-8 mb-2 text-menu2-izq-buscador-contenido" />
-            <span className="text-xs font-medium uppercase">
+            <span className="text-menu2-derecha-txt-mayusculas text-[10px] font-medium tracking-[0.1em] uppercase">
               Sin instrumentos
             </span>
           </div>
