@@ -11,7 +11,7 @@ export function MenuHeader() {
   const pathname = usePathname();
 
   return (
-    <header className="bg-menu2-header-bg h-[70px] flex-shrink-0 flex items-center px-4 backdrop-blur-md rounded-xl border border-menu2-izq-buscador-borde shadow-sm">
+    <header className="bg-menu2-header-bg h-[77px] flex-shrink-0 flex items-center px-4 backdrop-blur-md rounded-xl border border-menu2-izq-buscador-borde shadow-sm">
       <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
         <span className="bg font-bold lg:inline-block">
           {/* Logo claro */}
@@ -83,16 +83,19 @@ function NavItem({ icon, label, href, active }: any) {
         {icon}
         {/* Invisible bold text to reserve space and prevent jitter */}
         <div className="flex flex-col items-center">
-          <span 
+          <span
             className={cn(
               "transition-all duration-200",
-              active ? "font-semibold" : "font-normal"
+              active ? "font-semibold" : "font-normal",
             )}
           >
             {label}
           </span>
           {/* Reserved space for bold text (now semibold) */}
-          <span className="font-semibold h-0 overflow-hidden invisible select-none pointer-events-none" aria-hidden="true">
+          <span
+            className="font-semibold h-0 overflow-hidden invisible select-none pointer-events-none"
+            aria-hidden="true"
+          >
             {label}
           </span>
         </div>

@@ -24,8 +24,8 @@ export default function LaboratorioPage() {
 
   return (
     <>
-      <main className="flex-1 grid grid-cols-12 gap-3.5 min-h-0">
-        <aside className="col-span-2 min-h-0 bg-menu2-izq-bg rounded-xl border border-slate-200/50 dark:border-menu2-izq-buscador-borde shadow-xl p-3.5 overflow-hidden flex flex-col">
+      <main className="flex-1 grid grid-cols-[3fr_9fr_4fr] gap-3.5 min-h-0 max-w-[1700px] w-full">
+        <aside className="min-h-0 bg-menu2-izq-bg rounded-xl border border-slate-200/50 dark:border-menu2-izq-buscador-borde shadow-xl p-3.5 overflow-hidden flex flex-col">
           <InstrumentSidebar
             activeId={activeSpeciesId}
             onSelect={setActiveSpeciesId}
@@ -35,7 +35,7 @@ export default function LaboratorioPage() {
         </aside>
 
         {/* Centro: Visor 3D y Sección Inferior */}
-        <section className="col-span-7 flex flex-col gap-3.5 min-h-0">
+        <section className="flex flex-col gap-4 min-h-0">
           <div className="bg-menu2-centro-bg flex-1 backdrop-blur-md rounded-xl border border-slate-200/50 dark:border-menu2-izq-buscador-borde shadow-xl overflow-hidden min-h-0">
             <InstrumentViewer activeItem={activeItem} viewMode={viewMode} />
           </div>
@@ -53,7 +53,7 @@ export default function LaboratorioPage() {
         </section>
 
         {/* Derecha: Detalles */}
-        <aside className="col-span-3 min-h-0 overflow-y-auto custom-scrollbar bg-menu2-derecha-bg rounded-xl border border-slate-200/50 dark:border-menu2-izq-buscador-borde shadow-xl p-6">
+        <aside className="min-h-0 overflow-y-auto custom-scrollbar bg-menu2-derecha-bg rounded-xl border border-slate-200/50 dark:border-menu2-izq-buscador-borde shadow-xl p-6">
           <InstrumentDetails activeItem={activeItem} />
         </aside>
       </main>
