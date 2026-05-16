@@ -15,7 +15,7 @@ import { InstrumentDetails } from "./laboratorio/derecha";
 import { combinedData } from "./data";
 
 export default function LaboratorioPage() {
-  const [activeSpeciesId, setActiveSpeciesId] = useState("microscopio");
+  const [activeSpeciesId, setActiveSpeciesId] = useState(combinedData[0].id);
   const [viewMode, setViewMode] = useState("normal");
   const pathname = usePathname();
 

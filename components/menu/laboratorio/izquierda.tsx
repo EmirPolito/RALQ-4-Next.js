@@ -21,12 +21,7 @@ export function InstrumentSidebar({
 
   const filteredData = data.filter((item) => {
     const query = searchQuery.toLowerCase();
-    return (
-      item.name.toLowerCase().includes(query) ||
-      item.group.toLowerCase().includes(query) ||
-      item.scientificName?.toLowerCase().includes(query) ||
-      item.category.toLowerCase().includes(query)
-    );
+    return item.name.toLowerCase().startsWith(query);
   });
 
   return (
@@ -56,8 +51,6 @@ export function InstrumentSidebar({
             return (
               <motion.button
                 key={item.id}
-                whileHover={{ x: 0 }}
-                whileTap={{ scale: 0.98 }}
                 onClick={() => onSelect(item.id)}
                 className={cn(
                   /**tarjeta rectagular*/
