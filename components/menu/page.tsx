@@ -11,9 +11,7 @@ import { UserButton } from "@clerk/nextjs";
 import { InstrumentSidebar } from "./laboratorio/izquierda";
 import { InstrumentViewer, BottomSections } from "./laboratorio/centro";
 import { InstrumentDetails } from "./laboratorio/derecha";
-import { instrumentsData, moleculesData } from "./data";
-
-const combinedData = [...instrumentsData, ...moleculesData];
+import { combinedData } from "./data";
 
 export default function LaboratorioPage() {
   const [activeSpeciesId, setActiveSpeciesId] = useState("microscopio");

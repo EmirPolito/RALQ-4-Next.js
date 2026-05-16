@@ -19,11 +19,15 @@ export function InstrumentSidebar({
 }) {
   const [searchQuery, setSearchQuery] = useState("");
 
-  const filteredData = data.filter(
-    (item) =>
-      item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      item.group.toLowerCase().includes(searchQuery.toLowerCase()),
-  );
+  const filteredData = data.filter((item) => {
+    const query = searchQuery.toLowerCase();
+    return (
+      item.name.toLowerCase().includes(query) ||
+      item.group.toLowerCase().includes(query) ||
+      (item.scientificName?.toLowerCase().includes(query)) ||
+      item.category.toLowerCase().includes(query)
+    );
+  });
 
   return (
     /* bg de la terjeta*/
@@ -64,13 +68,17 @@ export function InstrumentSidebar({
               >
                 <div
                   className={cn(
-                    "w-9 h-9 rounded-lg flex items-center justify-center transition-colors",
+                    "w-12 h-12 rounded-lg flex items-center justify-center transition-colors",
                     isActive
                       ? "bg-menu2-izq-bg-icono text-menu2-izq-contenido-icono"
                       : "bg-menu2-izq-bg-icono text-menu2-izq-contenido-icono",
                   )}
                 >
-                  {item.icon}
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-14 h-14 object-contain"
+                  />
                 </div>
                 <div className="flex flex-col items-start text-left overflow-hidden">
                   <span

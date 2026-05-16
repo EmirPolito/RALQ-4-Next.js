@@ -136,16 +136,16 @@ export function InstrumentViewer({
             }}
             className="relative z-10"
           >
-            <div
+            <img
+              src={activeItem.image}
+              alt={activeItem.name}
               className={cn(
-                "text-[150px] filter transition-all duration-700",
+                "w-48 h-48 object-contain filter transition-all duration-700",
                 externalViewMode === "anatomy"
-                  ? "drop-shadow-[0_0_30px_rgba(99,102,241,0.5)] contrast-125"
+                  ? "drop-shadow-[0_0_30px_rgba(99,102,241,0.5)] contrast-125 invert brightness-200"
                   : "drop-shadow-[0_20px_50px_rgba(0,0,0,0.4)]",
               )}
-            >
-              {activeItem.emoji}
-            </div>
+            />
 
             {/* Details Markers */}
             {externalViewMode === "details" && (
@@ -274,25 +274,44 @@ export function BottomSections({
               className={cn(
                 "flex-1 flex flex-col rounded-xl overflow-hidden border transition-all cursor-pointer relative ",
                 viewMode === mode.id
-                  ? "border-menu2-abajo-borde shadow-md"
+                  ? "border-white/30 shadow-lg"
                   : "border-menu2-abajo-borde shadow-sm",
               )}
             >
               <div
                 className={cn(
-                  "flex-1 flex items-center justify-center",
+                  "flex-1 flex items-center justify-center p-4",
                   "bg-menu2-abajo-bg-bgtarjeta",
                 )}
               >
-                <span className="text-4xl drop-shadow">{mode.emoji}</span>
+                <img
+                  src={activeItem.image}
+                  alt={mode.label}
+                  className={cn(
+                    "w-12 h-12 object-contain transition-all duration-500",
+                    mode.id === "anatomy" ? "invert brightness-200 contrast-125" : "",
+                    mode.id === "details" ? "scale-110 brightness-110" : "",
+                    viewMode !== mode.id ? "opacity-40 grayscale" : "opacity-100",
+                  )}
+                />
                 {viewMode === mode.id && (
-                  <div className="bg-menu2-abajo-bg-bgtarjeta absolute inset-0 opacity-10" />
+                  <div className="bg-white/5 absolute inset-0 pointer-events-none" />
                 )}
               </div>
-              <div className="bg-menu2-abajo-borde py-1.5 flex items-center justify-center border-t border-menu2-abajo-borde">
+              <div
+                className={cn(
+                  "py-1.5 flex items-center justify-center border-t",
+                  viewMode === mode.id
+                    ? "bg-white border-white"
+                    : "bg-menu2-abajo-borde border-menu2-abajo-borde",
+                )}
+              >
                 <span
                   className={cn(
-                    "text-xs font-medium text-menu2-abajo-txt-tarjeta",
+                    "text-[10px] font-bold uppercase tracking-wider",
+                    viewMode === mode.id
+                      ? "text-black"
+                      : "text-menu2-abajo-txt-tarjeta",
                   )}
                 >
                   {mode.label}
