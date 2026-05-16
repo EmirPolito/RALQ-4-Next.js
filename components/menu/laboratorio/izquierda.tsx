@@ -99,7 +99,7 @@ export function InstrumentSidebar({
                         : "text-menu2-izq-tarjeta-mini-txt",
                     )}
                   >
-                    {item.group}
+                    {item.subtitle}
                   </span>
                 </div>
               </motion.button>

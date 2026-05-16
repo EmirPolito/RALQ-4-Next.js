@@ -45,7 +45,7 @@ export function InstrumentViewer({
           </h1>
 
           <span className="text-sm md:text-sm font-normal text-menu2-centro-desc">
-            {activeItem.category}
+            {activeItem.subtitle}
           </span>
         </div>
 
