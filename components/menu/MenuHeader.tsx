@@ -5,7 +5,14 @@ import { cn } from "@/lib/utils";
 import { Home, Microscope, Dna, LayoutGrid, MoreVertical } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { UserButton } from "@clerk/nextjs";
+import { UserButton, ClerkLoading, ClerkLoaded } from "@clerk/nextjs";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { MenuThemeControls } from "@/components/menu/menu-botones-generales";
+import { MenuLanguageSelector } from "@/components/menu/menu-boton-lenguage";
 
 export function MenuHeader() {
   const pathname = usePathname();
@@ -59,11 +66,69 @@ export function MenuHeader() {
       </nav>
 
       {/* Right Actions */}
-      <div className="flex items-center gap-4">
-        <button className="text-slate-500 hover:text-slate-900 dark:text-menu2-header-paginas dark:hover:text-menu2-header-paginas-hvr cursor-pointer transition-colors">
-          <MoreVertical className="w-5 h-5" />
-        </button>
-        <UserButton />
+      <div className="flex items-center gap-8">
+        <Popover>
+          <PopoverTrigger asChild>
+            <button className="text-slate-500 hover:text-slate-900 dark:text-menu2-header-paginas dark:hover:text-menu2-header-paginas-hvr cursor-pointer transition-colors p-0">
+              <MoreVertical className="w-5 h-5" />
+            </button>
+          </PopoverTrigger>
+          <PopoverContent
+            align="end"
+            sideOffset={8}
+            className="w-auto p-4 rounded-xl shadow-xl border border-slate-200 dark:border-menu2-izq-buscador-borde bg-white/95 dark:bg-[#1a1a1a]/95 backdrop-blur-xl flex flex-col gap-4 z-[200]"
+          >
+            <h3 className="font-medium text-sm text-slate-800 dark:text-white">
+              Ajustes Generales
+            </h3>
+
+            <div className="flex items-center justify-between gap-4">
+              <span className="text-menu2-derecha-txt-mayusculas text-[10px] font-medium tracking-[0.2em] uppercase">
+                Apariencia
+              </span>
+              <MenuThemeControls />
+            </div>
+
+            <div className="border-t border-slate-100 dark:border-white/10 my-2" />
+
+            <div className="flex items-center justify-between gap-4">
+              <span className="text-menu2-derecha-txt-mayusculas text-[10px] font-medium tracking-[0.2em] uppercase">
+                Idioma
+              </span>
+              <MenuLanguageSelector />
+            </div>
+          </PopoverContent>
+        </Popover>
+        <div className="mr-2 flex items-center justify-center min-w-[32px] min-h-[32px]">
+          <ClerkLoading>
+            <div className="w-7 h-7 rounded-full bg-slate-200 dark:bg-white/10 animate-pulse" />
+          </ClerkLoading>
+          <ClerkLoaded>
+            <UserButton
+              appearance={{
+                elements: {
+                  userButtonPopoverCard: {
+                    width: "280px",
+                    minWidth: "341px",
+                    maxWidth: "280px",
+                  },
+                  userPreviewSecondaryIdentifier: {
+                    maxWidth: "170px",
+                    whiteSpace: "nowrap",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                  },
+                  userPreviewMainIdentifier: {
+                    maxWidth: "170px",
+                    whiteSpace: "nowrap",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                  },
+                },
+              }}
+            />
+          </ClerkLoaded>
+        </div>
       </div>
     </header>
   );

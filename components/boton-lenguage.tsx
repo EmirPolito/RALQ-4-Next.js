@@ -46,6 +46,12 @@ export function LanguageSelector({
   const { locale, setLocale } = useLanguage();
   const [open, setOpen] = useState(false);
 
+  const handleLanguageCycle = () => {
+    const currentIndex = LANGUAGES.findIndex((l) => l.code === locale);
+    const nextIndex = (currentIndex + 1) % LANGUAGES.length;
+    setLocale(LANGUAGES[nextIndex].code);
+  };
+
   const current = LANGUAGES.find((l) => l.code === locale) ?? LANGUAGES[0];
 
   return (
@@ -74,7 +80,7 @@ export function LanguageSelector({
 
       {/* Dropdown */}
       <AnimatePresence>
-        {open && (
+          {open && (
           <>
             {/* Backdrop */}
             <div
