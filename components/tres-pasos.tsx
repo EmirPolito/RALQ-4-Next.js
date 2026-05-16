@@ -159,7 +159,7 @@ function TresPasosLaboratorioComponent() {
   return (
     <section
       id="how-it-works"
-      className="relative overflow-hidden bg-tres-bg px-5 md:px-12 py-[23px] md:py-20"
+      className="relative overflow-hidden bg-tres-bg px-5 md:px-12 py-[23px] md:py-14"
     >
       {/* Section heading — left-anchored, not centered */}
       <div className="mx-auto max-w-[1400px]">

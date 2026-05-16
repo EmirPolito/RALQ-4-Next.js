@@ -71,7 +71,7 @@ export default function ImgCursor() {
           }
           viewport={{ once: true }}
           /* Distancia de la descripción del titulo*/
-          className="mb-1.5 md:mb-12 text-center"
+          className="mb-1.5 md:mb-11 text-center"
         >
           {/* Título — "Construido sobre / las mejores tecnologías" */}
           <h2 className="text-balance text-2xl font-semibold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl">
