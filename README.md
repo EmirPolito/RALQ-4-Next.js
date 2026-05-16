@@ -13,12 +13,12 @@
 RALQ 2 es una plataforma educativa de vanguardia construida con **Next.js**, diseñada para transformar la enseñanza de la química mediante experiencias visuales inmersivas, modelos 3D interactivos y realidad aumentada.
 
 <div align="center">
-  <img width="1600" height="728" alt="RALQ Hero Section" src="https://github.com/user-attachments/assets/3611f1a9-df49-425c-84fe-79c41c34f6f0"/>
+  <img height="728" alt="RALQ Hero Section" src="https://github.com/user-attachments/assets/3611f1a9-df49-425c-84fe-79c41c34f6f0"/>
   
   <br/>
   <br/>
 
-  <img width="1600" height="724" alt="RALQ 3D Models" src="https://github.com/user-attachments/assets/b059f6f5-3b02-45c5-ac82-e8096a215d90"/>
+  <img height="724" alt="RALQ 3D Models" src="https://github.com/user-attachments/assets/b059f6f5-3b02-45c5-ac82-e8096a215d90"/>
   <br/>
 </div>
 
@@ -26,17 +26,21 @@ RALQ 2 es una plataforma educativa de vanguardia construida con **Next.js**, dis
 
 ## Características principales
 
+#### Páginas
+
+- **Home**: Página principal con `características` de la plataforma.
+- **Nosotros**: Información sobre el proyecto, sus `inicios` y su `evolución`.
+- **Contacto**: `Formulario de contacto` para enviar mensajes directamente al equipo.
+- **Ayuda**: `Preguntas frecuentes` y `guías` para el uso de la plataforma.
+- **Políticas de Privacidad**: Documento legal con el `tratamiento de datos` de los usuarios.
+- **Términos y Condiciones**: Documento legal con las `condiciones de uso` de la plataforma.
+
 #### Accesibilidad y Experiencia de Usuario (UX)
 
-- **Selector de modos** - **Claro**, **Oscuro** y **Daltónico**: Botones que adaptan la apariencia visual a cada entorno y necesidad, con soporte para daltonismo siguiendo estándares WCAG.
-- **Selector de Colores** - **Azul**, **Morado**, **Amarillo**, **Naranja**, **Rosa** y **Verde**: Botón para personalizar el color de la interfaz.
-- **Reductor de Movimiento**: Botón para reducir las animaciones de la interfaz para usuarios con sensibilidad al movimiento.
-
-#### Internacionalización
-
-- **Selector de idiomas**: `Español`, `Portugués` e `Inglés`.
-- **Persistencia de Idioma**: El idioma seleccionado se guarda automáticamente en `localStorage` para futuras visitas.
-- **Localización Dinámica**: Todos los componentes, desde el Hero hasta los documentos legales, están completamente traducidos.
+- **Selector de Modos**: `Claro`, `Oscuro` y `Daltónico` se adapta la apariencia visual a cada entorno y necesidad, con soporte para daltonismo siguiendo estándares WCAG.
+- **Selector de Color**: `Azul`, `Morado`, `Amarillo`, `Naranja`, `Rosa` y `Verde` se adapta el color a partes de la plataforma.
+- **Reductor de Movimiento**: `Switch` para reducir las animaciones de la interfaz para mejorar la experiencia de usuarios con sensibilidad al movimiento.
+- **Selector de Idiomas**: `Español`, `Portugués` e `Inglés` el idioma se adapta a todos los componentes de la página.
 
 #### Seguridad y Rendimiento
 
