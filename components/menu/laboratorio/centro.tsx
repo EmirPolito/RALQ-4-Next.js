@@ -179,31 +179,8 @@ export function InstrumentViewer({
           </motion.div>
         </div>
 
-        {/* Labels info UI */}
-        <div className="absolute top-6 left-6 z-20">
-          <div className="bg-menu2-centro-mini-bg/5 backdrop-blur-xl p-3 rounded-xl shadow-xl border border-menu2-centro-mini-borde/10 max-w-[200px]">
-            <div className="flex gap-2">
-              <div className="w-4 h-4 rounded-full bg-menu2-centro-mini-bg-icono flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-500/30">
-                <Info className="w-2.5 h-2.5 text-menu2-centro-mini-icono" />
-              </div>
-              <div>
-                <p className="text-xs md:text-xs font-semibold text-menu2-centro-mini-ttl">
-                  Estado
-                </p>
-                <p className="text-[10.5px] text-menu2-centro-mini-txt/75 leading-tight font-normal">
-                  {externalViewMode === "anatomy"
-                    ? "Modo radiografía activado"
-                    : externalViewMode === "details"
-                      ? "Analizando componentes"
-                      : "Visualización estándar activa"}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Action Bottom Bar */}
-        <div className="absolute bottom-60 -right-2 p-6 flex justify-end items-center z-20">
+        <div className="absolute bottom-58.5 -right-3 p-6 flex justify-end items-center z-20">
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -250,9 +227,9 @@ export function BottomSections({
 
   if (isInstrument) {
     const modes = [
-      { id: "normal", label: "Vista Normal", emoji: "📦", bg: "bg-blue-50" },
-      { id: "details", label: "Detalles", emoji: "🔍", bg: "bg-emerald-50" },
-      { id: "anatomy", label: "Anatomía", emoji: "🧬", bg: "bg-slate-50" },
+      { id: "normal", label: "Vista general", emoji: "📦", bg: "bg-blue-50" },
+      { id: "details", label: "ESTRUCTURA", emoji: "🔍", bg: "bg-emerald-50" },
+      { id: "anatomy", label: "COMPONENTES", emoji: "🧬", bg: "bg-slate-50" },
     ];
 
     return (
@@ -289,9 +266,13 @@ export function BottomSections({
                   alt={mode.label}
                   className={cn(
                     "w-12 h-12 object-contain transition-all duration-500",
-                    mode.id === "anatomy" ? "invert brightness-200 contrast-125" : "",
+                    mode.id === "anatomy"
+                      ? "invert brightness-200 contrast-125"
+                      : "",
                     mode.id === "details" ? "scale-110 brightness-110" : "",
-                    viewMode !== mode.id ? "opacity-40 grayscale" : "opacity-100",
+                    viewMode !== mode.id
+                      ? "opacity-40 grayscale"
+                      : "opacity-100",
                   )}
                 />
                 {viewMode === mode.id && (
