@@ -76,7 +76,7 @@ export default function LaboratorioPage() {
       </header>
 
       {/* 2. MAIN AREA */}
-      <main className="flex-1 grid grid-cols-12 gap-3 min-h-0">
+      <main className="flex-1 grid grid-cols-12 gap-3.5 min-h-0">
         <aside className="col-span-2 min-h-0">
           <InstrumentSidebar
             activeId={activeSpeciesId}
@@ -87,12 +87,12 @@ export default function LaboratorioPage() {
         </aside>
 
         {/* Centro: Visor 3D y Sección Inferior */}
-        <section className="col-span-7 flex flex-col gap-3 min-h-0">
+        <section className="col-span-7 flex flex-col gap-3.5 min-h-0">
           <div className="bg-menu2-centro-bg flex-1 backdrop-blur-md rounded-xl border border-menu2-izq-buscador-borde shadow-xl overflow-hidden min-h-0">
             <InstrumentViewer activeItem={activeItem} viewMode={viewMode} />
           </div>
 
-          <div className="flex-1 min-h-[160px] max-h-[200px]">
+          <div className="flex-1 min-h-[160px] max-h-[201px]">
             <BottomSections
               data={combinedData}
               activeItem={activeItem}
@@ -131,7 +131,7 @@ function NavItem({ icon, label, href, active }: any) {
     <Link href={href}>
       <button
         className={cn(
-          "flex items-center gap-2 px-3 py-1.5 rounded-xl transition-all text-xs cursor-pointer",
+          "flex items-center gap-1 px-4 py-1.5 rounded-lg transition-all text-xs cursor-pointer",
           active
             ? "bg-menu2-header-paginas-bg"
             : "text-menu2-header-paginas hover:text-menu2-header-paginas-hvr",
