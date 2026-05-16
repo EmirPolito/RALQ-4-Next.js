@@ -79,7 +79,7 @@ export function InstrumentViewer({
             >
               <div
                 className={cn(
-                  "absolute top-0.5 left-0.5 w-4 h-4 bg-white rounded-full transition-transform duration-300 shadow-sm",
+                  "absolute top-0.5 left-0.5 w-4 h-4 bg-menu2-centro-bolita-bg rounded-full transition-transform duration-300 shadow-sm",
                   showHabitat ? "translate-x-5" : "translate-x-0",
                 )}
               />

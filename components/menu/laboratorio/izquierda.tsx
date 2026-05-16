@@ -42,7 +42,7 @@ export function InstrumentSidebar({
           placeholder="Buscar..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full bg-menu2-izq-buscador-bg border border-menu2-izq-buscador-borde rounded-xl py-2.5 pl-9 pr-3 text-xs transition-all placeholder:text-menu2-izq-buscador-contenido"
+          className="w-full bg-menu2-izq-buscador-bg border border-menu2-izq-buscador-borde rounded-xl py-2.5 pl-9 pr-3 text-xs transition-all placeholder:text-menu2-izq-buscador-contenido focus:outline-none hover:border-menu2-izq-buscador-borde hover:bg-menu2-izq-buscador-bg"
         />
       </div>
 
@@ -64,7 +64,7 @@ export function InstrumentSidebar({
               >
                 <div
                   className={cn(
-                    "w-8 h-8 rounded-xl flex items-center justify-center transition-colors",
+                    "w-9 h-9 rounded-lg flex items-center justify-center transition-colors",
                     isActive
                       ? "bg-menu2-izq-bg-icono text-menu2-izq-contenido-icono"
                       : "bg-menu2-izq-bg-icono text-menu2-izq-contenido-icono",

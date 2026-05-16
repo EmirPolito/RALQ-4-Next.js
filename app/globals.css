@@ -230,6 +230,7 @@
   --menu2-centro-bgderecha: #ffffff; /**/
   --menu2-centro-bgbg: #efefef; /**/
   --menu2-centro-bg-boton: #000000; /**/
+  --menu2-centro-bolita-bg: #ffffff; /**/
   --menu2-centro-3D: #ffffff; /**/
   --menu2-centro-AR: #a1a1a1; /**/
   --menu2-centro-expansor: #ffffff; /**/
@@ -519,7 +520,7 @@
    Menu 2
 ========================================*/
   --menu2-bg-general: #000000;
-  --menu2-header-bg: #000000;
+  --menu2-header-bg: #0a0a0a;
   --menu2-header-paginas-bg: #1a1a1a;
   --menu2-header-paginas: #e5e5e5;
   --menu2-header-paginas-hvr: #ffffff;
@@ -549,6 +550,7 @@
   --menu2-centro-bgderecha: #0a0a0a;
   --menu2-centro-bgbg: #161616;
   --menu2-centro-bg-boton: #ffffff;
+  --menu2-centro-bolita-bg: #000000;
   --menu2-centro-3D: #000000;
   --menu2-centro-AR: #737373;
   --menu2-centro-expansor: #0a0a0a;
@@ -729,6 +731,7 @@
   --imgcursor-der-c-bg: #ffffff;
   --imgcursor-der-c: #000000;
   --imgcursor-der-ttl: #0072b2;
+  --menu2-centro-bolita-bg: #ffffff;
   --imgcursor-der-desc: #333333;
 
   /* Preguntas frecuentes */
@@ -4614,6 +4617,7 @@
   --color-menu2-centro-3D: var(--menu2-centro-3D);
   --color-menu2-centro-AR: var(--menu2-centro-AR);
   --color-menu2-centro-expansor: var(--menu2-centro-expansor);
+  --color-menu2-centro-bolita-bg: var(--menu2-centro-bolita-bg);
 
   --color-menu2-centro-mini-bg: var(--menu2-centro-mini-bg);
   --color-menu2-centro-mini-borde: var(--menu2-centro-mini-borde);
