@@ -32,7 +32,7 @@ export function InstrumentSidebar({
   return (
     /* bg de la terjeta*/
     <div className="bg-menu2-izq-bg flex flex-col h-full  border border-menu2-izq-buscador-borde rounded-xl p-3.5 shadow-xl overflow-hidden">
-      <h2 className="text-menu2-izq-ttl text-xs font-medium md:text-xs uppercase mb-4 px-1.5 pt-2">
+      <h2 className="text-menu2-derecha-txt-mayusculas text-[10px] font-medium tracking-[0.1em] uppercase mb-4 px-1.5 pt-2">
         {title}
       </h2>
 

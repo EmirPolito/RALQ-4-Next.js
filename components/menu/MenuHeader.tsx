@@ -18,7 +18,7 @@ export function MenuHeader() {
           <img
             src="/logos/ralq-verde.png"
             alt="RALQ logo"
-            className="px-1 hidden h-10 w-auto dark:hidden -mt-1"
+            className="px-1 block h-10 w-auto dark:hidden -mt-1"
           />
 
           {/* Logo oscuro */}
@@ -60,7 +60,7 @@ export function MenuHeader() {
 
       {/* Right Actions */}
       <div className="flex items-center gap-4">
-        <button className="text-menu2-header-paginas hover:text-menu2-header-paginas-hvr cursor-pointer transition-colors">
+        <button className="text-slate-500 hover:text-slate-900 dark:text-menu2-header-paginas dark:hover:text-menu2-header-paginas-hvr cursor-pointer transition-colors">
           <MoreVertical className="w-5 h-5" />
         </button>
         <UserButton />
@@ -74,10 +74,10 @@ function NavItem({ icon, label, href, active }: any) {
     <Link href={href}>
       <button
         className={cn(
-          "flex items-center gap-2 px-3 py-1.5 transition-all text-xs cursor-pointer rounded-lg relative",
+          "flex items-center gap-2 px-3 py-1.5 transition-all text-[13px] cursor-pointer rounded-lg relative",
           active
-            ? "text-white"
-            : "text-white/40 hover:text-white/70 font-medium",
+            ? "text-slate-900 dark:text-white"
+            : "text-slate-500 hover:text-slate-900 dark:text-white/40 dark:hover:text-white/70",
         )}
       >
         {icon}
@@ -86,13 +86,13 @@ function NavItem({ icon, label, href, active }: any) {
           <span 
             className={cn(
               "transition-all duration-200",
-              active ? "font-bold" : "font-medium"
+              active ? "font-semibold" : "font-normal"
             )}
           >
             {label}
           </span>
-          {/* Reserved space for bold text */}
-          <span className="font-bold h-0 overflow-hidden invisible select-none pointer-events-none" aria-hidden="true">
+          {/* Reserved space for bold text (now semibold) */}
+          <span className="font-semibold h-0 overflow-hidden invisible select-none pointer-events-none" aria-hidden="true">
             {label}
           </span>
         </div>

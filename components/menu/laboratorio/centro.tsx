@@ -237,7 +237,7 @@ export function BottomSections({
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1.5">
             <BookOpen className="w-3 h-3 text-menu2-abajo-txt" />
-            <h2 className="text-menu2-abajo-txt text-xs font-medium uppercase">
+            <h2 className="text-menu2-derecha-txt-mayusculas text-[10px] font-medium tracking-[0.1em] uppercase">
               Opciones de Visualización
             </h2>
           </div>
@@ -249,10 +249,10 @@ export function BottomSections({
               key={mode.id}
               onClick={() => onViewModeChange?.(mode.id)}
               className={cn(
-                "flex-1 flex flex-col rounded-xl overflow-hidden border transition-all cursor-pointer relative ",
+                "flex-1 flex flex-col rounded-xl overflow-hidden border transition-all cursor-pointer relative",
                 viewMode === mode.id
-                  ? "border-white/30 shadow-lg"
-                  : "border-menu2-abajo-borde shadow-sm",
+                  ? "border-black/10 dark:border-white/30 shadow-lg"
+                  : "border-slate-200/60 dark:border-menu2-abajo-borde shadow-sm",
               )}
             >
               <div
@@ -283,7 +283,7 @@ export function BottomSections({
                 className={cn(
                   "py-1.5 flex items-center justify-center border-t",
                   viewMode === mode.id
-                    ? "bg-white border-white"
+                    ? "bg-black border-black dark:bg-white dark:border-white"
                     : "bg-menu2-abajo-borde border-menu2-abajo-borde",
                 )}
               >
@@ -291,7 +291,7 @@ export function BottomSections({
                   className={cn(
                     "text-[10px] font-bold uppercase tracking-wider",
                     viewMode === mode.id
-                      ? "text-black"
+                      ? "text-white dark:text-black"
                       : "text-menu2-abajo-txt-tarjeta",
                   )}
                 >
