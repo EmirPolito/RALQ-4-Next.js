@@ -68,7 +68,7 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
             <div className="space-y-0">
               {/* Título movido aquí: justo arriba de los iconos circulares */}
               <h2 className="text-menu2-derecha-txt-mayusculas text-[10px] font-medium tracking-[0.1em] mb-3 px-1">
-                ESPECIFICACIONES TÉCNICAS
+                ESPECIFICACIONES
               </h2>
 
               {detailEntries.map(([key, value], i) => (
@@ -117,7 +117,7 @@ export function InstrumentDetails({ activeItem }: { activeItem: ItemData }) {
             {/* SECCIÓN LABORATORIO */}
             <div className="pt-3 transform-gpu">
               <h2 className="text-menu2-derecha-txt-mayusculas text-[10px] font-medium tracking-[0.1em] mb-3 px-1">
-                DATOS DE LABORATORIO
+                DATOS ADICIONALES
               </h2>
               <div className="space-y-4 px-2">
                 <div className="flex justify-between items-center">
