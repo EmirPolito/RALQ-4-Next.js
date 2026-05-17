@@ -224,6 +224,7 @@
 
   /* Menu 2 centro  */
   --menu2-centro-bg: #ffffff; /**/
+  --menu2-centro-bg-imagen: #000000;
   --menu2-centro-txt: #676767; /**/
   --menu2-centro-desc: #a1a1a1; /*descripcion*/
 
@@ -544,6 +545,7 @@
 
   /* Menu 2 centro  */
   --menu2-centro-bg: #0a0a0a;
+  --menu2-centro-bg-imagen: #ffffff;
   --menu2-centro-txt: #d1d1d1;
   --menu2-centro-desc: #737373;
 
@@ -933,6 +935,7 @@
 
   /* Menu 2 centro  */
   --menu2-centro-bg: #ffffff;
+  --menu2-centro-bg-imagen: #000000;
   --menu2-centro-txt: #0072b2;
   --menu2-centro-desc: #333333;
 
@@ -4608,6 +4611,7 @@
 
   /**/
   --color-menu2-centro-bg: var(--menu2-centro-bg);
+  --color-menu2-centro-bg-imagen: var(--menu2-centro-bg-imagen);
   --color-menu2-centro-bgbg: var(--menu2-centro-bgbg);
   --color-menu2-centro-txt: var(--menu2-centro-txt);
   --color-menu2-centro-desc: var(--menu2-centro-desc);

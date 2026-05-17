@@ -92,7 +92,7 @@ export function InstrumentViewer({
       </div>
 
       {/* Visualizador de modelo 3D  */}
-      <div className="relative h-[295px] rounded-xl overflow-hidden shadow-xl border border-menu2-izq-buscador-borde group bg-slate-950">
+      <div className="relative h-[295px] rounded-xl overflow-hidden shadow-xl border border-menu2-izq-buscador-borde group bg-[var(--menu2-centro-bg-imagen)]">
         {/* Dynamic Background based on mode */}
         <AnimatePresence mode="wait">
           <motion.div
@@ -107,8 +107,8 @@ export function InstrumentViewer({
                 : externalViewMode === "details"
                   ? "bg-slate-900"
                   : showHabitat
-                    ? "bg-gradient-to-tr from-slate-900 to-slate-800"
-                    : "bg-slate-50",
+                    ? "bg-menu2-centro-bg"
+                    : "bg-[var(--menu2-centro-bg-imagen)]",
             )}
           >
             {/* Anatomy Grid Effect */}
